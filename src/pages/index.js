@@ -1,16 +1,81 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Layout from '../components/Layout';
-import BrightTitle from '../components/BrightTitle';
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 
-const IndexPage = () => (
-  <Layout>
-    <BrightTitle>Hello world!</BrightTitle>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-);
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMarkdownRemark.edges;
 
-export default IndexPage;
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="All posts" />
+      {posts
+        .filter((post) => post?.node?.frontmatter?.published)
+        .map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug;
+          return node.frontmatter.date !== "Invalid date" ? (
+            <article key={node.fields.slug}>
+              <header>
+                <h3
+                  style={{
+                    marginBottom: `15px`,
+                  }}
+                >
+                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                <div
+                  style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
+                >
+                  <small>{node.frontmatter.date}</small>
+                  <div style={{ color: "var(--accent)" }}>
+                    {"★".repeat(parseInt(node.frontmatter.rating[0]))}
+                    {"☆".repeat(7 - parseInt(node.frontmatter.rating[0]))}
+                  </div>
+                </div>
+              </header>
+              <section>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </section>
+            </article>
+          ) : null;
+        })}
+    </Layout>
+  );
+};
+
+export default BlogIndex;
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            published
+            title
+            description
+            rating
+          }
+        }
+      }
+    }
+  }
+`;

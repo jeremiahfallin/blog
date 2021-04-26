@@ -1,0 +1,55 @@
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
+
+const Bio = () => {
+  const data = useStaticQuery(graphql`
+    query BioQuery {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+        childImageSharp {
+          fixed(width: 75, height: 75, quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      site {
+        siteMetadata {
+          author
+          socials {
+            twitter
+          }
+        }
+      }
+    }
+  `);
+
+  const { author } = data.site.siteMetadata;
+  return (
+    <div
+      style={{
+        display: `grid`,
+        gridAutoFlow: `column`,
+        marginBottom: `10px`,
+      }}
+    >
+      <Image
+        fixed={data.avatar.childImageSharp.fixed}
+        alt={author}
+        style={{
+          marginRight: `10px`,
+          marginBottom: 0,
+          minWidth: 50,
+          borderRadius: `100%`,
+        }}
+        imgStyle={{
+          borderRadius: `50%`,
+        }}
+      />
+      <p style={{ float: "right" }}>
+        Personal website of <strong>{author}</strong>.
+      </p>
+    </div>
+  );
+};
+
+export default Bio;
