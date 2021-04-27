@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ThemeContext } from "./ThemeContext";
+import FadeIn from "./FadeIn";
 import sun from "../assets/sun.png";
 import moon from "../assets/moon.png";
 
@@ -31,16 +32,20 @@ const Toggle = () => {
 
   return (
     <>
-      <StyledSun
-        src={sun}
-        isChecked={colorMode === "dark"}
-        onClick={() => setColorMode("light")}
-      />
-      <StyledMoon
-        src={moon}
-        isChecked={colorMode === "dark"}
-        onClick={() => setColorMode("dark")}
-      />
+      <FadeIn>
+        <StyledSun
+          src={sun}
+          isChecked={colorMode === "dark"}
+          onClick={() => setColorMode("light")}
+        />
+      </FadeIn>
+      <FadeIn>
+        <StyledMoon
+          src={moon}
+          isChecked={colorMode === "dark"}
+          onClick={() => setColorMode("dark")}
+        />
+      </FadeIn>
     </>
   );
 };

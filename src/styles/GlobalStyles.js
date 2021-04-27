@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
     line-height: 1.4;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    transition: all 0.50s linear;
   }
   a {
     color: var(--color-primary);
