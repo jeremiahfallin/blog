@@ -6,7 +6,7 @@ rating: 6/7
 published: true
 ---
 
-![Still from Netflix](./Alias Grace.webp)
+![Still from Netflix](./Alias-Grace.webp)
 &nbsp;&nbsp;&nbsp;_still from Netflix_
 
 Alias Grace covers the story of Grace Marks, a Canadian Maid who in the 1800s was accused of murdering her employer and his head housekeeper with another servant.

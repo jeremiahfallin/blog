@@ -4,12 +4,14 @@ import { Link, graphql } from "gatsby";
 import Bio from "../components/Bio";
 import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import HitsCounter from "../components/HitsCounter";
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = this.props.data.site.siteMetadata.title;
     const { previous, next } = this.props.pageContext;
+    console.log(this.props.pageContext);
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -73,6 +75,9 @@ class BlogPostTemplate extends React.Component {
             </li>
           </ul>
         </nav>
+        <HitsCounter
+          slug={this.props.data.markdownRemark.fields.slug}
+        ></HitsCounter>
       </Layout>
     );
   }
@@ -96,6 +101,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        slug
       }
     }
   }
