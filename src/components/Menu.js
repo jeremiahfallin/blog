@@ -5,7 +5,7 @@ import styled from "styled-components";
 const StyledDiv = styled.div`
   display: block;
   float: left;
-  margin-bottom: ${props => props.marginBottom};
+  margin-bottom: ${(props) => props.marginBottom};
 `;
 
 const Menu = () => {
@@ -28,7 +28,7 @@ const Menu = () => {
 
   return (
     <StyledDiv marginBottom={`15px`}>
-      {menu.map(item => {
+      {menu.map((item) => {
         return (
           <p key={item.path}>
             <strong>
@@ -37,7 +37,7 @@ const Menu = () => {
                 style={{
                   boxShadow: "none",
                   textDecoration: "none",
-                  color: `var(--accent)`,
+                  color: `var(--color-primary)`,
                   padding: "8px",
                   margin: "-8px",
                 }}

@@ -35,17 +35,11 @@ const Bio = () => {
       <Image
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
-        style={{
-          marginRight: `10px`,
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
         imgStyle={{
           borderRadius: `50%`,
         }}
       />
-      <p style={{ float: "right" }}>
+      <p style={{ float: "right", margin: 0 }}>
         Personal website of <strong>{author}</strong>.
       </p>
     </div>

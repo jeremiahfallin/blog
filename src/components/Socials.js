@@ -110,7 +110,7 @@ const ShowTooltip = ({ clicked, setClicked }) => {
   );
 };
 
-const Socials = ({ checked }) => {
+const Socials = () => {
   const [clicked, setClicked] = useState(false);
   const { colorMode } = React.useContext(ThemeContext);
 

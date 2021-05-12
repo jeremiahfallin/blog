@@ -9,16 +9,16 @@ module.exports = {
     },
     menu: [
       {
-        label: 'Posts',
-        path: '/',
+        label: "Posts",
+        path: "/",
       },
       {
-        label: 'Projects',
-        path: '/projects/',
+        label: "Projects",
+        path: "/projects/",
       },
       {
-        label: 'About',
-        path: '/about/',
+        label: "About",
+        path: "/about/",
       },
     ],
   },
@@ -44,7 +44,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1280,
             },
           },
           {

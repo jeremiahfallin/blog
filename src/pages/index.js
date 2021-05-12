@@ -31,7 +31,7 @@ const BlogIndex = ({ data, location }) => {
                   style={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}
                 >
                   <small>{node.frontmatter.date}</small>
-                  <div style={{ color: "var(--accent)" }}>
+                  <div style={{ color: "var(--color-primary)" }}>
                     {"★".repeat(parseInt(node.frontmatter.rating[0]))}
                     {"☆".repeat(7 - parseInt(node.frontmatter.rating[0]))}
                   </div>
