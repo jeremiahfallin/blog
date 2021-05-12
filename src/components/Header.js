@@ -9,15 +9,15 @@ const HeaderOneStyle = styled.h1`
   margin-bottom: ${(props) => (props.isRoot ? `15px` : 0)};
   padding-top: 40px;
 
-  @media only screen and (max-width: 650px) {
+  /* @media only screen and (max-width: 650px) {
     font-size: var(--font-size);
-  }
+  } */
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 650px) {
+  /* @media only screen and (min-width: 650px) {
     font-size: calc(2em + 46 * ((75vw - 600px) / 800));
     padding-bottom: 40px;
-  }
+  } */
 `;
 
 const Header = ({ location, title }) => {

@@ -11,7 +11,10 @@ const LayoutStyle = styled.div`
   position: relative;
   display: grid;
 
-  grid-template-columns: 1fr min(65ch, 100%) 1fr;
+  @media only screen and (min-width: 800px) {
+    grid-template-columns: 1fr min(65ch, 100%) 1fr;
+  }
+
   grid-column-gap: 32px;
 `;
 
