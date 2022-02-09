@@ -11,6 +11,7 @@ interface ShowFrontmatter {
   description: string;
   rating: string;
   published: boolean;
+  recommend: boolean;
 }
 
 interface ShowProperties extends BaseProperties {

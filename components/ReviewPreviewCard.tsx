@@ -2,8 +2,6 @@ import React from "react";
 import { Box, Badge, LinkBox, LinkOverlay } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 
-import { ChakraNextImage } from "./ChakraNextImage";
-
 import { formatAsDate } from "../lib/functions/format";
 
 export default function ReviewPreviewCard({ review }) {

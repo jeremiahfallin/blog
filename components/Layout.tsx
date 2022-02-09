@@ -1,7 +1,6 @@
 import React from "react";
 import {
   useColorMode,
-  chakra,
   Grid,
   GridItem,
   Flex,
@@ -12,7 +11,6 @@ import {
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import Head from "next/head";
-import Image from "next/image";
 import { OutboundLink } from "react-ga";
 import styled from "styled-components";
 import { FaTwitter, FaGithub, FaTwitch } from "react-icons/fa";

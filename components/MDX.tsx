@@ -2,11 +2,11 @@ import React, { useMemo, ReactHTMLElement } from "react";
 import Image from "next/image";
 import { getMDXComponent } from "mdx-bundler/client";
 import Link from "next/link";
-import { Heading, Text, Grid, GridItem, Center } from "@chakra-ui/react";
+import { Heading, Text, GridItem, Center } from "@chakra-ui/react";
 import { omit } from "@arcath/utils/lib/functions/pick";
 import { OutboundLink } from "react-ga";
 
-import { Code } from "./code";
+import { Code } from "./Code";
 
 const Img: React.FC<any> = (props) => {
   return (

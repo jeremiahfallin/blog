@@ -12,7 +12,7 @@ import { pick } from "@arcath/utils/lib/functions/pick";
 import { getPageBySlug, getPages } from "../lib/data/pages";
 
 import { Content } from "../components/MDX";
-import { Layout } from "../components/layout";
+import { Layout } from "../components/Layout";
 
 import { pageTitle } from "../lib/functions/page-title";
 

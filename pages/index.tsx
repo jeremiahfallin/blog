@@ -6,7 +6,7 @@ import { Grid, GridItem } from "@chakra-ui/react";
 import { asyncMap } from "@arcath/utils/lib/functions/async-map";
 import { pick } from "@arcath/utils/lib/functions/pick";
 
-import { Layout } from "../components/layout";
+import { Layout } from "../components/Layout";
 import { getMovies } from "../lib/data/movies";
 import { getShows } from "../lib/data/shows";
 
