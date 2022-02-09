@@ -1,0 +1,16 @@
+{
+  "name": "Jeremiah Fallin",
+  "short_name": "jeremiah-fallin",
+  "icons": [
+    {
+      "src": "/img/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "hsl(168deg, 99%, 18%)",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

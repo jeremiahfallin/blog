@@ -1,0 +1,17 @@
+{
+  "name": "Jeremiah Fallin",
+  "description": "Blogger",
+  "productionUrl": "https://www.tacit.gg",
+  "author": {
+    "name": "Jeremiah Fallin",
+    "about": "I am a blogger and aspiring software developer in southern Oregon.",
+    "email": "jeremiah.fallin@gmail.com",
+    "social": {
+      "twitter": "https://www.twitter.com/tacitician",
+      "twitterHandle": "@tacitician",
+      "github": "https://www.github.com/jeremiahfallin",
+      "instagram": "https://www.instagram.com/malsatori/",
+      "twitch": "https://www.twitch.tv/tacitician"
+    }
+  }
+}
