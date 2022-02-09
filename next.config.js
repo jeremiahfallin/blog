@@ -3,11 +3,10 @@ const withPWA = require("next-pwa");
 
 const nextConfig = {
   webpack5: true,
-  target: "serverless",
-  pwa: {
-    dest: "public",
-    disable: process.env.NODE_ENV === "development",
-  },
+  // pwa: {
+  //   dest: "public",
+  //   disable: process.env.NODE_ENV === "development",
+  // },
   experimental: {
     styledComponents: true,
   },
