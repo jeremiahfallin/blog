@@ -13,7 +13,7 @@ import { OutboundLink } from "react-ga";
 import { getShows, getShowFromSlug } from "../../lib/data/shows";
 
 import { MDX, ContentContainer } from "../../components/MDX";
-import { Layout } from "../../components/layout";
+import { Layout } from "../../components/Layout";
 
 export const getStaticProps = async ({
   params,
