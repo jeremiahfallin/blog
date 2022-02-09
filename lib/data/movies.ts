@@ -11,6 +11,7 @@ interface MovieFrontmatter {
   description: string;
   rating: string;
   published: boolean;
+  recommend: boolean;
 }
 
 interface MovieProperties extends BaseProperties {
