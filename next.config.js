@@ -24,4 +24,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withPWA(withImages(nextConfig));
+module.exports = withImages(nextConfig);
