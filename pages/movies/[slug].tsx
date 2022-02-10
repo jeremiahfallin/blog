@@ -5,11 +5,13 @@ import {
   GetStaticPaths,
   InferGetStaticPropsType,
 } from "next";
+import Head from "next/head";
 import { pick } from "@arcath/utils/lib/functions/pick";
 
 import { getMovies, getMovieFromSlug } from "../../lib/data/movies";
+import { pageTitle } from "../../lib/functions/page-title";
 
-import { MDX, ContentContainer } from "../../components/MDX";
+import { Content } from "../../components/MDX";
 import { Layout } from "../../components/Layout";
 
 export const getStaticProps = async ({
@@ -43,13 +45,15 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 const MDXMovie: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  movie,
   source,
 }) => {
   return (
     <Layout>
-      <ContentContainer>
-        <MDX source={source} />
-      </ContentContainer>
+      <Head>
+        <title>{pageTitle(movie.title)}</title>
+      </Head>
+      <Content source={source} heading={movie.title} />
     </Layout>
   );
 };

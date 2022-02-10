@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { GetStaticPropsContext, NextPage, InferGetStaticPropsType } from "next";
 import Head from "next/head";
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Box, Heading, Grid, GridItem } from "@chakra-ui/react";
+
 import { asyncMap } from "@arcath/utils/lib/functions/async-map";
 import { pick } from "@arcath/utils/lib/functions/pick";
 
 import { Layout } from "../components/Layout";
 import { getMovies } from "../lib/data/movies";
 import { getShows } from "../lib/data/shows";
+import { getProjects } from "../lib/data/projects";
 
 import ReviewPreviewCard from "../components/ReviewPreviewCard";
+import Link from "../components/Link";
 
 import meta from "../_data/meta.json";
 
@@ -45,10 +48,19 @@ export const getStaticProps = async ({}: GetStaticPropsContext) => {
 
     return { ...data, content };
   });
+
+  const projects = await asyncMap(
+    await getProjects({ order: "DESC" }),
+    async (project) => {
+      return pick(await project.data, ["title", "href", "year"]);
+    }
+  );
+
   return {
     props: {
       movies,
       shows,
+      projects,
     },
   };
 };
@@ -56,6 +68,7 @@ export const getStaticProps = async ({}: GetStaticPropsContext) => {
 const IndexPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   movies,
   shows,
+  projects,
 }) => {
   return (
     <Layout>
@@ -67,6 +80,9 @@ const IndexPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       </Head>
 
       <GridItem as="main" colStart={3}>
+        <Heading as="h2" size="lg" paddingBottom={2}>
+          Movies
+        </Heading>
         <Grid
           gap={6}
           templateColumns={[
@@ -83,6 +99,22 @@ const IndexPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               </GridItem>
             );
           })}
+        </Grid>
+        <Box paddingBottom={6}>
+          <Link href="/movies">More...</Link>
+        </Box>
+
+        <Heading as="h2" size="lg" paddingBottom={2}>
+          Shows
+        </Heading>
+        <Grid
+          gap={6}
+          templateColumns={[
+            "repeat(1, 1fr)",
+            "repeat(2, 1fr)",
+            "repeat(3, 1fr)",
+          ]}
+        >
           {shows.map((show) => {
             if (!show.published) return null;
             return (
@@ -92,8 +124,22 @@ const IndexPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             );
           })}
         </Grid>
+        <Box paddingBottom={6}>
+          <Link href="/shows">More...</Link>
+        </Box>
+        <Grid gap={2}>
+          <Heading as="h2" size="lg">
+            Projects
+          </Heading>
+          {projects.map((project) => {
+            return (
+              <Box key={project.href} paddingBottom={2}>
+                <Link href={`${project.href}`}>{project.title}</Link>
+              </Box>
+            );
+          })}
+        </Grid>
       </GridItem>
-      <footer></footer>
     </Layout>
   );
 };

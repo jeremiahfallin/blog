@@ -1,13 +1,14 @@
 import React from "react";
 import { GetStaticPropsContext, NextPage, InferGetStaticPropsType } from "next";
-import Link from "next/link";
 import Head from "next/head";
+import { Box, Heading } from "@chakra-ui/react";
 import { pick } from "@arcath/utils/lib/functions/pick";
 import { asyncMap } from "@arcath/utils/lib/functions/async-map";
 
 import { getMovies } from "../../lib/data/movies";
 
 import { Layout } from "../../components/Layout";
+import Link from "../../components/Link";
 
 import { pageTitle } from "../../lib/functions/page-title";
 
@@ -40,20 +41,20 @@ const MoviesPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
       <Head>
         <title>{pageTitle("Movies")}</title>
       </Head>
-      <div>
+      <Box>
         {movies.map(({ title, href, description }, i) => {
           return (
-            <div key={href}>
-              <div className="col-span-2">
+            <Box key={href}>
+              <Box>
                 <Link href={href}>
-                  <h3>{title}</h3>
+                  <Heading>{title}</Heading>
                 </Link>
-                <div>{description}</div>
-              </div>
-            </div>
+                <Box>{description}</Box>
+              </Box>
+            </Box>
           );
         })}
-      </div>
+      </Box>
     </Layout>
   );
 };

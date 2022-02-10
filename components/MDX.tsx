@@ -1,10 +1,15 @@
 import React, { useMemo, ReactHTMLElement } from "react";
 import Image from "next/image";
 import { getMDXComponent } from "mdx-bundler/client";
-import Link from "next/link";
-import { Heading, Text, GridItem, Center } from "@chakra-ui/react";
+import Link from "./Link";
+import {
+  Heading,
+  Text,
+  GridItem,
+  Center,
+  Link as ChakraLink,
+} from "@chakra-ui/react";
 import { omit } from "@arcath/utils/lib/functions/pick";
-import { OutboundLink } from "react-ga";
 
 import { Code } from "./Code";
 
@@ -43,9 +48,9 @@ const Anchor: React.FC<
 
   if (href!.substr(0, 4) === "http") {
     return (
-      <OutboundLink eventLabel="Content Outbound Link" to={href!}>
+      <ChakraLink href={href!} color="green.600">
         {children}
-      </OutboundLink>
+      </ChakraLink>
     );
   }
 
@@ -56,6 +61,7 @@ const Anchor: React.FC<
   );
 };
 
+// Not sure if there is a better way to do this for different header levels.
 const Header: React.FC<any> = (props) => {
   return <Heading size="2xl" {...props} />;
 };
@@ -113,7 +119,9 @@ export const Content: React.FC<{ source: any; heading: string }> = ({
 }) => {
   return (
     <ContentContainer>
-      <Heading>{heading}</Heading>
+      <GridItem colStart={3}>
+        <Heading paddingBottom={4}>{heading}</Heading>
+      </GridItem>
       <MDX source={source} />
     </ContentContainer>
   );

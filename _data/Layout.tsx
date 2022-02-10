@@ -10,11 +10,11 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
+import Link from "next/link";
 import Head from "next/head";
 import { OutboundLink } from "react-ga";
 import { FaTwitter, FaGithub, FaTwitch } from "react-icons/fa";
 
-import Link from "./Link";
 import { ChakraNextImage } from "./ChakraNextImage";
 
 import meta from "../_data/meta.json";
@@ -52,19 +52,19 @@ export const Layout: React.FC = ({ children }) => {
           templateColumns="repeat(2, 1fr)"
         >
           <Box>
-            <Heading size="lg">
-              <Link href="/" fontColor={"inherit"}>
-                {meta.name}
-              </Link>
-            </Heading>
-            <Heading size="md">{meta.description}</Heading>
+            <Link href="/">
+              <a>
+                <h1>{meta.name}</h1>
+              </a>
+            </Link>
+            <h2>{meta.description}</h2>
           </Box>
           <Flex gap={4}>
-            <Link href="/about" fontColor={"inherit"}>
-              About
+            <Link href="/about">
+              <a>About</a>
             </Link>
-            <Link href="/contact" fontColor={"inherit"}>
-              Contact
+            <Link href="/contact">
+              <a>Contact</a>
             </Link>
           </Flex>
         </Grid>
