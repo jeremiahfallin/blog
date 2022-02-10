@@ -23,7 +23,7 @@ const NotFoundPage: NextPage = () => {
         <a href="https://github.com/jeremiahfallin/blog/issues">
           open an issue on GitHub
         </a>{" "}
-        and I'll check it out.
+        and I&apos;ll check it out.
       </p>
     </div>
   );
