@@ -41,7 +41,6 @@
     "remark-mdx-images": "^1.0.3",
     "remark-plugin-colocate-images": "^0.2.0",
     "sodb": "^3.0.0",
-    "styled-components": "^5.3.3",
     "swr": "^1.2.0",
     "terser-webpack-plugin": "^5.3.1",
     "unist-util-visit": "^4.1.0"

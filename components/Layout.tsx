@@ -12,18 +12,11 @@ import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import Head from "next/head";
 import { OutboundLink } from "react-ga";
-import styled from "styled-components";
 import { FaTwitter, FaGithub, FaTwitch } from "react-icons/fa";
 
 import { ChakraNextImage } from "./ChakraNextImage";
 
 import meta from "../_data/meta.json";
-
-const ModeToggle = styled.div`
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-`;
 
 export const Layout: React.FC = ({ children }) => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -36,13 +29,18 @@ export const Layout: React.FC = ({ children }) => {
         <link rel="icon" type="image/png" href="/img/512.png" />
       </Head>
 
-      <ModeToggle onClick={toggleColorMode}>
+      <Box
+        position="absolute"
+        top="2rem"
+        right="2rem"
+        onClick={toggleColorMode}
+      >
         {colorMode === "light" ? (
           <SunIcon h={8} w={8} />
         ) : (
           <MoonIcon h={8} w={8} />
         )}
-      </ModeToggle>
+      </Box>
       <Box paddingBottom="2rem">
         <Box
           w="100%"
