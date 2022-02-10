@@ -4,7 +4,7 @@ import { StarIcon } from "@chakra-ui/icons";
 
 import { formatAsDate } from "../lib/functions/format";
 
-export default function ReviewPreviewCard({ review }) {
+export default function ReviewPreviewCard({ review: any }) {
   return (
     <Box
       maxW="sm"

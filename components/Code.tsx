@@ -1,127 +1,127 @@
-import React, {useState} from 'react'
-import Highlight, {defaultProps, PrismTheme} from 'prism-react-renderer'
-import copy from 'copy-to-clipboard'
-import {OutboundLink} from 'react-ga'
+import React, { useState } from "react";
+import Highlight, { defaultProps, PrismTheme } from "prism-react-renderer";
+import copy from "copy-to-clipboard";
+import { OutboundLink } from "react-ga";
 
 const theme: PrismTheme = {
   plain: {
-    color: '#e6e1dc',
-    backgroundColor: '#232323'
+    color: "#e6e1dc",
+    backgroundColor: "#232323",
   },
   styles: [
     {
-      types: ['comment'],
+      types: ["comment"],
       style: {
-        color: '#676869'
-      }
+        color: "#676869",
+      },
     },
     {
-      types: ['variable'],
+      types: ["variable"],
       style: {
-        fontStyle: 'italic'
-      }
+        fontStyle: "italic",
+      },
     },
     {
-      types: ['keyword', 'builtin', 'operator'],
+      types: ["keyword", "builtin", "operator"],
       style: {
-        color: '#DA4939'
-      }
+        color: "#DA4939",
+      },
     },
     {
-      types: ['number', 'string'],
+      types: ["number", "string"],
       style: {
-        color: '#A5C261'
-      }
+        color: "#A5C261",
+      },
     },
     {
-      types: ['constant'],
+      types: ["constant"],
       style: {
-        color: '#6D9CBE'
-      }
+        color: "#6D9CBE",
+      },
     },
     {
-      types: ['tag'],
+      types: ["tag"],
       style: {
-        color: '#CDA869'
-      }
+        color: "#CDA869",
+      },
     },
     {
-      types: ['attr-name'],
+      types: ["attr-name"],
       style: {
-        color: '#F5E1B6'
-      }
+        color: "#F5E1B6",
+      },
     },
     {
-      types: ['inserted'],
+      types: ["inserted"],
       style: {
-        color: '#E6E1DC',
-        backgroundColor: '#144212'
-      }
+        color: "#E6E1DC",
+        backgroundColor: "#144212",
+      },
     },
     {
-      types: ['deleted'],
+      types: ["deleted"],
       style: {
-        color: '#E6E1DC',
-        backgroundColor: '#660000'
-      }
+        color: "#E6E1DC",
+        backgroundColor: "#660000",
+      },
     },
     {
-      types: ['changed'],
+      types: ["changed"],
       style: {
-        color: '#967EFB'
-      }
+        color: "#967EFB",
+      },
     },
     {
-      types: ['function'],
+      types: ["function"],
       style: {
-        color: '#FFC66D'
-      }
+        color: "#FFC66D",
+      },
     },
     {
-      types: ['parameter'],
+      types: ["parameter"],
       style: {
-        fontStyle: 'italic'
-      }
+        fontStyle: "italic",
+      },
     },
     {
-      types: ['boolean'],
+      types: ["boolean"],
       style: {
-        color: '#6E9CBE'
-      }
-    }
-  ]
-}
+        color: "#6E9CBE",
+      },
+    },
+  ],
+};
 
-const RE = /([\d,-]+)/
+const RE = /([\d,-]+)/;
 
 const calculateLinesToHighlight = (meta: string) => {
   if (RE.test(meta)) {
     const lineNumbers = RE.exec(meta)[1]
-      .split(',')
-      .map(v => v.split('-').map(y => parseInt(y, 10)))
-    return index => {
-      const lineNumber = index + 1
+      .split(",")
+      .map((v) => v.split("-").map((y) => parseInt(y, 10)));
+    return (index) => {
+      const lineNumber = index + 1;
       const inRange = lineNumbers.some(([start, end]) =>
         end ? lineNumber >= start && lineNumber <= end : lineNumber === start
-      )
-      return inRange
-    }
+      );
+      return inRange;
+    };
   } else {
-    return () => false
+    return () => false;
   }
-}
+};
 
 export const Code: React.FC<{
-  codeString: string
-  language: any
-  line?: string
-  fileName?: string
-  url?: string
-}> = ({codeString, language, line, fileName, url}) => {
-  const shouldHighlightLine = calculateLinesToHighlight(line)
+  codeString: string;
+  language: any;
+  line?: string;
+  fileName?: string;
+  url?: string;
+}> = ({ codeString, language, line, fileName, url }) => {
+  const shouldHighlightLine = calculateLinesToHighlight(line);
 
-  const [show, setShow] = useState(false)
-  const [copied, setCopied] = useState(false)
+  const [show, setShow] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   return (
     <Highlight
@@ -130,7 +130,7 @@ export const Code: React.FC<{
       language={language}
       theme={theme}
     >
-      {({tokens, getLineProps, getTokenProps}) => (
+      {({ tokens, getLineProps, getTokenProps }) => (
         <div
           className="relative"
           onMouseEnter={() => setShow(true)}
@@ -139,14 +139,14 @@ export const Code: React.FC<{
           {tokens.length > 2 ? (
             <div
               className={`absolute top-10 right-4 w-8 h-8 p-1 rounded border border-gray-200 transition-opacity cursor-pointer shadow ${
-                show ? 'opacity-100' : 'opacity-0'
+                show ? "opacity-100" : "opacity-0"
               }`}
               onClick={() => {
-                copy(codeString)
-                setCopied(true)
+                copy(codeString);
+                setCopied(true);
                 setTimeout(() => {
-                  setCopied(false)
-                }, 2500)
+                  setCopied(false);
+                }, 2500);
               }}
             >
               {copied ? (
@@ -176,7 +176,7 @@ export const Code: React.FC<{
               )}
             </div>
           ) : (
-            ''
+            ""
           )}
           <pre className="bg-gray-900 dark:bg-gray-700">
             {tokens.map((line, i) => {
@@ -187,18 +187,20 @@ export const Code: React.FC<{
                     line,
                     key: i,
                     className: shouldHighlightLine(i)
-                      ? 'bg-brand-light bg-opacity-30 border-l-4 border-brand-dark'
-                      : 'border-l-4 border-gray-900'
+                      ? "bg-brand-light bg-opacity-30 border-l-4 border-brand-dark"
+                      : "border-l-4 border-gray-900",
                   })}
                 >
                   <span className="mr-4 text-right w-6 inline-block select-none text-gray-400">
                     {i + 1}
                   </span>
                   {line.map((token, key) => {
-                    return <span key={key} {...getTokenProps({token, key})} />
+                    return (
+                      <span key={key} {...getTokenProps({ token, key })} />
+                    );
                   })}
                 </div>
-              )
+              );
             })}
             <div className="border-l-4 border-gray-900 bg-gray-900">
               <span className="ml-10 mr-4 inline-block px-2 bg-brand-dark">
@@ -209,7 +211,7 @@ export const Code: React.FC<{
                   {fileName}
                 </span>
               ) : (
-                ''
+                ""
               )}
               {url ? (
                 <span className="mr-4 inline-block px-2 bg-white">
@@ -222,12 +224,12 @@ export const Code: React.FC<{
                   </OutboundLink>
                 </span>
               ) : (
-                ''
+                ""
               )}
             </div>
           </pre>
         </div>
       )}
     </Highlight>
-  )
-}
+  );
+};
