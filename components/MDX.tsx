@@ -56,10 +56,40 @@ const Anchor: React.FC<
   );
 };
 
+const Header: React.FC<any> = (props) => {
+  return <Heading size="2xl" {...props} />;
+};
+
+const Header2: React.FC<any> = (props) => {
+  return <Heading as="h2" size="xl" {...props} />;
+};
+
+const Header3: React.FC<any> = (props) => {
+  return <Heading as="h3" size="lg" {...props} />;
+};
+
+const Header4: React.FC<any> = (props) => {
+  return <Heading as="h4" size="md" {...props} />;
+};
+
+const Header5: React.FC<any> = (props) => {
+  return <Heading as="h5" size="sm" {...props} />;
+};
+
+const Header6: React.FC<any> = (props) => {
+  return <Heading as="h6" size="xs" {...props} />;
+};
+
 export const components = {
   //img: Img,
   p: Paragraph,
   a: Anchor,
+  h1: Header,
+  h2: Header2,
+  h3: Header3,
+  h4: Header4,
+  h5: Header5,
+  h6: Header6,
   pre: (preProps: Partial<ReactHTMLElement<HTMLPreElement>["props"]>) => {
     const props = preToCodeBlock(preProps);
 

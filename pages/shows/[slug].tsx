@@ -6,9 +6,6 @@ import {
   InferGetStaticPropsType,
 } from "next";
 import { pick } from "@arcath/utils/lib/functions/pick";
-import Image from "next/image";
-import { Grid } from "@chakra-ui/react";
-import { OutboundLink } from "react-ga";
 
 import { getShows, getShowFromSlug } from "../../lib/data/shows";
 
@@ -46,7 +43,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 const MDXShow: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
-  show,
   source,
 }) => {
   return (

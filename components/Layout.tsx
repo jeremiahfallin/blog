@@ -79,8 +79,8 @@ export const Layout: React.FC = ({ children }) => {
           <GridItem colStart={3}>
             <Grid
               templateColumns="repeat(2, 1fr)"
-              align="center"
-              justify="center"
+              alignItems="center"
+              justifyContent="center"
             >
               <GridItem>
                 <ChakraNextImage

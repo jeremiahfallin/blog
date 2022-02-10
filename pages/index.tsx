@@ -1,7 +1,6 @@
 import React from "react";
 import { GetStaticPropsContext, NextPage, InferGetStaticPropsType } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { asyncMap } from "@arcath/utils/lib/functions/async-map";
 import { pick } from "@arcath/utils/lib/functions/pick";
@@ -86,11 +85,14 @@ const IndexPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           })}
           {shows.map((show) => {
             if (!show.published) return null;
-            return <ReviewPreviewCard key={show.slug} review={show} />;
+            return (
+              <GridItem key={show.slug}>
+                <ReviewPreviewCard key={show.slug} review={show} />
+              </GridItem>
+            );
           })}
         </Grid>
       </GridItem>
-
       <footer></footer>
     </Layout>
   );
