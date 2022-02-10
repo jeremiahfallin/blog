@@ -96,7 +96,7 @@ const RE = /([\d,-]+)/;
 
 const calculateLinesToHighlight = (meta: string) => {
   if (RE.test(meta)) {
-    const lineNumbers = RE.exec(meta)[1]
+    const lineNumbers = RE.exec(meta)![1]
       .split(",")
       .map((v) => v.split("-").map((y) => parseInt(y, 10)));
     return (index) => {
