@@ -37,13 +37,7 @@ const toBase64 = (str: string) =>
     ? Buffer.from(str).toString("base64")
     : window.btoa(str);
 
-interface ChakraNextImageProps extends ImageProps, BoxProps {
-  blurDataURL?: string;
-  placeholder?: string;
-  loader?: string;
-}
-
-export const ChakraNextImage = (props: ChakraNextImageProps) => {
+export const ChakraNextImage = (props: ImageProps & BoxProps) => {
   const {
     src,
     alt,
