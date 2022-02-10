@@ -14,8 +14,8 @@ import Head from "next/head";
 import { OutboundLink } from "react-ga";
 import { FaTwitter, FaGithub, FaTwitch } from "react-icons/fa";
 
-import Link from "./Link";
 import { ChakraNextImage } from "./ChakraNextImage";
+import Link from "./Link";
 
 import meta from "../_data/meta.json";
 
