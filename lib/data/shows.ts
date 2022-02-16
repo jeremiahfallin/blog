@@ -7,7 +7,7 @@ const SHOWS_DIRECTORY = path.join(process.cwd(), "_content", "shows");
 interface ShowFrontmatter {
   title: string;
   content: string;
-  date: string;
+  date: Date;
   description: string;
   rating: string;
   published: boolean;
