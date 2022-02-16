@@ -1,10 +1,28 @@
 import React from "react";
-import { Box, Badge, LinkBox, LinkOverlay } from "@chakra-ui/react";
+import { Box, Badge, LinkBox, LinkOverlay, keyframes } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 
 import { formatAsDate } from "../lib/functions/format";
 
 export default function ReviewPreviewCard({ review }) {
+  const colors = keyframes`
+    0% {
+        color: green.300;
+    }
+    25% {
+        color: pink.500;
+    }
+    50% {
+        color: pink.600;
+    }
+    75% {
+        color: rebeccapurple;
+    }
+    100% {
+        color: green.300;
+    }
+  `;
+
   return (
     <Box
       maxW="sm"
@@ -52,6 +70,10 @@ export default function ReviewPreviewCard({ review }) {
             .map((_, i) => (
               <StarIcon
                 key={i}
+                role="text"
+                animation={
+                  review.rating === 7 ? `${colors} 10s linear infinite` : ""
+                }
                 color={i < review.rating ? "green.500" : "gray.300"}
               />
             ))}

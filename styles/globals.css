@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.clip {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: red;
+}
