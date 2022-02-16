@@ -21,6 +21,7 @@ export const getStaticProps = async ({}: GetStaticPropsContext) => {
     return pick({ ...(await movie.data), source }, [
       "title",
       "source",
+      "date",
       "href",
       "description",
     ]);

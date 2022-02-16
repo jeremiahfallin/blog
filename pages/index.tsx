@@ -5,6 +5,7 @@ import { Box, Heading, Grid, GridItem } from "@chakra-ui/react";
 
 import { asyncMap } from "@arcath/utils/lib/functions/async-map";
 import { pick } from "@arcath/utils/lib/functions/pick";
+import { replaceProperty } from "@arcath/utils/lib/functions/replace-property";
 
 import { Layout } from "../components/Layout";
 import { getMovies } from "../lib/data/movies";
@@ -18,32 +19,40 @@ import meta from "../_data/meta.json";
 
 export const getStaticProps = async ({}: GetStaticPropsContext) => {
   const movies = await asyncMap(await getMovies(), async (movies) => {
-    const data = pick(await movies.data, [
-      "title",
-      "href",
-      "description",
-      "rating",
-      "slug",
+    const data = replaceProperty(
+      pick(await movies.data, [
+        "title",
+        "href",
+        "description",
+        "rating",
+        "slug",
+        "date",
+        "recommend",
+        "published",
+      ]),
       "date",
-      "recommend",
-      "published",
-    ]);
+      (date) => date.toISOString()
+    );
     const content = await movies.bundle;
 
     return { ...data, content };
   });
 
   const shows = await asyncMap(await getShows(), async (shows) => {
-    const data = pick(await shows.data, [
-      "title",
-      "href",
-      "description",
-      "rating",
-      "slug",
+    const data = replaceProperty(
+      pick(await shows.data, [
+        "title",
+        "href",
+        "description",
+        "rating",
+        "slug",
+        "date",
+        "recommend",
+        "published",
+      ]),
       "date",
-      "recommend",
-      "published",
-    ]);
+      (date) => date.toISOString()
+    );
     const content = await shows.bundle;
 
     return { ...data, content };
