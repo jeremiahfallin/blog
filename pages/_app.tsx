@@ -23,6 +23,21 @@ export const theme = extendTheme({
       700: "#2a69ac",
     },
   },
+  styles: {
+    global: {
+      "&::-webkit-scrollbar": {
+        width: "4px",
+      },
+      "&::-webkit-scrollbar-track": {
+        background: "cyan.900",
+        width: "6px",
+      },
+      "&::-webkit-scrollbar-thumb": {
+        background: "green.900",
+        borderRadius: "24px",
+      },
+    },
+  },
 });
 
 function MyApp({ Component, pageProps }) {

@@ -45,7 +45,6 @@ export const Layout: React.FC = ({ children }) => {
       <Box paddingBottom="2rem">
         <Grid
           as="header"
-          w="100%"
           p="2rem"
           paddingTop="0"
           bgGradient={`linear(to-b, green.500, ${headerFade})`}
