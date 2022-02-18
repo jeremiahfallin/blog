@@ -88,67 +88,60 @@ const IndexPage: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <GridItem as="main" colStart={3}>
-        <Heading as="h2" size="lg" paddingBottom={2}>
-          Movies
-        </Heading>
-        <Grid
-          gap={6}
-          templateColumns={[
-            "repeat(1, 1fr)",
-            "repeat(2, 1fr)",
-            "repeat(3, 1fr)",
-          ]}
-        >
-          {movies.map((movie) => {
-            if (!movie.published) return null;
-            return (
-              <GridItem key={movie.slug}>
-                <ReviewPreviewCard review={movie} />
-              </GridItem>
-            );
-          })}
-        </Grid>
-        <Box paddingBottom={6}>
-          <Link href="/movies">More...</Link>
-        </Box>
+      <Heading as="h2" size="lg" paddingBottom={2} gridColumnStart={3}>
+        Movies
+      </Heading>
+      <Grid
+        gap={4}
+        gridColumnStart={3}
+        templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}
+        w="100%"
+      >
+        {movies.map((movie) => {
+          if (!movie.published) return null;
+          return (
+            <GridItem key={movie.slug}>
+              <ReviewPreviewCard review={movie} />
+            </GridItem>
+          );
+        })}
+      </Grid>
+      <Box paddingBottom={6} gridColumnStart={3}>
+        <Link href="/movies">More...</Link>
+      </Box>
 
-        <Heading as="h2" size="lg" paddingBottom={2}>
-          Shows
+      <Heading as="h2" size="lg" paddingBottom={2} gridColumnStart={3}>
+        Shows
+      </Heading>
+      <Grid
+        gap={4}
+        gridColumnStart={3}
+        templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}
+      >
+        {shows.map((show) => {
+          if (!show.published) return null;
+          return (
+            <GridItem key={show.slug}>
+              <ReviewPreviewCard key={show.slug} review={show} />
+            </GridItem>
+          );
+        })}
+      </Grid>
+      <Box paddingBottom={6} gridColumnStart={3}>
+        <Link href="/shows">More...</Link>
+      </Box>
+      <Grid gap={2} gridColumnStart={3}>
+        <Heading as="h2" size="lg">
+          Projects
         </Heading>
-        <Grid
-          gap={6}
-          templateColumns={[
-            "repeat(1, 1fr)",
-            "repeat(2, 1fr)",
-            "repeat(3, 1fr)",
-          ]}
-        >
-          {shows.map((show) => {
-            if (!show.published) return null;
-            return (
-              <GridItem key={show.slug}>
-                <ReviewPreviewCard key={show.slug} review={show} />
-              </GridItem>
-            );
-          })}
-        </Grid>
-        <Box paddingBottom={6}>
-          <Link href="/shows">More...</Link>
-        </Box>
-        <Grid gap={2}>
-          <Heading as="h2" size="lg">
-            Projects
-          </Heading>
-          {projects.map((project) => {
-            return (
-              <Box key={project.href} paddingBottom={2}>
-                <Link href={`${project.href}`}>{project.title}</Link>
-              </Box>
-            );
-          })}
-        </Grid>
-      </GridItem>
+        {projects.map((project) => {
+          return (
+            <Box key={project.href} paddingBottom={2}>
+              <Link href={`${project.href}`}>{project.title}</Link>
+            </Box>
+          );
+        })}
+      </Grid>
     </Layout>
   );
 };

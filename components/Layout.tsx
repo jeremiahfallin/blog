@@ -68,11 +68,17 @@ export const Layout: React.FC = ({ children }) => {
           </Flex>
         </Grid>
         <Grid
-          gap={6}
           templateColumns="minmax(0.6rem, 1fr) minmax(0.6rem, 1fr) minmax(auto, 60ch) minmax(0.6rem, 1fr) minmax(0.6rem, 1fr)"
           paddingTop="2rem"
         >
-          {children}
+          <GridItem as="main" colStart={1} colEnd={-1}>
+            <Grid
+              templateColumns="minmax(0.6rem, 1fr) minmax(0.6rem, 1fr) minmax(auto, 60ch) minmax(0.6rem, 1fr) minmax(0.6rem, 1fr)"
+              paddingTop="2rem"
+            >
+              {children}
+            </Grid>
+          </GridItem>
           <GridItem as="footer" colStart={3}>
             <Grid
               templateColumns="repeat(2, 1fr)"

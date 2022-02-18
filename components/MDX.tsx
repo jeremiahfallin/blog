@@ -31,7 +31,7 @@ const Paragraph: React.FC<any> = (props) => {
   }
 
   return (
-    <GridItem colStart={3}>
+    <GridItem colStart={3} pb={6}>
       <Text {...props} />
     </GridItem>
   );
@@ -119,7 +119,7 @@ export const Content: React.FC<{ source: any; heading: string }> = ({
 }) => {
   return (
     <ContentContainer>
-      <GridItem colStart={3}>
+      <GridItem colStart={2}>
         <Heading paddingBottom={4}>{heading}</Heading>
       </GridItem>
       <MDX source={source} />

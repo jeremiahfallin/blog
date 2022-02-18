@@ -25,6 +25,10 @@ export const theme = extendTheme({
   },
   styles: {
     global: {
+      "body, html": {
+        minWidth: "100%",
+        overflowX: "hidden",
+      },
       "&::-webkit-scrollbar": {
         width: "4px",
       },
