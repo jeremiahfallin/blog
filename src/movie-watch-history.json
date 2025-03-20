@@ -1,0 +1,416 @@
+[
+  {
+    "order": 1,
+    "title": "The Fall Guy",
+    "dateWatched": "2024-9-7",
+    "betterThanPrevious": null
+  },
+  {
+    "order": 2,
+    "title": "Killers of the Flower Moon",
+    "dateWatched": "2024-9-7",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 3,
+    "title": "Oddity",
+    "dateWatched": "2024-9-14",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 4,
+    "title": "Twister",
+    "dateWatched": "2024-10-13",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 5,
+    "title": "Stranger Darling",
+    "dateWatched": "2024-10-13",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 6,
+    "title": "Smile 2",
+    "dateWatched": "2024-11-17",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 7,
+    "title": "Alien: Romulus",
+    "dateWatched": "2024-11-18",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 8,
+    "title": "Prey",
+    "dateWatched": "2024-11-18",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 9,
+    "title": "Twisters",
+    "dateWatched": "2024-11-19",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 10,
+    "title": "Love Lies Bleeding",
+    "dateWatched": "2024-11-20",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 11,
+    "title": "Deadpool & Wolverine",
+    "dateWatched": "2024-11-22",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 12,
+    "title": "Anora",
+    "dateWatched": "2024-12-24",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 13,
+    "title": "Juror #2",
+    "dateWatched": "2025-1-1",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 14,
+    "title": "New Life",
+    "dateWatched": "2025-1-1",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 15,
+    "title": "Heretic",
+    "dateWatched": "2025-1-1",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 16,
+    "title": "Smile 2",
+    "dateWatched": "2025-1-23",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 17,
+    "title": "Lowlifes",
+    "dateWatched": "2025-1-23",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 18,
+    "title": "Alien: Romulus",
+    "dateWatched": "2025-1-24",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 19,
+    "title": "Things Will Be Different",
+    "dateWatched": "2025-1-24",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 20,
+    "title": "Humane",
+    "dateWatched": "2025-1-25",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 21,
+    "title": "Summoners",
+    "dateWatched": "2025-1-26",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 22,
+    "title": "Werevolves",
+    "dateWatched": "2025-1-26",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 23,
+    "title": "Army of the Dead",
+    "dateWatched": "2025-1-26",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 24,
+    "title": "Arrival",
+    "dateWatched": "2025-1-26",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 25,
+    "title": "Mean Girls",
+    "dateWatched": "2025-1-26",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 26,
+    "title": "Monster Summer",
+    "dateWatched": "2025-2-1",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 27,
+    "title": "Hit Man",
+    "dateWatched": "2025-2-16",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 28,
+    "title": "Azrael",
+    "dateWatched": "2025-2-16",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 29,
+    "title": "The Last Voyage of the Demeter",
+    "dateWatched": "2025-2-17",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 30,
+    "title": "Here After",
+    "dateWatched": "2025-2-17",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 31,
+    "title": "Good One",
+    "dateWatched": "2025-2-17",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 32,
+    "title": "The Substance",
+    "dateWatched": "2025-2-17",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 33,
+    "title": "Wrong Turn 2: Dead End",
+    "dateWatched": "2025-2-18",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 34,
+    "title": "Somewhere Quiet",
+    "dateWatched": "2025-2-19",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 35,
+    "title": "The Watchers",
+    "dateWatched": "2025-2-20",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 36,
+    "title": "The Order",
+    "dateWatched": "2025-2-20",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 37,
+    "title": "Longlegs",
+    "dateWatched": "2025-2-20",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 38,
+    "title": "Night Swim",
+    "dateWatched": "2025-2-22",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 39,
+    "title": "Nightbitch",
+    "dateWatched": "2025-2-23",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 40,
+    "title": "Project Eerie",
+    "dateWatched": "2025-2-23",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 41,
+    "title": "To Catch a Killer",
+    "dateWatched": "2025-2-23",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 42,
+    "title": "Trial by Fire",
+    "dateWatched": "2025-2-23",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 43,
+    "title": "Interstellar",
+    "dateWatched": "2025-2-23",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 44,
+    "title": "Daddy's Head",
+    "dateWatched": "2025-3-2",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 45,
+    "title": "The Hangman",
+    "dateWatched": "2025-3-3",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 46,
+    "title": "Apartment 7A",
+    "dateWatched": "2025-3-3",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 47,
+    "title": "Monkey Man",
+    "dateWatched": "2025-3-3",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 48,
+    "title": "In a Violent Nature",
+    "dateWatched": "2025-3-4",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 49,
+    "title": "Emilia Pérez",
+    "dateWatched": "2025-3-7",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 50,
+    "title": "Trap",
+    "dateWatched": "2025-3-8",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 51,
+    "title": "Handling the Undead",
+    "dateWatched": "2025-3-11",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 52,
+    "title": "Don't Move",
+    "dateWatched": "2025-3-11",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 53,
+    "title": "Spiderhead",
+    "dateWatched": "2025-3-11",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 54,
+    "title": "To Catch a Killer",
+    "dateWatched": "2025-3-12",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 55,
+    "title": "Trial by Fire",
+    "dateWatched": "2025-3-12",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 56,
+    "title": "Kate",
+    "dateWatched": "2025-3-12",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 57,
+    "title": "The Watchers",
+    "dateWatched": "2025-3-13",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 58,
+    "title": "Sweet Girl",
+    "dateWatched": "2025-3-13",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 59,
+    "title": "Don't Listen",
+    "dateWatched": "2025-3-13",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 60,
+    "title": "The Abyss",
+    "dateWatched": "2025-3-14",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 61,
+    "title": "The Swarm",
+    "dateWatched": "2025-3-14",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 62,
+    "title": "Ma",
+    "dateWatched": "2025-3-14",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 63,
+    "title": "Army of the Dead",
+    "dateWatched": "2025-3-15",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 64,
+    "title": "Upgrade",
+    "dateWatched": "2025-3-15",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 65,
+    "title": "Extinction",
+    "dateWatched": "2025-3-15",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 66,
+    "title": "Deadly Illusions",
+    "dateWatched": "2025-3-15",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 67,
+    "title": "Night Raiders",
+    "dateWatched": "2025-3-15",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 68,
+    "title": "Tarot",
+    "dateWatched": "2025-3-15",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 69,
+    "title": "Runaway Jury",
+    "dateWatched": "2025-3-16",
+    "betterThanPrevious": true
+  }
+]

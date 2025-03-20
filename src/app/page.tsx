@@ -1,95 +1,124 @@
+import { Box, Card, Flex, Heading, Link, Text } from "@radix-ui/themes";
+import { getBlogPosts, BlogPostData } from "@/getBlogPosts";
 import Image from "next/image";
-import styles from "./page.module.css";
 
-export default function Home() {
+function MovieCard({ movie }: { movie: BlogPostData }) {
+  const image = movie.metadata.background as string;
+
+  if (image) {
+    return (
+      <Box style={{ width: "calc(33.33% - 16px)", minWidth: "280px" }}>
+        <Card
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            aspectRatio: "16 / 9",
+          }}
+        >
+          <Image
+            src={`/media/${image}`}
+            alt={movie.metadata.title as string}
+            width={640}
+            height={360}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              zIndex: 0,
+              opacity: 0.7,
+            }}
+            quality={90}
+          />
+          <Flex
+            position="absolute"
+            bottom="0"
+            left="0"
+            width="100%"
+            p="2"
+            justify="center"
+            align="center"
+            style={{
+              zIndex: 1,
+              backgroundColor: "rgba(0, 0, 0, 0.6)",
+            }}
+          >
+            <Heading as="h3" size="3">
+              <Link href={`/movies/${movie.slug}` as string}>
+                {movie.metadata.title as string}
+              </Link>
+            </Heading>
+          </Flex>
+        </Card>
+      </Box>
+    );
+  }
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <Box style={{ width: "calc(33.33% - 16px)", minWidth: "280px" }}>
+      <Card>
+        <Flex direction="column" gap="2">
+          <Heading as="h3" size="3">
+            <Link href={`/movies/${movie.slug}` as string}>
+              {movie.metadata.title as string}
+            </Link>
+          </Heading>
+          <Text size="2">{movie.metadata.description as string}</Text>
+        </Flex>
+      </Card>
+    </Box>
+  );
+}
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+function ProjectCard({ project }: { project: BlogPostData }) {
+  return (
+    <Box width="300px">
+      <Card>
+        <Flex direction="column" gap="2">
+          <Link href={`/projects/${project.slug}` as string}>
+            {project.metadata.title as string}
+          </Link>
+        </Flex>
+      </Card>
+    </Box>
+  );
+}
+
+export default async function Home() {
+  const blogPosts = await getBlogPosts();
+  const moviePosts = blogPosts.filter((post) => post.slug.startsWith("movie"));
+  const projectPosts = blogPosts.filter((post) =>
+    post.slug.startsWith("project")
+  );
+
+  return (
+    <Flex direction="column" gap="4" justify="center" align="center">
+      <main>
+        <Flex direction="column" gap="4">
+          <Heading as="h2" size="4">
+            Projects
+          </Heading>
+          {projectPosts.map((post) => (
+            <ProjectCard key={post.slug} project={post} />
+          ))}
+          <Heading as="h2" size="4">
+            Movies
+          </Heading>
+          <Flex
+            direction="row"
+            gap="4"
+            wrap="wrap"
+            justify="between"
+            style={{ width: "100%" }}
           >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+            {moviePosts.map((post) => (
+              <MovieCard key={post.slug} movie={post} />
+            ))}
+          </Flex>
+        </Flex>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </Flex>
   );
 }
