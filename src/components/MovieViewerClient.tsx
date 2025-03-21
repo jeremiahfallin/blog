@@ -1,7 +1,7 @@
 "use client";
 
+import { BlogPostData } from "@/getBlogPostData";
 import dynamic from "next/dynamic";
-import { BlogPost } from "@/types"; // Adjust the import path as needed
 
 // Dynamically import MovieViewer with SSR disabled
 const MovieViewer = dynamic(() => import("@/components/MovieViewer"), {
@@ -10,7 +10,7 @@ const MovieViewer = dynamic(() => import("@/components/MovieViewer"), {
 });
 
 interface MovieViewerClientProps {
-  posts: BlogPost[];
+  posts: BlogPostData[];
 }
 
 export default function MovieViewerClient({ posts }: MovieViewerClientProps) {
