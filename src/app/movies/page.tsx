@@ -1,11 +1,5 @@
-import dynamic from "next/dynamic";
 import { getBlogPosts } from "@/getBlogPosts";
-
-// Dynamically import MovieViewer with SSR disabled
-const MovieViewer = dynamic(() => import("@/components/MovieViewer"), {
-  ssr: false,
-  loading: () => <p>Loading movie viewer...</p>,
-});
+import MovieViewerClient from "@/components/MovieViewerClient";
 
 export default async function Movies() {
   const blogPosts = await getBlogPosts();
@@ -15,7 +9,7 @@ export default async function Movies() {
       <main>
         <h1>Movie Watch History</h1>
         <p>View my movie watch history as a table or interactive graph.</p>
-        <MovieViewer posts={blogPosts} />
+        <MovieViewerClient posts={blogPosts} />
       </main>
       <footer></footer>
     </div>
