@@ -49,9 +49,12 @@ export default function MovieGraph() {
         x: (Math.random() - 0.5) * 1200,
         y: (Math.random() - 0.5) * 800 - 200, // Bias toward upper side of canvas
       })),
-      // Create links with more distance between nodes
+      // Create links with more distance between nodes and swap source/target to fix arrow direction
       links: graph.links.map((link) => ({
         ...link,
+        // Swap source and target to correct arrow direction
+        source: link.target,
+        target: link.source,
         // This doesn't directly change distance but helps the ForceGraph spacing
         value: 20, // Higher value = more spacing
       })),
