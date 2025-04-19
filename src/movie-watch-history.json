@@ -412,5 +412,233 @@
     "title": "Runaway Jury",
     "dateWatched": "2025-3-16",
     "betterThanPrevious": true
+  },
+  {
+    "order": 70,
+    "title": "Spectral",
+    "dateWatched": "2025-3-20",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 71,
+    "title": "Legion",
+    "dateWatched": "2025-3-20",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 72,
+    "title": "Locked In",
+    "dateWatched": "2025-3-25",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 73,
+    "title": "Awake",
+    "dateWatched": "2025-3-25",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 74,
+    "title": "Close",
+    "dateWatched": "2025-3-25",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 75,
+    "title": "Talk to Me",
+    "dateWatched": "2025-3-26",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 76,
+    "title": "Revelations",
+    "dateWatched": "2025-3-26",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 77,
+    "title": "Mufasa: The Lion King",
+    "dateWatched": "2025-3-29",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 78,
+    "title": "Sweet Girl",
+    "dateWatched": "2025-3-29",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 79,
+    "title": "The Fall Guy",
+    "dateWatched": "2025-3-30",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 80,
+    "title": "Tarot",
+    "dateWatched": "2025-3-30",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 81,
+    "title": "Interstellar",
+    "dateWatched": "2025-3-30",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 82,
+    "title": "Don't Let Go",
+    "dateWatched": "2025-3-30",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 83,
+    "title": "Spectral",
+    "dateWatched": "2025-3-30",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 84,
+    "title": "Legion",
+    "dateWatched": "2025-3-30",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 85,
+    "title": "Locked In",
+    "dateWatched": "2025-3-30",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 86,
+    "title": "Awake",
+    "dateWatched": "2025-3-31",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 87,
+    "title": "Close",
+    "dateWatched": "2025-3-31",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 88,
+    "title": "Revelations",
+    "dateWatched": "2025-3-31",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 89,
+    "title": "Talk to Me",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 90,
+    "title": "ARQ",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 91,
+    "title": "The Electric State",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 92,
+    "title": "Prey",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 93,
+    "title": "Geostorm",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 94,
+    "title": "Sicario: Day of the Soldado",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 95,
+    "title": "Alpha",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 96,
+    "title": "Lucy",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 97,
+    "title": "Draft Day",
+    "dateWatched": "2025-4-1",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 98,
+    "title": "The Gray Man",
+    "dateWatched": "2025-4-2",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 99,
+    "title": "Den of Thieves",
+    "dateWatched": "2025-4-2",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 100,
+    "title": "Den of Thieves 2: Pantera",
+    "dateWatched": "2025-4-2",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 101,
+    "title": "Ad Vitam",
+    "dateWatched": "2025-4-2",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 102,
+    "title": "Sicario",
+    "dateWatched": "2025-4-7",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 103,
+    "title": "Spotlight",
+    "dateWatched": "2025-4-13",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 104,
+    "title": "Sinners",
+    "dateWatched": "2025-4-17",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 105,
+    "title": "The Good Nurse",
+    "dateWatched": "2025-4-17",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 106,
+    "title": "Midnight in the Switchgrass",
+    "dateWatched": "2025-4-18",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 107,
+    "title": "The Gray Man",
+    "dateWatched": "2025-4-18",
+    "betterThanPrevious": true
   }
 ]

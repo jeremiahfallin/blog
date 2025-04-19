@@ -235,7 +235,6 @@ export const calculateRatings = (
       Object.assign(ratings, newRatings);
 
       if (diff < convergenceThreshold) {
-        console.log(`Converged at iteration ${iter}`);
         break;
       }
     }
