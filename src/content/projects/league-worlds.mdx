@@ -1,0 +1,36 @@
+export const metadata = {
+  title: "League Worlds",
+  slug: "league-worlds",
+  date: "2022-05-09T00:00:00.000Z",
+  description:
+    "A tool that allows users to see professional draft data in League of Legends.",
+};
+
+### Project Showcase: League of Legends Draft Stats Viewer
+
+This project provides insights into champion draft strategies used in professional League of Legends (LoL) leagues. Built with [Next.js](https://nextjs.org/) and hosted on [Vercel](https://league-draft-stats.vercel.app/), the application fetches and displays detailed statistics about champion picks and bans across various professional tournaments.
+
+**Goal:**
+
+The primary goal was to create a tool that allows users to easily access and analyze LoL champion draft data from different professional leagues, starting from the 2020 season.
+
+**Core Features & Technologies:**
+
+- **Data Fetching:** The application utilizes the `poro` library's `CargoClient` to query LoL game data, specifically from the `PicksAndBansS7` table, filtering by tournament/league. It retrieves information such as bans, picks in order, team compositions by role, scores, and winners for each game.
+- **Data Processing:** Raw pick and ban data is processed to calculate aggregated statistics for each champion, including:
+  - Ban rates (total, round 1, round 2)
+  - Pick rates (total and across different pick rounds)
+  - Presence (pick + ban rate)
+  - Win rate
+  - Pick distribution across roles (Top, Jungle, Mid, Bot, Support)
+- **Frontend & UI:**
+  - **Framework:** Built with [Next.js](https://nextjs.org/) and [React](https://reactjs.org/).
+  - **UI Components:** Leverages the [Chakra UI](https://chakra-ui.com/) component library for building the user interface, including tables, layout elements, tooltips, and select dropdowns.
+  - **Data Display:** Uses [React Table](https://react-table.tanstack.com/) for displaying the champion statistics in a sortable and filterable table. Features include number range filtering, text filtering, column sorting, and expandable rows to show role distribution.
+  - **Visualizations:** Conditional background coloring is applied to table cells to visually represent percentages (like pick/ban rates and win rates).
+  - **Draft Visualization:** A dedicated page (`/draft`) visualizes the pick/ban sequence for specific games in a card format.
+- **Routing & Data Fetching (Next.js):**
+  - Uses dynamic routing (`[...league].js`) to create pages for different leagues.
+  - Employs `getStaticProps` for server-side rendering and revalidation, ensuring data stays relatively fresh.
+
+This project demonstrates skills in frontend development using Next.js and React, data fetching and manipulation with external APIs, and UI creation with component libraries like Chakra UI and data table libraries like React Table. It effectively presents complex game data in an accessible and interactive format.

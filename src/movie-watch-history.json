@@ -25,7 +25,7 @@
   },
   {
     "order": 5,
-    "title": "Stranger Darling",
+    "title": "Strange Darling",
     "dateWatched": "2024-10-13",
     "betterThanPrevious": true
   },
@@ -493,152 +493,488 @@
   },
   {
     "order": 83,
-    "title": "Spectral",
-    "dateWatched": "2025-3-30",
-    "betterThanPrevious": false
-  },
-  {
-    "order": 84,
-    "title": "Legion",
-    "dateWatched": "2025-3-30",
-    "betterThanPrevious": false
-  },
-  {
-    "order": 85,
-    "title": "Locked In",
-    "dateWatched": "2025-3-30",
-    "betterThanPrevious": true
-  },
-  {
-    "order": 86,
-    "title": "Awake",
-    "dateWatched": "2025-3-31",
-    "betterThanPrevious": true
-  },
-  {
-    "order": 87,
-    "title": "Close",
-    "dateWatched": "2025-3-31",
-    "betterThanPrevious": true
-  },
-  {
-    "order": 88,
     "title": "Revelations",
     "dateWatched": "2025-3-31",
     "betterThanPrevious": false
   },
   {
-    "order": 89,
+    "order": 84,
     "title": "Talk to Me",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": true
   },
   {
-    "order": 90,
+    "order": 85,
     "title": "ARQ",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": false
   },
   {
-    "order": 91,
+    "order": 86,
     "title": "The Electric State",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": false
   },
   {
-    "order": 92,
+    "order": 87,
     "title": "Prey",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": true
   },
   {
-    "order": 93,
+    "order": 88,
     "title": "Geostorm",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": false
   },
   {
-    "order": 94,
+    "order": 89,
     "title": "Sicario: Day of the Soldado",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": false
   },
   {
-    "order": 95,
+    "order": 90,
     "title": "Alpha",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": true
   },
   {
-    "order": 96,
+    "order": 91,
     "title": "Lucy",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": false
   },
   {
-    "order": 97,
+    "order": 92,
     "title": "Draft Day",
     "dateWatched": "2025-4-1",
     "betterThanPrevious": true
   },
   {
-    "order": 98,
+    "order": 93,
     "title": "The Gray Man",
     "dateWatched": "2025-4-2",
     "betterThanPrevious": true
   },
   {
-    "order": 99,
+    "order": 94,
     "title": "Den of Thieves",
     "dateWatched": "2025-4-2",
     "betterThanPrevious": true
   },
   {
-    "order": 100,
+    "order": 95,
     "title": "Den of Thieves 2: Pantera",
     "dateWatched": "2025-4-2",
     "betterThanPrevious": false
   },
   {
-    "order": 101,
+    "order": 96,
     "title": "Ad Vitam",
     "dateWatched": "2025-4-2",
     "betterThanPrevious": true
   },
   {
-    "order": 102,
+    "order": 97,
     "title": "Sicario",
     "dateWatched": "2025-4-7",
     "betterThanPrevious": true
   },
   {
-    "order": 103,
+    "order": 98,
     "title": "Spotlight",
     "dateWatched": "2025-4-13",
     "betterThanPrevious": true
   },
   {
-    "order": 104,
+    "order": 99,
     "title": "Sinners",
     "dateWatched": "2025-4-17",
     "betterThanPrevious": false
   },
   {
-    "order": 105,
+    "order": 100,
     "title": "The Good Nurse",
     "dateWatched": "2025-4-17",
     "betterThanPrevious": false
   },
   {
-    "order": 106,
+    "order": 101,
     "title": "Midnight in the Switchgrass",
     "dateWatched": "2025-4-18",
     "betterThanPrevious": false
   },
   {
+    "order": 102,
+    "title": "Aftermath",
+    "dateWatched": "2025-4-21",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 103,
+    "title": "iHostage",
+    "dateWatched": "2025-4-21",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 104,
+    "title": "Venom: The Last Dance",
+    "dateWatched": "2025-4-21",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 105,
+    "title": "Lou",
+    "dateWatched": "2025-4-21",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 106,
+    "title": "Vanished into the Night",
+    "dateWatched": "2025-4-22",
+    "betterThanPrevious": false
+  },
+  {
     "order": 107,
-    "title": "The Gray Man",
-    "dateWatched": "2025-4-18",
+    "title": "Trigger Warning",
+    "dateWatched": "2025-4-22",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 108,
+    "title": "Land of Bad",
+    "dateWatched": "2025-4-22",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 109,
+    "title": "American Sniper",
+    "dateWatched": "2025-4-22",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 110,
+    "title": "Project Power",
+    "dateWatched": "2025-4-22",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 111,
+    "title": "Freaks – You're One of Us",
+    "dateWatched": "2025-4-22",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 112,
+    "title": "Havoc",
+    "dateWatched": "2025-4-22",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 113,
+    "title": "The Frozen Ground",
+    "dateWatched": "2025-4-25",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 114,
+    "title": "Army of the Dead",
+    "dateWatched": "2025-4-28",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 115,
+    "title": "Carry-On",
+    "dateWatched": "2025-4-29",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 116,
+    "title": "A Dog's Way Home",
+    "dateWatched": "2025-4-29",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 117,
+    "title": "The Clovehitch Killer",
+    "dateWatched": "2025-4-29",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 118,
+    "title": "Exterritorial",
+    "dateWatched": "2025-4-29",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 119,
+    "title": "Dawn of the Dead",
+    "dateWatched": "2025-4-29",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 120,
+    "title": "Peninsula",
+    "dateWatched": "2025-5-3",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 121,
+    "title": "Hanna",
+    "dateWatched": "2025-5-7",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 122,
+    "title": "Constantine",
+    "dateWatched": "2025-5-7",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 123,
+    "title": "Heart Eyes",
+    "dateWatched": "2025-5-7",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 124,
+    "title": "The Haunted Apartment \"Miss K\"",
+    "dateWatched": "2025-5-8",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 125,
+    "title": "Train to Busan",
+    "dateWatched": "2025-5-9",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 126,
+    "title": "Insidious: Chapter 2",
+    "dateWatched": "2025-5-9",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 127,
+    "title": "The Gorge",
+    "dateWatched": "2025-5-9",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 128,
+    "title": "Companion",
+    "dateWatched": "2025-5-10",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 129,
+    "title": "Veronica",
+    "dateWatched": "2025-5-10",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 130,
+    "title": "The Old Guard",
+    "dateWatched": "2025-5-10",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 131,
+    "title": "John Wick: Chapter 4",
+    "dateWatched": "2025-5-12",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 132,
+    "title": "Circle",
+    "dateWatched": "2025-5-13",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 133,
+    "title": "The Silence",
+    "dateWatched": "2025-5-14",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 134,
+    "title": "In The Tall Grass",
+    "dateWatched": "2025-5-15",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 135,
+    "title": "Dawn of the Dead",
+    "dateWatched": "2025-5-15",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 136,
+    "title": "Texas Chainsaw Massacre (2022)",
+    "dateWatched": "2025-5-15",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 137,
+    "title": "Smile",
+    "dateWatched": "2025-5-15",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 138,
+    "title": "#Alive",
+    "dateWatched": "2025-5-16",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 139,
+    "title": "Fear Street Part 1: 1994",
+    "dateWatched": "2025-5-16",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 140,
+    "title": "Fear Street Part 2: 1978",
+    "dateWatched": "2025-5-16",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 141,
+    "title": "Fear Street Part 3: 1666",
+    "dateWatched": "2025-5-16",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 142,
+    "title": "Spectral",
+    "dateWatched": "2025-5-16",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 143,
+    "title": "Spotlight",
+    "dateWatched": "2025-5-17",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 144,
+    "title": "Novocaine",
+    "dateWatched": "2025-5-17",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 145,
+    "title": "Rattlesnake",
+    "dateWatched": "2025-5-17",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 146,
+    "title": "Death of a Unicorn",
+    "dateWatched": "2025-5-17",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 147,
+    "title": "Smile 2",
+    "dateWatched": "2025-5-19",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 148,
+    "title": "Fear Street: Prom Queen",
+    "dateWatched": "2025-5-25",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 149,
+    "title": "Constantine",
+    "dateWatched": "2025-6-2",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 150,
+    "title": "Kate",
+    "dateWatched": "2025-6-2",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 151,
+    "title": "The Killer",
+    "dateWatched": "2025-6-4",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 152,
+    "title": "Now You See Me",
+    "dateWatched": "2025-6-5",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 153,
+    "title": "River Wild",
+    "dateWatched": "2025-6-6",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 154,
+    "title": "To Catch a Killer",
+    "dateWatched": "2025-6-7",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 155,
+    "title": "The Town",
+    "dateWatched": "2025-6-8",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 156,
+    "title": "STRAW",
+    "dateWatched": "2025-6-8",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 157,
+    "title": "Barbarian",
+    "dateWatched": "2025-6-8",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 158,
+    "title": "The Titan",
+    "dateWatched": "2025-6-10",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 159,
+    "title": "Plane",
+    "dateWatched": "2025-6-16",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 160,
+    "title": "Copycat",
+    "dateWatched": "2025-6-16",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 161,
+    "title": "The Ritual",
+    "dateWatched": "2025-6-17",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 162,
+    "title": "Dawn of the Dead",
+    "dateWatched": "2025-6-18",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 163,
+    "title": "Train to Busan",
+    "dateWatched": "2025-6-18",
     "betterThanPrevious": true
   }
 ]

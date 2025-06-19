@@ -9,18 +9,20 @@ import {
   SortingState,
   flexRender,
 } from "@tanstack/react-table";
-import watchHistory from "@/movie-watch-history.json";
 import { BlogPostData } from "@/getBlogPosts";
-import { calculateRatings } from "@/utils/calculateRatings";
-import { calculateLogisticRatings } from "@/utils/calculateLogisticRatings";
 
-// Define MovieRatings type here or import if defined elsewhere
-type MovieRatings = { [title: string]: number };
+// Define types for our movie data
+type WatchHistoryEntry = {
+  order: number;
+  title: string;
+  dateWatched: string;
+  betterThanPrevious: boolean | null;
+};
 
-type WatchHistoryWithScore = (typeof watchHistory)[number] & {
+type WatchHistoryWithScore = WatchHistoryEntry & {
   btscore: number;
   viewCount: number;
-  logisticScore: number | null; // Add logisticScore, allow null for loading state
+  logisticScore: number | null;
 };
 
 const columnHelper = createColumnHelper<WatchHistoryWithScore>();
@@ -75,72 +77,55 @@ const columns = [
   }),
 ];
 
-// Calculate view counts
-const getViewCounts = () => {
-  const counts: Record<string, number> = {};
-  watchHistory.forEach((movie) => {
-    counts[movie.title] = (counts[movie.title] || 0) + 1;
-  });
-  return counts;
-};
-
-const viewCounts = getViewCounts();
-const ratings = calculateRatings(watchHistory);
-
 export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
   const [sorting, setSorting] = useState<SortingState>([]);
-  const [logisticRatings, setLogisticRatings] = useState<MovieRatings | null>(
-    null
-  );
+  const [movieData, setMovieData] = useState<WatchHistoryWithScore[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
-  // Effect to calculate logistic ratings on mount
+  // Fetch pre-calculated movie data from our API
   useEffect(() => {
-    const fetchRatings = async () => {
+    async function fetchMovieData() {
       try {
-        const calculatedRatings = await calculateLogisticRatings(watchHistory);
-        setLogisticRatings(calculatedRatings);
+        setIsLoading(true);
+        const response = await fetch("/api/movies");
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch movie data");
+        }
+
+        const data = await response.json();
+        setMovieData(data);
       } catch (error) {
-        console.error("Error calculating logistic ratings:", error);
-        setLogisticRatings({}); // Set to empty object on error or handle differently
+        console.error("Error fetching movie data:", error);
+      } finally {
+        setIsLoading(false);
       }
-    };
-    fetchRatings();
-  }, []); // Empty dependency array ensures this runs only once on mount
+    }
 
-  // Calculate defaultData inside the component using useMemo
-  const defaultData = useMemo(() => {
-    return watchHistory.map((watch) => ({
-      ...watch,
-      btscore: 100 * (ratings.ratings[watch.title] || 0),
-      viewCount: viewCounts[watch.title],
-      // Add logistic score, defaulting to null if not calculated yet
-      logisticScore:
-        logisticRatings && logisticRatings[watch.title] !== undefined
-          ? logisticRatings[watch.title]
-          : null,
-    }));
-  }, [logisticRatings]); // Recalculate when logisticRatings state changes
+    fetchMovieData();
+  }, []); // Empty dependency array means this runs once on mount
 
+  // Determine unique movies based on sorting criteria
   const uniqueMovies = useMemo(() => {
     if (
       sorting.length > 0 &&
       (sorting[0].id === "btscore" ||
         sorting[0].id === "viewCount" ||
-        sorting[0].id === "logisticScore") // Add logisticScore here
+        sorting[0].id === "logisticScore")
     ) {
-      const movieMap = new Map<string, WatchHistoryWithScore>(); // Add type hint for clarity
+      const movieMap = new Map<string, WatchHistoryWithScore>();
 
-      defaultData.forEach((movie) => {
+      movieData.forEach((movie) => {
         const existingMovie = movieMap.get(movie.title);
         if (
           !existingMovie ||
-          (sorting[0].id === "btscore" && existingMovie.score < movie.score) ||
+          (sorting[0].id === "btscore" &&
+            existingMovie.btscore < movie.btscore) ||
           (sorting[0].id === "viewCount" &&
             existingMovie.viewCount < movie.viewCount) ||
-          // Add condition for logisticScore
           (sorting[0].id === "logisticScore" &&
-            movie.logisticScore !== null && // Make sure score is calculated
-            (existingMovie.logisticScore === null || // Prioritize non-null scores
+            movie.logisticScore !== null &&
+            (existingMovie.logisticScore === null ||
               existingMovie.logisticScore < movie.logisticScore))
         ) {
           movieMap.set(movie.title, movie);
@@ -150,8 +135,8 @@ export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
       return Array.from(movieMap.values());
     }
 
-    return defaultData;
-  }, [defaultData, sorting]);
+    return movieData;
+  }, [movieData, sorting]);
 
   const table = useReactTable({
     columns,
@@ -163,6 +148,11 @@ export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
       sorting,
     },
   });
+
+  // Show loading state while fetching data
+  if (isLoading) {
+    return <div>Loading movie data...</div>;
+  }
 
   return (
     <Table.Root>

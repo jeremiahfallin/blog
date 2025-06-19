@@ -5,11 +5,39 @@ export const metadata = {
   description: "An Animal Crossing&colon; New Horizons tool",
 };
 
-is a tool for narrowing down the 391 villagers in Animal Crossing:
-New Horizons down to 10 (the number that will fit on a player's
-island). It's hard to pick favorites and this tool was made to
-help. Uses React with a custom hook I wrote, useFavorite, that
-keeps track of what villagers have been picked over other
-villagers to come up with a top 10. Custom useFavorite hook is
-generic and could be used for other favorite finding websites
-written in React.
+# Project: ACNH Villager Finder
+
+## Overview
+
+This project is a tool designed to help players of the popular Nintendo Switch game _Animal Crossing: New Horizons_ select their 10 ideal villagers out of the over 400 available characters. It presents villagers to the user in batches, allowing them to pick favorites until they reach their desired 10.
+
+See it here: [https://villager.center](https://villager.center)
+
+## Features
+
+- **Villager Selection:** Users are shown a random batch of villagers. They can click on villagers they like to add them to a temporary selection.
+- **Favorite Management:** Users pick their favorite villager(s) from the presented batch. This eliminates the non-picked villagers from the potential pool and adds the selected one(s) to their 'Favorites' list. The process repeats with new random batches from the remaining pool until 10 favorites are chosen.
+- **Progress Tracking:** A progress bar in the header visually tracks how many favorites have been selected out of 10. The application state, including the list of favorites and remaining villagers, is saved to `localStorage`, allowing users to resume their selection process later.
+- **Responsive Design:** The application offers distinct layouts for desktop and mobile users. Desktop uses a grid layout for selecting villagers, while mobile utilizes a swipeable carousel (`nuka-carousel`). A custom hook (`useWindowDimensions`) detects the screen size to render the appropriate layout.
+- **Villager Information:** Users can view more details about a villager (likely personality, species, birthday, etc. - fetched from the API) via a modal window (`@reach/dialog`).
+- **Visual Favorites Display:** Selected favorite villagers are displayed visually, potentially using a custom SVG layout component (`FavoritesEsVeeGee`) on desktop.
+- **Reset Functionality:** Users can reset their selections and start the process over.
+
+## Technical Implementation
+
+- **Framework:** Built with **Gatsby**, a React-based static site generator.
+- **Data Fetching:** Villager data, including names, images, personalities, and other details, is fetched from the Nookipedia API during the Gatsby build process (`gatsby-node.js`) using `isomorphic-fetch`. This data is used to create Gatsby nodes, making it available via GraphQL in the frontend.
+- **State Management:** Primarily uses React Hooks.
+  - A custom hook (`useFavorites`) manages the core logic using `useReducer` for selecting favorites, eliminating others, tracking remaining villagers, and persisting state to `localStorage`.
+  - `useState` is used for local component state, like the temporary selection within a batch.
+  - `useContext` (`CompleteContext`) shares the completion percentage with the Header component.
+- **UI & Styling:**
+  - Built with **React** components.
+  - Styled using **Styled Components**. Global styles are applied via `createGlobalStyle`.
+  - Utilizes `nuka-carousel` for the mobile view and `@reach/dialog` for modals.
+- **Build & Optimization:** Leverages Gatsby plugins for performance and features, including `gatsby-plugin-image`, `gatsby-plugin-sharp`, `gatsby-transformer-sharp` for image optimization, `gatsby-plugin-react-helmet` for managing the document head, and `gatsby-plugin-manifest` / `gatsby-plugin-offline` for PWA capabilities.
+
+## Collaboration
+
+- **Code:** Jeremiah Fallin
+- **Design:** Kristi Luu

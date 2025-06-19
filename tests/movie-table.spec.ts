@@ -37,23 +37,32 @@ test.describe("Movie Table Functionality", () => {
     await expect(
       page.getByRole("tab", { name: "Table View", selected: true })
     ).toBeVisible();
+
+    // Wait for the loading indicator to disappear (if it exists)
+    await page
+      .getByText("Loading movie data...")
+      .waitFor({ state: "detached", timeout: 5000 })
+      .catch(() => {
+        // If the loading text doesn't exist or disappears quickly, that's fine
+      });
+
     // Wait for the table itself to be visible
     await expect(page.getByRole("table")).toBeVisible();
 
-    // Wait for a known movie's logistic score to be calculated, indicating readiness.
-    // We'll use "Killers of the Flower Moon" (second in the JSON) as it should have a score.
+    // Wait for a known movie's logistic score to be visible - it should be pre-calculated now
     const knownMovieTitle = "Killers of the Flower Moon";
     const knownMovieRowLocator = page.locator("tr", {
       has: page.getByRole("cell", { name: knownMovieTitle }),
     });
-    const knownMovieScoreCellLocator =
-      knownMovieRowLocator.locator("td:nth-child(7)"); // Logistic score is the 4th column
 
-    // Wait for that specific movie's score cell to contain a number
-    // First wait for the text content NOT to be "No"
-    await expect(knownMovieScoreCellLocator).not.toHaveText("No", {
-      timeout: 25000, // Generous timeout for calculation and rendering
-    });
+    // Make sure the movie row is visible
+    await expect(knownMovieRowLocator).toBeVisible();
+
+    const knownMovieScoreCellLocator =
+      knownMovieRowLocator.locator("td:nth-child(7)"); // Logistic score is the 7th column
+
+    // Verify it has a numeric value (not "Calculating...")
+    await expect(knownMovieScoreCellLocator).not.toHaveText("Calculating...");
     // Then, assert that it matches the number regex
     await expect(knownMovieScoreCellLocator).toHaveText(/^-?\d+(\.\d+)?$/);
   });
@@ -159,7 +168,7 @@ test.describe("Movie Table Functionality", () => {
 
     // --- Sort Ascending (Lowest First - should be the state after first click) ---
     await scoreHeader.click();
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(500); // Reduced timeout since no calculation needed
     const scoresAscText = await getColumnCellsText(page, scoreColumnIndex);
     const scoresAsc = scoresAscText.map(parseScore);
     expect(scoresAsc.length).toBeGreaterThan(1);
@@ -167,7 +176,7 @@ test.describe("Movie Table Functionality", () => {
 
     // --- Sort Descending (Highest First - should be the state after second click) ---
     await scoreHeader.click();
-    await page.waitForTimeout(3000);
+    await page.waitForTimeout(500); // Reduced timeout since no calculation needed
     const scoresDescText = await getColumnCellsText(page, scoreColumnIndex);
     const scoresDesc = scoresDescText.map(parseScore);
     expect(scoresDesc.length).toBeGreaterThan(1);
@@ -184,7 +193,7 @@ test.describe("Movie Table Functionality", () => {
 
     // --- Sort Descending (Highest First) ---
     await logisticScoreHeader.click();
-    await page.waitForTimeout(500); // Allow for sort
+    await page.waitForTimeout(500); // Reduced timeout since no calculation needed
     const scoresDescText = await getColumnCellsText(
       page,
       logisticScoreColumnIndex
@@ -195,7 +204,7 @@ test.describe("Movie Table Functionality", () => {
 
     // --- Sort Ascending (Lowest First) ---
     await logisticScoreHeader.click();
-    await page.waitForTimeout(500); // Allow for sort
+    await page.waitForTimeout(500); // Reduced timeout since no calculation needed
     const scoresAscText = await getColumnCellsText(
       page,
       logisticScoreColumnIndex

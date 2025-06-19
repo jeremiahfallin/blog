@@ -1,6 +1,7 @@
 import { Box, Card, Flex, Heading, Link, Text } from "@radix-ui/themes";
 import { getBlogPosts, BlogPostData } from "@/getBlogPosts";
 import Image from "next/image";
+import { ProjectCard } from "@/components/ProjectCard";
 
 function MovieCard({ movie }: { movie: BlogPostData }) {
   const image = movie.metadata.background as string;
@@ -66,20 +67,6 @@ function MovieCard({ movie }: { movie: BlogPostData }) {
             </Link>
           </Heading>
           <Text size="2">{movie.metadata.description as string}</Text>
-        </Flex>
-      </Card>
-    </Box>
-  );
-}
-
-function ProjectCard({ project }: { project: BlogPostData }) {
-  return (
-    <Box width="300px">
-      <Card>
-        <Flex direction="column" gap="2">
-          <Link href={`/projects/${project.slug}` as string}>
-            {project.metadata.title as string}
-          </Link>
         </Flex>
       </Card>
     </Box>
