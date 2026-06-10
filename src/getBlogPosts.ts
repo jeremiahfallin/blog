@@ -1,4 +1,3 @@
-import { notFound } from "next/navigation";
 import type { Metadata } from "next/types";
 import path from "path";
 import fs from "fs/promises";
@@ -61,10 +60,10 @@ export async function getBlogPosts(): Promise<BlogPostData[]> {
     return [...moviesData, ...showsData, ...projectsData];
   } catch (error: unknown) {
     if (error instanceof Error) {
-      console.error(error.message);
+      console.error("Error loading blog posts:", error.message);
     } else {
-      console.error("Unexpected error", error);
+      console.error("Unexpected error loading blog posts:", error);
     }
-    return notFound();
+    return [];
   }
 }

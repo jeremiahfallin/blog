@@ -1,6 +1,6 @@
 "use client";
 
-import { BlogPostData } from "@/getBlogPostData";
+import { BlogPostData } from "@/getBlogPosts";
 import dynamic from "next/dynamic";
 
 // Dynamically import MovieViewer with SSR disabled

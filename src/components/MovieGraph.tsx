@@ -1,13 +1,12 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import ForceGraph2D from "react-force-graph-2d";
-import { calculateRatings } from "@/utils/calculateRatings";
-import watchHistory from "@/movie-watch-history.json";
 import { Box, Callout, Flex, Text } from "@radix-ui/themes";
 
 type Node = {
   id: string;
   rating: number;
+  uncertainty?: number;
   val?: number;
   x?: number;
   y?: number;
@@ -29,9 +28,20 @@ type GraphData = {
   links: Link[];
 };
 
+interface MovieApiData {
+  order: number;
+  title: string;
+  dateWatched: string;
+  betterThanPrevious: boolean | null;
+  btscore: number;
+  viewCount: number;
+  logisticScore: number | null;
+}
+
 export default function MovieGraph() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [hoveredNode, setHoveredNode] = useState<Node | null>(null);
+  const [movieData, setMovieData] = useState<Record<string, MovieApiData>>({});
   const [graphData, setGraphData] = useState<GraphData>({
     nodes: [],
     links: [],
@@ -42,65 +52,85 @@ export default function MovieGraph() {
   });
 
   useEffect(() => {
-    const { graph } = calculateRatings(watchHistory);
+    async function fetchMovieData() {
+      try {
+        const response = await fetch("/api/movies");
+        if (response.ok) {
+          const data = await response.json();
+          const movies = data.movies || [];
+          const map: Record<string, MovieApiData> = {};
+          movies.forEach((movie: MovieApiData) => {
+            map[movie.title] = movie;
+          });
+          setMovieData(map);
 
-    // Find min and max ratings in the data
-    let minRating = Number.MAX_VALUE;
-    let maxRating = Number.MIN_VALUE;
+          if (data.graph) {
+            const graph = data.graph;
 
-    graph.nodes.forEach((node) => {
-      if (node.rating < minRating) minRating = node.rating;
-      if (node.rating > maxRating) maxRating = node.rating;
-    });
+            // Find min and max ratings in the data
+            let minRating = Number.MAX_VALUE;
+            let maxRating = Number.MIN_VALUE;
 
-    // Store the rating range for legend display
-    setRatingRange({ min: minRating, max: maxRating });
+            graph.nodes.forEach((node: Node) => {
+              if (node.rating < minRating) minRating = node.rating;
+              if (node.rating > maxRating) maxRating = node.rating;
+            });
 
-    // Define a color spectrum function based on actual rating range
-    const getNodeColor = (rating: number) => {
-      // Normalize rating to 0-1 range
-      const normalizedRating = (rating - minRating) / (maxRating - minRating);
+            // Store the rating range for legend display
+            setRatingRange({ min: minRating, max: maxRating });
 
-      // Create color spectrum from red (low) to yellow to green (high)
-      if (normalizedRating < 0.33) {
-        // Red to orange: mix red with increasing yellow
-        const yellowAmount = normalizedRating * 3; // 0 to 1 within this range
-        return `rgb(231, ${Math.floor(76 + yellowAmount * 100)}, 60)`;
-      } else if (normalizedRating < 0.66) {
-        // Orange to yellow: decrease red while keeping yellow high
-        const adjustedValue = (normalizedRating - 0.33) * 3; // 0 to 1 within this range
-        return `rgb(${Math.floor(231 - adjustedValue * 40)}, ${Math.floor(
-          176 + adjustedValue * 20
-        )}, 60)`;
-      } else {
-        // Yellow to green: decrease red while keeping green high
-        const adjustedValue = (normalizedRating - 0.66) * 3; // 0 to 1 within this range
-        return `rgb(${Math.floor(191 - adjustedValue * 150)}, ${Math.floor(
-          196 + adjustedValue * 30
-        )}, ${Math.floor(60 + adjustedValue * 36)})`;
+            // Define a color spectrum function based on actual rating range
+            const getNodeColor = (rating: number) => {
+              // Normalize rating to 0-1 range
+              const normalizedRating = (rating - minRating) / (maxRating - minRating);
+
+              // Create color spectrum from red (low) to yellow to green (high)
+              if (normalizedRating < 0.33) {
+                // Red to orange: mix red with increasing yellow
+                const yellowAmount = normalizedRating * 3; // 0 to 1 within this range
+                return `rgb(231, ${Math.floor(76 + yellowAmount * 100)}, 60)`;
+              } else if (normalizedRating < 0.66) {
+                // Orange to yellow: decrease red while keeping yellow high
+                const adjustedValue = (normalizedRating - 0.33) * 3; // 0 to 1 within this range
+                return `rgb(${Math.floor(231 - adjustedValue * 40)}, ${Math.floor(
+                  176 + adjustedValue * 20
+                )}, 60)`;
+              } else {
+                // Yellow to green: decrease red while keeping green high
+                const adjustedValue = (normalizedRating - 0.66) * 3; // 0 to 1 within this range
+                return `rgb(${Math.floor(191 - adjustedValue * 150)}, ${Math.floor(
+                  196 + adjustedValue * 30
+                )}, ${Math.floor(60 + adjustedValue * 36)})`;
+              }
+            };
+
+            // Adjust node size based on rating and position nodes with more spread
+            setGraphData({
+              nodes: graph.nodes.map((node: Node) => ({
+                ...node,
+                val: 5 + node.rating * 200, // Significantly increase the scaling factor for more noticeable size differences
+                color: getNodeColor(node.rating), // Apply color based on rating
+                // Initialize nodes with much more spread
+                x: (Math.random() - 0.5) * 1200,
+                y: (Math.random() - 0.5) * 800 - 200, // Bias toward upper side of canvas
+              })),
+              // Create links with more distance between nodes
+              links: graph.links.map((link: Link) => ({
+                ...link,
+                // Swap source and target to correct arrow direction
+                source: link.target,
+                target: link.source,
+                // This doesn't directly change distance but helps the ForceGraph spacing
+                value: 20, // Higher value = more spacing
+              })),
+            });
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching movie data for graph:", error);
       }
-    };
-
-    // Adjust node size based on rating and position nodes with more spread
-    setGraphData({
-      nodes: graph.nodes.map((node) => ({
-        ...node,
-        val: 5 + node.rating * 200, // Significantly increase the scaling factor for more noticeable size differences
-        color: getNodeColor(node.rating), // Apply color based on rating
-        // Initialize nodes with much more spread
-        x: (Math.random() - 0.5) * 1200,
-        y: (Math.random() - 0.5) * 800 - 200, // Bias toward upper side of canvas
-      })),
-      // Create links with more distance between nodes
-      links: graph.links.map((link) => ({
-        ...link,
-        // Swap source and target to correct arrow direction
-        source: link.target,
-        target: link.source,
-        // This doesn't directly change distance but helps the ForceGraph spacing
-        value: 20, // Higher value = more spacing
-      })),
-    });
+    }
+    fetchMovieData();
   }, []);
 
   return (
@@ -133,11 +163,12 @@ export default function MovieGraph() {
           style={{
             width: "100%",
             height: "70vh",
-            border: "1px solid #333",
-            borderRadius: "8px",
+            border: "1px solid rgba(255, 255, 255, 0.08)",
+            borderRadius: "16px",
             position: "relative",
-            background: "#121212",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.3)",
+            background: "rgba(10, 10, 15, 0.55)",
+            backdropFilter: "blur(6px)",
+            boxShadow: "0 10px 40px rgba(0, 0, 0, 0.4)",
             overflow: "hidden",
           }}
         >
@@ -165,7 +196,7 @@ export default function MovieGraph() {
                   fontSize + fontSize * 0.2,
                 ];
 
-                // Draw node circle
+                // Draw node circle (always)
                 ctx.beginPath();
                 ctx.arc(
                   node.x || 0,
@@ -177,8 +208,21 @@ export default function MovieGraph() {
                 ctx.fillStyle = node.color || "#666";
                 ctx.fill();
 
+                // Compute label alpha based on zoom and hover state.
+                // Hovered node always fully visible; other labels fade out as the user zooms out.
+                // globalScale ~ 1.0 at default zoom; <0.5 means zoomed far out, >1.5 means zoomed in.
+                const isHovered = hoveredNode?.id === node.id;
+                const labelAlpha = isHovered
+                  ? 1
+                  : Math.min(1, Math.max(0, (globalScale - 0.6) * 1.8));
+
+                if (labelAlpha <= 0.02) {
+                  node.__bckgDimensions = bckgDimensions;
+                  return;
+                }
+
                 // Draw text background with improved visibility for dark mode
-                ctx.fillStyle = "rgba(30, 30, 30, 0.9)";
+                ctx.fillStyle = `rgba(30, 30, 30, ${0.9 * labelAlpha})`;
                 ctx.fillRect(
                   (node.x || 0) - bckgDimensions[0] / 2,
                   (node.y || 0) + (node.val || 10) / 2 + 2,
@@ -186,10 +230,10 @@ export default function MovieGraph() {
                   bckgDimensions[1]
                 );
 
-                // Draw text with better contrast for dark mode
+                // Draw text with fade
                 ctx.textAlign = "center";
                 ctx.textBaseline = "middle";
-                ctx.fillStyle = "#eee";
+                ctx.fillStyle = `rgba(238, 238, 238, ${labelAlpha})`;
                 ctx.fillText(
                   label,
                   node.x || 0,
@@ -229,12 +273,14 @@ export default function MovieGraph() {
             gap="1"
             style={{
               position: "absolute",
-              top: "10px",
-              left: "10px",
-              background: "#222",
-              padding: "10px",
-              borderRadius: "4px",
-              boxShadow: "0 2px 4px rgba(0, 0, 0, 0.5)",
+              bottom: "12px",
+              left: "12px",
+              background: "rgba(20, 20, 25, 0.75)",
+              backdropFilter: "blur(10px)",
+              border: "1px solid rgba(255, 255, 255, 0.08)",
+              padding: "12px",
+              borderRadius: "12px",
+              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.35)",
               zIndex: 10,
               color: "#eee",
             }}
@@ -245,7 +291,7 @@ export default function MovieGraph() {
             <Flex direction="column" gap="2">
               <Box
                 height={"20px"}
-                width="100%"
+                width="120px"
                 style={{
                   background:
                     "linear-gradient(to right, #e74c3c, #f39c12, #f1c40f, #27ae60)",
@@ -253,18 +299,18 @@ export default function MovieGraph() {
                 }}
               />
               <Flex justify="between" width="100%">
-                <Text size="2" style={{ color: "#bbb" }}>
+                <Text size="1" style={{ color: "#bbb" }}>
                   {(100 * ratingRange.min).toFixed(2)}
                 </Text>
-                <Text size="2" style={{ color: "#bbb" }}>
+                <Text size="1" style={{ color: "#bbb" }}>
                   Rating
                 </Text>
-                <Text size="2" style={{ color: "#bbb" }}>
+                <Text size="1" style={{ color: "#bbb" }}>
                   {(100 * ratingRange.max).toFixed(2)}
                 </Text>
               </Flex>
-              <Text size="1" mt="2" style={{ opacity: 0.7, color: "#999" }}>
-                Node size also increases with rating
+              <Text size="1" mt="1" style={{ opacity: 0.6, color: "#999" }}>
+                Size scales with score
               </Text>
             </Flex>
           </Flex>
@@ -273,26 +319,45 @@ export default function MovieGraph() {
             <Flex
               position={"absolute"}
               direction="column"
-              top="10px"
-              right="10px"
-              p="2"
+              bottom="12px"
+              right="12px"
+              p="3"
               style={{
-                background: "#222",
-                borderRadius: "4px",
-                boxShadow: "0 2px 4px rgba(0, 0, 0, 0.5)",
+                background: "rgba(20, 20, 25, 0.75)",
+                backdropFilter: "blur(10px)",
+                border: "1px solid rgba(255, 255, 255, 0.08)",
+                borderRadius: "12px",
+                boxShadow: "0 8px 32px rgba(0, 0, 0, 0.35)",
                 zIndex: 10,
                 color: "#eee",
+                minWidth: "160px",
               }}
             >
-              <Text size="4" weight="bold" style={{ color: "#eee" }}>
+              <Text size="3" weight="bold" style={{ color: "#eee", marginBottom: "4px" }}>
                 {hoveredNode.id}
               </Text>
               <Text size="2" style={{ color: "#bbb" }}>
-                Rating:{" "}
+                BT Score:{" "}
                 <span style={{ fontWeight: "bold", color: hoveredNode.color }}>
                   {(100 * hoveredNode.rating).toFixed(2)}
+                  {hoveredNode.uncertainty !== undefined && ` (±${(100 * hoveredNode.uncertainty).toFixed(2)})`}
                 </span>
               </Text>
+              {movieData[hoveredNode.id]?.logisticScore !== undefined && (
+                <Text size="2" style={{ color: "#bbb" }}>
+                  Logistic Score:{" "}
+                  <span style={{ fontWeight: "bold", color: "#60a5fa" }}>
+                    {movieData[hoveredNode.id].logisticScore !== null
+                      ? (movieData[hoveredNode.id].logisticScore as number).toFixed(4)
+                      : "Calculating..."}
+                  </span>
+                </Text>
+              )}
+              {movieData[hoveredNode.id]?.viewCount !== undefined && (
+                <Text size="1" style={{ color: "#999", marginTop: "4px" }}>
+                  Views: {movieData[hoveredNode.id].viewCount}
+                </Text>
+              )}
             </Flex>
           )}
         </Box>

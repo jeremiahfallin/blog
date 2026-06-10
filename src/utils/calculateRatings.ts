@@ -5,28 +5,36 @@ type WatchHistory = {
   betterThanPrevious: boolean | null;
 };
 
-// Define a new return type that includes both ratings and graph
 type RatingResult = {
   ratings: Record<string, number>;
+  uncertainties: Record<string, number>;
   graph: {
-    nodes: Array<{ id: string; rating: number }>;
+    nodes: Array<{ id: string; rating: number; uncertainty: number }>;
     links: Array<{ source: string; target: string; weight: number }>;
   };
+  cycles: string[][];
 };
 
 export const calculateRatings = (
   watchHistory: WatchHistory[]
 ): RatingResult => {
-  // Sort by order to ensure comparisons are between consecutive events.
   const sortedHistory = [...watchHistory].sort((a, b) => a.order - b.order);
+
+  // Find maximum watch date for temporal decay reference
+  const dates = sortedHistory
+    .filter((item) => item.dateWatched)
+    .map((item) => new Date(item.dateWatched).getTime());
+  const maxDate = dates.length > 0 ? Math.max(...dates) : Date.now();
+
+  const LAMBDA = 0.002; // halflife approx 346 days (~1 year)
+  const GAMMA = 0.5;   // Transitive discount factor
 
   const wins: Record<string, number> = {};
   const matches: Record<string, Record<string, number>> = {};
 
-  // Helper: safely increment a match count between two titles.
-  const addMatch = (a: string, b: string) => {
+  const addMatch = (a: string, b: string, weight: number = 1) => {
     if (!matches[a]) matches[a] = {};
-    matches[a][b] = (matches[a][b] || 0) + 1;
+    matches[a][b] = (matches[a][b] || 0) + weight;
   };
 
   // Initialize win counts for each title.
@@ -37,79 +45,97 @@ export const calculateRatings = (
   });
 
   // Build a graph representing "better than" relationships
-  // For each movie, store a map of movies it's better than and the comparison count
   const graph: Record<string, Map<string, number>> = {};
 
-  // Initialize the graph
   sortedHistory.forEach((item) => {
     if (!graph[item.title]) {
       graph[item.title] = new Map<string, number>();
     }
   });
 
-  // Process direct comparisons from the watch history
+  // Process direct comparisons from the watch history with temporal decay
   for (let i = 1; i < sortedHistory.length; i++) {
     const prev = sortedHistory[i - 1];
     const curr = sortedHistory[i];
 
-    // Skip if comparing the same title or if no comparison provided
     if (prev.title === curr.title || curr.betterThanPrevious === null) continue;
 
+    // Calculate time diff in days and apply decay
+    const watchTime = new Date(curr.dateWatched).getTime();
+    const diffDays = Math.max(0, (maxDate - watchTime) / (1000 * 3600 * 24));
+    const decayWeight = Math.exp(-LAMBDA * diffDays);
+
     // Record direct match
-    addMatch(prev.title, curr.title);
-    addMatch(curr.title, prev.title);
+    addMatch(prev.title, curr.title, decayWeight);
+    addMatch(curr.title, prev.title, decayWeight);
 
     if (curr.betterThanPrevious === true) {
-      // Current movie is better than previous
-      wins[curr.title]++;
-
-      // Add or increment the edge in the graph
+      wins[curr.title] += decayWeight;
       const currentEdges = graph[curr.title];
-      currentEdges.set(prev.title, (currentEdges.get(prev.title) || 0) + 1);
+      currentEdges.set(prev.title, (currentEdges.get(prev.title) || 0) + decayWeight);
     } else {
-      // Previous movie is better than current
-      wins[prev.title]++;
-
-      // Add or increment the edge in the graph
+      wins[prev.title] += decayWeight;
       const prevEdges = graph[prev.title];
-      prevEdges.set(curr.title, (prevEdges.get(curr.title) || 0) + 1);
+      prevEdges.set(curr.title, (prevEdges.get(curr.title) || 0) + decayWeight);
     }
   }
 
-  // Compute transitive relationships using graph traversal
-  // For each movie, find all movies it's transitively better than
+  // Detect circular preferences (3-cycles: A > B > C > A) on the direct graph
+  const detectCycles = (directGraph: Record<string, Map<string, number>>): string[][] => {
+    const cyclesList: string[][] = [];
+    const seen = new Set<string>();
+
+    for (const a in directGraph) {
+      const edgesA = directGraph[a];
+      for (const b of edgesA.keys()) {
+        const edgesB = directGraph[b];
+        if (!edgesB) continue;
+        for (const c of edgesB.keys()) {
+          const edgesC = directGraph[c];
+          if (!edgesC) continue;
+          if (edgesC.has(a)) {
+            const cycle = [a, b, c];
+            const minElement = [...cycle].sort()[0];
+            const minIndex = cycle.indexOf(minElement);
+            const shifted = [...cycle.slice(minIndex), ...cycle.slice(0, minIndex)];
+            const key = shifted.join(" -> ");
+            if (!seen.has(key)) {
+              seen.add(key);
+              cyclesList.push(cycle);
+            }
+          }
+        }
+      }
+    }
+    return cyclesList;
+  };
+
+  const cycles = detectCycles(graph);
+
+  // Compute transitive relationships using discounted graph traversal
   const computeTransitiveComparisons = () => {
-    // Clone the graph to work with (we'll add transitive edges to this)
     const transitiveGraph: Record<string, Map<string, number>> = {};
 
     for (const title in graph) {
       transitiveGraph[title] = new Map(graph[title]);
     }
 
-    // For each movie A, B, C: if A > B and B > C, then A > C
-    // This is essentially the Floyd-Warshall algorithm for transitive closure
     for (const b in graph) {
-      // intermediate movie
       for (const a in graph) {
-        // start movie
         if (a === b) continue;
 
-        // If A > B
         const aToB = transitiveGraph[a].get(b) || 0;
         if (aToB > 0) {
-          // For all C where B > C, set A > C
           for (const [c, bToC] of graph[b].entries()) {
             if (a === c || b === c) continue;
 
-            // How many times can we infer A > C via B
-            const inferredCount = Math.min(aToB, bToC);
+            const inferredCount = Math.min(aToB, bToC) * GAMMA;
             if (inferredCount > 0) {
               const current = transitiveGraph[a].get(c) || 0;
               transitiveGraph[a].set(c, current + inferredCount);
 
-              // Also update matches and wins
-              addMatch(a, c);
-              addMatch(c, a);
+              addMatch(a, c, inferredCount);
+              addMatch(c, a, inferredCount);
               wins[a] += inferredCount;
             }
           }
@@ -123,29 +149,24 @@ export const calculateRatings = (
   // Apply transitive comparisons
   computeTransitiveComparisons();
 
-  // Get the list of unique titles.
   const items = Object.keys(wins);
 
-  // Check if we have enough data to proceed
   const totalComparisons =
     Object.values(matches).reduce(
       (sum, matchObj) =>
         sum + Object.values(matchObj).reduce((s, v) => s + v, 0),
       0
-    ) / 2; // Divide by 2 because we counted each match twice
+    ) / 2;
 
-  // Initialize ratings
   let ratings: Record<string, number>;
 
   if (totalComparisons === 0) {
-    // No comparisons available, return equal ratings
     const equalRating = 1 / items.length;
     ratings = items.reduce((acc, item) => {
       acc[item] = equalRating;
       return acc;
     }, {} as Record<string, number>);
   } else {
-    // Initialize ratings with a better strategy - use win percentages as starting point
     ratings = {};
     items.forEach((item) => {
       const totalMatches = Object.values(matches[item] || {}).reduce(
@@ -155,24 +176,21 @@ export const calculateRatings = (
       ratings[item] = totalMatches > 0 ? wins[item] / totalMatches : 0.5;
     });
 
-    // Add a prior/regularization factor
     const prior = 0.5;
-    const priorStrength = 2; // Equivalent to 2 virtual matches with 50% win rate
+    const priorStrength = 2;
 
-    // Normalize initial ratings
     const initialTotal = Object.values(ratings).reduce(
       (sum, val) => sum + val,
       0
     );
     for (const key in ratings) {
       ratings[key] /= initialTotal;
-      // Ensure no rating is exactly zero
       if (ratings[key] < 1e-10) ratings[key] = 1e-10;
     }
 
     const maxIterations = 1000;
     const convergenceThreshold = 1e-6;
-    const damping = 0.5; // Increased damping for stability
+    const damping = 0.5;
 
     let lastDiff = Infinity;
     let nonImprovementCount = 0;
@@ -181,28 +199,22 @@ export const calculateRatings = (
       const newRatings: Record<string, number> = {};
 
       for (const i of items) {
-        // Add prior for regularization
         const numerator = wins[i] + prior * priorStrength;
         let denominator = 0;
 
         if (matches[i]) {
           for (const j in matches[i]) {
             const n_ij = matches[i][j];
-            // More stable formula that avoids division by very small numbers
             denominator += (n_ij * ratings[j]) / (ratings[i] + ratings[j]);
           }
         }
 
-        // Add prior to denominator as well
         denominator += priorStrength;
 
         const updatedValue = numerator / denominator;
-
-        // Apply damping: mix old and updated values
         newRatings[i] = (1 - damping) * ratings[i] + damping * updatedValue;
       }
 
-      // Normalize newRatings so the sum equals 1
       const total = Object.values(newRatings).reduce(
         (sum, val) => sum + val,
         0
@@ -211,20 +223,14 @@ export const calculateRatings = (
         newRatings[key] /= total;
       }
 
-      // Check for convergence
       let diff = 0;
       for (const i of items) {
         diff += Math.abs(newRatings[i] - ratings[i]);
       }
 
-      // Check if we're making progress
       if (diff >= lastDiff) {
         nonImprovementCount++;
-        // If we haven't improved for several iterations, break
         if (nonImprovementCount >= 5) {
-          console.log(
-            `Stopping at iteration ${iter}: no improvement for 5 iterations`
-          );
           break;
         }
       } else {
@@ -240,19 +246,41 @@ export const calculateRatings = (
     }
   }
 
-  // Convert the graph to a format suitable for visualization
+  // Compute uncertainties using the diagonal Laplace approximation
+  const uncertainties: Record<string, number> = {};
+  const priorVariance = 1.0; // Baseline variance in log-odds space
+
+  items.forEach((i) => {
+    let H_ii = 1.0 / priorVariance;
+    if (matches[i]) {
+      for (const j in matches[i]) {
+        const n_ij = matches[i][j];
+        const r_i = ratings[i] || 0;
+        const r_j = ratings[j] || 0;
+        const sum = r_i + r_j;
+        if (sum > 0) {
+          H_ii += n_ij * (r_i * r_j) / Math.pow(sum, 2);
+        }
+      }
+    }
+    const sdLogOdds = 1.0 / Math.sqrt(H_ii);
+    const ratingVal = ratings[i] || 0;
+    // Apply delta method to map standard deviation to probability space:
+    // sd_prob = sd_log_odds * pi * (1 - pi)
+    uncertainties[i] = sdLogOdds * ratingVal * (1.0 - ratingVal);
+  });
+
   const graphForDisplay = {
     nodes: items.map((title) => ({
       id: title,
-      rating: ratings[title],
+      rating: ratings[title] || 0,
+      uncertainty: uncertainties[title] || 0,
     })),
     links: [] as Array<{ source: string; target: string; weight: number }>,
   };
 
-  // Add the links (only include significant relationships)
   for (const source in graph) {
     for (const [target, weight] of graph[source].entries()) {
-      // We can filter out weaker relationships if desired
       if (weight > 0) {
         graphForDisplay.links.push({
           source,
@@ -265,6 +293,8 @@ export const calculateRatings = (
 
   return {
     ratings,
+    uncertainties,
     graph: graphForDisplay,
+    cycles,
   };
 };

@@ -66,7 +66,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           marginTop: "1.75rem",
           marginBottom: "0.75rem",
           fontWeight: 600,
-          color: "var(--gray-11)",
+          color: "var(--gray-12)",
         }}
       >
         {children}
@@ -80,7 +80,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           marginTop: "1.5rem",
           marginBottom: "0.75rem",
           fontWeight: 600,
-          color: "var(--gray-11)",
+          color: "var(--gray-12)",
         }}
       >
         {children}
@@ -94,7 +94,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           marginTop: "1.5rem",
           marginBottom: "0.5rem",
           fontWeight: 600,
-          color: "var(--gray-10)",
+          color: "var(--gray-12)",
           textTransform: "uppercase",
           letterSpacing: "0.05em",
         }}

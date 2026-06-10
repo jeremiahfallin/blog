@@ -1,17 +1,27 @@
 import { getBlogPosts } from "@/getBlogPosts";
 import MovieViewerClient from "@/components/MovieViewerClient";
+import { Box, Flex, Heading, Text, Container, Section } from "@radix-ui/themes";
 
 export default async function Movies() {
   const blogPosts = await getBlogPosts();
 
   return (
-    <div>
-      <main>
-        <h1>Movie Watch History</h1>
-        <p>View my movie watch history as a table or interactive graph.</p>
-        <MovieViewerClient posts={blogPosts} />
-      </main>
-      <footer></footer>
-    </div>
+    <Container size="3">
+      <Section size="3" className="movies-section">
+        <Flex direction="column" gap="4">
+          <Box className="movies-header-container">
+            <Heading as="h1" size="8" className="movies-heading">
+              Movie Watch History
+            </Heading>
+            <Text size="3" className="movies-description">
+              View my movie watch history as a table or interactive graph. Hover any score column header for an
+              explanation of how the rating is calculated.
+            </Text>
+          </Box>
+
+          <MovieViewerClient posts={blogPosts} />
+        </Flex>
+      </Section>
+    </Container>
   );
 }

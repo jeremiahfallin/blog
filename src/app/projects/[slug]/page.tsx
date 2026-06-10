@@ -11,6 +11,10 @@ import {
 } from "@radix-ui/themes";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Breadcrumb from "@/components/Breadcrumb";
+import AdjacentNav from "@/components/AdjacentNav";
+import { getAdjacent } from "@/utils/adjacentPosts";
+import { getReadingTime } from "@/utils/readingTime";
 
 export default async function Page({
   params,
@@ -37,8 +41,20 @@ export default async function Page({
     // Check if there's a background image
     const hasBackground = metadata.background as string | undefined;
 
+    const allPosts = await getBlogPosts();
+    const { prev, next } = getAdjacent(allPosts, "projects", slug);
+    const readingMinutes = await getReadingTime("projects", slug);
+
     return (
       <Container className="project-page">
+        <Breadcrumb
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Projects", href: "/projects" },
+            { label: metadata.title as string },
+          ]}
+        />
+
         <Card size="3" className="project-header">
           {hasBackground && (
             <Box className="project-hero-image">
@@ -59,11 +75,17 @@ export default async function Page({
               {metadata.title as string}
             </Heading>
 
-            {formattedDate && (
-              <Text size="2" color="gray" className="project-date">
-                {formattedDate}
-              </Text>
-            )}
+            <Flex align="center" gap="3" wrap="wrap" mt="1" mb="2">
+              {formattedDate && (
+                <Text size="2" color="gray" className="project-date">
+                  {formattedDate}
+                </Text>
+              )}
+              <span className="reading-time" aria-label={`${readingMinutes} minute read`}>
+                <span aria-hidden>⏱</span>
+                {readingMinutes} min read
+              </span>
+            </Flex>
 
             {metadata.description && (
               <Text size="3" className="project-description">
@@ -74,7 +96,7 @@ export default async function Page({
             {metadata.tags && (
               <Flex gap="2" wrap="wrap" className="project-tags">
                 {(metadata.tags as string[]).map((tag) => (
-                  <Badge key={tag} variant="soft" className="project-tag">
+                  <Badge key={tag} variant="soft" radius="full" className="project-tag">
                     {tag}
                   </Badge>
                 ))}
@@ -88,6 +110,8 @@ export default async function Page({
         <Box className="project-content">
           <Post />
         </Box>
+
+        <AdjacentNav prev={prev} next={next} />
       </Container>
     );
   } catch {

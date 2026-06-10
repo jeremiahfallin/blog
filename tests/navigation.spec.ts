@@ -6,7 +6,7 @@ test.describe("Navigation", () => {
     await page.goto("/");
 
     // Find the link with text "Movies" and click it
-    await page.getByRole("link", { name: "Movies" }).click();
+    await page.getByRole("link", { name: "Movies", exact: true }).click();
 
     // The new URL should be "/movies" (baseURL is prepended automatically)
     await expect(page).toHaveURL("/movies");
@@ -22,16 +22,31 @@ test.describe("Navigation", () => {
     await page.goto("/");
 
     // Find the link with text "Projects" and click it
-    await page.getByRole("link", { name: "Projects" }).click();
+    await page.getByRole("link", { name: "Projects", exact: true }).click();
 
     // The new URL should be "/projects"
     await expect(page).toHaveURL("/projects");
 
-    // The new page should contain an h1 with "Projects" (Update if your heading is different)
-    // Assuming you'll add a /projects page later, let's check for the link text for now
-    // If you have a specific heading on the projects page, use that instead.
-    await expect(page.getByRole("link", { name: "Projects" })).toBeVisible(); // Placeholder check
-    // TODO: Add a more specific check once the /projects page exists or has content
+    // The new page should contain an h1 with "Projects"
+    await expect(
+      page.getByRole("heading", { name: "Projects", level: 1 })
+    ).toBeVisible();
+  });
+
+  test("should navigate to the Shows page", async ({ page }) => {
+    // Start from the index page
+    await page.goto("/");
+
+    // Find the link with text "Shows" and click it
+    await page.getByRole("link", { name: "Shows", exact: true }).click();
+
+    // The new URL should be "/shows"
+    await expect(page).toHaveURL("/shows");
+
+    // The new page should contain an h1 with "TV Shows"
+    await expect(
+      page.getByRole("heading", { name: "TV Shows", level: 1 })
+    ).toBeVisible();
   });
 
   test("should navigate back to the Home page", async ({ page }) => {
@@ -46,10 +61,10 @@ test.describe("Navigation", () => {
 
     // Check for a heading specific to the home page
     await expect(
-      page.getByRole("heading", { name: "Projects", level: 2 })
+      page.getByRole("heading", { name: "Featured Projects", level: 2 })
     ).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "Movies", level: 2 })
+      page.getByRole("heading", { name: "Recent Watch History", level: 2 })
     ).toBeVisible();
   });
 });

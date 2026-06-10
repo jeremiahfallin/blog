@@ -1,0 +1,6431 @@
+{
+  "movies": [
+    {
+      "order": 1,
+      "title": "The Fall Guy",
+      "dateWatched": "2024-9-7",
+      "betterThanPrevious": null,
+      "btscore": 0.4914664504208562,
+      "bayesianUncertainty": 0.00438129101125902,
+      "viewCount": 2,
+      "logisticScore": 3.2229652404785156
+    },
+    {
+      "order": 2,
+      "title": "Killers of the Flower Moon",
+      "dateWatched": "2024-9-7",
+      "betterThanPrevious": false,
+      "btscore": 0.2852860817481169,
+      "bayesianUncertainty": 0.0026720094543142984,
+      "viewCount": 1,
+      "logisticScore": -0.1675771027803421
+    },
+    {
+      "order": 3,
+      "title": "Oddity",
+      "dateWatched": "2024-9-14",
+      "betterThanPrevious": false,
+      "btscore": 0.19994448732012193,
+      "bayesianUncertainty": 0.0018215500313496472,
+      "viewCount": 1,
+      "logisticScore": -3.682269334793091
+    },
+    {
+      "order": 4,
+      "title": "Twister",
+      "dateWatched": "2024-10-13",
+      "betterThanPrevious": true,
+      "btscore": 0.2861487166710188,
+      "bayesianUncertainty": 0.002670718312755174,
+      "viewCount": 1,
+      "logisticScore": 0.12706606090068817
+    },
+    {
+      "order": 5,
+      "title": "Strange Darling",
+      "dateWatched": "2024-10-13",
+      "betterThanPrevious": true,
+      "btscore": 0.515879266773975,
+      "bayesianUncertainty": 0.004428477043526832,
+      "viewCount": 1,
+      "logisticScore": 4.227264404296875
+    },
+    {
+      "order": 6,
+      "title": "Smile 2",
+      "dateWatched": "2024-11-17",
+      "betterThanPrevious": false,
+      "btscore": 0.5358127066492864,
+      "bayesianUncertainty": 0.004246624476781507,
+      "viewCount": 3,
+      "logisticScore": 1.6339459419250488
+    },
+    {
+      "order": 7,
+      "title": "Alien: Romulus",
+      "dateWatched": "2024-11-18",
+      "betterThanPrevious": true,
+      "btscore": 0.7250767157797336,
+      "bayesianUncertainty": 0.005811666484792769,
+      "viewCount": 2,
+      "logisticScore": 4.533337116241455
+    },
+    {
+      "order": 8,
+      "title": "Prey",
+      "dateWatched": "2024-11-18",
+      "betterThanPrevious": false,
+      "btscore": 0.5001421000805748,
+      "bayesianUncertainty": 0.0038469903097329444,
+      "viewCount": 3,
+      "logisticScore": 1.3188667297363281
+    },
+    {
+      "order": 9,
+      "title": "Twisters",
+      "dateWatched": "2024-11-19",
+      "betterThanPrevious": false,
+      "btscore": 0.1825934844496966,
+      "bayesianUncertainty": 0.0016434070450171857,
+      "viewCount": 1,
+      "logisticScore": -3.921358108520508
+    },
+    {
+      "order": 10,
+      "title": "Love Lies Bleeding",
+      "dateWatched": "2024-11-20",
+      "betterThanPrevious": true,
+      "btscore": 0.28155663067372827,
+      "bayesianUncertainty": 0.0025662780677937046,
+      "viewCount": 1,
+      "logisticScore": -1.0710585117340088
+    },
+    {
+      "order": 11,
+      "title": "Deadpool & Wolverine",
+      "dateWatched": "2024-11-22",
+      "betterThanPrevious": true,
+      "btscore": 0.31406030760601455,
+      "bayesianUncertainty": 0.002854440628389685,
+      "viewCount": 1,
+      "logisticScore": 1.3495776653289795
+    },
+    {
+      "order": 12,
+      "title": "Anora",
+      "dateWatched": "2024-12-24",
+      "betterThanPrevious": true,
+      "btscore": 0.4318850689845348,
+      "bayesianUncertainty": 0.0038543211257722094,
+      "viewCount": 1,
+      "logisticScore": 4.337719440460205
+    },
+    {
+      "order": 13,
+      "title": "Juror #2",
+      "dateWatched": "2025-1-1",
+      "betterThanPrevious": false,
+      "btscore": 0.2941299437657458,
+      "bayesianUncertainty": 0.0027135996613246336,
+      "viewCount": 1,
+      "logisticScore": 0.027952030301094055
+    },
+    {
+      "order": 14,
+      "title": "New Life",
+      "dateWatched": "2025-1-1",
+      "betterThanPrevious": false,
+      "btscore": 0.18176843825399508,
+      "bayesianUncertainty": 0.0016121960592407941,
+      "viewCount": 1,
+      "logisticScore": -4.167346000671387
+    },
+    {
+      "order": 15,
+      "title": "Heretic",
+      "dateWatched": "2025-1-1",
+      "betterThanPrevious": true,
+      "btscore": 0.2636598372220146,
+      "bayesianUncertainty": 0.0023673679271638717,
+      "viewCount": 1,
+      "logisticScore": -1.0538479089736938
+    },
+    {
+      "order": 16,
+      "title": "Smile 2",
+      "dateWatched": "2025-1-23",
+      "betterThanPrevious": true,
+      "btscore": 0.5358127066492864,
+      "bayesianUncertainty": 0.004246624476781507,
+      "viewCount": 3,
+      "logisticScore": 1.6339459419250488
+    },
+    {
+      "order": 17,
+      "title": "Lowlifes",
+      "dateWatched": "2025-1-23",
+      "betterThanPrevious": false,
+      "btscore": 0.18094114015430446,
+      "bayesianUncertainty": 0.0016591685431095547,
+      "viewCount": 1,
+      "logisticScore": -2.3487653732299805
+    },
+    {
+      "order": 18,
+      "title": "Alien: Romulus",
+      "dateWatched": "2025-1-24",
+      "betterThanPrevious": true,
+      "btscore": 0.7250767157797336,
+      "bayesianUncertainty": 0.005811666484792769,
+      "viewCount": 2,
+      "logisticScore": 4.533337116241455
+    },
+    {
+      "order": 19,
+      "title": "Things Will Be Different",
+      "dateWatched": "2025-1-24",
+      "betterThanPrevious": false,
+      "btscore": 0.20083481855811733,
+      "bayesianUncertainty": 0.0018744607069769435,
+      "viewCount": 1,
+      "logisticScore": -1.8367931842803955
+    },
+    {
+      "order": 20,
+      "title": "Humane",
+      "dateWatched": "2025-1-25",
+      "betterThanPrevious": true,
+      "btscore": 0.42155032360648514,
+      "bayesianUncertainty": 0.0038169377443631213,
+      "viewCount": 1,
+      "logisticScore": 3.530188798904419
+    },
+    {
+      "order": 21,
+      "title": "Summoners",
+      "dateWatched": "2025-1-26",
+      "betterThanPrevious": false,
+      "btscore": 0.2961996968975403,
+      "bayesianUncertainty": 0.002722069789151117,
+      "viewCount": 1,
+      "logisticScore": 0.12006920576095581
+    },
+    {
+      "order": 22,
+      "title": "Werevolves",
+      "dateWatched": "2025-1-26",
+      "betterThanPrevious": false,
+      "btscore": 0.18274813740768275,
+      "bayesianUncertainty": 0.001650081528959895,
+      "viewCount": 1,
+      "logisticScore": -3.231064558029175
+    },
+    {
+      "order": 23,
+      "title": "Army of the Dead",
+      "dateWatched": "2025-1-26",
+      "betterThanPrevious": true,
+      "btscore": 0.6674272754546994,
+      "bayesianUncertainty": 0.0052653442046253695,
+      "viewCount": 3,
+      "logisticScore": 2.5635385513305664
+    },
+    {
+      "order": 24,
+      "title": "Arrival",
+      "dateWatched": "2025-1-26",
+      "betterThanPrevious": true,
+      "btscore": 0.5951839065369505,
+      "bayesianUncertainty": 0.004930718473519921,
+      "viewCount": 1,
+      "logisticScore": 4.887837886810303
+    },
+    {
+      "order": 25,
+      "title": "Mean Girls",
+      "dateWatched": "2025-1-26",
+      "betterThanPrevious": false,
+      "btscore": 0.29234920846352325,
+      "bayesianUncertainty": 0.002693091724515257,
+      "viewCount": 1,
+      "logisticScore": 0.5787020325660706
+    },
+    {
+      "order": 26,
+      "title": "Monster Summer",
+      "dateWatched": "2025-2-1",
+      "betterThanPrevious": false,
+      "btscore": 0.19364815445376504,
+      "bayesianUncertainty": 0.0017599840058385577,
+      "viewCount": 1,
+      "logisticScore": -3.020829916000366
+    },
+    {
+      "order": 27,
+      "title": "Hit Man",
+      "dateWatched": "2025-2-16",
+      "betterThanPrevious": true,
+      "btscore": 0.4405167193266765,
+      "bayesianUncertainty": 0.003934978717981655,
+      "viewCount": 1,
+      "logisticScore": 3.7529611587524414
+    },
+    {
+      "order": 28,
+      "title": "Azrael",
+      "dateWatched": "2025-2-16",
+      "betterThanPrevious": false,
+      "btscore": 0.32596282738074583,
+      "bayesianUncertainty": 0.0029235066251066004,
+      "viewCount": 1,
+      "logisticScore": 1.0698602199554443
+    },
+    {
+      "order": 29,
+      "title": "The Last Voyage of the Demeter",
+      "dateWatched": "2025-2-17",
+      "betterThanPrevious": false,
+      "btscore": 0.2858802883343215,
+      "bayesianUncertainty": 0.002565903092796359,
+      "viewCount": 1,
+      "logisticScore": -1.2146344184875488
+    },
+    {
+      "order": 30,
+      "title": "Here After",
+      "dateWatched": "2025-2-17",
+      "betterThanPrevious": false,
+      "btscore": 0.18178599980016355,
+      "bayesianUncertainty": 0.0015990203739405828,
+      "viewCount": 1,
+      "logisticScore": -4.013739585876465
+    },
+    {
+      "order": 31,
+      "title": "Good One",
+      "dateWatched": "2025-2-17",
+      "betterThanPrevious": true,
+      "btscore": 0.29772093938889005,
+      "bayesianUncertainty": 0.002727322114623136,
+      "viewCount": 1,
+      "logisticScore": -0.28140345215797424
+    },
+    {
+      "order": 32,
+      "title": "The Substance",
+      "dateWatched": "2025-2-17",
+      "betterThanPrevious": true,
+      "btscore": 0.42954624499387656,
+      "bayesianUncertainty": 0.0038774067632046214,
+      "viewCount": 1,
+      "logisticScore": 3.0996651649475098
+    },
+    {
+      "order": 33,
+      "title": "Wrong Turn 2: Dead End",
+      "dateWatched": "2025-2-18",
+      "betterThanPrevious": false,
+      "btscore": 0.19251015192187126,
+      "bayesianUncertainty": 0.001745556232893214,
+      "viewCount": 1,
+      "logisticScore": -3.0625100135803223
+    },
+    {
+      "order": 34,
+      "title": "Somewhere Quiet",
+      "dateWatched": "2025-2-19",
+      "betterThanPrevious": true,
+      "btscore": 0.29319453283988045,
+      "bayesianUncertainty": 0.0026923022593104942,
+      "viewCount": 1,
+      "logisticScore": 0.383023738861084
+    },
+    {
+      "order": 35,
+      "title": "The Watchers",
+      "dateWatched": "2025-2-20",
+      "betterThanPrevious": true,
+      "btscore": 0.594045085252729,
+      "bayesianUncertainty": 0.0050005302439678325,
+      "viewCount": 2,
+      "logisticScore": 4.206631660461426
+    },
+    {
+      "order": 36,
+      "title": "The Order",
+      "dateWatched": "2025-2-20",
+      "betterThanPrevious": false,
+      "btscore": 0.19988711522299024,
+      "bayesianUncertainty": 0.0018524821770789968,
+      "viewCount": 1,
+      "logisticScore": -2.087705373764038
+    },
+    {
+      "order": 37,
+      "title": "Longlegs",
+      "dateWatched": "2025-2-20",
+      "betterThanPrevious": true,
+      "btscore": 0.40150864799323416,
+      "bayesianUncertainty": 0.0036917281329019672,
+      "viewCount": 1,
+      "logisticScore": 2.627300262451172
+    },
+    {
+      "order": 38,
+      "title": "Night Swim",
+      "dateWatched": "2025-2-22",
+      "betterThanPrevious": false,
+      "btscore": 0.20227302866809801,
+      "bayesianUncertainty": 0.0018630562046461315,
+      "viewCount": 1,
+      "logisticScore": -2.3264641761779785
+    },
+    {
+      "order": 39,
+      "title": "Nightbitch",
+      "dateWatched": "2025-2-23",
+      "betterThanPrevious": true,
+      "btscore": 0.4048998362424735,
+      "bayesianUncertainty": 0.003731183888667507,
+      "viewCount": 1,
+      "logisticScore": 2.394191265106201
+    },
+    {
+      "order": 40,
+      "title": "Project Eerie",
+      "dateWatched": "2025-2-23",
+      "betterThanPrevious": false,
+      "btscore": 0.1680244621766004,
+      "bayesianUncertainty": 0.0015002897460516629,
+      "viewCount": 1,
+      "logisticScore": -3.6366775035858154
+    },
+    {
+      "order": 41,
+      "title": "To Catch a Killer",
+      "dateWatched": "2025-2-23",
+      "betterThanPrevious": true,
+      "btscore": 0.4985646860470575,
+      "bayesianUncertainty": 0.003534767312124878,
+      "viewCount": 4,
+      "logisticScore": -0.775076687335968
+    },
+    {
+      "order": 42,
+      "title": "Trial by Fire",
+      "dateWatched": "2025-2-23",
+      "betterThanPrevious": true,
+      "btscore": 0.46224607427630593,
+      "bayesianUncertainty": 0.0034485477254625075,
+      "viewCount": 2,
+      "logisticScore": 0.6215853691101074
+    },
+    {
+      "order": 43,
+      "title": "Interstellar",
+      "dateWatched": "2025-2-23",
+      "betterThanPrevious": true,
+      "btscore": 0.6113421205122849,
+      "bayesianUncertainty": 0.0050278464516616056,
+      "viewCount": 2,
+      "logisticScore": 4.083324909210205
+    },
+    {
+      "order": 44,
+      "title": "Daddy's Head",
+      "dateWatched": "2025-3-2",
+      "betterThanPrevious": false,
+      "btscore": 0.2944544814383073,
+      "bayesianUncertainty": 0.002701398798309425,
+      "viewCount": 1,
+      "logisticScore": 0.04185542091727257
+    },
+    {
+      "order": 45,
+      "title": "The Hangman",
+      "dateWatched": "2025-3-3",
+      "betterThanPrevious": false,
+      "btscore": 0.18312558706609078,
+      "bayesianUncertainty": 0.0016255493156103159,
+      "viewCount": 1,
+      "logisticScore": -3.9454283714294434
+    },
+    {
+      "order": 46,
+      "title": "Apartment 7A",
+      "dateWatched": "2025-3-3",
+      "betterThanPrevious": true,
+      "btscore": 0.29859372595805783,
+      "bayesianUncertainty": 0.00272930585508327,
+      "viewCount": 1,
+      "logisticScore": -0.32129472494125366
+    },
+    {
+      "order": 47,
+      "title": "Monkey Man",
+      "dateWatched": "2025-3-3",
+      "betterThanPrevious": true,
+      "btscore": 0.43417345198903423,
+      "bayesianUncertainty": 0.003910208665920479,
+      "viewCount": 1,
+      "logisticScore": 3.1195244789123535
+    },
+    {
+      "order": 48,
+      "title": "In a Violent Nature",
+      "dateWatched": "2025-3-4",
+      "betterThanPrevious": false,
+      "btscore": 0.19169904089915268,
+      "bayesianUncertainty": 0.001730337169910649,
+      "viewCount": 1,
+      "logisticScore": -3.330174207687378
+    },
+    {
+      "order": 49,
+      "title": "Emilia Pérez",
+      "dateWatched": "2025-3-7",
+      "betterThanPrevious": true,
+      "btscore": 0.2981753808322834,
+      "bayesianUncertainty": 0.002722518302935653,
+      "viewCount": 1,
+      "logisticScore": -0.051054585725069046
+    },
+    {
+      "order": 50,
+      "title": "Trap",
+      "dateWatched": "2025-3-8",
+      "betterThanPrevious": true,
+      "btscore": 0.4369296118832233,
+      "bayesianUncertainty": 0.003934275872949783,
+      "viewCount": 1,
+      "logisticScore": 3.235769748687744
+    },
+    {
+      "order": 51,
+      "title": "Handling the Undead",
+      "dateWatched": "2025-3-11",
+      "betterThanPrevious": false,
+      "btscore": 0.17872985584424142,
+      "bayesianUncertainty": 0.001596725650901753,
+      "viewCount": 1,
+      "logisticScore": -3.1612167358398438
+    },
+    {
+      "order": 52,
+      "title": "Don't Move",
+      "dateWatched": "2025-3-11",
+      "betterThanPrevious": true,
+      "btscore": 0.29970983673704665,
+      "bayesianUncertainty": 0.0022208122810136056,
+      "viewCount": 2,
+      "logisticScore": 0.5551572442054749
+    },
+    {
+      "order": 53,
+      "title": "Spiderhead",
+      "dateWatched": "2025-3-11",
+      "betterThanPrevious": true,
+      "btscore": 0.623465161724003,
+      "bayesianUncertainty": 0.005175950534859936,
+      "viewCount": 1,
+      "logisticScore": 3.71301531791687
+    },
+    {
+      "order": 54,
+      "title": "To Catch a Killer",
+      "dateWatched": "2025-3-12",
+      "betterThanPrevious": false,
+      "btscore": 0.4985646860470575,
+      "bayesianUncertainty": 0.003534767312124878,
+      "viewCount": 4,
+      "logisticScore": -0.775076687335968
+    },
+    {
+      "order": 55,
+      "title": "Trial by Fire",
+      "dateWatched": "2025-3-12",
+      "betterThanPrevious": true,
+      "btscore": 0.46224607427630593,
+      "bayesianUncertainty": 0.0034485477254625075,
+      "viewCount": 2,
+      "logisticScore": 0.6215853691101074
+    },
+    {
+      "order": 56,
+      "title": "Kate",
+      "dateWatched": "2025-3-12",
+      "betterThanPrevious": true,
+      "btscore": 0.24465230008053956,
+      "bayesianUncertainty": 0.0020463933171786463,
+      "viewCount": 2,
+      "logisticScore": 1.377252221107483
+    },
+    {
+      "order": 57,
+      "title": "The Watchers",
+      "dateWatched": "2025-3-13",
+      "betterThanPrevious": true,
+      "btscore": 0.594045085252729,
+      "bayesianUncertainty": 0.0050005302439678325,
+      "viewCount": 2,
+      "logisticScore": 4.206631660461426
+    },
+    {
+      "order": 58,
+      "title": "Sweet Girl",
+      "dateWatched": "2025-3-13",
+      "betterThanPrevious": false,
+      "btscore": 0.1511065634597357,
+      "bayesianUncertainty": 0.0012979483990439363,
+      "viewCount": 2,
+      "logisticScore": -3.3146347999572754
+    },
+    {
+      "order": 59,
+      "title": "Don't Listen",
+      "dateWatched": "2025-3-13",
+      "betterThanPrevious": true,
+      "btscore": 0.30160180327349295,
+      "bayesianUncertainty": 0.002758363320617989,
+      "viewCount": 1,
+      "logisticScore": -0.025769781321287155
+    },
+    {
+      "order": 60,
+      "title": "The Abyss",
+      "dateWatched": "2025-3-14",
+      "betterThanPrevious": true,
+      "btscore": 0.4397597885204418,
+      "bayesianUncertainty": 0.003961594489034763,
+      "viewCount": 1,
+      "logisticScore": 3.3137524127960205
+    },
+    {
+      "order": 61,
+      "title": "The Swarm",
+      "dateWatched": "2025-3-14",
+      "betterThanPrevious": false,
+      "btscore": 0.18470534960599286,
+      "bayesianUncertainty": 0.0016600621813623777,
+      "viewCount": 1,
+      "logisticScore": -3.4845144748687744
+    },
+    {
+      "order": 62,
+      "title": "Ma",
+      "dateWatched": "2025-3-14",
+      "betterThanPrevious": true,
+      "btscore": 0.27845241567790097,
+      "bayesianUncertainty": 0.002511618639049868,
+      "viewCount": 1,
+      "logisticScore": -0.3307390511035919
+    },
+    {
+      "order": 63,
+      "title": "Army of the Dead",
+      "dateWatched": "2025-3-15",
+      "betterThanPrevious": true,
+      "btscore": 0.6674272754546994,
+      "bayesianUncertainty": 0.0052653442046253695,
+      "viewCount": 3,
+      "logisticScore": 2.5635385513305664
+    },
+    {
+      "order": 64,
+      "title": "Upgrade",
+      "dateWatched": "2025-3-15",
+      "betterThanPrevious": false,
+      "btscore": 0.21286283767655104,
+      "bayesianUncertainty": 0.001801646856953461,
+      "viewCount": 2,
+      "logisticScore": -0.9003856182098389
+    },
+    {
+      "order": 65,
+      "title": "Extinction",
+      "dateWatched": "2025-3-15",
+      "betterThanPrevious": false,
+      "btscore": 0.15849605563127356,
+      "bayesianUncertainty": 0.0013665918324969521,
+      "viewCount": 1,
+      "logisticScore": -4.1064958572387695
+    },
+    {
+      "order": 66,
+      "title": "Deadly Illusions",
+      "dateWatched": "2025-3-15",
+      "betterThanPrevious": true,
+      "btscore": 0.3011504986998012,
+      "bayesianUncertainty": 0.002752102240930222,
+      "viewCount": 1,
+      "logisticScore": -0.35848331451416016
+    },
+    {
+      "order": 67,
+      "title": "Night Raiders",
+      "dateWatched": "2025-3-15",
+      "betterThanPrevious": true,
+      "btscore": 0.44265951427125433,
+      "bayesianUncertainty": 0.003995953008285897,
+      "viewCount": 1,
+      "logisticScore": 3.1215059757232666
+    },
+    {
+      "order": 68,
+      "title": "Tarot",
+      "dateWatched": "2025-3-15",
+      "betterThanPrevious": false,
+      "btscore": 0.15647670487314927,
+      "bayesianUncertainty": 0.0013698488490381001,
+      "viewCount": 2,
+      "logisticScore": -2.320307493209839
+    },
+    {
+      "order": 69,
+      "title": "Runaway Jury",
+      "dateWatched": "2025-3-16",
+      "betterThanPrevious": true,
+      "btscore": 0.4622076577343492,
+      "bayesianUncertainty": 0.00413521512051442,
+      "viewCount": 1,
+      "logisticScore": 2.955862522125244
+    },
+    {
+      "order": 70,
+      "title": "Spectral",
+      "dateWatched": "2025-3-20",
+      "betterThanPrevious": false,
+      "btscore": 0.2482832479456326,
+      "bayesianUncertainty": 0.0020231296454284024,
+      "viewCount": 2,
+      "logisticScore": -0.5443310141563416
+    },
+    {
+      "order": 71,
+      "title": "Legion",
+      "dateWatched": "2025-3-20",
+      "betterThanPrevious": false,
+      "btscore": 0.2617794837259001,
+      "bayesianUncertainty": 0.0022563612948428642,
+      "viewCount": 1,
+      "logisticScore": -2.2204666137695312
+    },
+    {
+      "order": 72,
+      "title": "Locked In",
+      "dateWatched": "2025-3-25",
+      "betterThanPrevious": false,
+      "btscore": 0.15989725638576496,
+      "bayesianUncertainty": 0.001358400235990613,
+      "viewCount": 1,
+      "logisticScore": -4.861631393432617
+    },
+    {
+      "order": 73,
+      "title": "Awake",
+      "dateWatched": "2025-3-25",
+      "betterThanPrevious": true,
+      "btscore": 0.33234603566596754,
+      "bayesianUncertainty": 0.00253008800987728,
+      "viewCount": 2,
+      "logisticScore": -1.4419459104537964
+    },
+    {
+      "order": 74,
+      "title": "Close",
+      "dateWatched": "2025-3-25",
+      "betterThanPrevious": true,
+      "btscore": 0.3622072254969156,
+      "bayesianUncertainty": 0.0031838426931712085,
+      "viewCount": 1,
+      "logisticScore": 1.1664448976516724
+    },
+    {
+      "order": 75,
+      "title": "Talk to Me",
+      "dateWatched": "2025-3-26",
+      "betterThanPrevious": true,
+      "btscore": 0.612983098720631,
+      "bayesianUncertainty": 0.005140993107345311,
+      "viewCount": 2,
+      "logisticScore": 4.213037014007568
+    },
+    {
+      "order": 76,
+      "title": "Revelations",
+      "dateWatched": "2025-3-26",
+      "betterThanPrevious": false,
+      "btscore": 0.14846179278740337,
+      "bayesianUncertainty": 0.0012813804353370305,
+      "viewCount": 2,
+      "logisticScore": -3.3127388954162598
+    },
+    {
+      "order": 77,
+      "title": "Mufasa: The Lion King",
+      "dateWatched": "2025-3-29",
+      "betterThanPrevious": true,
+      "btscore": 0.4222481227506802,
+      "bayesianUncertainty": 0.003900647435441533,
+      "viewCount": 1,
+      "logisticScore": 1.8743140697479248
+    },
+    {
+      "order": 78,
+      "title": "Sweet Girl",
+      "dateWatched": "2025-3-29",
+      "betterThanPrevious": false,
+      "btscore": 0.1511065634597357,
+      "bayesianUncertainty": 0.0012979483990439363,
+      "viewCount": 2,
+      "logisticScore": -3.3146347999572754
+    },
+    {
+      "order": 79,
+      "title": "The Fall Guy",
+      "dateWatched": "2025-3-30",
+      "betterThanPrevious": true,
+      "btscore": 0.4914664504208562,
+      "bayesianUncertainty": 0.00438129101125902,
+      "viewCount": 2,
+      "logisticScore": 3.2229652404785156
+    },
+    {
+      "order": 80,
+      "title": "Tarot",
+      "dateWatched": "2025-3-30",
+      "betterThanPrevious": false,
+      "btscore": 0.15647670487314927,
+      "bayesianUncertainty": 0.0013698488490381001,
+      "viewCount": 2,
+      "logisticScore": -2.320307493209839
+    },
+    {
+      "order": 81,
+      "title": "Interstellar",
+      "dateWatched": "2025-3-30",
+      "betterThanPrevious": true,
+      "btscore": 0.6113421205122849,
+      "bayesianUncertainty": 0.0050278464516616056,
+      "viewCount": 2,
+      "logisticScore": 4.083324909210205
+    },
+    {
+      "order": 82,
+      "title": "Don't Let Go",
+      "dateWatched": "2025-3-30",
+      "betterThanPrevious": false,
+      "btscore": 0.29915746755056055,
+      "bayesianUncertainty": 0.002738949329793649,
+      "viewCount": 1,
+      "logisticScore": 0.22512638568878174
+    },
+    {
+      "order": 83,
+      "title": "Revelations",
+      "dateWatched": "2025-3-31",
+      "betterThanPrevious": false,
+      "btscore": 0.14846179278740337,
+      "bayesianUncertainty": 0.0012813804353370305,
+      "viewCount": 2,
+      "logisticScore": -3.3127388954162598
+    },
+    {
+      "order": 84,
+      "title": "Talk to Me",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": true,
+      "btscore": 0.612983098720631,
+      "bayesianUncertainty": 0.005140993107345311,
+      "viewCount": 2,
+      "logisticScore": 4.213037014007568
+    },
+    {
+      "order": 85,
+      "title": "ARQ",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": false,
+      "btscore": 0.29763667515280273,
+      "bayesianUncertainty": 0.0027205759718672354,
+      "viewCount": 1,
+      "logisticScore": 0.268420934677124
+    },
+    {
+      "order": 86,
+      "title": "The Electric State",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": false,
+      "btscore": 0.1669783371559283,
+      "bayesianUncertainty": 0.0014802302045193883,
+      "viewCount": 1,
+      "logisticScore": -3.4117021560668945
+    },
+    {
+      "order": 87,
+      "title": "Prey",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": true,
+      "btscore": 0.5001421000805748,
+      "bayesianUncertainty": 0.0038469903097329444,
+      "viewCount": 3,
+      "logisticScore": 1.3188667297363281
+    },
+    {
+      "order": 88,
+      "title": "Geostorm",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": false,
+      "btscore": 0.2669171624502528,
+      "bayesianUncertainty": 0.0023620777863580713,
+      "viewCount": 1,
+      "logisticScore": -1.0786569118499756
+    },
+    {
+      "order": 89,
+      "title": "Sicario: Day of the Soldado",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": false,
+      "btscore": 0.17882108002718008,
+      "bayesianUncertainty": 0.0015900169071169465,
+      "viewCount": 1,
+      "logisticScore": -3.9428634643554688
+    },
+    {
+      "order": 90,
+      "title": "Alpha",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": true,
+      "btscore": 0.41596251064431033,
+      "bayesianUncertainty": 0.0038142427985490197,
+      "viewCount": 1,
+      "logisticScore": 1.8571914434432983
+    },
+    {
+      "order": 91,
+      "title": "Lucy",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": false,
+      "btscore": 0.19051999780571074,
+      "bayesianUncertainty": 0.001707181945176592,
+      "viewCount": 1,
+      "logisticScore": -3.945274591445923
+    },
+    {
+      "order": 92,
+      "title": "Draft Day",
+      "dateWatched": "2025-4-1",
+      "betterThanPrevious": true,
+      "btscore": 0.28743550003083096,
+      "bayesianUncertainty": 0.0025567692317693936,
+      "viewCount": 1,
+      "logisticScore": -1.2059963941574097
+    },
+    {
+      "order": 93,
+      "title": "The Gray Man",
+      "dateWatched": "2025-4-2",
+      "betterThanPrevious": true,
+      "btscore": 0.3312733438625397,
+      "bayesianUncertainty": 0.0029444245364664123,
+      "viewCount": 1,
+      "logisticScore": 1.0402121543884277
+    },
+    {
+      "order": 94,
+      "title": "Den of Thieves",
+      "dateWatched": "2025-4-2",
+      "betterThanPrevious": true,
+      "btscore": 0.4379665445220808,
+      "bayesianUncertainty": 0.003910755437029839,
+      "viewCount": 1,
+      "logisticScore": 3.690563201904297
+    },
+    {
+      "order": 95,
+      "title": "Den of Thieves 2: Pantera",
+      "dateWatched": "2025-4-2",
+      "betterThanPrevious": false,
+      "btscore": 0.19021083104469416,
+      "bayesianUncertainty": 0.0017050576491081583,
+      "viewCount": 1,
+      "logisticScore": -3.8777761459350586
+    },
+    {
+      "order": 96,
+      "title": "Ad Vitam",
+      "dateWatched": "2025-4-2",
+      "betterThanPrevious": true,
+      "btscore": 0.28455264039322864,
+      "bayesianUncertainty": 0.0025366814601197273,
+      "viewCount": 1,
+      "logisticScore": -1.006140947341919
+    },
+    {
+      "order": 97,
+      "title": "Sicario",
+      "dateWatched": "2025-4-7",
+      "betterThanPrevious": true,
+      "btscore": 0.3244822328038894,
+      "bayesianUncertainty": 0.0028947445398899265,
+      "viewCount": 1,
+      "logisticScore": 1.5168235301971436
+    },
+    {
+      "order": 98,
+      "title": "Spotlight",
+      "dateWatched": "2025-4-13",
+      "betterThanPrevious": true,
+      "btscore": 0.7092122156534072,
+      "bayesianUncertainty": 0.0055920275558636505,
+      "viewCount": 2,
+      "logisticScore": 4.883321762084961
+    },
+    {
+      "order": 99,
+      "title": "Sinners",
+      "dateWatched": "2025-4-17",
+      "betterThanPrevious": false,
+      "btscore": 0.34032132988454017,
+      "bayesianUncertainty": 0.0029952407123052384,
+      "viewCount": 1,
+      "logisticScore": 2.058673858642578
+    },
+    {
+      "order": 100,
+      "title": "The Good Nurse",
+      "dateWatched": "2025-4-17",
+      "betterThanPrevious": false,
+      "btscore": 0.31736358105629237,
+      "bayesianUncertainty": 0.0027603904850584497,
+      "viewCount": 1,
+      "logisticScore": 0.09361844509840012
+    },
+    {
+      "order": 101,
+      "title": "Midnight in the Switchgrass",
+      "dateWatched": "2025-4-18",
+      "betterThanPrevious": false,
+      "btscore": 0.28293833853650124,
+      "bayesianUncertainty": 0.0024861579917607487,
+      "viewCount": 1,
+      "logisticScore": -1.79033625125885
+    },
+    {
+      "order": 102,
+      "title": "Aftermath",
+      "dateWatched": "2025-4-21",
+      "betterThanPrevious": false,
+      "btscore": 0.17155452100993526,
+      "bayesianUncertainty": 0.0014853726664076894,
+      "viewCount": 1,
+      "logisticScore": -4.442868232727051
+    },
+    {
+      "order": 103,
+      "title": "iHostage",
+      "dateWatched": "2025-4-21",
+      "betterThanPrevious": true,
+      "btscore": 0.30208989280764803,
+      "bayesianUncertainty": 0.0027433249417946792,
+      "viewCount": 1,
+      "logisticScore": -0.216753751039505
+    },
+    {
+      "order": 104,
+      "title": "Venom: The Last Dance",
+      "dateWatched": "2025-4-21",
+      "betterThanPrevious": true,
+      "btscore": 0.48093733623374557,
+      "bayesianUncertainty": 0.004208004102446953,
+      "viewCount": 1,
+      "logisticScore": 3.6068532466888428
+    },
+    {
+      "order": 105,
+      "title": "Lou",
+      "dateWatched": "2025-4-21",
+      "betterThanPrevious": false,
+      "btscore": 0.30166760684863614,
+      "bayesianUncertainty": 0.0027379762952613328,
+      "viewCount": 1,
+      "logisticScore": -0.14918743073940277
+    },
+    {
+      "order": 106,
+      "title": "Vanished into the Night",
+      "dateWatched": "2025-4-22",
+      "betterThanPrevious": false,
+      "btscore": 0.17889167652151722,
+      "bayesianUncertainty": 0.001566288701139946,
+      "viewCount": 1,
+      "logisticScore": -4.184818267822266
+    },
+    {
+      "order": 107,
+      "title": "Trigger Warning",
+      "dateWatched": "2025-4-22",
+      "betterThanPrevious": true,
+      "btscore": 0.28899282618067995,
+      "bayesianUncertainty": 0.0025621683744505366,
+      "viewCount": 1,
+      "logisticScore": -1.1999711990356445
+    },
+    {
+      "order": 108,
+      "title": "Land of Bad",
+      "dateWatched": "2025-4-22",
+      "betterThanPrevious": true,
+      "btscore": 0.3332550241882615,
+      "bayesianUncertainty": 0.0029521207910711165,
+      "viewCount": 1,
+      "logisticScore": 1.2705879211425781
+    },
+    {
+      "order": 109,
+      "title": "American Sniper",
+      "dateWatched": "2025-4-22",
+      "betterThanPrevious": true,
+      "btscore": 0.4732829596948266,
+      "bayesianUncertainty": 0.00411971295450303,
+      "viewCount": 1,
+      "logisticScore": 4.276980400085449
+    },
+    {
+      "order": 110,
+      "title": "Project Power",
+      "dateWatched": "2025-4-22",
+      "betterThanPrevious": false,
+      "btscore": 0.3012400205992519,
+      "bayesianUncertainty": 0.0027322493403664364,
+      "viewCount": 1,
+      "logisticScore": 0.3551294207572937
+    },
+    {
+      "order": 111,
+      "title": "Freaks – You're One of Us",
+      "dateWatched": "2025-4-22",
+      "betterThanPrevious": false,
+      "btscore": 0.18648513191293647,
+      "bayesianUncertainty": 0.0016704226653257502,
+      "viewCount": 1,
+      "logisticScore": -3.1826062202453613
+    },
+    {
+      "order": 112,
+      "title": "Havoc",
+      "dateWatched": "2025-4-22",
+      "betterThanPrevious": true,
+      "btscore": 0.42315235855637917,
+      "bayesianUncertainty": 0.0038685752717839217,
+      "viewCount": 1,
+      "logisticScore": 2.1891698837280273
+    },
+    {
+      "order": 113,
+      "title": "The Frozen Ground",
+      "dateWatched": "2025-4-25",
+      "betterThanPrevious": false,
+      "btscore": 0.18208022321650222,
+      "bayesianUncertainty": 0.0016583577512321722,
+      "viewCount": 1,
+      "logisticScore": -2.522645950317383
+    },
+    {
+      "order": 114,
+      "title": "Army of the Dead",
+      "dateWatched": "2025-4-28",
+      "betterThanPrevious": true,
+      "btscore": 0.6674272754546994,
+      "bayesianUncertainty": 0.0052653442046253695,
+      "viewCount": 3,
+      "logisticScore": 2.5635385513305664
+    },
+    {
+      "order": 115,
+      "title": "Carry-On",
+      "dateWatched": "2025-4-29",
+      "betterThanPrevious": false,
+      "btscore": 0.2821778263750292,
+      "bayesianUncertainty": 0.002527422022758285,
+      "viewCount": 1,
+      "logisticScore": -0.2776915431022644
+    },
+    {
+      "order": 116,
+      "title": "A Dog's Way Home",
+      "dateWatched": "2025-4-29",
+      "betterThanPrevious": false,
+      "btscore": 0.18004498107177208,
+      "bayesianUncertainty": 0.0016056377580758723,
+      "viewCount": 1,
+      "logisticScore": -3.380546808242798
+    },
+    {
+      "order": 117,
+      "title": "The Clovehitch Killer",
+      "dateWatched": "2025-4-29",
+      "betterThanPrevious": true,
+      "btscore": 0.4261285888845206,
+      "bayesianUncertainty": 0.003896978148468023,
+      "viewCount": 1,
+      "logisticScore": 2.0745482444763184
+    },
+    {
+      "order": 118,
+      "title": "Exterritorial",
+      "dateWatched": "2025-4-29",
+      "betterThanPrevious": false,
+      "btscore": 0.17720575873671776,
+      "bayesianUncertainty": 0.0016272753046003305,
+      "viewCount": 1,
+      "logisticScore": -2.6020314693450928
+    },
+    {
+      "order": 119,
+      "title": "Dawn of the Dead",
+      "dateWatched": "2025-4-29",
+      "betterThanPrevious": true,
+      "btscore": 0.9724913156749639,
+      "bayesianUncertainty": 0.007504239006407342,
+      "viewCount": 4,
+      "logisticScore": 2.044452667236328
+    },
+    {
+      "order": 120,
+      "title": "Peninsula",
+      "dateWatched": "2025-5-3",
+      "betterThanPrevious": false,
+      "btscore": 0.1675335868449078,
+      "bayesianUncertainty": 0.0015099155754380383,
+      "viewCount": 1,
+      "logisticScore": -3.1732823848724365
+    },
+    {
+      "order": 121,
+      "title": "Hanna",
+      "dateWatched": "2025-5-7",
+      "betterThanPrevious": true,
+      "btscore": 0.299276709720936,
+      "bayesianUncertainty": 0.002722746863292898,
+      "viewCount": 1,
+      "logisticScore": 0.3990103304386139
+    },
+    {
+      "order": 122,
+      "title": "Constantine",
+      "dateWatched": "2025-5-7",
+      "betterThanPrevious": true,
+      "btscore": 0.6686798514310157,
+      "bayesianUncertainty": 0.005446431446379502,
+      "viewCount": 2,
+      "logisticScore": 4.373843669891357
+    },
+    {
+      "order": 123,
+      "title": "Heart Eyes",
+      "dateWatched": "2025-5-7",
+      "betterThanPrevious": false,
+      "btscore": 0.2984773924637135,
+      "bayesianUncertainty": 0.002713096293652815,
+      "viewCount": 1,
+      "logisticScore": 0.4162527322769165
+    },
+    {
+      "order": 124,
+      "title": "The Haunted Apartment \"Miss K\"",
+      "dateWatched": "2025-5-8",
+      "betterThanPrevious": false,
+      "btscore": 0.1795631306338617,
+      "bayesianUncertainty": 0.0016306720576240172,
+      "viewCount": 1,
+      "logisticScore": -3.106595516204834
+    },
+    {
+      "order": 125,
+      "title": "Train to Busan",
+      "dateWatched": "2025-5-9",
+      "betterThanPrevious": true,
+      "btscore": 0.880742180583482,
+      "bayesianUncertainty": 0.00692580535853163,
+      "viewCount": 2,
+      "logisticScore": 4.3824687004089355
+    },
+    {
+      "order": 126,
+      "title": "Insidious: Chapter 2",
+      "dateWatched": "2025-5-9",
+      "betterThanPrevious": false,
+      "btscore": 0.1804394610586105,
+      "bayesianUncertainty": 0.0016329727538952747,
+      "viewCount": 1,
+      "logisticScore": -3.184370279312134
+    },
+    {
+      "order": 127,
+      "title": "The Gorge",
+      "dateWatched": "2025-5-9",
+      "betterThanPrevious": true,
+      "btscore": 0.3035281596584718,
+      "bayesianUncertainty": 0.0027447230454783673,
+      "viewCount": 1,
+      "logisticScore": 0.017677977681159973
+    },
+    {
+      "order": 128,
+      "title": "Companion",
+      "dateWatched": "2025-5-10",
+      "betterThanPrevious": true,
+      "btscore": 0.4589847697755507,
+      "bayesianUncertainty": 0.0040892040947183034,
+      "viewCount": 1,
+      "logisticScore": 3.2122397422790527
+    },
+    {
+      "order": 129,
+      "title": "Veronica",
+      "dateWatched": "2025-5-10",
+      "betterThanPrevious": false,
+      "btscore": 0.18396760277943486,
+      "bayesianUncertainty": 0.0016446365277396197,
+      "viewCount": 1,
+      "logisticScore": -3.3088393211364746
+    },
+    {
+      "order": 130,
+      "title": "The Old Guard",
+      "dateWatched": "2025-5-10",
+      "betterThanPrevious": true,
+      "btscore": 0.3032184940436966,
+      "bayesianUncertainty": 0.002740680413981293,
+      "viewCount": 1,
+      "logisticScore": -0.018737586215138435
+    },
+    {
+      "order": 131,
+      "title": "John Wick: Chapter 4",
+      "dateWatched": "2025-5-12",
+      "betterThanPrevious": true,
+      "btscore": 0.4602372374847201,
+      "bayesianUncertainty": 0.004100179525226684,
+      "viewCount": 1,
+      "logisticScore": 3.258136034011841
+    },
+    {
+      "order": 132,
+      "title": "Circle",
+      "dateWatched": "2025-5-13",
+      "betterThanPrevious": false,
+      "btscore": 0.17880594636020775,
+      "bayesianUncertainty": 0.001616996551159909,
+      "viewCount": 1,
+      "logisticScore": -2.8686463832855225
+    },
+    {
+      "order": 133,
+      "title": "The Silence",
+      "dateWatched": "2025-5-14",
+      "betterThanPrevious": true,
+      "btscore": 0.49313890249673037,
+      "bayesianUncertainty": 0.003939223365870789,
+      "viewCount": 2,
+      "logisticScore": 0.8236250281333923
+    },
+    {
+      "order": 134,
+      "title": "In The Tall Grass",
+      "dateWatched": "2025-5-15",
+      "betterThanPrevious": false,
+      "btscore": 0.16332721268150566,
+      "bayesianUncertainty": 0.0014839245425860084,
+      "viewCount": 1,
+      "logisticScore": -2.951632261276245
+    },
+    {
+      "order": 135,
+      "title": "Dawn of the Dead",
+      "dateWatched": "2025-5-15",
+      "betterThanPrevious": true,
+      "btscore": 0.9724913156749639,
+      "bayesianUncertainty": 0.007504239006407342,
+      "viewCount": 4,
+      "logisticScore": 2.044452667236328
+    },
+    {
+      "order": 136,
+      "title": "Texas Chainsaw Massacre (2022)",
+      "dateWatched": "2025-5-15",
+      "betterThanPrevious": false,
+      "btscore": 0.1739305428443805,
+      "bayesianUncertainty": 0.0016015857210848374,
+      "viewCount": 1,
+      "logisticScore": -2.3460006713867188
+    },
+    {
+      "order": 137,
+      "title": "Smile",
+      "dateWatched": "2025-5-15",
+      "betterThanPrevious": true,
+      "btscore": 0.545730560110481,
+      "bayesianUncertainty": 0.004756638405834805,
+      "viewCount": 1,
+      "logisticScore": 3.3800320625305176
+    },
+    {
+      "order": 138,
+      "title": "#Alive",
+      "dateWatched": "2025-5-16",
+      "betterThanPrevious": false,
+      "btscore": 0.4246945946707412,
+      "bayesianUncertainty": 0.003073441266354366,
+      "viewCount": 3,
+      "logisticScore": -0.07435834407806396
+    },
+    {
+      "order": 139,
+      "title": "Fear Street Part 1: 1994",
+      "dateWatched": "2025-5-16",
+      "betterThanPrevious": false,
+      "btscore": 0.15736311059167415,
+      "bayesianUncertainty": 0.001386198152669691,
+      "viewCount": 1,
+      "logisticScore": -3.3534913063049316
+    },
+    {
+      "order": 140,
+      "title": "Fear Street Part 2: 1978",
+      "dateWatched": "2025-5-16",
+      "betterThanPrevious": true,
+      "btscore": 0.45753809886197105,
+      "bayesianUncertainty": 0.004067642916524209,
+      "viewCount": 1,
+      "logisticScore": 3.970903158187866
+    },
+    {
+      "order": 141,
+      "title": "Fear Street Part 3: 1666",
+      "dateWatched": "2025-5-16",
+      "betterThanPrevious": false,
+      "btscore": 0.3508179053107831,
+      "bayesianUncertainty": 0.0030688368149301426,
+      "viewCount": 1,
+      "logisticScore": 1.3838273286819458
+    },
+    {
+      "order": 142,
+      "title": "Spectral",
+      "dateWatched": "2025-5-16",
+      "betterThanPrevious": false,
+      "btscore": 0.2482832479456326,
+      "bayesianUncertainty": 0.0020231296454284024,
+      "viewCount": 2,
+      "logisticScore": -0.5443310141563416
+    },
+    {
+      "order": 143,
+      "title": "Spotlight",
+      "dateWatched": "2025-5-17",
+      "betterThanPrevious": true,
+      "btscore": 0.7092122156534072,
+      "bayesianUncertainty": 0.0055920275558636505,
+      "viewCount": 2,
+      "logisticScore": 4.883321762084961
+    },
+    {
+      "order": 144,
+      "title": "Novocaine",
+      "dateWatched": "2025-5-17",
+      "betterThanPrevious": false,
+      "btscore": 0.2994571684244102,
+      "bayesianUncertainty": 0.0027227081782535793,
+      "viewCount": 1,
+      "logisticScore": 0.2013864517211914
+    },
+    {
+      "order": 145,
+      "title": "Rattlesnake",
+      "dateWatched": "2025-5-17",
+      "betterThanPrevious": false,
+      "btscore": 0.16574927643676318,
+      "bayesianUncertainty": 0.0014411100063303616,
+      "viewCount": 1,
+      "logisticScore": -4.119286060333252
+    },
+    {
+      "order": 146,
+      "title": "Death of a Unicorn",
+      "dateWatched": "2025-5-17",
+      "betterThanPrevious": true,
+      "btscore": 0.2760125460996605,
+      "bayesianUncertainty": 0.002431842183085339,
+      "viewCount": 1,
+      "logisticScore": -1.0047168731689453
+    },
+    {
+      "order": 147,
+      "title": "Smile 2",
+      "dateWatched": "2025-5-19",
+      "betterThanPrevious": true,
+      "btscore": 0.5358127066492864,
+      "bayesianUncertainty": 0.004246624476781507,
+      "viewCount": 3,
+      "logisticScore": 1.6339459419250488
+    },
+    {
+      "order": 148,
+      "title": "Fear Street: Prom Queen",
+      "dateWatched": "2025-5-25",
+      "betterThanPrevious": false,
+      "btscore": 0.17068106391606316,
+      "bayesianUncertainty": 0.001543773815613953,
+      "viewCount": 1,
+      "logisticScore": -2.48321270942688
+    },
+    {
+      "order": 149,
+      "title": "Constantine",
+      "dateWatched": "2025-6-2",
+      "betterThanPrevious": true,
+      "btscore": 0.6686798514310157,
+      "bayesianUncertainty": 0.005446431446379502,
+      "viewCount": 2,
+      "logisticScore": 4.373843669891357
+    },
+    {
+      "order": 150,
+      "title": "Kate",
+      "dateWatched": "2025-6-2",
+      "betterThanPrevious": false,
+      "btscore": 0.24465230008053956,
+      "bayesianUncertainty": 0.0020463933171786463,
+      "viewCount": 2,
+      "logisticScore": 1.377252221107483
+    },
+    {
+      "order": 151,
+      "title": "The Killer",
+      "dateWatched": "2025-6-4",
+      "betterThanPrevious": true,
+      "btscore": 0.4603500546798734,
+      "bayesianUncertainty": 0.004094785813750289,
+      "viewCount": 1,
+      "logisticScore": 3.847891330718994
+    },
+    {
+      "order": 152,
+      "title": "Now You See Me",
+      "dateWatched": "2025-6-5",
+      "betterThanPrevious": false,
+      "btscore": 0.16462471156056693,
+      "bayesianUncertainty": 0.0014372194333742826,
+      "viewCount": 1,
+      "logisticScore": -4.425930976867676
+    },
+    {
+      "order": 153,
+      "title": "River Wild",
+      "dateWatched": "2025-6-6",
+      "betterThanPrevious": true,
+      "btscore": 0.25141687116523903,
+      "bayesianUncertainty": 0.0021523793773408173,
+      "viewCount": 1,
+      "logisticScore": -2.14414381980896
+    },
+    {
+      "order": 154,
+      "title": "To Catch a Killer",
+      "dateWatched": "2025-6-7",
+      "betterThanPrevious": true,
+      "btscore": 0.4985646860470575,
+      "bayesianUncertainty": 0.003534767312124878,
+      "viewCount": 4,
+      "logisticScore": -0.775076687335968
+    },
+    {
+      "order": 155,
+      "title": "The Town",
+      "dateWatched": "2025-6-8",
+      "betterThanPrevious": true,
+      "btscore": 0.9978225554125414,
+      "bayesianUncertainty": 0.0077293179837472255,
+      "viewCount": 2,
+      "logisticScore": 3.5412912368774414
+    },
+    {
+      "order": 156,
+      "title": "STRAW",
+      "dateWatched": "2025-6-8",
+      "betterThanPrevious": false,
+      "btscore": 0.18565458892852843,
+      "bayesianUncertainty": 0.0017170597557858735,
+      "viewCount": 1,
+      "logisticScore": -2.325136423110962
+    },
+    {
+      "order": 157,
+      "title": "Barbarian",
+      "dateWatched": "2025-6-8",
+      "betterThanPrevious": true,
+      "btscore": 0.43893932131607594,
+      "bayesianUncertainty": 0.003987084152149202,
+      "viewCount": 1,
+      "logisticScore": 2.214726448059082
+    },
+    {
+      "order": 158,
+      "title": "The Titan",
+      "dateWatched": "2025-6-10",
+      "betterThanPrevious": false,
+      "btscore": 0.18223981679336015,
+      "bayesianUncertainty": 0.0016115726613591527,
+      "viewCount": 1,
+      "logisticScore": -4.228174209594727
+    },
+    {
+      "order": 159,
+      "title": "Plane",
+      "dateWatched": "2025-6-16",
+      "betterThanPrevious": true,
+      "btscore": 0.3020668273328481,
+      "bayesianUncertainty": 0.0026456718323436446,
+      "viewCount": 1,
+      "logisticScore": -2.1364362239837646
+    },
+    {
+      "order": 160,
+      "title": "Copycat",
+      "dateWatched": "2025-6-16",
+      "betterThanPrevious": true,
+      "btscore": 0.2834429897546424,
+      "bayesianUncertainty": 0.002323626253622557,
+      "viewCount": 1,
+      "logisticScore": -1.0432796478271484
+    },
+    {
+      "order": 161,
+      "title": "The Ritual",
+      "dateWatched": "2025-6-17",
+      "betterThanPrevious": true,
+      "btscore": 0.18797539599398483,
+      "bayesianUncertainty": 0.0014344487628076912,
+      "viewCount": 2,
+      "logisticScore": -0.39539778232574463
+    },
+    {
+      "order": 162,
+      "title": "Dawn of the Dead",
+      "dateWatched": "2025-6-18",
+      "betterThanPrevious": true,
+      "btscore": 0.9724913156749639,
+      "bayesianUncertainty": 0.007504239006407342,
+      "viewCount": 4,
+      "logisticScore": 2.044452667236328
+    },
+    {
+      "order": 163,
+      "title": "Train to Busan",
+      "dateWatched": "2025-6-18",
+      "betterThanPrevious": true,
+      "btscore": 0.880742180583482,
+      "bayesianUncertainty": 0.00692580535853163,
+      "viewCount": 2,
+      "logisticScore": 4.3824687004089355
+    },
+    {
+      "order": 164,
+      "title": "Upgrade",
+      "dateWatched": "2025-6-21",
+      "betterThanPrevious": false,
+      "btscore": 0.21286283767655104,
+      "bayesianUncertainty": 0.001801646856953461,
+      "viewCount": 2,
+      "logisticScore": -0.9003856182098389
+    },
+    {
+      "order": 165,
+      "title": "10 Cloverfield Lane",
+      "dateWatched": "2025-6-22",
+      "betterThanPrevious": true,
+      "btscore": 0.5237224921653828,
+      "bayesianUncertainty": 0.004578038396519359,
+      "viewCount": 1,
+      "logisticScore": 3.3844869136810303
+    },
+    {
+      "order": 166,
+      "title": "Until Dawn",
+      "dateWatched": "2025-7-16",
+      "betterThanPrevious": false,
+      "btscore": 0.2665346701193858,
+      "bayesianUncertainty": 0.002099227627925197,
+      "viewCount": 2,
+      "logisticScore": -0.7745957970619202
+    },
+    {
+      "order": 167,
+      "title": "Bring Her Back",
+      "dateWatched": "2025-7-17",
+      "betterThanPrevious": true,
+      "btscore": 0.5423853316154597,
+      "bayesianUncertainty": 0.004632506390067469,
+      "viewCount": 1,
+      "logisticScore": 4.062973499298096
+    },
+    {
+      "order": 168,
+      "title": "Catch Me If You Can",
+      "dateWatched": "2025-7-19",
+      "betterThanPrevious": false,
+      "btscore": 0.3477610865987862,
+      "bayesianUncertainty": 0.0030417342059349504,
+      "viewCount": 1,
+      "logisticScore": 1.030738353729248
+    },
+    {
+      "order": 169,
+      "title": "This Never Happened",
+      "dateWatched": "2025-7-19",
+      "betterThanPrevious": false,
+      "btscore": 0.307116658034194,
+      "bayesianUncertainty": 0.0026989259551787165,
+      "viewCount": 1,
+      "logisticScore": -1.5659228563308716
+    },
+    {
+      "order": 170,
+      "title": "Wolf Man",
+      "dateWatched": "2025-8-10",
+      "betterThanPrevious": false,
+      "btscore": 0.0898360996673496,
+      "bayesianUncertainty": 0.0007132791237882222,
+      "viewCount": 2,
+      "logisticScore": -4.952568531036377
+    },
+    {
+      "order": 171,
+      "title": "28 Years Later",
+      "dateWatched": "2025-8-10",
+      "betterThanPrevious": true,
+      "btscore": 0.3114511964694115,
+      "bayesianUncertainty": 0.002837085544303347,
+      "viewCount": 1,
+      "logisticScore": -0.0010375924175605178
+    },
+    {
+      "order": 172,
+      "title": "Cuckoo",
+      "dateWatched": "2025-8-10",
+      "betterThanPrevious": true,
+      "btscore": 0.9384524873629109,
+      "bayesianUncertainty": 0.006908951861168654,
+      "viewCount": 1,
+      "logisticScore": 5.358133792877197
+    },
+    {
+      "order": 173,
+      "title": "World War Z",
+      "dateWatched": "2025-8-12",
+      "betterThanPrevious": false,
+      "btscore": 1.5299669957274669,
+      "bayesianUncertainty": 0.009972998596176317,
+      "viewCount": 4,
+      "logisticScore": 3.7745845317840576
+    },
+    {
+      "order": 174,
+      "title": "Session 8",
+      "dateWatched": "2025-8-17",
+      "betterThanPrevious": false,
+      "btscore": 0.15462989429957374,
+      "bayesianUncertainty": 0.0013731188229763884,
+      "viewCount": 1,
+      "logisticScore": -4.069573402404785
+    },
+    {
+      "order": 175,
+      "title": "Lovely, Dark, and Deep",
+      "dateWatched": "2025-8-17",
+      "betterThanPrevious": true,
+      "btscore": 0.30194945707072857,
+      "bayesianUncertainty": 0.002608261315756651,
+      "viewCount": 1,
+      "logisticScore": -1.6246694326400757
+    },
+    {
+      "order": 176,
+      "title": "Alien",
+      "dateWatched": "2025-8-17",
+      "betterThanPrevious": true,
+      "btscore": 0.333132131791375,
+      "bayesianUncertainty": 0.0028027438848944406,
+      "viewCount": 1,
+      "logisticScore": 0.13571974635124207
+    },
+    {
+      "order": 177,
+      "title": "Thunderbolts*",
+      "dateWatched": "2025-8-18",
+      "betterThanPrevious": true,
+      "btscore": 0.34035837738839136,
+      "bayesianUncertainty": 0.0029301074161045353,
+      "viewCount": 1,
+      "logisticScore": 1.928607702255249
+    },
+    {
+      "order": 178,
+      "title": "Children of Men",
+      "dateWatched": "2025-8-18",
+      "betterThanPrevious": true,
+      "btscore": 0.5429203707919595,
+      "bayesianUncertainty": 0.004555004415237493,
+      "viewCount": 1,
+      "logisticScore": 4.551538467407227
+    },
+    {
+      "order": 179,
+      "title": "The Black Phone",
+      "dateWatched": "2025-11-1",
+      "betterThanPrevious": false,
+      "btscore": 0.3205752860655996,
+      "bayesianUncertainty": 0.002807689145318301,
+      "viewCount": 1,
+      "logisticScore": 0.4232807755470276
+    },
+    {
+      "order": 180,
+      "title": "The Conjuring: Last Rites",
+      "dateWatched": "2025-11-3",
+      "betterThanPrevious": false,
+      "btscore": 0.1605918201405533,
+      "bayesianUncertainty": 0.0013955432045473944,
+      "viewCount": 1,
+      "logisticScore": -3.1438632011413574
+    },
+    {
+      "order": 181,
+      "title": "Dead of Winter",
+      "dateWatched": "2025-11-3",
+      "betterThanPrevious": true,
+      "btscore": 0.5067445768356589,
+      "bayesianUncertainty": 0.00453091403509103,
+      "viewCount": 1,
+      "logisticScore": 2.0128934383392334
+    },
+    {
+      "order": 182,
+      "title": "Presence",
+      "dateWatched": "2025-11-4",
+      "betterThanPrevious": false,
+      "btscore": 0.16238557606162976,
+      "bayesianUncertainty": 0.001402023146256715,
+      "viewCount": 1,
+      "logisticScore": -3.7999022006988525
+    },
+    {
+      "order": 183,
+      "title": "Final Destination: Bloodlines",
+      "dateWatched": "2025-11-4",
+      "betterThanPrevious": true,
+      "btscore": 0.30139016885391706,
+      "bayesianUncertainty": 0.002552854888545736,
+      "viewCount": 1,
+      "logisticScore": -1.0760492086410522
+    },
+    {
+      "order": 184,
+      "title": "The Long Walk",
+      "dateWatched": "2025-11-6",
+      "betterThanPrevious": true,
+      "btscore": 0.3620577656363128,
+      "bayesianUncertainty": 0.0030606110229498234,
+      "viewCount": 1,
+      "logisticScore": 1.176913857460022
+    },
+    {
+      "order": 185,
+      "title": "Good Boy",
+      "dateWatched": "2025-11-7",
+      "betterThanPrevious": true,
+      "btscore": 0.530049713134235,
+      "bayesianUncertainty": 0.0045288589040572,
+      "viewCount": 1,
+      "logisticScore": 3.896312952041626
+    },
+    {
+      "order": 186,
+      "title": "Vicious",
+      "dateWatched": "2025-11-15",
+      "betterThanPrevious": false,
+      "btscore": 0.16953081165052905,
+      "bayesianUncertainty": 0.0015161718922685143,
+      "viewCount": 1,
+      "logisticScore": -2.155498743057251
+    },
+    {
+      "order": 187,
+      "title": "Black Phone 2",
+      "dateWatched": "2025-11-18",
+      "betterThanPrevious": true,
+      "btscore": 0.5197176545452846,
+      "bayesianUncertainty": 0.004649838218264704,
+      "viewCount": 1,
+      "logisticScore": 2.225351333618164
+    },
+    {
+      "order": 188,
+      "title": "Shelby Oaks",
+      "dateWatched": "2025-11-28",
+      "betterThanPrevious": false,
+      "btscore": 0.1364082219955113,
+      "bayesianUncertainty": 0.0011748905070596211,
+      "viewCount": 1,
+      "logisticScore": -3.271075963973999
+    },
+    {
+      "order": 189,
+      "title": "Hell House LLC: Lineage",
+      "dateWatched": "2025-11-29",
+      "betterThanPrevious": true,
+      "btscore": 0.32315067585370694,
+      "bayesianUncertainty": 0.002538378257873097,
+      "viewCount": 2,
+      "logisticScore": 0.15801596641540527
+    },
+    {
+      "order": 190,
+      "title": "825 Forest Road",
+      "dateWatched": "2025-11-30",
+      "betterThanPrevious": false,
+      "btscore": 0.1268619852094115,
+      "bayesianUncertainty": 0.0010636854746780707,
+      "viewCount": 1,
+      "logisticScore": -3.746314525604248
+    },
+    {
+      "order": 191,
+      "title": "The Strangers: Chapter 2",
+      "dateWatched": "2025-12-18",
+      "betterThanPrevious": true,
+      "btscore": 0.32917519072145207,
+      "bayesianUncertainty": 0.0028692199836046492,
+      "viewCount": 1,
+      "logisticScore": -0.12779051065444946
+    },
+    {
+      "order": 192,
+      "title": "Dead Mail",
+      "dateWatched": "2025-12-19",
+      "betterThanPrevious": true,
+      "btscore": 0.5709280316753751,
+      "bayesianUncertainty": 0.004900304361240908,
+      "viewCount": 1,
+      "logisticScore": 3.3610899448394775
+    },
+    {
+      "order": 193,
+      "title": "Night of the Reaper",
+      "dateWatched": "2025-12-22",
+      "betterThanPrevious": false,
+      "btscore": 0.1642407793288898,
+      "bayesianUncertainty": 0.0014643867697541988,
+      "viewCount": 1,
+      "logisticScore": -2.41636323928833
+    },
+    {
+      "order": 194,
+      "title": "Silent Zone",
+      "dateWatched": "2025-12-24",
+      "betterThanPrevious": true,
+      "btscore": 0.5311128108601146,
+      "bayesianUncertainty": 0.004707576352074936,
+      "viewCount": 1,
+      "logisticScore": 2.364912986755371
+    },
+    {
+      "order": 195,
+      "title": "The Surrender",
+      "dateWatched": "2025-12-24",
+      "betterThanPrevious": false,
+      "btscore": 0.16453333089191527,
+      "bayesianUncertainty": 0.0014637596633735497,
+      "viewCount": 1,
+      "logisticScore": -2.333587408065796
+    },
+    {
+      "order": 196,
+      "title": "Dangerous Animals",
+      "dateWatched": "2025-12-25",
+      "betterThanPrevious": true,
+      "btscore": 0.5344247264113046,
+      "bayesianUncertainty": 0.004746945437521222,
+      "viewCount": 1,
+      "logisticScore": 2.3106091022491455
+    },
+    {
+      "order": 197,
+      "title": "The Astronaut",
+      "dateWatched": "2025-12-26",
+      "betterThanPrevious": false,
+      "btscore": 0.15206731709992036,
+      "bayesianUncertainty": 0.0013207252941059193,
+      "viewCount": 1,
+      "logisticScore": -3.2975077629089355
+    },
+    {
+      "order": 198,
+      "title": "The Cleansing Hour",
+      "dateWatched": "2025-12-26",
+      "betterThanPrevious": true,
+      "btscore": 0.27927672464506303,
+      "bayesianUncertainty": 0.002419589064636485,
+      "viewCount": 1,
+      "logisticScore": -0.017329057678580284
+    },
+    {
+      "order": 199,
+      "title": "The Running Man",
+      "dateWatched": "2025-12-27",
+      "betterThanPrevious": true,
+      "btscore": 1.3605510220477242,
+      "bayesianUncertainty": 0.009173720444653847,
+      "viewCount": 4,
+      "logisticScore": 3.2409074306488037
+    },
+    {
+      "order": 200,
+      "title": "Antrum: The Deadliest Film Ever Made",
+      "dateWatched": "2025-12-28",
+      "betterThanPrevious": false,
+      "btscore": 0.13453156715610137,
+      "bayesianUncertainty": 0.00117890235933608,
+      "viewCount": 1,
+      "logisticScore": -3.2847325801849365
+    },
+    {
+      "order": 201,
+      "title": "The Monkey",
+      "dateWatched": "2025-12-28",
+      "betterThanPrevious": true,
+      "btscore": 0.32899671433248734,
+      "bayesianUncertainty": 0.0028579658932759424,
+      "viewCount": 1,
+      "logisticScore": 0.00003215941251255572
+    },
+    {
+      "order": 202,
+      "title": "Abigail",
+      "dateWatched": "2025-12-28",
+      "betterThanPrevious": true,
+      "btscore": 0.5800618748474707,
+      "bayesianUncertainty": 0.004988212929694865,
+      "viewCount": 1,
+      "logisticScore": 3.267333984375
+    },
+    {
+      "order": 203,
+      "title": "Stranger in the Woods",
+      "dateWatched": "2025-12-29",
+      "betterThanPrevious": false,
+      "btscore": 0.14069917088194078,
+      "bayesianUncertainty": 0.001189925757944799,
+      "viewCount": 1,
+      "logisticScore": -3.6112060546875
+    },
+    {
+      "order": 204,
+      "title": "Descendant",
+      "dateWatched": "2025-12-29",
+      "betterThanPrevious": true,
+      "btscore": 0.29177974753141894,
+      "bayesianUncertainty": 0.00200164537452574,
+      "viewCount": 2,
+      "logisticScore": -0.8540564775466919
+    },
+    {
+      "order": 205,
+      "title": "The Dark and the Wicked",
+      "dateWatched": "2025-12-29",
+      "betterThanPrevious": false,
+      "btscore": 0.28877953820648217,
+      "bayesianUncertainty": 0.0023569492532737484,
+      "viewCount": 1,
+      "logisticScore": -2.04609751701355
+    },
+    {
+      "order": 206,
+      "title": "Terrifier",
+      "dateWatched": "2026-1-2",
+      "betterThanPrevious": false,
+      "btscore": 0.14204004381874938,
+      "bayesianUncertainty": 0.0011892098099770525,
+      "viewCount": 1,
+      "logisticScore": -4.213639736175537
+    },
+    {
+      "order": 207,
+      "title": "Terrifier 2",
+      "dateWatched": "2026-1-2",
+      "betterThanPrevious": true,
+      "btscore": 0.5439233768009527,
+      "bayesianUncertainty": 0.004847980038198397,
+      "viewCount": 1,
+      "logisticScore": 1.9344877004623413
+    },
+    {
+      "order": 208,
+      "title": "Skinamarink",
+      "dateWatched": "2026-1-3",
+      "betterThanPrevious": false,
+      "btscore": 0.15140623097449815,
+      "bayesianUncertainty": 0.001303947753407002,
+      "viewCount": 1,
+      "logisticScore": -3.239985704421997
+    },
+    {
+      "order": 209,
+      "title": "Memories of Murder",
+      "dateWatched": "2026-1-4",
+      "betterThanPrevious": true,
+      "btscore": 0.3269175488809283,
+      "bayesianUncertainty": 0.0028262001972619555,
+      "viewCount": 1,
+      "logisticScore": 0.04822796583175659
+    },
+    {
+      "order": 210,
+      "title": "Predator: Badlands",
+      "dateWatched": "2026-1-7",
+      "betterThanPrevious": true,
+      "btscore": 0.5818270416585023,
+      "bayesianUncertainty": 0.004974017078538799,
+      "viewCount": 1,
+      "logisticScore": 3.3012146949768066
+    },
+    {
+      "order": 211,
+      "title": "The Shrouds",
+      "dateWatched": "2026-1-8",
+      "betterThanPrevious": false,
+      "btscore": 0.15243965533920079,
+      "bayesianUncertainty": 0.001303969593225724,
+      "viewCount": 1,
+      "logisticScore": -3.9873054027557373
+    },
+    {
+      "order": 212,
+      "title": "Alice",
+      "dateWatched": "2026-1-8",
+      "betterThanPrevious": true,
+      "btscore": 0.3066249228684722,
+      "bayesianUncertainty": 0.002553191847140917,
+      "viewCount": 1,
+      "logisticScore": -1.2274889945983887
+    },
+    {
+      "order": 213,
+      "title": "Locked",
+      "dateWatched": "2026-1-10",
+      "betterThanPrevious": true,
+      "btscore": 0.3729948732501355,
+      "bayesianUncertainty": 0.003097963682928865,
+      "viewCount": 1,
+      "logisticScore": 1.052346110343933
+    },
+    {
+      "order": 214,
+      "title": "The Man in My Basement",
+      "dateWatched": "2026-1-10",
+      "betterThanPrevious": true,
+      "btscore": 0.5623448296200053,
+      "bayesianUncertainty": 0.004738643889798778,
+      "viewCount": 1,
+      "logisticScore": 3.742837905883789
+    },
+    {
+      "order": 215,
+      "title": "Witchboard",
+      "dateWatched": "2026-1-11",
+      "betterThanPrevious": false,
+      "btscore": 0.1616113498149932,
+      "bayesianUncertainty": 0.0014368879486398023,
+      "viewCount": 1,
+      "logisticScore": -2.30564546585083
+    },
+    {
+      "order": 216,
+      "title": "One Battle After Another",
+      "dateWatched": "2026-1-12",
+      "betterThanPrevious": true,
+      "btscore": 0.5453779152636163,
+      "bayesianUncertainty": 0.0048329937556025535,
+      "viewCount": 1,
+      "logisticScore": 2.1261487007141113
+    },
+    {
+      "order": 217,
+      "title": "Monster Island",
+      "dateWatched": "2026-1-14",
+      "betterThanPrevious": false,
+      "btscore": 0.15208007150628897,
+      "bayesianUncertainty": 0.0012965857113077885,
+      "viewCount": 1,
+      "logisticScore": -3.7890472412109375
+    },
+    {
+      "order": 218,
+      "title": "ClearMind",
+      "dateWatched": "2026-1-14",
+      "betterThanPrevious": true,
+      "btscore": 0.30585097248710164,
+      "bayesianUncertainty": 0.002546564053523325,
+      "viewCount": 1,
+      "logisticScore": -1.035044550895691
+    },
+    {
+      "order": 219,
+      "title": "Black Bag",
+      "dateWatched": "2026-1-15",
+      "betterThanPrevious": true,
+      "btscore": 0.3698564807849042,
+      "bayesianUncertainty": 0.0030746416945178867,
+      "viewCount": 1,
+      "logisticScore": 1.324220895767212
+    },
+    {
+      "order": 220,
+      "title": "La La Land",
+      "dateWatched": "2026-1-15",
+      "betterThanPrevious": true,
+      "btscore": 0.6618060827281003,
+      "bayesianUncertainty": 0.005339590575340878,
+      "viewCount": 1,
+      "logisticScore": 4.209527492523193
+    },
+    {
+      "order": 221,
+      "title": "Hell House LLC: Lineage",
+      "dateWatched": "2026-1-20",
+      "betterThanPrevious": false,
+      "btscore": 0.32315067585370694,
+      "bayesianUncertainty": 0.002538378257873097,
+      "viewCount": 2,
+      "logisticScore": 0.15801596641540527
+    },
+    {
+      "order": 222,
+      "title": "World War Z",
+      "dateWatched": "2026-1-20",
+      "betterThanPrevious": true,
+      "btscore": 1.5299669957274669,
+      "bayesianUncertainty": 0.009972998596176317,
+      "viewCount": 4,
+      "logisticScore": 3.7745845317840576
+    },
+    {
+      "order": 223,
+      "title": "The Rip",
+      "dateWatched": "2026-1-21",
+      "betterThanPrevious": false,
+      "btscore": 0.6027071594616611,
+      "bayesianUncertainty": 0.003890397872554419,
+      "viewCount": 3,
+      "logisticScore": 1.9038660526275635
+    },
+    {
+      "order": 224,
+      "title": "Shazam! Fury of the Gods",
+      "dateWatched": "2026-1-21",
+      "betterThanPrevious": false,
+      "btscore": 0.28139542535056455,
+      "bayesianUncertainty": 0.0022288911693354144,
+      "viewCount": 1,
+      "logisticScore": -0.010065825656056404
+    },
+    {
+      "order": 225,
+      "title": "Caught Stealing",
+      "dateWatched": "2026-1-22",
+      "betterThanPrevious": false,
+      "btscore": 0.27328121039260656,
+      "bayesianUncertainty": 0.002231015938458747,
+      "viewCount": 1,
+      "logisticScore": -2.0568864345550537
+    },
+    {
+      "order": 226,
+      "title": "Wolf Man",
+      "dateWatched": "2026-1-22",
+      "betterThanPrevious": false,
+      "btscore": 0.0898360996673496,
+      "bayesianUncertainty": 0.0007132791237882222,
+      "viewCount": 2,
+      "logisticScore": -4.952568531036377
+    },
+    {
+      "order": 227,
+      "title": "World War Z",
+      "dateWatched": "2026-1-24",
+      "betterThanPrevious": true,
+      "btscore": 1.5299669957274669,
+      "bayesianUncertainty": 0.009972998596176317,
+      "viewCount": 4,
+      "logisticScore": 3.7745845317840576
+    },
+    {
+      "order": 228,
+      "title": "I Used to Be Funny",
+      "dateWatched": "2026-1-24",
+      "betterThanPrevious": false,
+      "btscore": 0.29308804546526,
+      "bayesianUncertainty": 0.002553795537907789,
+      "viewCount": 1,
+      "logisticScore": -0.06888587772846222
+    },
+    {
+      "order": 229,
+      "title": "Abraham's Boys",
+      "dateWatched": "2026-1-24",
+      "betterThanPrevious": false,
+      "btscore": 0.11761515065871468,
+      "bayesianUncertainty": 0.0009839565572369931,
+      "viewCount": 1,
+      "logisticScore": -3.95377516746521
+    },
+    {
+      "order": 230,
+      "title": "To Catch a Killer",
+      "dateWatched": "2026-1-25",
+      "betterThanPrevious": true,
+      "btscore": 0.4985646860470575,
+      "bayesianUncertainty": 0.003534767312124878,
+      "viewCount": 4,
+      "logisticScore": -0.775076687335968
+    },
+    {
+      "order": 231,
+      "title": "Drop",
+      "dateWatched": "2026-1-25",
+      "betterThanPrevious": false,
+      "btscore": 0.1303670858979929,
+      "bayesianUncertainty": 0.0011153728389445903,
+      "viewCount": 1,
+      "logisticScore": -3.7463998794555664
+    },
+    {
+      "order": 232,
+      "title": "Mission Impossible - The Final Reckoning",
+      "dateWatched": "2026-1-26",
+      "betterThanPrevious": true,
+      "btscore": 0.5631608060206117,
+      "bayesianUncertainty": 0.005030782449671477,
+      "viewCount": 1,
+      "logisticScore": 2.0996360778808594
+    },
+    {
+      "order": 233,
+      "title": "Bone Lake",
+      "dateWatched": "2026-1-26",
+      "betterThanPrevious": false,
+      "btscore": 0.13875767081679957,
+      "bayesianUncertainty": 0.0012032851113528834,
+      "viewCount": 1,
+      "logisticScore": -2.5875425338745117
+    },
+    {
+      "order": 234,
+      "title": "Prey",
+      "dateWatched": "2026-1-26",
+      "betterThanPrevious": true,
+      "btscore": 0.5001421000805748,
+      "bayesianUncertainty": 0.0038469903097329444,
+      "viewCount": 3,
+      "logisticScore": 1.3188667297363281
+    },
+    {
+      "order": 235,
+      "title": "Nuremberg",
+      "dateWatched": "2026-1-27",
+      "betterThanPrevious": true,
+      "btscore": 0.7210759824710379,
+      "bayesianUncertainty": 0.005712823513558719,
+      "viewCount": 1,
+      "logisticScore": 4.26472806930542
+    },
+    {
+      "order": 236,
+      "title": "Midnight Peepshow",
+      "dateWatched": "2026-1-28",
+      "betterThanPrevious": false,
+      "btscore": 0.3286300463830677,
+      "bayesianUncertainty": 0.0028484325932561796,
+      "viewCount": 1,
+      "logisticScore": 0.3709620237350464
+    },
+    {
+      "order": 237,
+      "title": "They Called Him Mostly Harmless",
+      "dateWatched": "2026-1-28",
+      "betterThanPrevious": false,
+      "btscore": 0.12978602463518013,
+      "bayesianUncertainty": 0.0011351775860360001,
+      "viewCount": 1,
+      "logisticScore": -3.1613686084747314
+    },
+    {
+      "order": 238,
+      "title": "The Running Man",
+      "dateWatched": "2026-1-28",
+      "betterThanPrevious": true,
+      "btscore": 1.3605510220477242,
+      "bayesianUncertainty": 0.009173720444653847,
+      "viewCount": 4,
+      "logisticScore": 3.2409074306488037
+    },
+    {
+      "order": 239,
+      "title": "The Strangers: Chapter 1",
+      "dateWatched": "2026-1-29",
+      "betterThanPrevious": false,
+      "btscore": 0.28669262848448224,
+      "bayesianUncertainty": 0.0024814133253774737,
+      "viewCount": 1,
+      "logisticScore": -0.1472088098526001
+    },
+    {
+      "order": 240,
+      "title": "Pearl: An X-traordinary Origin Story",
+      "dateWatched": "2026-1-30",
+      "betterThanPrevious": false,
+      "btscore": 0.10687490986269242,
+      "bayesianUncertainty": 0.000911696541336421,
+      "viewCount": 1,
+      "logisticScore": -3.5819308757781982
+    },
+    {
+      "order": 241,
+      "title": "The Rip",
+      "dateWatched": "2026-1-30",
+      "betterThanPrevious": true,
+      "btscore": 0.6027071594616611,
+      "bayesianUncertainty": 0.003890397872554419,
+      "viewCount": 3,
+      "logisticScore": 1.9038660526275635
+    },
+    {
+      "order": 242,
+      "title": "Don't Move",
+      "dateWatched": "2026-1-30",
+      "betterThanPrevious": false,
+      "btscore": 0.29970983673704665,
+      "bayesianUncertainty": 0.0022208122810136056,
+      "viewCount": 2,
+      "logisticScore": 0.5551572442054749
+    },
+    {
+      "order": 243,
+      "title": "The Boogeyman",
+      "dateWatched": "2026-1-31",
+      "betterThanPrevious": false,
+      "btscore": 0.23858291350151245,
+      "bayesianUncertainty": 0.0016113704710737538,
+      "viewCount": 2,
+      "logisticScore": -0.4573342800140381
+    },
+    {
+      "order": 244,
+      "title": "Descendant",
+      "dateWatched": "2026-1-31",
+      "betterThanPrevious": false,
+      "btscore": 0.29177974753141894,
+      "bayesianUncertainty": 0.00200164537452574,
+      "viewCount": 2,
+      "logisticScore": -0.8540564775466919
+    },
+    {
+      "order": 245,
+      "title": "Bugonia",
+      "dateWatched": "2026-2-1",
+      "betterThanPrevious": true,
+      "btscore": 1.110829007461596,
+      "bayesianUncertainty": 0.00787445311517409,
+      "viewCount": 1,
+      "logisticScore": 4.965854167938232
+    },
+    {
+      "order": 246,
+      "title": "The Running Man",
+      "dateWatched": "2026-2-1",
+      "betterThanPrevious": false,
+      "btscore": 1.3605510220477242,
+      "bayesianUncertainty": 0.009173720444653847,
+      "viewCount": 4,
+      "logisticScore": 3.2409074306488037
+    },
+    {
+      "order": 247,
+      "title": "The Rip",
+      "dateWatched": "2026-2-3",
+      "betterThanPrevious": false,
+      "btscore": 0.6027071594616611,
+      "bayesianUncertainty": 0.003890397872554419,
+      "viewCount": 3,
+      "logisticScore": 1.9038660526275635
+    },
+    {
+      "order": 248,
+      "title": "The Boogeyman",
+      "dateWatched": "2026-2-3",
+      "betterThanPrevious": false,
+      "btscore": 0.23858291350151245,
+      "bayesianUncertainty": 0.0016113704710737538,
+      "viewCount": 2,
+      "logisticScore": -0.4573342800140381
+    },
+    {
+      "order": 249,
+      "title": "Singin' in the Rain",
+      "dateWatched": "2026-2-5",
+      "betterThanPrevious": true,
+      "btscore": 0.6017461592337262,
+      "bayesianUncertainty": 0.005112324475061939,
+      "viewCount": 1,
+      "logisticScore": 2.979440927505493
+    },
+    {
+      "order": 250,
+      "title": "Him",
+      "dateWatched": "2026-2-5",
+      "betterThanPrevious": false,
+      "btscore": 0.14815725116755096,
+      "bayesianUncertainty": 0.0012613516369899972,
+      "viewCount": 1,
+      "logisticScore": -3.9072115421295166
+    },
+    {
+      "order": 251,
+      "title": "Roofman",
+      "dateWatched": "2026-2-6",
+      "betterThanPrevious": true,
+      "btscore": 0.309404739264912,
+      "bayesianUncertainty": 0.002556875834978165,
+      "viewCount": 1,
+      "logisticScore": -1.1221410036087036
+    },
+    {
+      "order": 252,
+      "title": "Orphan: First Kill",
+      "dateWatched": "2026-2-6",
+      "betterThanPrevious": true,
+      "btscore": 0.3775482371707051,
+      "bayesianUncertainty": 0.003111084074672319,
+      "viewCount": 1,
+      "logisticScore": 1.2068449258804321
+    },
+    {
+      "order": 253,
+      "title": "Dungeons & Dragons: Honor Among Thieves",
+      "dateWatched": "2026-2-7",
+      "betterThanPrevious": true,
+      "btscore": 0.5808815444967665,
+      "bayesianUncertainty": 0.004876295425458414,
+      "viewCount": 1,
+      "logisticScore": 3.997048854827881
+    },
+    {
+      "order": 254,
+      "title": "Aliens vs. Predator: Requiem",
+      "dateWatched": "2026-2-7",
+      "betterThanPrevious": false,
+      "btscore": 0.1450215963249952,
+      "bayesianUncertainty": 0.0012514948267889985,
+      "viewCount": 1,
+      "logisticScore": -3.061570405960083
+    },
+    {
+      "order": 255,
+      "title": "The Bad Batch",
+      "dateWatched": "2026-2-8",
+      "betterThanPrevious": true,
+      "btscore": 0.3211554074301792,
+      "bayesianUncertainty": 0.0027912631578437437,
+      "viewCount": 1,
+      "logisticScore": 0.4249635636806488
+    },
+    {
+      "order": 256,
+      "title": "F1: The Movie",
+      "dateWatched": "2026-2-8",
+      "betterThanPrevious": true,
+      "btscore": 0.9819170132477302,
+      "bayesianUncertainty": 0.007477680609505791,
+      "viewCount": 2,
+      "logisticScore": 4.16973352432251
+    },
+    {
+      "order": 257,
+      "title": "Dracula",
+      "dateWatched": "2026-2-8",
+      "betterThanPrevious": false,
+      "btscore": 0.1452742272696145,
+      "bayesianUncertainty": 0.0012534970400283488,
+      "viewCount": 1,
+      "logisticScore": -3.92615008354187
+    },
+    {
+      "order": 258,
+      "title": "The Housemaid",
+      "dateWatched": "2026-2-9",
+      "betterThanPrevious": true,
+      "btscore": 0.3100534775209641,
+      "bayesianUncertainty": 0.0025609030047667896,
+      "viewCount": 1,
+      "logisticScore": -1.174136757850647
+    },
+    {
+      "order": 259,
+      "title": "Primate",
+      "dateWatched": "2026-2-9",
+      "betterThanPrevious": true,
+      "btscore": 0.37836043425876853,
+      "bayesianUncertainty": 0.003115453921647956,
+      "viewCount": 1,
+      "logisticScore": 1.0823732614517212
+    },
+    {
+      "order": 260,
+      "title": "Hamnet",
+      "dateWatched": "2026-2-10",
+      "betterThanPrevious": true,
+      "btscore": 0.5800390038713835,
+      "bayesianUncertainty": 0.004853448654730155,
+      "viewCount": 1,
+      "logisticScore": 3.805461883544922
+    },
+    {
+      "order": 261,
+      "title": "Nobody 2",
+      "dateWatched": "2026-2-11",
+      "betterThanPrevious": false,
+      "btscore": 0.15715816594198864,
+      "bayesianUncertainty": 0.0013934624673026701,
+      "viewCount": 1,
+      "logisticScore": -2.171117067337036
+    },
+    {
+      "order": 262,
+      "title": "Hell House LLC Origins: The Carmichael Manor",
+      "dateWatched": "2026-2-11",
+      "betterThanPrevious": true,
+      "btscore": 0.5653230036163336,
+      "bayesianUncertainty": 0.004998885883023509,
+      "viewCount": 1,
+      "logisticScore": 2.3335819244384766
+    },
+    {
+      "order": 263,
+      "title": "Return to Silent Hill",
+      "dateWatched": "2026-2-13",
+      "betterThanPrevious": false,
+      "btscore": 0.14534656370861557,
+      "bayesianUncertainty": 0.00124438694060027,
+      "viewCount": 1,
+      "logisticScore": -3.3405027389526367
+    },
+    {
+      "order": 264,
+      "title": "Exit 8",
+      "dateWatched": "2026-2-13",
+      "betterThanPrevious": true,
+      "btscore": 0.33199365831983285,
+      "bayesianUncertainty": 0.002846318675588981,
+      "viewCount": 1,
+      "logisticScore": 0.006465519312769175
+    },
+    {
+      "order": 265,
+      "title": "McFarland, USA",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": true,
+      "btscore": 0.6053628380399323,
+      "bayesianUncertainty": 0.005130593539787252,
+      "viewCount": 1,
+      "logisticScore": 3.3859357833862305
+    },
+    {
+      "order": 266,
+      "title": "Hidden",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": false,
+      "btscore": 0.15629882866261996,
+      "bayesianUncertainty": 0.00138716126002483,
+      "viewCount": 1,
+      "logisticScore": -2.3022994995117188
+    },
+    {
+      "order": 267,
+      "title": "Ghost Train",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": true,
+      "btscore": 0.5683451854540493,
+      "bayesianUncertainty": 0.005029156670296147,
+      "viewCount": 1,
+      "logisticScore": 2.5672342777252197
+    },
+    {
+      "order": 268,
+      "title": "Holy Ghost",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": false,
+      "btscore": 0.14120045450209087,
+      "bayesianUncertainty": 0.0012762956958671451,
+      "viewCount": 1,
+      "logisticScore": -2.119178295135498
+    },
+    {
+      "order": 269,
+      "title": "World War Z",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": true,
+      "btscore": 1.5299669957274669,
+      "bayesianUncertainty": 0.009972998596176317,
+      "viewCount": 4,
+      "logisticScore": 3.7745845317840576
+    },
+    {
+      "order": 270,
+      "title": "Ready or Not",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": false,
+      "btscore": 0.6568519564531197,
+      "bayesianUncertainty": 0.004765382633506684,
+      "viewCount": 2,
+      "logisticScore": 2.2019784450531006
+    },
+    {
+      "order": 271,
+      "title": "The Devil on Trial",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": false,
+      "btscore": 0.3063678059504862,
+      "bayesianUncertainty": 0.0024903371775229157,
+      "viewCount": 1,
+      "logisticScore": 0.7641624808311462
+    },
+    {
+      "order": 272,
+      "title": "The Ritual",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": false,
+      "btscore": 0.18797539599398483,
+      "bayesianUncertainty": 0.0014344487628076912,
+      "viewCount": 2,
+      "logisticScore": -0.39539778232574463
+    },
+    {
+      "order": 273,
+      "title": "Little Miss Sunshine",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": true,
+      "btscore": 0.5954538585947922,
+      "bayesianUncertainty": 0.0051319129484474315,
+      "viewCount": 1,
+      "logisticScore": 3.194201707839966
+    },
+    {
+      "order": 274,
+      "title": "The Devil's Advocate",
+      "dateWatched": "2026-2-15",
+      "betterThanPrevious": false,
+      "btscore": 0.15460710836327382,
+      "bayesianUncertainty": 0.001373514744805972,
+      "viewCount": 1,
+      "logisticScore": -2.075455665588379
+    },
+    {
+      "order": 275,
+      "title": "Everything Everywhere All At Once",
+      "dateWatched": "2026-3-5",
+      "betterThanPrevious": true,
+      "btscore": 0.6205149162705699,
+      "bayesianUncertainty": 0.005246945952902917,
+      "viewCount": 1,
+      "logisticScore": 3.1204850673675537
+    },
+    {
+      "order": 276,
+      "title": "28 Weeks Later",
+      "dateWatched": "2026-3-8",
+      "betterThanPrevious": false,
+      "btscore": 0.3391787951141033,
+      "bayesianUncertainty": 0.0029023863848378906,
+      "viewCount": 1,
+      "logisticScore": -0.3653050363063812
+    },
+    {
+      "order": 277,
+      "title": "Alone",
+      "dateWatched": "2026-3-12",
+      "betterThanPrevious": false,
+      "btscore": 0.12593843075005526,
+      "bayesianUncertainty": 0.0010243545166881054,
+      "viewCount": 1,
+      "logisticScore": -4.273745059967041
+    },
+    {
+      "order": 278,
+      "title": "Awake",
+      "dateWatched": "2026-3-14",
+      "betterThanPrevious": true,
+      "btscore": 0.33234603566596754,
+      "bayesianUncertainty": 0.00253008800987728,
+      "viewCount": 2,
+      "logisticScore": -1.4419459104537964
+    },
+    {
+      "order": 279,
+      "title": "Night Patrol",
+      "dateWatched": "2026-3-15",
+      "betterThanPrevious": true,
+      "btscore": 0.4141159948950903,
+      "bayesianUncertainty": 0.0033370148628403527,
+      "viewCount": 1,
+      "logisticScore": 1.183632254600525
+    },
+    {
+      "order": 280,
+      "title": "28 Years Later: The Bone Temple",
+      "dateWatched": "2026-3-15",
+      "betterThanPrevious": true,
+      "btscore": 0.6448999502686694,
+      "bayesianUncertainty": 0.005037677383569221,
+      "viewCount": 1,
+      "logisticScore": 4.42125129699707
+    },
+    {
+      "order": 281,
+      "title": "Marty Supreme",
+      "dateWatched": "2026-3-16",
+      "betterThanPrevious": false,
+      "btscore": 0.3833489876582404,
+      "bayesianUncertainty": 0.003128691494454002,
+      "viewCount": 1,
+      "logisticScore": 1.375860333442688
+    },
+    {
+      "order": 282,
+      "title": "Train Dreams",
+      "dateWatched": "2026-3-17",
+      "betterThanPrevious": false,
+      "btscore": 0.3134727047516924,
+      "bayesianUncertainty": 0.0025671322841243874,
+      "viewCount": 1,
+      "logisticScore": -1.0093083381652832
+    },
+    {
+      "order": 283,
+      "title": "The Plague",
+      "dateWatched": "2026-3-17",
+      "betterThanPrevious": false,
+      "btscore": 0.13481321746907415,
+      "bayesianUncertainty": 0.001132448311493026,
+      "viewCount": 1,
+      "logisticScore": -3.7685937881469727
+    },
+    {
+      "order": 284,
+      "title": "The Secret Agent",
+      "dateWatched": "2026-3-17",
+      "betterThanPrevious": true,
+      "btscore": 0.6324985199455637,
+      "bayesianUncertainty": 0.005359242579856583,
+      "viewCount": 1,
+      "logisticScore": 3.022836685180664
+    },
+    {
+      "order": 285,
+      "title": "A Quiet Place",
+      "dateWatched": "2026-3-17",
+      "betterThanPrevious": false,
+      "btscore": 0.33818811034893226,
+      "bayesianUncertainty": 0.002887665863780885,
+      "viewCount": 1,
+      "logisticScore": -0.3383844196796417
+    },
+    {
+      "order": 286,
+      "title": "War Machine",
+      "dateWatched": "2026-3-17",
+      "betterThanPrevious": false,
+      "btscore": 0.12899946230337042,
+      "bayesianUncertainty": 0.001071574510857504,
+      "viewCount": 1,
+      "logisticScore": -3.9016010761260986
+    },
+    {
+      "order": 287,
+      "title": "Whistle",
+      "dateWatched": "2026-3-18",
+      "betterThanPrevious": true,
+      "btscore": 0.3272209597239653,
+      "bayesianUncertainty": 0.002824693730199087,
+      "viewCount": 1,
+      "logisticScore": 0.10613704472780228
+    },
+    {
+      "order": 288,
+      "title": "F1: The Movie",
+      "dateWatched": "2026-3-22",
+      "betterThanPrevious": true,
+      "btscore": 0.9819170132477302,
+      "bayesianUncertainty": 0.007477680609505791,
+      "viewCount": 2,
+      "logisticScore": 4.16973352432251
+    },
+    {
+      "order": 289,
+      "title": "The Autopsy of Jane Doe",
+      "dateWatched": "2026-3-25",
+      "betterThanPrevious": false,
+      "btscore": 0.32518925341767235,
+      "bayesianUncertainty": 0.0028009488420696767,
+      "viewCount": 1,
+      "logisticScore": 0.4209058880805969
+    },
+    {
+      "order": 290,
+      "title": "Play Dead",
+      "dateWatched": "2026-3-18",
+      "betterThanPrevious": false,
+      "btscore": 0.13818052345310694,
+      "bayesianUncertainty": 0.001193601698587611,
+      "viewCount": 1,
+      "logisticScore": -3.0493080615997314
+    },
+    {
+      "order": 291,
+      "title": "I Am Legend",
+      "dateWatched": "2026-3-20",
+      "betterThanPrevious": true,
+      "btscore": 0.7463625222157958,
+      "bayesianUncertainty": 0.006176006334015064,
+      "viewCount": 1,
+      "logisticScore": 3.2254724502563477
+    },
+    {
+      "order": 292,
+      "title": "#Alive",
+      "dateWatched": "2026-3-21",
+      "betterThanPrevious": false,
+      "btscore": 0.4246945946707412,
+      "bayesianUncertainty": 0.003073441266354366,
+      "viewCount": 3,
+      "logisticScore": -0.07435834407806396
+    },
+    {
+      "order": 293,
+      "title": "The Nightman",
+      "dateWatched": "2026-3-25",
+      "betterThanPrevious": false,
+      "btscore": 0.11073840527620477,
+      "bayesianUncertainty": 0.0009001763670608587,
+      "viewCount": 1,
+      "logisticScore": -4.254549980163574
+    },
+    {
+      "order": 294,
+      "title": "Pretty Lethal",
+      "dateWatched": "2026-3-27",
+      "betterThanPrevious": true,
+      "btscore": 0.3187705766850297,
+      "bayesianUncertainty": 0.0026133805995234615,
+      "viewCount": 1,
+      "logisticScore": -1.344987154006958
+    },
+    {
+      "order": 295,
+      "title": "Send Help",
+      "dateWatched": "2026-3-28",
+      "betterThanPrevious": true,
+      "btscore": 0.3887877417738276,
+      "bayesianUncertainty": 0.0031660054976680144,
+      "viewCount": 1,
+      "logisticScore": 0.9778032898902893
+    },
+    {
+      "order": 296,
+      "title": "Dust Bunny",
+      "dateWatched": "2026-3-29",
+      "betterThanPrevious": true,
+      "btscore": 0.6081578192615761,
+      "bayesianUncertainty": 0.005032809885728354,
+      "viewCount": 1,
+      "logisticScore": 3.7073285579681396
+    },
+    {
+      "order": 297,
+      "title": "Holy Night: Demon Hunters",
+      "dateWatched": "2026-3-29",
+      "betterThanPrevious": false,
+      "btscore": 0.1496796205025217,
+      "bayesianUncertainty": 0.001326320211431376,
+      "viewCount": 1,
+      "logisticScore": -2.1277496814727783
+    },
+    {
+      "order": 298,
+      "title": "Cloverfield",
+      "dateWatched": "2026-3-30",
+      "betterThanPrevious": true,
+      "btscore": 0.654284647578533,
+      "bayesianUncertainty": 0.005549910611735863,
+      "viewCount": 1,
+      "logisticScore": 2.96545672416687
+    },
+    {
+      "order": 299,
+      "title": "Until Dawn",
+      "dateWatched": "2026-4-4",
+      "betterThanPrevious": false,
+      "btscore": 0.2665346701193858,
+      "bayesianUncertainty": 0.002099227627925197,
+      "viewCount": 2,
+      "logisticScore": -0.7745957970619202
+    },
+    {
+      "order": 300,
+      "title": "Better Watch Out",
+      "dateWatched": "2026-4-5",
+      "betterThanPrevious": false,
+      "btscore": 0.12348718929558505,
+      "bayesianUncertainty": 0.0010233136010367272,
+      "viewCount": 1,
+      "logisticScore": -3.816937208175659
+    },
+    {
+      "order": 301,
+      "title": "Poor Things",
+      "dateWatched": "2026-4-5",
+      "betterThanPrevious": true,
+      "btscore": 0.6098256452572948,
+      "bayesianUncertainty": 0.0054089326012232925,
+      "viewCount": 1,
+      "logisticScore": 2.0108368396759033
+    },
+    {
+      "order": 302,
+      "title": "Undertone",
+      "dateWatched": "2026-4-5",
+      "betterThanPrevious": false,
+      "btscore": 0.13724567331887533,
+      "bayesianUncertainty": 0.001168637736856795,
+      "viewCount": 1,
+      "logisticScore": -3.220391273498535
+    },
+    {
+      "order": 303,
+      "title": "Thrash",
+      "dateWatched": "2026-4-6",
+      "betterThanPrevious": true,
+      "btscore": 0.3374235035894918,
+      "bayesianUncertainty": 0.0028654516216044495,
+      "viewCount": 1,
+      "logisticScore": 0.2406422346830368
+    },
+    {
+      "order": 304,
+      "title": "Drive",
+      "dateWatched": "2026-4-6",
+      "betterThanPrevious": true,
+      "btscore": 0.6807682472336982,
+      "bayesianUncertainty": 0.005493485818432476,
+      "viewCount": 1,
+      "logisticScore": 3.8784079551696777
+    },
+    {
+      "order": 305,
+      "title": "War of the Worlds",
+      "dateWatched": "2026-4-6",
+      "betterThanPrevious": false,
+      "btscore": 0.3380683544854053,
+      "bayesianUncertainty": 0.0028703449407446718,
+      "viewCount": 1,
+      "logisticScore": 0.20550473034381866
+    },
+    {
+      "order": 306,
+      "title": "Blood",
+      "dateWatched": "2026-4-8",
+      "betterThanPrevious": false,
+      "btscore": 0.13695156394230365,
+      "bayesianUncertainty": 0.0011657306062144077,
+      "viewCount": 1,
+      "logisticScore": -3.263411045074463
+    },
+    {
+      "order": 307,
+      "title": "Apex",
+      "dateWatched": "2026-4-8",
+      "betterThanPrevious": true,
+      "btscore": 0.60971068834934,
+      "bayesianUncertainty": 0.00539415814445201,
+      "viewCount": 1,
+      "logisticScore": 2.231889486312866
+    },
+    {
+      "order": 308,
+      "title": "V/H/S Viral",
+      "dateWatched": "2026-4-8",
+      "betterThanPrevious": false,
+      "btscore": 0.13120038483351973,
+      "bayesianUncertainty": 0.0011780433668829413,
+      "viewCount": 1,
+      "logisticScore": -2.3370521068573
+    },
+    {
+      "order": 309,
+      "title": "The Running Man",
+      "dateWatched": "2026-4-8",
+      "betterThanPrevious": true,
+      "btscore": 1.3605510220477242,
+      "bayesianUncertainty": 0.009173720444653847,
+      "viewCount": 4,
+      "logisticScore": 3.2409074306488037
+    },
+    {
+      "order": 310,
+      "title": "Blade Runner",
+      "dateWatched": "2026-4-9",
+      "betterThanPrevious": false,
+      "btscore": 0.13007518935889925,
+      "bayesianUncertainty": 0.0011771048521282371,
+      "viewCount": 1,
+      "logisticScore": -1.9789618253707886
+    },
+    {
+      "order": 311,
+      "title": "Blade Runner 2049",
+      "dateWatched": "2026-4-10",
+      "betterThanPrevious": true,
+      "btscore": 0.7640898913408152,
+      "bayesianUncertainty": 0.0063084547452170354,
+      "viewCount": 1,
+      "logisticScore": 3.3641321659088135
+    },
+    {
+      "order": 312,
+      "title": "#Alive",
+      "dateWatched": "2026-4-12",
+      "betterThanPrevious": false,
+      "btscore": 0.4246945946707412,
+      "bayesianUncertainty": 0.003073441266354366,
+      "viewCount": 3,
+      "logisticScore": -0.07435834407806396
+    },
+    {
+      "order": 313,
+      "title": "Exposed",
+      "dateWatched": "2026-4-12",
+      "betterThanPrevious": false,
+      "btscore": 0.10767635687413914,
+      "bayesianUncertainty": 0.0009157437150306856,
+      "viewCount": 1,
+      "logisticScore": -3.1886746883392334
+    },
+    {
+      "order": 314,
+      "title": "Dawn of the Dead",
+      "dateWatched": "2026-5-6",
+      "betterThanPrevious": true,
+      "btscore": 0.9724913156749639,
+      "bayesianUncertainty": 0.007504239006407342,
+      "viewCount": 4,
+      "logisticScore": 2.044452667236328
+    },
+    {
+      "order": 315,
+      "title": "Psycho Killer",
+      "dateWatched": "2026-5-6",
+      "betterThanPrevious": false,
+      "btscore": 0.13375742582218142,
+      "bayesianUncertainty": 0.0011883863097960537,
+      "viewCount": 1,
+      "logisticScore": -2.4950740337371826
+    },
+    {
+      "order": 316,
+      "title": "You're Next",
+      "dateWatched": "2026-5-6",
+      "betterThanPrevious": true,
+      "btscore": 0.6296430167596414,
+      "bayesianUncertainty": 0.005531035007532515,
+      "viewCount": 1,
+      "logisticScore": 2.366365671157837
+    },
+    {
+      "order": 317,
+      "title": "The Black Demon",
+      "dateWatched": "2026-5-14",
+      "betterThanPrevious": false,
+      "btscore": 0.14353024615081847,
+      "bayesianUncertainty": 0.0012628295898230377,
+      "viewCount": 1,
+      "logisticScore": -2.455035924911499
+    },
+    {
+      "order": 318,
+      "title": "Last Straw",
+      "dateWatched": "2026-5-14",
+      "betterThanPrevious": true,
+      "btscore": 0.6302145951481044,
+      "bayesianUncertainty": 0.005518759050410614,
+      "viewCount": 1,
+      "logisticScore": 2.4292643070220947
+    },
+    {
+      "order": 319,
+      "title": "Haunting of the Queen Mary",
+      "dateWatched": "2026-5-15",
+      "betterThanPrevious": false,
+      "btscore": 0.142517876516303,
+      "bayesianUncertainty": 0.0012607080071967908,
+      "viewCount": 1,
+      "logisticScore": -2.2619833946228027
+    },
+    {
+      "order": 320,
+      "title": "The Evil Dead",
+      "dateWatched": "2026-5-15",
+      "betterThanPrevious": true,
+      "btscore": 0.7289576186644189,
+      "bayesianUncertainty": 0.005934726152229028,
+      "viewCount": 1,
+      "logisticScore": 3.7522389888763428
+    },
+    {
+      "order": 321,
+      "title": "The Silence",
+      "dateWatched": "2026-5-16",
+      "betterThanPrevious": false,
+      "btscore": 0.49313890249673037,
+      "bayesianUncertainty": 0.003939223365870789,
+      "viewCount": 2,
+      "logisticScore": 0.8236250281333923
+    },
+    {
+      "order": 322,
+      "title": "Paranormal Activity: Next of Kin",
+      "dateWatched": "2026-5-22",
+      "betterThanPrevious": false,
+      "btscore": 0.11154853572316144,
+      "bayesianUncertainty": 0.0009183670616929313,
+      "viewCount": 1,
+      "logisticScore": -3.83335280418396
+    },
+    {
+      "order": 323,
+      "title": "The Strangers: Chapter 3",
+      "dateWatched": "2026-5-22",
+      "betterThanPrevious": true,
+      "btscore": 0.29779141233779777,
+      "bayesianUncertainty": 0.0024405873449760106,
+      "viewCount": 1,
+      "logisticScore": -0.6630247235298157
+    },
+    {
+      "order": 324,
+      "title": "Ready or Not",
+      "dateWatched": "2026-5-23",
+      "betterThanPrevious": true,
+      "btscore": 0.6568519564531197,
+      "bayesianUncertainty": 0.004765382633506684,
+      "viewCount": 2,
+      "logisticScore": 2.2019784450531006
+    },
+    {
+      "order": 325,
+      "title": "Worldbreaker",
+      "dateWatched": "2026-5-24",
+      "betterThanPrevious": false,
+      "btscore": 0.12353436607743117,
+      "bayesianUncertainty": 0.0010809967497902976,
+      "viewCount": 1,
+      "logisticScore": -2.532797336578369
+    },
+    {
+      "order": 326,
+      "title": "Lights Out",
+      "dateWatched": "2026-5-25",
+      "betterThanPrevious": true,
+      "btscore": 0.6452728938898927,
+      "bayesianUncertainty": 0.0056776529258295025,
+      "viewCount": 1,
+      "logisticScore": 2.4116806983947754
+    },
+    {
+      "order": 327,
+      "title": "Bodycam",
+      "dateWatched": "2026-5-26",
+      "betterThanPrevious": false,
+      "btscore": 0.14094716061564103,
+      "bayesianUncertainty": 0.001242689654374002,
+      "viewCount": 1,
+      "logisticScore": -2.1857001781463623
+    },
+    {
+      "order": 328,
+      "title": "Night of the Hunted",
+      "dateWatched": "2026-5-30",
+      "betterThanPrevious": true,
+      "btscore": 0.6858693642329475,
+      "bayesianUncertainty": 0.0057067809918892294,
+      "viewCount": 1,
+      "logisticScore": 3.211742877960205
+    },
+    {
+      "order": 329,
+      "title": "Iron Lung",
+      "dateWatched": "2026-6-1",
+      "betterThanPrevious": false,
+      "btscore": 0.3470936931136301,
+      "bayesianUncertainty": 0.0029086424725635325,
+      "viewCount": 1,
+      "logisticScore": -0.06479005515575409
+    },
+    {
+      "order": 330,
+      "title": "The Deep House",
+      "dateWatched": "2026-6-1",
+      "betterThanPrevious": false,
+      "btscore": 0.1268755816464152,
+      "bayesianUncertainty": 0.0010874235804780826,
+      "viewCount": 1,
+      "logisticScore": -3.344714879989624
+    },
+    {
+      "order": 331,
+      "title": "The Town",
+      "dateWatched": "2026-6-2",
+      "betterThanPrevious": true,
+      "btscore": 0.9978225554125414,
+      "bayesianUncertainty": 0.0077293179837472255,
+      "viewCount": 2,
+      "logisticScore": 3.5412912368774414
+    },
+    {
+      "order": 332,
+      "title": "Carriers",
+      "dateWatched": "2026-6-4",
+      "betterThanPrevious": false,
+      "btscore": 0.33773389746415744,
+      "bayesianUncertainty": 0.0028569966245155674,
+      "viewCount": 1,
+      "logisticScore": 0.07931249588727951
+    },
+    {
+      "order": 333,
+      "title": "The Awakening",
+      "dateWatched": "2026-6-7",
+      "betterThanPrevious": false,
+      "btscore": 0.12929925491509375,
+      "bayesianUncertainty": 0.001082864680700898,
+      "viewCount": 1,
+      "logisticScore": -3.3742637634277344
+    },
+    {
+      "order": 334,
+      "title": "Hokum",
+      "dateWatched": "2026-6-7",
+      "betterThanPrevious": true,
+      "btscore": 0.4594431591573983,
+      "bayesianUncertainty": 0.0042255350423809936,
+      "viewCount": 1,
+      "logisticScore": 1.7199572324752808
+    }
+  ],
+  "cycles": [],
+  "graph": {
+    "nodes": [
+      {
+        "id": "The Fall Guy",
+        "rating": 0.004914664504208562,
+        "uncertainty": 0.00438129101125902
+      },
+      {
+        "id": "Killers of the Flower Moon",
+        "rating": 0.002852860817481169,
+        "uncertainty": 0.0026720094543142984
+      },
+      {
+        "id": "Oddity",
+        "rating": 0.001999444873201219,
+        "uncertainty": 0.0018215500313496472
+      },
+      {
+        "id": "Twister",
+        "rating": 0.002861487166710188,
+        "uncertainty": 0.002670718312755174
+      },
+      {
+        "id": "Strange Darling",
+        "rating": 0.0051587926677397495,
+        "uncertainty": 0.004428477043526832
+      },
+      {
+        "id": "Smile 2",
+        "rating": 0.005358127066492864,
+        "uncertainty": 0.004246624476781507
+      },
+      {
+        "id": "Alien: Romulus",
+        "rating": 0.007250767157797337,
+        "uncertainty": 0.005811666484792769
+      },
+      {
+        "id": "Prey",
+        "rating": 0.005001421000805748,
+        "uncertainty": 0.0038469903097329444
+      },
+      {
+        "id": "Twisters",
+        "rating": 0.0018259348444969663,
+        "uncertainty": 0.0016434070450171857
+      },
+      {
+        "id": "Love Lies Bleeding",
+        "rating": 0.002815566306737283,
+        "uncertainty": 0.0025662780677937046
+      },
+      {
+        "id": "Deadpool & Wolverine",
+        "rating": 0.0031406030760601457,
+        "uncertainty": 0.002854440628389685
+      },
+      {
+        "id": "Anora",
+        "rating": 0.004318850689845348,
+        "uncertainty": 0.0038543211257722094
+      },
+      {
+        "id": "Juror #2",
+        "rating": 0.002941299437657458,
+        "uncertainty": 0.0027135996613246336
+      },
+      {
+        "id": "New Life",
+        "rating": 0.0018176843825399509,
+        "uncertainty": 0.0016121960592407941
+      },
+      {
+        "id": "Heretic",
+        "rating": 0.0026365983722201457,
+        "uncertainty": 0.0023673679271638717
+      },
+      {
+        "id": "Lowlifes",
+        "rating": 0.0018094114015430446,
+        "uncertainty": 0.0016591685431095547
+      },
+      {
+        "id": "Things Will Be Different",
+        "rating": 0.0020083481855811733,
+        "uncertainty": 0.0018744607069769435
+      },
+      {
+        "id": "Humane",
+        "rating": 0.0042155032360648515,
+        "uncertainty": 0.0038169377443631213
+      },
+      {
+        "id": "Summoners",
+        "rating": 0.0029619969689754027,
+        "uncertainty": 0.002722069789151117
+      },
+      {
+        "id": "Werevolves",
+        "rating": 0.0018274813740768276,
+        "uncertainty": 0.001650081528959895
+      },
+      {
+        "id": "Army of the Dead",
+        "rating": 0.006674272754546994,
+        "uncertainty": 0.0052653442046253695
+      },
+      {
+        "id": "Arrival",
+        "rating": 0.005951839065369505,
+        "uncertainty": 0.004930718473519921
+      },
+      {
+        "id": "Mean Girls",
+        "rating": 0.0029234920846352326,
+        "uncertainty": 0.002693091724515257
+      },
+      {
+        "id": "Monster Summer",
+        "rating": 0.0019364815445376503,
+        "uncertainty": 0.0017599840058385577
+      },
+      {
+        "id": "Hit Man",
+        "rating": 0.004405167193266765,
+        "uncertainty": 0.003934978717981655
+      },
+      {
+        "id": "Azrael",
+        "rating": 0.0032596282738074586,
+        "uncertainty": 0.0029235066251066004
+      },
+      {
+        "id": "The Last Voyage of the Demeter",
+        "rating": 0.002858802883343215,
+        "uncertainty": 0.002565903092796359
+      },
+      {
+        "id": "Here After",
+        "rating": 0.0018178599980016356,
+        "uncertainty": 0.0015990203739405828
+      },
+      {
+        "id": "Good One",
+        "rating": 0.0029772093938889004,
+        "uncertainty": 0.002727322114623136
+      },
+      {
+        "id": "The Substance",
+        "rating": 0.004295462449938766,
+        "uncertainty": 0.0038774067632046214
+      },
+      {
+        "id": "Wrong Turn 2: Dead End",
+        "rating": 0.0019251015192187125,
+        "uncertainty": 0.001745556232893214
+      },
+      {
+        "id": "Somewhere Quiet",
+        "rating": 0.0029319453283988043,
+        "uncertainty": 0.0026923022593104942
+      },
+      {
+        "id": "The Watchers",
+        "rating": 0.005940450852527291,
+        "uncertainty": 0.0050005302439678325
+      },
+      {
+        "id": "The Order",
+        "rating": 0.0019988711522299024,
+        "uncertainty": 0.0018524821770789968
+      },
+      {
+        "id": "Longlegs",
+        "rating": 0.0040150864799323414,
+        "uncertainty": 0.0036917281329019672
+      },
+      {
+        "id": "Night Swim",
+        "rating": 0.00202273028668098,
+        "uncertainty": 0.0018630562046461315
+      },
+      {
+        "id": "Nightbitch",
+        "rating": 0.004048998362424735,
+        "uncertainty": 0.003731183888667507
+      },
+      {
+        "id": "Project Eerie",
+        "rating": 0.001680244621766004,
+        "uncertainty": 0.0015002897460516629
+      },
+      {
+        "id": "To Catch a Killer",
+        "rating": 0.004985646860470575,
+        "uncertainty": 0.003534767312124878
+      },
+      {
+        "id": "Trial by Fire",
+        "rating": 0.0046224607427630595,
+        "uncertainty": 0.0034485477254625075
+      },
+      {
+        "id": "Interstellar",
+        "rating": 0.006113421205122849,
+        "uncertainty": 0.0050278464516616056
+      },
+      {
+        "id": "Daddy's Head",
+        "rating": 0.002944544814383073,
+        "uncertainty": 0.002701398798309425
+      },
+      {
+        "id": "The Hangman",
+        "rating": 0.001831255870660908,
+        "uncertainty": 0.0016255493156103159
+      },
+      {
+        "id": "Apartment 7A",
+        "rating": 0.002985937259580578,
+        "uncertainty": 0.00272930585508327
+      },
+      {
+        "id": "Monkey Man",
+        "rating": 0.0043417345198903425,
+        "uncertainty": 0.003910208665920479
+      },
+      {
+        "id": "In a Violent Nature",
+        "rating": 0.0019169904089915268,
+        "uncertainty": 0.001730337169910649
+      },
+      {
+        "id": "Emilia Pérez",
+        "rating": 0.0029817538083228338,
+        "uncertainty": 0.002722518302935653
+      },
+      {
+        "id": "Trap",
+        "rating": 0.004369296118832233,
+        "uncertainty": 0.003934275872949783
+      },
+      {
+        "id": "Handling the Undead",
+        "rating": 0.0017872985584424142,
+        "uncertainty": 0.001596725650901753
+      },
+      {
+        "id": "Don't Move",
+        "rating": 0.0029970983673704666,
+        "uncertainty": 0.0022208122810136056
+      },
+      {
+        "id": "Spiderhead",
+        "rating": 0.006234651617240031,
+        "uncertainty": 0.005175950534859936
+      },
+      {
+        "id": "Kate",
+        "rating": 0.0024465230008053956,
+        "uncertainty": 0.0020463933171786463
+      },
+      {
+        "id": "Sweet Girl",
+        "rating": 0.0015110656345973569,
+        "uncertainty": 0.0012979483990439363
+      },
+      {
+        "id": "Don't Listen",
+        "rating": 0.0030160180327349294,
+        "uncertainty": 0.002758363320617989
+      },
+      {
+        "id": "The Abyss",
+        "rating": 0.004397597885204418,
+        "uncertainty": 0.003961594489034763
+      },
+      {
+        "id": "The Swarm",
+        "rating": 0.0018470534960599286,
+        "uncertainty": 0.0016600621813623777
+      },
+      {
+        "id": "Ma",
+        "rating": 0.0027845241567790095,
+        "uncertainty": 0.002511618639049868
+      },
+      {
+        "id": "Upgrade",
+        "rating": 0.0021286283767655103,
+        "uncertainty": 0.001801646856953461
+      },
+      {
+        "id": "Extinction",
+        "rating": 0.0015849605563127355,
+        "uncertainty": 0.0013665918324969521
+      },
+      {
+        "id": "Deadly Illusions",
+        "rating": 0.003011504986998012,
+        "uncertainty": 0.002752102240930222
+      },
+      {
+        "id": "Night Raiders",
+        "rating": 0.004426595142712543,
+        "uncertainty": 0.003995953008285897
+      },
+      {
+        "id": "Tarot",
+        "rating": 0.0015647670487314927,
+        "uncertainty": 0.0013698488490381001
+      },
+      {
+        "id": "Runaway Jury",
+        "rating": 0.004622076577343492,
+        "uncertainty": 0.00413521512051442
+      },
+      {
+        "id": "Spectral",
+        "rating": 0.002482832479456326,
+        "uncertainty": 0.0020231296454284024
+      },
+      {
+        "id": "Legion",
+        "rating": 0.002617794837259001,
+        "uncertainty": 0.0022563612948428642
+      },
+      {
+        "id": "Locked In",
+        "rating": 0.0015989725638576495,
+        "uncertainty": 0.001358400235990613
+      },
+      {
+        "id": "Awake",
+        "rating": 0.0033234603566596756,
+        "uncertainty": 0.00253008800987728
+      },
+      {
+        "id": "Close",
+        "rating": 0.003622072254969156,
+        "uncertainty": 0.0031838426931712085
+      },
+      {
+        "id": "Talk to Me",
+        "rating": 0.00612983098720631,
+        "uncertainty": 0.005140993107345311
+      },
+      {
+        "id": "Revelations",
+        "rating": 0.0014846179278740338,
+        "uncertainty": 0.0012813804353370305
+      },
+      {
+        "id": "Mufasa: The Lion King",
+        "rating": 0.004222481227506802,
+        "uncertainty": 0.003900647435441533
+      },
+      {
+        "id": "Don't Let Go",
+        "rating": 0.0029915746755056058,
+        "uncertainty": 0.002738949329793649
+      },
+      {
+        "id": "ARQ",
+        "rating": 0.002976366751528027,
+        "uncertainty": 0.0027205759718672354
+      },
+      {
+        "id": "The Electric State",
+        "rating": 0.001669783371559283,
+        "uncertainty": 0.0014802302045193883
+      },
+      {
+        "id": "Geostorm",
+        "rating": 0.002669171624502528,
+        "uncertainty": 0.0023620777863580713
+      },
+      {
+        "id": "Sicario: Day of the Soldado",
+        "rating": 0.0017882108002718008,
+        "uncertainty": 0.0015900169071169465
+      },
+      {
+        "id": "Alpha",
+        "rating": 0.004159625106443104,
+        "uncertainty": 0.0038142427985490197
+      },
+      {
+        "id": "Lucy",
+        "rating": 0.0019051999780571075,
+        "uncertainty": 0.001707181945176592
+      },
+      {
+        "id": "Draft Day",
+        "rating": 0.0028743550003083097,
+        "uncertainty": 0.0025567692317693936
+      },
+      {
+        "id": "The Gray Man",
+        "rating": 0.003312733438625397,
+        "uncertainty": 0.0029444245364664123
+      },
+      {
+        "id": "Den of Thieves",
+        "rating": 0.004379665445220808,
+        "uncertainty": 0.003910755437029839
+      },
+      {
+        "id": "Den of Thieves 2: Pantera",
+        "rating": 0.0019021083104469416,
+        "uncertainty": 0.0017050576491081583
+      },
+      {
+        "id": "Ad Vitam",
+        "rating": 0.0028455264039322866,
+        "uncertainty": 0.0025366814601197273
+      },
+      {
+        "id": "Sicario",
+        "rating": 0.003244822328038894,
+        "uncertainty": 0.0028947445398899265
+      },
+      {
+        "id": "Spotlight",
+        "rating": 0.0070921221565340715,
+        "uncertainty": 0.0055920275558636505
+      },
+      {
+        "id": "Sinners",
+        "rating": 0.0034032132988454015,
+        "uncertainty": 0.0029952407123052384
+      },
+      {
+        "id": "The Good Nurse",
+        "rating": 0.0031736358105629234,
+        "uncertainty": 0.0027603904850584497
+      },
+      {
+        "id": "Midnight in the Switchgrass",
+        "rating": 0.0028293833853650125,
+        "uncertainty": 0.0024861579917607487
+      },
+      {
+        "id": "Aftermath",
+        "rating": 0.0017155452100993526,
+        "uncertainty": 0.0014853726664076894
+      },
+      {
+        "id": "iHostage",
+        "rating": 0.0030208989280764804,
+        "uncertainty": 0.0027433249417946792
+      },
+      {
+        "id": "Venom: The Last Dance",
+        "rating": 0.004809373362337456,
+        "uncertainty": 0.004208004102446953
+      },
+      {
+        "id": "Lou",
+        "rating": 0.0030166760684863614,
+        "uncertainty": 0.0027379762952613328
+      },
+      {
+        "id": "Vanished into the Night",
+        "rating": 0.0017889167652151722,
+        "uncertainty": 0.001566288701139946
+      },
+      {
+        "id": "Trigger Warning",
+        "rating": 0.0028899282618067993,
+        "uncertainty": 0.0025621683744505366
+      },
+      {
+        "id": "Land of Bad",
+        "rating": 0.0033325502418826147,
+        "uncertainty": 0.0029521207910711165
+      },
+      {
+        "id": "American Sniper",
+        "rating": 0.004732829596948266,
+        "uncertainty": 0.00411971295450303
+      },
+      {
+        "id": "Project Power",
+        "rating": 0.003012400205992519,
+        "uncertainty": 0.0027322493403664364
+      },
+      {
+        "id": "Freaks – You're One of Us",
+        "rating": 0.0018648513191293647,
+        "uncertainty": 0.0016704226653257502
+      },
+      {
+        "id": "Havoc",
+        "rating": 0.004231523585563792,
+        "uncertainty": 0.0038685752717839217
+      },
+      {
+        "id": "The Frozen Ground",
+        "rating": 0.0018208022321650223,
+        "uncertainty": 0.0016583577512321722
+      },
+      {
+        "id": "Carry-On",
+        "rating": 0.002821778263750292,
+        "uncertainty": 0.002527422022758285
+      },
+      {
+        "id": "A Dog's Way Home",
+        "rating": 0.0018004498107177208,
+        "uncertainty": 0.0016056377580758723
+      },
+      {
+        "id": "The Clovehitch Killer",
+        "rating": 0.004261285888845206,
+        "uncertainty": 0.003896978148468023
+      },
+      {
+        "id": "Exterritorial",
+        "rating": 0.0017720575873671775,
+        "uncertainty": 0.0016272753046003305
+      },
+      {
+        "id": "Dawn of the Dead",
+        "rating": 0.00972491315674964,
+        "uncertainty": 0.007504239006407342
+      },
+      {
+        "id": "Peninsula",
+        "rating": 0.001675335868449078,
+        "uncertainty": 0.0015099155754380383
+      },
+      {
+        "id": "Hanna",
+        "rating": 0.00299276709720936,
+        "uncertainty": 0.002722746863292898
+      },
+      {
+        "id": "Constantine",
+        "rating": 0.006686798514310157,
+        "uncertainty": 0.005446431446379502
+      },
+      {
+        "id": "Heart Eyes",
+        "rating": 0.002984773924637135,
+        "uncertainty": 0.002713096293652815
+      },
+      {
+        "id": "The Haunted Apartment \"Miss K\"",
+        "rating": 0.001795631306338617,
+        "uncertainty": 0.0016306720576240172
+      },
+      {
+        "id": "Train to Busan",
+        "rating": 0.00880742180583482,
+        "uncertainty": 0.00692580535853163
+      },
+      {
+        "id": "Insidious: Chapter 2",
+        "rating": 0.001804394610586105,
+        "uncertainty": 0.0016329727538952747
+      },
+      {
+        "id": "The Gorge",
+        "rating": 0.003035281596584718,
+        "uncertainty": 0.0027447230454783673
+      },
+      {
+        "id": "Companion",
+        "rating": 0.004589847697755507,
+        "uncertainty": 0.0040892040947183034
+      },
+      {
+        "id": "Veronica",
+        "rating": 0.0018396760277943486,
+        "uncertainty": 0.0016446365277396197
+      },
+      {
+        "id": "The Old Guard",
+        "rating": 0.003032184940436966,
+        "uncertainty": 0.002740680413981293
+      },
+      {
+        "id": "John Wick: Chapter 4",
+        "rating": 0.004602372374847201,
+        "uncertainty": 0.004100179525226684
+      },
+      {
+        "id": "Circle",
+        "rating": 0.0017880594636020776,
+        "uncertainty": 0.001616996551159909
+      },
+      {
+        "id": "The Silence",
+        "rating": 0.004931389024967304,
+        "uncertainty": 0.003939223365870789
+      },
+      {
+        "id": "In The Tall Grass",
+        "rating": 0.0016332721268150566,
+        "uncertainty": 0.0014839245425860084
+      },
+      {
+        "id": "Texas Chainsaw Massacre (2022)",
+        "rating": 0.001739305428443805,
+        "uncertainty": 0.0016015857210848374
+      },
+      {
+        "id": "Smile",
+        "rating": 0.00545730560110481,
+        "uncertainty": 0.004756638405834805
+      },
+      {
+        "id": "#Alive",
+        "rating": 0.004246945946707412,
+        "uncertainty": 0.003073441266354366
+      },
+      {
+        "id": "Fear Street Part 1: 1994",
+        "rating": 0.0015736311059167416,
+        "uncertainty": 0.001386198152669691
+      },
+      {
+        "id": "Fear Street Part 2: 1978",
+        "rating": 0.004575380988619711,
+        "uncertainty": 0.004067642916524209
+      },
+      {
+        "id": "Fear Street Part 3: 1666",
+        "rating": 0.0035081790531078312,
+        "uncertainty": 0.0030688368149301426
+      },
+      {
+        "id": "Novocaine",
+        "rating": 0.0029945716842441025,
+        "uncertainty": 0.0027227081782535793
+      },
+      {
+        "id": "Rattlesnake",
+        "rating": 0.001657492764367632,
+        "uncertainty": 0.0014411100063303616
+      },
+      {
+        "id": "Death of a Unicorn",
+        "rating": 0.002760125460996605,
+        "uncertainty": 0.002431842183085339
+      },
+      {
+        "id": "Fear Street: Prom Queen",
+        "rating": 0.0017068106391606316,
+        "uncertainty": 0.001543773815613953
+      },
+      {
+        "id": "The Killer",
+        "rating": 0.004603500546798734,
+        "uncertainty": 0.004094785813750289
+      },
+      {
+        "id": "Now You See Me",
+        "rating": 0.0016462471156056693,
+        "uncertainty": 0.0014372194333742826
+      },
+      {
+        "id": "River Wild",
+        "rating": 0.0025141687116523904,
+        "uncertainty": 0.0021523793773408173
+      },
+      {
+        "id": "The Town",
+        "rating": 0.009978225554125414,
+        "uncertainty": 0.0077293179837472255
+      },
+      {
+        "id": "STRAW",
+        "rating": 0.0018565458892852843,
+        "uncertainty": 0.0017170597557858735
+      },
+      {
+        "id": "Barbarian",
+        "rating": 0.004389393213160759,
+        "uncertainty": 0.003987084152149202
+      },
+      {
+        "id": "The Titan",
+        "rating": 0.0018223981679336015,
+        "uncertainty": 0.0016115726613591527
+      },
+      {
+        "id": "Plane",
+        "rating": 0.003020668273328481,
+        "uncertainty": 0.0026456718323436446
+      },
+      {
+        "id": "Copycat",
+        "rating": 0.0028344298975464238,
+        "uncertainty": 0.002323626253622557
+      },
+      {
+        "id": "The Ritual",
+        "rating": 0.0018797539599398484,
+        "uncertainty": 0.0014344487628076912
+      },
+      {
+        "id": "10 Cloverfield Lane",
+        "rating": 0.005237224921653828,
+        "uncertainty": 0.004578038396519359
+      },
+      {
+        "id": "Until Dawn",
+        "rating": 0.002665346701193858,
+        "uncertainty": 0.002099227627925197
+      },
+      {
+        "id": "Bring Her Back",
+        "rating": 0.005423853316154597,
+        "uncertainty": 0.004632506390067469
+      },
+      {
+        "id": "Catch Me If You Can",
+        "rating": 0.0034776108659878616,
+        "uncertainty": 0.0030417342059349504
+      },
+      {
+        "id": "This Never Happened",
+        "rating": 0.0030711665803419405,
+        "uncertainty": 0.0026989259551787165
+      },
+      {
+        "id": "Wolf Man",
+        "rating": 0.000898360996673496,
+        "uncertainty": 0.0007132791237882222
+      },
+      {
+        "id": "28 Years Later",
+        "rating": 0.003114511964694115,
+        "uncertainty": 0.002837085544303347
+      },
+      {
+        "id": "Cuckoo",
+        "rating": 0.009384524873629108,
+        "uncertainty": 0.006908951861168654
+      },
+      {
+        "id": "World War Z",
+        "rating": 0.015299669957274668,
+        "uncertainty": 0.009972998596176317
+      },
+      {
+        "id": "Session 8",
+        "rating": 0.0015462989429957375,
+        "uncertainty": 0.0013731188229763884
+      },
+      {
+        "id": "Lovely, Dark, and Deep",
+        "rating": 0.003019494570707286,
+        "uncertainty": 0.002608261315756651
+      },
+      {
+        "id": "Alien",
+        "rating": 0.0033313213179137504,
+        "uncertainty": 0.0028027438848944406
+      },
+      {
+        "id": "Thunderbolts*",
+        "rating": 0.0034035837738839135,
+        "uncertainty": 0.0029301074161045353
+      },
+      {
+        "id": "Children of Men",
+        "rating": 0.005429203707919596,
+        "uncertainty": 0.004555004415237493
+      },
+      {
+        "id": "The Black Phone",
+        "rating": 0.0032057528606559958,
+        "uncertainty": 0.002807689145318301
+      },
+      {
+        "id": "The Conjuring: Last Rites",
+        "rating": 0.001605918201405533,
+        "uncertainty": 0.0013955432045473944
+      },
+      {
+        "id": "Dead of Winter",
+        "rating": 0.005067445768356589,
+        "uncertainty": 0.00453091403509103
+      },
+      {
+        "id": "Presence",
+        "rating": 0.0016238557606162976,
+        "uncertainty": 0.001402023146256715
+      },
+      {
+        "id": "Final Destination: Bloodlines",
+        "rating": 0.0030139016885391704,
+        "uncertainty": 0.002552854888545736
+      },
+      {
+        "id": "The Long Walk",
+        "rating": 0.003620577656363128,
+        "uncertainty": 0.0030606110229498234
+      },
+      {
+        "id": "Good Boy",
+        "rating": 0.00530049713134235,
+        "uncertainty": 0.0045288589040572
+      },
+      {
+        "id": "Vicious",
+        "rating": 0.0016953081165052906,
+        "uncertainty": 0.0015161718922685143
+      },
+      {
+        "id": "Black Phone 2",
+        "rating": 0.0051971765454528465,
+        "uncertainty": 0.004649838218264704
+      },
+      {
+        "id": "Shelby Oaks",
+        "rating": 0.0013640822199551131,
+        "uncertainty": 0.0011748905070596211
+      },
+      {
+        "id": "Hell House LLC: Lineage",
+        "rating": 0.0032315067585370694,
+        "uncertainty": 0.002538378257873097
+      },
+      {
+        "id": "825 Forest Road",
+        "rating": 0.001268619852094115,
+        "uncertainty": 0.0010636854746780707
+      },
+      {
+        "id": "The Strangers: Chapter 2",
+        "rating": 0.003291751907214521,
+        "uncertainty": 0.0028692199836046492
+      },
+      {
+        "id": "Dead Mail",
+        "rating": 0.0057092803167537514,
+        "uncertainty": 0.004900304361240908
+      },
+      {
+        "id": "Night of the Reaper",
+        "rating": 0.0016424077932888981,
+        "uncertainty": 0.0014643867697541988
+      },
+      {
+        "id": "Silent Zone",
+        "rating": 0.005311128108601146,
+        "uncertainty": 0.004707576352074936
+      },
+      {
+        "id": "The Surrender",
+        "rating": 0.0016453333089191528,
+        "uncertainty": 0.0014637596633735497
+      },
+      {
+        "id": "Dangerous Animals",
+        "rating": 0.0053442472641130456,
+        "uncertainty": 0.004746945437521222
+      },
+      {
+        "id": "The Astronaut",
+        "rating": 0.0015206731709992035,
+        "uncertainty": 0.0013207252941059193
+      },
+      {
+        "id": "The Cleansing Hour",
+        "rating": 0.0027927672464506306,
+        "uncertainty": 0.002419589064636485
+      },
+      {
+        "id": "The Running Man",
+        "rating": 0.013605510220477242,
+        "uncertainty": 0.009173720444653847
+      },
+      {
+        "id": "Antrum: The Deadliest Film Ever Made",
+        "rating": 0.0013453156715610138,
+        "uncertainty": 0.00117890235933608
+      },
+      {
+        "id": "The Monkey",
+        "rating": 0.003289967143324873,
+        "uncertainty": 0.0028579658932759424
+      },
+      {
+        "id": "Abigail",
+        "rating": 0.005800618748474707,
+        "uncertainty": 0.004988212929694865
+      },
+      {
+        "id": "Stranger in the Woods",
+        "rating": 0.0014069917088194077,
+        "uncertainty": 0.001189925757944799
+      },
+      {
+        "id": "Descendant",
+        "rating": 0.0029177974753141892,
+        "uncertainty": 0.00200164537452574
+      },
+      {
+        "id": "The Dark and the Wicked",
+        "rating": 0.0028877953820648215,
+        "uncertainty": 0.0023569492532737484
+      },
+      {
+        "id": "Terrifier",
+        "rating": 0.0014204004381874937,
+        "uncertainty": 0.0011892098099770525
+      },
+      {
+        "id": "Terrifier 2",
+        "rating": 0.0054392337680095265,
+        "uncertainty": 0.004847980038198397
+      },
+      {
+        "id": "Skinamarink",
+        "rating": 0.0015140623097449814,
+        "uncertainty": 0.001303947753407002
+      },
+      {
+        "id": "Memories of Murder",
+        "rating": 0.0032691754888092826,
+        "uncertainty": 0.0028262001972619555
+      },
+      {
+        "id": "Predator: Badlands",
+        "rating": 0.005818270416585023,
+        "uncertainty": 0.004974017078538799
+      },
+      {
+        "id": "The Shrouds",
+        "rating": 0.001524396553392008,
+        "uncertainty": 0.001303969593225724
+      },
+      {
+        "id": "Alice",
+        "rating": 0.003066249228684722,
+        "uncertainty": 0.002553191847140917
+      },
+      {
+        "id": "Locked",
+        "rating": 0.0037299487325013546,
+        "uncertainty": 0.003097963682928865
+      },
+      {
+        "id": "The Man in My Basement",
+        "rating": 0.005623448296200054,
+        "uncertainty": 0.004738643889798778
+      },
+      {
+        "id": "Witchboard",
+        "rating": 0.0016161134981499319,
+        "uncertainty": 0.0014368879486398023
+      },
+      {
+        "id": "One Battle After Another",
+        "rating": 0.005453779152636163,
+        "uncertainty": 0.0048329937556025535
+      },
+      {
+        "id": "Monster Island",
+        "rating": 0.0015208007150628896,
+        "uncertainty": 0.0012965857113077885
+      },
+      {
+        "id": "ClearMind",
+        "rating": 0.003058509724871016,
+        "uncertainty": 0.002546564053523325
+      },
+      {
+        "id": "Black Bag",
+        "rating": 0.0036985648078490417,
+        "uncertainty": 0.0030746416945178867
+      },
+      {
+        "id": "La La Land",
+        "rating": 0.006618060827281003,
+        "uncertainty": 0.005339590575340878
+      },
+      {
+        "id": "The Rip",
+        "rating": 0.0060270715946166105,
+        "uncertainty": 0.003890397872554419
+      },
+      {
+        "id": "Shazam! Fury of the Gods",
+        "rating": 0.0028139542535056453,
+        "uncertainty": 0.0022288911693354144
+      },
+      {
+        "id": "Caught Stealing",
+        "rating": 0.0027328121039260655,
+        "uncertainty": 0.002231015938458747
+      },
+      {
+        "id": "I Used to Be Funny",
+        "rating": 0.0029308804546526,
+        "uncertainty": 0.002553795537907789
+      },
+      {
+        "id": "Abraham's Boys",
+        "rating": 0.0011761515065871469,
+        "uncertainty": 0.0009839565572369931
+      },
+      {
+        "id": "Drop",
+        "rating": 0.001303670858979929,
+        "uncertainty": 0.0011153728389445903
+      },
+      {
+        "id": "Mission Impossible - The Final Reckoning",
+        "rating": 0.005631608060206117,
+        "uncertainty": 0.005030782449671477
+      },
+      {
+        "id": "Bone Lake",
+        "rating": 0.0013875767081679958,
+        "uncertainty": 0.0012032851113528834
+      },
+      {
+        "id": "Nuremberg",
+        "rating": 0.007210759824710379,
+        "uncertainty": 0.005712823513558719
+      },
+      {
+        "id": "Midnight Peepshow",
+        "rating": 0.0032863004638306772,
+        "uncertainty": 0.0028484325932561796
+      },
+      {
+        "id": "They Called Him Mostly Harmless",
+        "rating": 0.0012978602463518014,
+        "uncertainty": 0.0011351775860360001
+      },
+      {
+        "id": "The Strangers: Chapter 1",
+        "rating": 0.0028669262848448223,
+        "uncertainty": 0.0024814133253774737
+      },
+      {
+        "id": "Pearl: An X-traordinary Origin Story",
+        "rating": 0.0010687490986269243,
+        "uncertainty": 0.000911696541336421
+      },
+      {
+        "id": "The Boogeyman",
+        "rating": 0.0023858291350151244,
+        "uncertainty": 0.0016113704710737538
+      },
+      {
+        "id": "Bugonia",
+        "rating": 0.01110829007461596,
+        "uncertainty": 0.00787445311517409
+      },
+      {
+        "id": "Singin' in the Rain",
+        "rating": 0.0060174615923372626,
+        "uncertainty": 0.005112324475061939
+      },
+      {
+        "id": "Him",
+        "rating": 0.0014815725116755097,
+        "uncertainty": 0.0012613516369899972
+      },
+      {
+        "id": "Roofman",
+        "rating": 0.00309404739264912,
+        "uncertainty": 0.002556875834978165
+      },
+      {
+        "id": "Orphan: First Kill",
+        "rating": 0.003775482371707051,
+        "uncertainty": 0.003111084074672319
+      },
+      {
+        "id": "Dungeons & Dragons: Honor Among Thieves",
+        "rating": 0.005808815444967665,
+        "uncertainty": 0.004876295425458414
+      },
+      {
+        "id": "Aliens vs. Predator: Requiem",
+        "rating": 0.001450215963249952,
+        "uncertainty": 0.0012514948267889985
+      },
+      {
+        "id": "The Bad Batch",
+        "rating": 0.003211554074301792,
+        "uncertainty": 0.0027912631578437437
+      },
+      {
+        "id": "F1: The Movie",
+        "rating": 0.009819170132477302,
+        "uncertainty": 0.007477680609505791
+      },
+      {
+        "id": "Dracula",
+        "rating": 0.001452742272696145,
+        "uncertainty": 0.0012534970400283488
+      },
+      {
+        "id": "The Housemaid",
+        "rating": 0.003100534775209641,
+        "uncertainty": 0.0025609030047667896
+      },
+      {
+        "id": "Primate",
+        "rating": 0.003783604342587685,
+        "uncertainty": 0.003115453921647956
+      },
+      {
+        "id": "Hamnet",
+        "rating": 0.005800390038713835,
+        "uncertainty": 0.004853448654730155
+      },
+      {
+        "id": "Nobody 2",
+        "rating": 0.0015715816594198864,
+        "uncertainty": 0.0013934624673026701
+      },
+      {
+        "id": "Hell House LLC Origins: The Carmichael Manor",
+        "rating": 0.005653230036163336,
+        "uncertainty": 0.004998885883023509
+      },
+      {
+        "id": "Return to Silent Hill",
+        "rating": 0.0014534656370861557,
+        "uncertainty": 0.00124438694060027
+      },
+      {
+        "id": "Exit 8",
+        "rating": 0.0033199365831983285,
+        "uncertainty": 0.002846318675588981
+      },
+      {
+        "id": "McFarland, USA",
+        "rating": 0.006053628380399323,
+        "uncertainty": 0.005130593539787252
+      },
+      {
+        "id": "Hidden",
+        "rating": 0.0015629882866261997,
+        "uncertainty": 0.00138716126002483
+      },
+      {
+        "id": "Ghost Train",
+        "rating": 0.005683451854540493,
+        "uncertainty": 0.005029156670296147
+      },
+      {
+        "id": "Holy Ghost",
+        "rating": 0.0014120045450209087,
+        "uncertainty": 0.0012762956958671451
+      },
+      {
+        "id": "Ready or Not",
+        "rating": 0.006568519564531197,
+        "uncertainty": 0.004765382633506684
+      },
+      {
+        "id": "The Devil on Trial",
+        "rating": 0.0030636780595048618,
+        "uncertainty": 0.0024903371775229157
+      },
+      {
+        "id": "Little Miss Sunshine",
+        "rating": 0.005954538585947922,
+        "uncertainty": 0.0051319129484474315
+      },
+      {
+        "id": "The Devil's Advocate",
+        "rating": 0.001546071083632738,
+        "uncertainty": 0.001373514744805972
+      },
+      {
+        "id": "Everything Everywhere All At Once",
+        "rating": 0.006205149162705699,
+        "uncertainty": 0.005246945952902917
+      },
+      {
+        "id": "28 Weeks Later",
+        "rating": 0.003391787951141033,
+        "uncertainty": 0.0029023863848378906
+      },
+      {
+        "id": "Alone",
+        "rating": 0.0012593843075005527,
+        "uncertainty": 0.0010243545166881054
+      },
+      {
+        "id": "Night Patrol",
+        "rating": 0.004141159948950903,
+        "uncertainty": 0.0033370148628403527
+      },
+      {
+        "id": "28 Years Later: The Bone Temple",
+        "rating": 0.006448999502686694,
+        "uncertainty": 0.005037677383569221
+      },
+      {
+        "id": "Marty Supreme",
+        "rating": 0.0038334898765824037,
+        "uncertainty": 0.003128691494454002
+      },
+      {
+        "id": "Train Dreams",
+        "rating": 0.0031347270475169243,
+        "uncertainty": 0.0025671322841243874
+      },
+      {
+        "id": "The Plague",
+        "rating": 0.0013481321746907416,
+        "uncertainty": 0.001132448311493026
+      },
+      {
+        "id": "The Secret Agent",
+        "rating": 0.006324985199455637,
+        "uncertainty": 0.005359242579856583
+      },
+      {
+        "id": "A Quiet Place",
+        "rating": 0.0033818811034893224,
+        "uncertainty": 0.002887665863780885
+      },
+      {
+        "id": "War Machine",
+        "rating": 0.001289994623033704,
+        "uncertainty": 0.001071574510857504
+      },
+      {
+        "id": "Whistle",
+        "rating": 0.003272209597239653,
+        "uncertainty": 0.002824693730199087
+      },
+      {
+        "id": "The Autopsy of Jane Doe",
+        "rating": 0.0032518925341767234,
+        "uncertainty": 0.0028009488420696767
+      },
+      {
+        "id": "Play Dead",
+        "rating": 0.0013818052345310695,
+        "uncertainty": 0.001193601698587611
+      },
+      {
+        "id": "I Am Legend",
+        "rating": 0.007463625222157958,
+        "uncertainty": 0.006176006334015064
+      },
+      {
+        "id": "The Nightman",
+        "rating": 0.0011073840527620477,
+        "uncertainty": 0.0009001763670608587
+      },
+      {
+        "id": "Pretty Lethal",
+        "rating": 0.0031877057668502976,
+        "uncertainty": 0.0026133805995234615
+      },
+      {
+        "id": "Send Help",
+        "rating": 0.003887877417738276,
+        "uncertainty": 0.0031660054976680144
+      },
+      {
+        "id": "Dust Bunny",
+        "rating": 0.006081578192615761,
+        "uncertainty": 0.005032809885728354
+      },
+      {
+        "id": "Holy Night: Demon Hunters",
+        "rating": 0.001496796205025217,
+        "uncertainty": 0.001326320211431376
+      },
+      {
+        "id": "Cloverfield",
+        "rating": 0.00654284647578533,
+        "uncertainty": 0.005549910611735863
+      },
+      {
+        "id": "Better Watch Out",
+        "rating": 0.0012348718929558506,
+        "uncertainty": 0.0010233136010367272
+      },
+      {
+        "id": "Poor Things",
+        "rating": 0.006098256452572948,
+        "uncertainty": 0.0054089326012232925
+      },
+      {
+        "id": "Undertone",
+        "rating": 0.0013724567331887534,
+        "uncertainty": 0.001168637736856795
+      },
+      {
+        "id": "Thrash",
+        "rating": 0.0033742350358949183,
+        "uncertainty": 0.0028654516216044495
+      },
+      {
+        "id": "Drive",
+        "rating": 0.006807682472336983,
+        "uncertainty": 0.005493485818432476
+      },
+      {
+        "id": "War of the Worlds",
+        "rating": 0.003380683544854053,
+        "uncertainty": 0.0028703449407446718
+      },
+      {
+        "id": "Blood",
+        "rating": 0.0013695156394230366,
+        "uncertainty": 0.0011657306062144077
+      },
+      {
+        "id": "Apex",
+        "rating": 0.0060971068834934,
+        "uncertainty": 0.00539415814445201
+      },
+      {
+        "id": "V/H/S Viral",
+        "rating": 0.0013120038483351972,
+        "uncertainty": 0.0011780433668829413
+      },
+      {
+        "id": "Blade Runner",
+        "rating": 0.0013007518935889925,
+        "uncertainty": 0.0011771048521282371
+      },
+      {
+        "id": "Blade Runner 2049",
+        "rating": 0.007640898913408152,
+        "uncertainty": 0.0063084547452170354
+      },
+      {
+        "id": "Exposed",
+        "rating": 0.0010767635687413913,
+        "uncertainty": 0.0009157437150306856
+      },
+      {
+        "id": "Psycho Killer",
+        "rating": 0.0013375742582218142,
+        "uncertainty": 0.0011883863097960537
+      },
+      {
+        "id": "You're Next",
+        "rating": 0.006296430167596414,
+        "uncertainty": 0.005531035007532515
+      },
+      {
+        "id": "The Black Demon",
+        "rating": 0.0014353024615081848,
+        "uncertainty": 0.0012628295898230377
+      },
+      {
+        "id": "Last Straw",
+        "rating": 0.0063021459514810444,
+        "uncertainty": 0.005518759050410614
+      },
+      {
+        "id": "Haunting of the Queen Mary",
+        "rating": 0.0014251787651630298,
+        "uncertainty": 0.0012607080071967908
+      },
+      {
+        "id": "The Evil Dead",
+        "rating": 0.007289576186644189,
+        "uncertainty": 0.005934726152229028
+      },
+      {
+        "id": "Paranormal Activity: Next of Kin",
+        "rating": 0.0011154853572316143,
+        "uncertainty": 0.0009183670616929313
+      },
+      {
+        "id": "The Strangers: Chapter 3",
+        "rating": 0.002977914123377978,
+        "uncertainty": 0.0024405873449760106
+      },
+      {
+        "id": "Worldbreaker",
+        "rating": 0.0012353436607743116,
+        "uncertainty": 0.0010809967497902976
+      },
+      {
+        "id": "Lights Out",
+        "rating": 0.006452728938898928,
+        "uncertainty": 0.0056776529258295025
+      },
+      {
+        "id": "Bodycam",
+        "rating": 0.0014094716061564103,
+        "uncertainty": 0.001242689654374002
+      },
+      {
+        "id": "Night of the Hunted",
+        "rating": 0.006858693642329475,
+        "uncertainty": 0.0057067809918892294
+      },
+      {
+        "id": "Iron Lung",
+        "rating": 0.003470936931136301,
+        "uncertainty": 0.0029086424725635325
+      },
+      {
+        "id": "The Deep House",
+        "rating": 0.0012687558164641518,
+        "uncertainty": 0.0010874235804780826
+      },
+      {
+        "id": "Carriers",
+        "rating": 0.0033773389746415746,
+        "uncertainty": 0.0028569966245155674
+      },
+      {
+        "id": "The Awakening",
+        "rating": 0.0012929925491509376,
+        "uncertainty": 0.001082864680700898
+      },
+      {
+        "id": "Hokum",
+        "rating": 0.004594431591573983,
+        "uncertainty": 0.0042255350423809936
+      }
+    ],
+    "links": [
+      {
+        "source": "The Fall Guy",
+        "target": "Killers of the Flower Moon",
+        "weight": 0.27915167692210985
+      },
+      {
+        "source": "The Fall Guy",
+        "target": "Sweet Girl",
+        "weight": 0.41979029080811425
+      },
+      {
+        "source": "The Fall Guy",
+        "target": "Tarot",
+        "weight": 0.41979029080811425
+      },
+      {
+        "source": "Killers of the Flower Moon",
+        "target": "Oddity",
+        "weight": 0.2830872853768075
+      },
+      {
+        "source": "Twister",
+        "target": "Oddity",
+        "weight": 0.2998168971982543
+      },
+      {
+        "source": "Strange Darling",
+        "target": "Twister",
+        "weight": 0.2998168971982543
+      },
+      {
+        "source": "Strange Darling",
+        "target": "Smile 2",
+        "weight": 0.3215560751233821
+      },
+      {
+        "source": "Smile 2",
+        "target": "Heretic",
+        "weight": 0.36791009906893457
+      },
+      {
+        "source": "Smile 2",
+        "target": "Lowlifes",
+        "weight": 0.36791009906893457
+      },
+      {
+        "source": "Smile 2",
+        "target": "Death of a Unicorn",
+        "weight": 0.46394002109164667
+      },
+      {
+        "source": "Smile 2",
+        "target": "Fear Street: Prom Queen",
+        "weight": 0.46954083904279925
+      },
+      {
+        "source": "Alien: Romulus",
+        "target": "Smile 2",
+        "weight": 0.322199830814735
+      },
+      {
+        "source": "Alien: Romulus",
+        "target": "Prey",
+        "weight": 0.322199830814735
+      },
+      {
+        "source": "Alien: Romulus",
+        "target": "Lowlifes",
+        "weight": 0.36864665557806275
+      },
+      {
+        "source": "Alien: Romulus",
+        "target": "Things Will Be Different",
+        "weight": 0.36864665557806275
+      },
+      {
+        "source": "Prey",
+        "target": "Twisters",
+        "weight": 0.3228448753058408
+      },
+      {
+        "source": "Prey",
+        "target": "The Electric State",
+        "weight": 0.4214728147759176
+      },
+      {
+        "source": "Prey",
+        "target": "Geostorm",
+        "weight": 0.4214728147759176
+      },
+      {
+        "source": "Prey",
+        "target": "Bone Lake",
+        "weight": 0.7680375401183264
+      },
+      {
+        "source": "Love Lies Bleeding",
+        "target": "Twisters",
+        "weight": 0.3234912111768782
+      },
+      {
+        "source": "Deadpool & Wolverine",
+        "target": "Love Lies Bleeding",
+        "weight": 0.32478776740530135
+      },
+      {
+        "source": "Anora",
+        "target": "Deadpool & Wolverine",
+        "weight": 0.3462537700415116
+      },
+      {
+        "source": "Anora",
+        "target": "Juror #2",
+        "weight": 0.3520730252983176
+      },
+      {
+        "source": "Juror #2",
+        "target": "New Life",
+        "weight": 0.3520730252983176
+      },
+      {
+        "source": "Heretic",
+        "target": "New Life",
+        "weight": 0.3520730252983176
+      },
+      {
+        "source": "Humane",
+        "target": "Things Will Be Different",
+        "weight": 0.3693846866743048
+      },
+      {
+        "source": "Humane",
+        "target": "Summoners",
+        "weight": 0.370124195309786
+      },
+      {
+        "source": "Summoners",
+        "target": "Werevolves",
+        "weight": 0.370124195309786
+      },
+      {
+        "source": "Army of the Dead",
+        "target": "Werevolves",
+        "weight": 0.370124195309786
+      },
+      {
+        "source": "Army of the Dead",
+        "target": "Ma",
+        "weight": 0.4073836127417638
+      },
+      {
+        "source": "Army of the Dead",
+        "target": "Upgrade",
+        "weight": 0.4073836127417638
+      },
+      {
+        "source": "Army of the Dead",
+        "target": "The Frozen Ground",
+        "weight": 0.4448580662229411
+      },
+      {
+        "source": "Army of the Dead",
+        "target": "Carry-On",
+        "weight": 0.4457486726649602
+      },
+      {
+        "source": "Arrival",
+        "target": "Army of the Dead",
+        "weight": 0.370124195309786
+      },
+      {
+        "source": "Arrival",
+        "target": "Mean Girls",
+        "weight": 0.370124195309786
+      },
+      {
+        "source": "Mean Girls",
+        "target": "Monster Summer",
+        "weight": 0.3745924415118903
+      },
+      {
+        "source": "Hit Man",
+        "target": "Monster Summer",
+        "weight": 0.386000479740645
+      },
+      {
+        "source": "Hit Man",
+        "target": "Azrael",
+        "weight": 0.386000479740645
+      },
+      {
+        "source": "Azrael",
+        "target": "The Last Voyage of the Demeter",
+        "weight": 0.3867732532160105
+      },
+      {
+        "source": "The Last Voyage of the Demeter",
+        "target": "Here After",
+        "weight": 0.3867732532160105
+      },
+      {
+        "source": "Good One",
+        "target": "Here After",
+        "weight": 0.3867732532160105
+      },
+      {
+        "source": "The Substance",
+        "target": "Good One",
+        "weight": 0.3867732532160105
+      },
+      {
+        "source": "The Substance",
+        "target": "Wrong Turn 2: Dead End",
+        "weight": 0.38754757378490456
+      },
+      {
+        "source": "Somewhere Quiet",
+        "target": "Wrong Turn 2: Dead End",
+        "weight": 0.38832344454461054
+      },
+      {
+        "source": "The Watchers",
+        "target": "Somewhere Quiet",
+        "weight": 0.3891008685986124
+      },
+      {
+        "source": "The Watchers",
+        "target": "The Order",
+        "weight": 0.3891008685986124
+      },
+      {
+        "source": "The Watchers",
+        "target": "Kate",
+        "weight": 0.40575733301861544
+      },
+      {
+        "source": "The Watchers",
+        "target": "Sweet Girl",
+        "weight": 0.40575733301861544
+      },
+      {
+        "source": "Longlegs",
+        "target": "The Order",
+        "weight": 0.3891008685986124
+      },
+      {
+        "source": "Longlegs",
+        "target": "Night Swim",
+        "weight": 0.39066038903451866
+      },
+      {
+        "source": "Nightbitch",
+        "target": "Night Swim",
+        "weight": 0.39144249165450684
+      },
+      {
+        "source": "Nightbitch",
+        "target": "Project Eerie",
+        "weight": 0.39144249165450684
+      },
+      {
+        "source": "To Catch a Killer",
+        "target": "Project Eerie",
+        "weight": 0.39144249165450684
+      },
+      {
+        "source": "To Catch a Killer",
+        "target": "River Wild",
+        "weight": 0.48190899009020244
+      },
+      {
+        "source": "To Catch a Killer",
+        "target": "Abraham's Boys",
+        "weight": 0.7665030000896318
+      },
+      {
+        "source": "To Catch a Killer",
+        "target": "Drop",
+        "weight": 0.7665030000896318
+      },
+      {
+        "source": "Trial by Fire",
+        "target": "To Catch a Killer",
+        "weight": 0.7963891209810117
+      },
+      {
+        "source": "Interstellar",
+        "target": "Trial by Fire",
+        "weight": 0.39144249165450684
+      },
+      {
+        "source": "Interstellar",
+        "target": "Daddy's Head",
+        "weight": 0.39696122754987906
+      },
+      {
+        "source": "Interstellar",
+        "target": "Tarot",
+        "weight": 0.41979029080811425
+      },
+      {
+        "source": "Interstellar",
+        "target": "Don't Let Go",
+        "weight": 0.41979029080811425
+      },
+      {
+        "source": "Daddy's Head",
+        "target": "The Hangman",
+        "weight": 0.39775594445698026
+      },
+      {
+        "source": "Apartment 7A",
+        "target": "The Hangman",
+        "weight": 0.39775594445698026
+      },
+      {
+        "source": "Monkey Man",
+        "target": "Apartment 7A",
+        "weight": 0.39775594445698026
+      },
+      {
+        "source": "Monkey Man",
+        "target": "In a Violent Nature",
+        "weight": 0.39855225238838965
+      },
+      {
+        "source": "Emilia Pérez",
+        "target": "In a Violent Nature",
+        "weight": 0.4009507542126918
+      },
+      {
+        "source": "Trap",
+        "target": "Emilia Pérez",
+        "weight": 0.40175345815749397
+      },
+      {
+        "source": "Trap",
+        "target": "Handling the Undead",
+        "weight": 0.4041375454214515
+      },
+      {
+        "source": "Don't Move",
+        "target": "Handling the Undead",
+        "weight": 0.4041375454214515
+      },
+      {
+        "source": "Don't Move",
+        "target": "The Boogeyman",
+        "weight": 0.7757564457234291
+      },
+      {
+        "source": "Spiderhead",
+        "target": "Don't Move",
+        "weight": 0.4041375454214515
+      },
+      {
+        "source": "Spiderhead",
+        "target": "To Catch a Killer",
+        "weight": 0.4049466293265049
+      },
+      {
+        "source": "Kate",
+        "target": "Trial by Fire",
+        "weight": 0.4049466293265049
+      },
+      {
+        "source": "Don't Listen",
+        "target": "Sweet Girl",
+        "weight": 0.40575733301861544
+      },
+      {
+        "source": "The Abyss",
+        "target": "Don't Listen",
+        "weight": 0.4065696597405991
+      },
+      {
+        "source": "The Abyss",
+        "target": "The Swarm",
+        "weight": 0.4065696597405991
+      },
+      {
+        "source": "Ma",
+        "target": "The Swarm",
+        "weight": 0.4065696597405991
+      },
+      {
+        "source": "Upgrade",
+        "target": "Extinction",
+        "weight": 0.4073836127417638
+      },
+      {
+        "source": "Deadly Illusions",
+        "target": "Extinction",
+        "weight": 0.4073836127417638
+      },
+      {
+        "source": "Night Raiders",
+        "target": "Deadly Illusions",
+        "weight": 0.4073836127417638
+      },
+      {
+        "source": "Night Raiders",
+        "target": "Tarot",
+        "weight": 0.4073836127417638
+      },
+      {
+        "source": "Runaway Jury",
+        "target": "Tarot",
+        "weight": 0.4081991952779227
+      },
+      {
+        "source": "Runaway Jury",
+        "target": "Spectral",
+        "weight": 0.41147788611717057
+      },
+      {
+        "source": "Spectral",
+        "target": "Legion",
+        "weight": 0.41147788611717057
+      },
+      {
+        "source": "Legion",
+        "target": "Locked In",
+        "weight": 0.41561330762408843
+      },
+      {
+        "source": "Awake",
+        "target": "Locked In",
+        "weight": 0.41561330762408843
+      },
+      {
+        "source": "Awake",
+        "target": "Alone",
+        "weight": 0.8436648165963837
+      },
+      {
+        "source": "Close",
+        "target": "Awake",
+        "weight": 0.41561330762408843
+      },
+      {
+        "source": "Talk to Me",
+        "target": "Close",
+        "weight": 0.41644536602038007
+      },
+      {
+        "source": "Talk to Me",
+        "target": "Revelations",
+        "weight": 0.8379181807962977
+      },
+      {
+        "source": "Talk to Me",
+        "target": "ARQ",
+        "weight": 0.4214728147759176
+      },
+      {
+        "source": "Mufasa: The Lion King",
+        "target": "Revelations",
+        "weight": 0.418951549247639
+      },
+      {
+        "source": "Mufasa: The Lion King",
+        "target": "Sweet Girl",
+        "weight": 0.418951549247639
+      },
+      {
+        "source": "Don't Let Go",
+        "target": "Revelations",
+        "weight": 0.42063071153031245
+      },
+      {
+        "source": "ARQ",
+        "target": "The Electric State",
+        "weight": 0.4214728147759176
+      },
+      {
+        "source": "Geostorm",
+        "target": "Sicario: Day of the Soldado",
+        "weight": 0.4214728147759176
+      },
+      {
+        "source": "Alpha",
+        "target": "Sicario: Day of the Soldado",
+        "weight": 0.4214728147759176
+      },
+      {
+        "source": "Alpha",
+        "target": "Lucy",
+        "weight": 0.4214728147759176
+      },
+      {
+        "source": "Draft Day",
+        "target": "Lucy",
+        "weight": 0.4214728147759176
+      },
+      {
+        "source": "The Gray Man",
+        "target": "Draft Day",
+        "weight": 0.42231660391334386
+      },
+      {
+        "source": "Den of Thieves",
+        "target": "The Gray Man",
+        "weight": 0.42231660391334386
+      },
+      {
+        "source": "Den of Thieves",
+        "target": "Den of Thieves 2: Pantera",
+        "weight": 0.42231660391334386
+      },
+      {
+        "source": "Ad Vitam",
+        "target": "Den of Thieves 2: Pantera",
+        "weight": 0.42231660391334386
+      },
+      {
+        "source": "Sicario",
+        "target": "Ad Vitam",
+        "weight": 0.4265609563450914
+      },
+      {
+        "source": "Spotlight",
+        "target": "Sicario",
+        "weight": 0.4317105234290797
+      },
+      {
+        "source": "Spotlight",
+        "target": "Sinners",
+        "weight": 0.43517805926635666
+      },
+      {
+        "source": "Spotlight",
+        "target": "Spectral",
+        "weight": 0.4620879675837
+      },
+      {
+        "source": "Spotlight",
+        "target": "Novocaine",
+        "weight": 0.4620879675837
+      },
+      {
+        "source": "Sinners",
+        "target": "The Good Nurse",
+        "weight": 0.43517805926635666
+      },
+      {
+        "source": "The Good Nurse",
+        "target": "Midnight in the Switchgrass",
+        "weight": 0.43604928632153556
+      },
+      {
+        "source": "Midnight in the Switchgrass",
+        "target": "Aftermath",
+        "weight": 0.4386734466479678
+      },
+      {
+        "source": "iHostage",
+        "target": "Aftermath",
+        "weight": 0.4386734466479678
+      },
+      {
+        "source": "Venom: The Last Dance",
+        "target": "iHostage",
+        "weight": 0.4386734466479678
+      },
+      {
+        "source": "Venom: The Last Dance",
+        "target": "Lou",
+        "weight": 0.4386734466479678
+      },
+      {
+        "source": "Lou",
+        "target": "Vanished into the Night",
+        "weight": 0.43955167147334756
+      },
+      {
+        "source": "Trigger Warning",
+        "target": "Vanished into the Night",
+        "weight": 0.43955167147334756
+      },
+      {
+        "source": "Land of Bad",
+        "target": "Trigger Warning",
+        "weight": 0.43955167147334756
+      },
+      {
+        "source": "American Sniper",
+        "target": "Land of Bad",
+        "weight": 0.43955167147334756
+      },
+      {
+        "source": "American Sniper",
+        "target": "Project Power",
+        "weight": 0.43955167147334756
+      },
+      {
+        "source": "Project Power",
+        "target": "Freaks – You're One of Us",
+        "weight": 0.43955167147334756
+      },
+      {
+        "source": "Havoc",
+        "target": "Freaks – You're One of Us",
+        "weight": 0.43955167147334756
+      },
+      {
+        "source": "Havoc",
+        "target": "The Frozen Ground",
+        "weight": 0.44219690927989863
+      },
+      {
+        "source": "Carry-On",
+        "target": "A Dog's Way Home",
+        "weight": 0.4457486726649602
+      },
+      {
+        "source": "The Clovehitch Killer",
+        "target": "A Dog's Way Home",
+        "weight": 0.4457486726649602
+      },
+      {
+        "source": "The Clovehitch Killer",
+        "target": "Exterritorial",
+        "weight": 0.4457486726649602
+      },
+      {
+        "source": "Dawn of the Dead",
+        "target": "Exterritorial",
+        "weight": 0.4457486726649602
+      },
+      {
+        "source": "Dawn of the Dead",
+        "target": "Peninsula",
+        "weight": 0.44932896411722156
+      },
+      {
+        "source": "Dawn of the Dead",
+        "target": "In The Tall Grass",
+        "weight": 0.46024330749309256
+      },
+      {
+        "source": "Dawn of the Dead",
+        "target": "Texas Chainsaw Massacre (2022)",
+        "weight": 0.46024330749309256
+      },
+      {
+        "source": "Dawn of the Dead",
+        "target": "The Ritual",
+        "weight": 0.49262846980013547
+      },
+      {
+        "source": "Dawn of the Dead",
+        "target": "Exposed",
+        "weight": 0.9380049995307295
+      },
+      {
+        "source": "Dawn of the Dead",
+        "target": "Psycho Killer",
+        "weight": 0.9380049995307295
+      },
+      {
+        "source": "Hanna",
+        "target": "Peninsula",
+        "weight": 0.4529380127765577
+      },
+      {
+        "source": "Constantine",
+        "target": "Hanna",
+        "weight": 0.4529380127765577
+      },
+      {
+        "source": "Constantine",
+        "target": "Heart Eyes",
+        "weight": 0.4529380127765577
+      },
+      {
+        "source": "Constantine",
+        "target": "Fear Street: Prom Queen",
+        "weight": 0.4771139155210344
+      },
+      {
+        "source": "Constantine",
+        "target": "Kate",
+        "weight": 0.4771139155210344
+      },
+      {
+        "source": "Heart Eyes",
+        "target": "The Haunted Apartment \"Miss K\"",
+        "weight": 0.45384479528235583
+      },
+      {
+        "source": "Train to Busan",
+        "target": "The Haunted Apartment \"Miss K\"",
+        "weight": 0.45475339316794017
+      },
+      {
+        "source": "Train to Busan",
+        "target": "Insidious: Chapter 2",
+        "weight": 0.45475339316794017
+      },
+      {
+        "source": "Train to Busan",
+        "target": "Dawn of the Dead",
+        "weight": 0.49262846980013547
+      },
+      {
+        "source": "Train to Busan",
+        "target": "Upgrade",
+        "weight": 0.4955931256926514
+      },
+      {
+        "source": "The Gorge",
+        "target": "Insidious: Chapter 2",
+        "weight": 0.45475339316794017
+      },
+      {
+        "source": "Companion",
+        "target": "The Gorge",
+        "weight": 0.4556638100677035
+      },
+      {
+        "source": "Companion",
+        "target": "Veronica",
+        "weight": 0.4556638100677035
+      },
+      {
+        "source": "The Old Guard",
+        "target": "Veronica",
+        "weight": 0.4556638100677035
+      },
+      {
+        "source": "John Wick: Chapter 4",
+        "target": "The Old Guard",
+        "weight": 0.45749011548373314
+      },
+      {
+        "source": "John Wick: Chapter 4",
+        "target": "Circle",
+        "weight": 0.4584060113052235
+      },
+      {
+        "source": "The Silence",
+        "target": "Circle",
+        "weight": 0.45932374075137034
+      },
+      {
+        "source": "The Silence",
+        "target": "In The Tall Grass",
+        "weight": 0.46024330749309256
+      },
+      {
+        "source": "The Silence",
+        "target": "Paranormal Activity: Next of Kin",
+        "weight": 0.9685065820791976
+      },
+      {
+        "source": "Smile",
+        "target": "Texas Chainsaw Massacre (2022)",
+        "weight": 0.46024330749309256
+      },
+      {
+        "source": "Smile",
+        "target": "#Alive",
+        "weight": 0.4611647152086584
+      },
+      {
+        "source": "#Alive",
+        "target": "Fear Street Part 1: 1994",
+        "weight": 0.4611647152086584
+      },
+      {
+        "source": "#Alive",
+        "target": "The Nightman",
+        "weight": 0.8624311149420454
+      },
+      {
+        "source": "#Alive",
+        "target": "Exposed",
+        "weight": 0.8940442575003572
+      },
+      {
+        "source": "Fear Street Part 2: 1978",
+        "target": "Fear Street Part 1: 1994",
+        "weight": 0.4611647152086584
+      },
+      {
+        "source": "Fear Street Part 2: 1978",
+        "target": "Fear Street Part 3: 1666",
+        "weight": 0.4611647152086584
+      },
+      {
+        "source": "Fear Street Part 3: 1666",
+        "target": "Spectral",
+        "weight": 0.4611647152086584
+      },
+      {
+        "source": "Novocaine",
+        "target": "Rattlesnake",
+        "weight": 0.4620879675837
+      },
+      {
+        "source": "Death of a Unicorn",
+        "target": "Rattlesnake",
+        "weight": 0.4620879675837
+      },
+      {
+        "source": "The Killer",
+        "target": "Kate",
+        "weight": 0.47902619318875106
+      },
+      {
+        "source": "The Killer",
+        "target": "Now You See Me",
+        "weight": 0.479985204266536
+      },
+      {
+        "source": "River Wild",
+        "target": "Now You See Me",
+        "weight": 0.480946135285778
+      },
+      {
+        "source": "The Town",
+        "target": "To Catch a Killer",
+        "weight": 0.48287377253122976
+      },
+      {
+        "source": "The Town",
+        "target": "STRAW",
+        "weight": 0.48287377253122976
+      },
+      {
+        "source": "The Town",
+        "target": "The Deep House",
+        "weight": 0.9900498337491681
+      },
+      {
+        "source": "The Town",
+        "target": "Carriers",
+        "weight": 0.9940179640539353
+      },
+      {
+        "source": "Barbarian",
+        "target": "STRAW",
+        "weight": 0.48287377253122976
+      },
+      {
+        "source": "Barbarian",
+        "target": "The Titan",
+        "weight": 0.48480913576734325
+      },
+      {
+        "source": "Plane",
+        "target": "The Titan",
+        "weight": 0.4906618916992401
+      },
+      {
+        "source": "Copycat",
+        "target": "Plane",
+        "weight": 0.4906618916992401
+      },
+      {
+        "source": "The Ritual",
+        "target": "Copycat",
+        "weight": 0.4916441974609651
+      },
+      {
+        "source": "10 Cloverfield Lane",
+        "target": "Upgrade",
+        "weight": 0.49658530379140947
+      },
+      {
+        "source": "10 Cloverfield Lane",
+        "target": "Until Dawn",
+        "weight": 0.5210027286033344
+      },
+      {
+        "source": "Until Dawn",
+        "target": "Better Watch Out",
+        "weight": 0.8816148467834161
+      },
+      {
+        "source": "Bring Her Back",
+        "target": "Until Dawn",
+        "weight": 0.522045776761016
+      },
+      {
+        "source": "Bring Her Back",
+        "target": "Catch Me If You Can",
+        "weight": 0.5241381418083354
+      },
+      {
+        "source": "Catch Me If You Can",
+        "target": "This Never Happened",
+        "weight": 0.5241381418083354
+      },
+      {
+        "source": "This Never Happened",
+        "target": "Wolf Man",
+        "weight": 0.5477151097137275
+      },
+      {
+        "source": "28 Years Later",
+        "target": "Wolf Man",
+        "weight": 0.5477151097137275
+      },
+      {
+        "source": "Cuckoo",
+        "target": "28 Years Later",
+        "weight": 0.5477151097137275
+      },
+      {
+        "source": "Cuckoo",
+        "target": "World War Z",
+        "weight": 0.5499103577216016
+      },
+      {
+        "source": "World War Z",
+        "target": "Session 8",
+        "weight": 0.5554370486980182
+      },
+      {
+        "source": "World War Z",
+        "target": "Hell House LLC: Lineage",
+        "weight": 0.7588761678069784
+      },
+      {
+        "source": "World War Z",
+        "target": "The Rip",
+        "weight": 0.760395438907269
+      },
+      {
+        "source": "World War Z",
+        "target": "Wolf Man",
+        "weight": 0.7649715260739595
+      },
+      {
+        "source": "World War Z",
+        "target": "I Used to Be Funny",
+        "weight": 0.7649715260739595
+      },
+      {
+        "source": "World War Z",
+        "target": "Holy Ghost",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "World War Z",
+        "target": "Ready or Not",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "Lovely, Dark, and Deep",
+        "target": "Session 8",
+        "weight": 0.5554370486980182
+      },
+      {
+        "source": "Alien",
+        "target": "Lovely, Dark, and Deep",
+        "weight": 0.5554370486980182
+      },
+      {
+        "source": "Thunderbolts*",
+        "target": "Alien",
+        "weight": 0.5565490344104649
+      },
+      {
+        "source": "Children of Men",
+        "target": "Thunderbolts*",
+        "weight": 0.5565490344104649
+      },
+      {
+        "source": "Children of Men",
+        "target": "The Black Phone",
+        "weight": 0.6466177259354396
+      },
+      {
+        "source": "The Black Phone",
+        "target": "The Conjuring: Last Rites",
+        "weight": 0.6492634797207997
+      },
+      {
+        "source": "Dead of Winter",
+        "target": "The Conjuring: Last Rites",
+        "weight": 0.6492634797207997
+      },
+      {
+        "source": "Dead of Winter",
+        "target": "Presence",
+        "weight": 0.6505633060733184
+      },
+      {
+        "source": "Final Destination: Bloodlines",
+        "target": "Presence",
+        "weight": 0.6505633060733184
+      },
+      {
+        "source": "The Long Walk",
+        "target": "Final Destination: Bloodlines",
+        "weight": 0.653170770750347
+      },
+      {
+        "source": "Good Boy",
+        "target": "The Long Walk",
+        "weight": 0.6544784195047192
+      },
+      {
+        "source": "Good Boy",
+        "target": "Vicious",
+        "weight": 0.6645910875931937
+      },
+      {
+        "source": "Black Phone 2",
+        "target": "Vicious",
+        "weight": 0.6685906207195398
+      },
+      {
+        "source": "Black Phone 2",
+        "target": "Shelby Oaks",
+        "weight": 0.6820970471873948
+      },
+      {
+        "source": "Hell House LLC: Lineage",
+        "target": "Shelby Oaks",
+        "weight": 0.6834626063857817
+      },
+      {
+        "source": "Hell House LLC: Lineage",
+        "target": "825 Forest Road",
+        "weight": 0.6848308994355053
+      },
+      {
+        "source": "The Strangers: Chapter 2",
+        "target": "825 Forest Road",
+        "weight": 0.7099339557574544
+      },
+      {
+        "source": "Dead Mail",
+        "target": "The Strangers: Chapter 2",
+        "weight": 0.711355244483933
+      },
+      {
+        "source": "Dead Mail",
+        "target": "Night of the Reaper",
+        "weight": 0.7156362059924855
+      },
+      {
+        "source": "Silent Zone",
+        "target": "Night of the Reaper",
+        "weight": 0.7185044835471956
+      },
+      {
+        "source": "Silent Zone",
+        "target": "The Surrender",
+        "weight": 0.7185044835471956
+      },
+      {
+        "source": "Dangerous Animals",
+        "target": "The Surrender",
+        "weight": 0.7199429304817424
+      },
+      {
+        "source": "Dangerous Animals",
+        "target": "The Astronaut",
+        "weight": 0.7213842571889708
+      },
+      {
+        "source": "The Cleansing Hour",
+        "target": "The Astronaut",
+        "weight": 0.7213842571889708
+      },
+      {
+        "source": "The Running Man",
+        "target": "The Cleansing Hour",
+        "weight": 0.72282846943419
+      },
+      {
+        "source": "The Running Man",
+        "target": "Antrum: The Deadliest Film Ever Made",
+        "weight": 0.7242755729942506
+      },
+      {
+        "source": "The Running Man",
+        "target": "They Called Him Mostly Harmless",
+        "weight": 0.77111584277972
+      },
+      {
+        "source": "The Running Man",
+        "target": "The Strangers: Chapter 1",
+        "weight": 0.7726596177256337
+      },
+      {
+        "source": "The Running Man",
+        "target": "The Rip",
+        "weight": 0.7804249759829658
+      },
+      {
+        "source": "The Running Man",
+        "target": "V/H/S Viral",
+        "weight": 0.8869204367171575
+      },
+      {
+        "source": "The Running Man",
+        "target": "Blade Runner",
+        "weight": 0.8886960526146174
+      },
+      {
+        "source": "The Monkey",
+        "target": "Antrum: The Deadliest Film Ever Made",
+        "weight": 0.7242755729942506
+      },
+      {
+        "source": "Abigail",
+        "target": "The Monkey",
+        "weight": 0.7242755729942506
+      },
+      {
+        "source": "Abigail",
+        "target": "Stranger in the Woods",
+        "weight": 0.725725573657569
+      },
+      {
+        "source": "Descendant",
+        "target": "Stranger in the Woods",
+        "weight": 0.725725573657569
+      },
+      {
+        "source": "Descendant",
+        "target": "The Dark and the Wicked",
+        "weight": 0.725725573657569
+      },
+      {
+        "source": "The Dark and the Wicked",
+        "target": "Terrifier",
+        "weight": 0.7320425292306714
+      },
+      {
+        "source": "Terrifier 2",
+        "target": "Terrifier",
+        "weight": 0.7320425292306714
+      },
+      {
+        "source": "Terrifier 2",
+        "target": "Skinamarink",
+        "weight": 0.7335080793507363
+      },
+      {
+        "source": "Memories of Murder",
+        "target": "Skinamarink",
+        "weight": 0.7349765635040963
+      },
+      {
+        "source": "Predator: Badlands",
+        "target": "Memories of Murder",
+        "weight": 0.7393996789621566
+      },
+      {
+        "source": "Predator: Badlands",
+        "target": "The Shrouds",
+        "weight": 0.7408799581057983
+      },
+      {
+        "source": "Alice",
+        "target": "The Shrouds",
+        "weight": 0.7408799581057983
+      },
+      {
+        "source": "Locked",
+        "target": "Alice",
+        "weight": 0.7438494128885149
+      },
+      {
+        "source": "The Man in My Basement",
+        "target": "Locked",
+        "weight": 0.7438494128885149
+      },
+      {
+        "source": "The Man in My Basement",
+        "target": "Witchboard",
+        "weight": 0.745338600405413
+      },
+      {
+        "source": "One Battle After Another",
+        "target": "Witchboard",
+        "weight": 0.7468307692777065
+      },
+      {
+        "source": "One Battle After Another",
+        "target": "Monster Island",
+        "weight": 0.749824074975139
+      },
+      {
+        "source": "ClearMind",
+        "target": "Monster Island",
+        "weight": 0.749824074975139
+      },
+      {
+        "source": "Black Bag",
+        "target": "ClearMind",
+        "weight": 0.7513252237735047
+      },
+      {
+        "source": "La La Land",
+        "target": "Black Bag",
+        "weight": 0.7513252237735047
+      },
+      {
+        "source": "La La Land",
+        "target": "Hell House LLC: Lineage",
+        "weight": 0.7588761678069784
+      },
+      {
+        "source": "The Rip",
+        "target": "Shazam! Fury of the Gods",
+        "weight": 0.760395438907269
+      },
+      {
+        "source": "The Rip",
+        "target": "Pearl: An X-traordinary Origin Story",
+        "weight": 0.7742064833110487
+      },
+      {
+        "source": "The Rip",
+        "target": "Don't Move",
+        "weight": 0.7742064833110487
+      },
+      {
+        "source": "The Rip",
+        "target": "The Boogeyman",
+        "weight": 0.7804249759829658
+      },
+      {
+        "source": "Shazam! Fury of the Gods",
+        "target": "Caught Stealing",
+        "weight": 0.7619177515903292
+      },
+      {
+        "source": "Caught Stealing",
+        "target": "Wolf Man",
+        "weight": 0.7619177515903292
+      },
+      {
+        "source": "I Used to Be Funny",
+        "target": "Abraham's Boys",
+        "weight": 0.7649715260739595
+      },
+      {
+        "source": "Mission Impossible - The Final Reckoning",
+        "target": "Drop",
+        "weight": 0.7680375401183264
+      },
+      {
+        "source": "Mission Impossible - The Final Reckoning",
+        "target": "Bone Lake",
+        "weight": 0.7680375401183264
+      },
+      {
+        "source": "Nuremberg",
+        "target": "Prey",
+        "weight": 0.7695751522982056
+      },
+      {
+        "source": "Nuremberg",
+        "target": "Midnight Peepshow",
+        "weight": 0.77111584277972
+      },
+      {
+        "source": "Midnight Peepshow",
+        "target": "They Called Him Mostly Harmless",
+        "weight": 0.77111584277972
+      },
+      {
+        "source": "The Strangers: Chapter 1",
+        "target": "Pearl: An X-traordinary Origin Story",
+        "weight": 0.7742064833110487
+      },
+      {
+        "source": "The Boogeyman",
+        "target": "Descendant",
+        "weight": 0.7757564457234291
+      },
+      {
+        "source": "Bugonia",
+        "target": "Descendant",
+        "weight": 0.7773095111626267
+      },
+      {
+        "source": "Bugonia",
+        "target": "The Running Man",
+        "weight": 0.7773095111626267
+      },
+      {
+        "source": "Singin' in the Rain",
+        "target": "The Boogeyman",
+        "weight": 0.7835529276195699
+      },
+      {
+        "source": "Singin' in the Rain",
+        "target": "Him",
+        "weight": 0.7835529276195699
+      },
+      {
+        "source": "Roofman",
+        "target": "Him",
+        "weight": 0.785121601625924
+      },
+      {
+        "source": "Orphan: First Kill",
+        "target": "Roofman",
+        "weight": 0.785121601625924
+      },
+      {
+        "source": "Dungeons & Dragons: Honor Among Thieves",
+        "target": "Orphan: First Kill",
+        "weight": 0.7866934161197315
+      },
+      {
+        "source": "Dungeons & Dragons: Honor Among Thieves",
+        "target": "Aliens vs. Predator: Requiem",
+        "weight": 0.7866934161197315
+      },
+      {
+        "source": "The Bad Batch",
+        "target": "Aliens vs. Predator: Requiem",
+        "weight": 0.7882683773882525
+      },
+      {
+        "source": "F1: The Movie",
+        "target": "The Bad Batch",
+        "weight": 0.7882683773882525
+      },
+      {
+        "source": "F1: The Movie",
+        "target": "Dracula",
+        "weight": 0.7882683773882525
+      },
+      {
+        "source": "F1: The Movie",
+        "target": "Whistle",
+        "weight": 0.8572720210114575
+      },
+      {
+        "source": "F1: The Movie",
+        "target": "The Autopsy of Jane Doe",
+        "weight": 0.8624311149420454
+      },
+      {
+        "source": "The Housemaid",
+        "target": "Dracula",
+        "weight": 0.789846491731334
+      },
+      {
+        "source": "Primate",
+        "target": "The Housemaid",
+        "weight": 0.789846491731334
+      },
+      {
+        "source": "Hamnet",
+        "target": "Primate",
+        "weight": 0.7914277654614356
+      },
+      {
+        "source": "Hamnet",
+        "target": "Nobody 2",
+        "weight": 0.7930122049036542
+      },
+      {
+        "source": "Hell House LLC Origins: The Carmichael Manor",
+        "target": "Nobody 2",
+        "weight": 0.7930122049036542
+      },
+      {
+        "source": "Hell House LLC Origins: The Carmichael Manor",
+        "target": "Return to Silent Hill",
+        "weight": 0.7961906062881705
+      },
+      {
+        "source": "Exit 8",
+        "target": "Return to Silent Hill",
+        "weight": 0.7961906062881705
+      },
+      {
+        "source": "McFarland, USA",
+        "target": "Exit 8",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "McFarland, USA",
+        "target": "Hidden",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "Ghost Train",
+        "target": "Hidden",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "Ghost Train",
+        "target": "Holy Ghost",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "Ready or Not",
+        "target": "The Devil on Trial",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "Ready or Not",
+        "target": "The Strangers: Chapter 3",
+        "weight": 0.9704455335485082
+      },
+      {
+        "source": "Ready or Not",
+        "target": "Worldbreaker",
+        "weight": 0.9723883668012469
+      },
+      {
+        "source": "The Devil on Trial",
+        "target": "The Ritual",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "Little Miss Sunshine",
+        "target": "The Ritual",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "Little Miss Sunshine",
+        "target": "The Devil's Advocate",
+        "weight": 0.7993817467393728
+      },
+      {
+        "source": "Everything Everywhere All At Once",
+        "target": "The Devil's Advocate",
+        "weight": 0.8286837613354977
+      },
+      {
+        "source": "Everything Everywhere All At Once",
+        "target": "28 Weeks Later",
+        "weight": 0.8336708100886328
+      },
+      {
+        "source": "28 Weeks Later",
+        "target": "Alone",
+        "weight": 0.8402968976584314
+      },
+      {
+        "source": "Night Patrol",
+        "target": "Awake",
+        "weight": 0.8453538346846587
+      },
+      {
+        "source": "28 Years Later: The Bone Temple",
+        "target": "Night Patrol",
+        "weight": 0.8453538346846587
+      },
+      {
+        "source": "28 Years Later: The Bone Temple",
+        "target": "Marty Supreme",
+        "weight": 0.8470462341893996
+      },
+      {
+        "source": "Marty Supreme",
+        "target": "Train Dreams",
+        "weight": 0.8487420218802068
+      },
+      {
+        "source": "Train Dreams",
+        "target": "The Plague",
+        "weight": 0.8487420218802068
+      },
+      {
+        "source": "The Secret Agent",
+        "target": "The Plague",
+        "weight": 0.8487420218802068
+      },
+      {
+        "source": "The Secret Agent",
+        "target": "A Quiet Place",
+        "weight": 0.8487420218802068
+      },
+      {
+        "source": "A Quiet Place",
+        "target": "War Machine",
+        "weight": 0.8487420218802068
+      },
+      {
+        "source": "Whistle",
+        "target": "War Machine",
+        "weight": 0.850441204540233
+      },
+      {
+        "source": "The Autopsy of Jane Doe",
+        "target": "Play Dead",
+        "weight": 0.850441204540233
+      },
+      {
+        "source": "I Am Legend",
+        "target": "Play Dead",
+        "weight": 0.8538497819684817
+      },
+      {
+        "source": "I Am Legend",
+        "target": "#Alive",
+        "weight": 0.8555591903710185
+      },
+      {
+        "source": "Pretty Lethal",
+        "target": "The Nightman",
+        "weight": 0.865887748059205
+      },
+      {
+        "source": "Send Help",
+        "target": "Pretty Lethal",
+        "weight": 0.867621256485914
+      },
+      {
+        "source": "Dust Bunny",
+        "target": "Send Help",
+        "weight": 0.8693582353988059
+      },
+      {
+        "source": "Dust Bunny",
+        "target": "Holy Night: Demon Hunters",
+        "weight": 0.8693582353988059
+      },
+      {
+        "source": "Cloverfield",
+        "target": "Holy Night: Demon Hunters",
+        "weight": 0.8710986917457983
+      },
+      {
+        "source": "Cloverfield",
+        "target": "Until Dawn",
+        "weight": 0.8798533791446438
+      },
+      {
+        "source": "Poor Things",
+        "target": "Better Watch Out",
+        "weight": 0.8816148467834161
+      },
+      {
+        "source": "Poor Things",
+        "target": "Undertone",
+        "weight": 0.8816148467834161
+      },
+      {
+        "source": "Thrash",
+        "target": "Undertone",
+        "weight": 0.8833798408827509
+      },
+      {
+        "source": "Drive",
+        "target": "Thrash",
+        "weight": 0.8833798408827509
+      },
+      {
+        "source": "Drive",
+        "target": "War of the Worlds",
+        "weight": 0.8833798408827509
+      },
+      {
+        "source": "War of the Worlds",
+        "target": "Blood",
+        "weight": 0.8869204367171575
+      },
+      {
+        "source": "Apex",
+        "target": "Blood",
+        "weight": 0.8869204367171575
+      },
+      {
+        "source": "Apex",
+        "target": "V/H/S Viral",
+        "weight": 0.8869204367171575
+      },
+      {
+        "source": "Blade Runner 2049",
+        "target": "Blade Runner",
+        "weight": 0.8904752232974726
+      },
+      {
+        "source": "Blade Runner 2049",
+        "target": "#Alive",
+        "weight": 0.8940442575003572
+      },
+      {
+        "source": "You're Next",
+        "target": "Psycho Killer",
+        "weight": 0.9380049995307295
+      },
+      {
+        "source": "You're Next",
+        "target": "The Black Demon",
+        "weight": 0.9531337870775047
+      },
+      {
+        "source": "Last Straw",
+        "target": "The Black Demon",
+        "weight": 0.9531337870775047
+      },
+      {
+        "source": "Last Straw",
+        "target": "Haunting of the Queen Mary",
+        "weight": 0.9550419621907147
+      },
+      {
+        "source": "The Evil Dead",
+        "target": "Haunting of the Queen Mary",
+        "weight": 0.9550419621907147
+      },
+      {
+        "source": "The Evil Dead",
+        "target": "The Silence",
+        "weight": 0.9569539574730467
+      },
+      {
+        "source": "The Strangers: Chapter 3",
+        "target": "Paranormal Activity: Next of Kin",
+        "weight": 0.9685065820791976
+      },
+      {
+        "source": "Lights Out",
+        "target": "Worldbreaker",
+        "weight": 0.9743350896087494
+      },
+      {
+        "source": "Lights Out",
+        "target": "Bodycam",
+        "weight": 0.9762857097579093
+      },
+      {
+        "source": "Night of the Hunted",
+        "target": "Bodycam",
+        "weight": 0.9841273200552851
+      },
+      {
+        "source": "Night of the Hunted",
+        "target": "Iron Lung",
+        "weight": 0.9880717128619305
+      },
+      {
+        "source": "Iron Lung",
+        "target": "The Deep House",
+        "weight": 0.9880717128619305
+      },
+      {
+        "source": "Carriers",
+        "target": "The Awakening",
+        "weight": 1
+      },
+      {
+        "source": "Hokum",
+        "target": "The Awakening",
+        "weight": 1
+      }
+    ]
+  }
+}

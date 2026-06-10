@@ -1,6 +1,7 @@
 import { getBlogPosts } from "@/getBlogPosts";
 import { Box, Flex, Heading, Text, Container, Section } from "@radix-ui/themes";
 import { ProjectCard } from "@/components/ProjectCard";
+import ScrollReveal from "@/components/ScrollReveal";
 
 export default async function Projects() {
   const blogPosts = await getBlogPosts();
@@ -23,18 +24,13 @@ export default async function Projects() {
             </Text>
           </Box>
 
-          <Flex
-            direction="row"
-            gap="6"
-            wrap="wrap"
-            style={{
-              justifyContent: "flex-start",
-            }}
-          >
-            {projectPosts.map((post) => (
-              <ProjectCard key={post.slug} project={post} />
-            ))}
-          </Flex>
+          <ScrollReveal>
+            <Box className="card-grid-wide">
+              {projectPosts.map((post) => (
+                <ProjectCard key={post.slug} project={post} />
+              ))}
+            </Box>
+          </ScrollReveal>
         </Flex>
       </Section>
     </Container>

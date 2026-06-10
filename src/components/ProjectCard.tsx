@@ -9,6 +9,16 @@ type ExtendedMetadata = {
   date?: string;
 };
 
+const getTagColor = (tag: string): "blue" | "indigo" | "pink" | "orange" | "teal" | "gray" => {
+  const t = tag.toLowerCase();
+  if (t.includes("react") || t.includes("next")) return "blue";
+  if (t.includes("typescript") || t.includes("ts") || t.includes("javascript") || t.includes("js")) return "indigo";
+  if (t.includes("design") || t.includes("ui") || t.includes("ux") || t.includes("redesign")) return "pink";
+  if (t.includes("ml") || t.includes("ai") || t.includes("tensorflow") || t.includes("tensor") || t.includes("python")) return "orange";
+  if (t.includes("web") || t.includes("css") || t.includes("html")) return "teal";
+  return "gray";
+};
+
 export function ProjectCard({ project }: { project: BlogPostData }) {
   const hasBackground = project.metadata.background as string | undefined;
   const projectUrl = `/projects/${project.slug.replace("projects/", "")}`;
@@ -18,13 +28,7 @@ export function ProjectCard({ project }: { project: BlogPostData }) {
     ExtendedMetadata;
 
   return (
-    <Box
-      style={{
-        width: "calc(50% - 24px)",
-        minWidth: "300px",
-        maxWidth: "500px",
-      }}
-    >
+    <Box style={{ height: "100%" }}>
       <Card
         size="2"
         style={{
@@ -65,7 +69,7 @@ export function ProjectCard({ project }: { project: BlogPostData }) {
               p={hasBackground ? "2" : "0"}
               style={{ flexGrow: 1 }}
             >
-              <Heading as="h3" size="4">
+              <Heading as="h3" size="4" className="card-title-hover">
                 <Link asChild>
                   <span>{metadata.title as string}</span>
                 </Link>
@@ -85,7 +89,7 @@ export function ProjectCard({ project }: { project: BlogPostData }) {
               {metadata.tags && metadata.tags.length > 0 && (
                 <Flex gap="1" wrap="wrap">
                   {metadata.tags.slice(0, 3).map((tag) => (
-                    <Badge key={tag} variant="soft" size="1">
+                    <Badge key={tag} variant="soft" color={getTagColor(tag)} size="1">
                       {tag}
                     </Badge>
                   ))}

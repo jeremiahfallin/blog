@@ -22,11 +22,14 @@ test.describe("Movie API", () => {
     expect(response.ok()).toBeTruthy();
 
     // Parse the response JSON
-    const movies = (await response.json()) as Movie[];
+    const data = await response.json();
+    const movies = data.movies as Movie[];
+    const cycles = data.cycles as string[][];
 
     // Verify the basic structure
     expect(Array.isArray(movies)).toBeTruthy();
     expect(movies.length).toBeGreaterThan(0);
+    expect(Array.isArray(cycles)).toBeTruthy();
 
     // Check that a known movie exists with expected properties
     const fallGuy = movies.find((movie) => movie.title === "The Fall Guy");
@@ -55,7 +58,8 @@ test.describe("Movie API", () => {
 
   test("Movie scores are correctly calculated", async ({ request }) => {
     const response = await request.get("/api/movies");
-    const movies = (await response.json()) as Movie[];
+    const data = await response.json();
+    const movies = data.movies as Movie[];
 
     // Check that we have logistic scores for all movies
     const moviesWithoutScores = movies.filter(
