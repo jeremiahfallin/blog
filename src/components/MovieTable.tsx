@@ -21,6 +21,7 @@ import {
   SortingState,
   flexRender,
 } from "@tanstack/react-table";
+import NextLink from "next/link";
 import { BlogPostData } from "@/getBlogPosts";
 
 // Define types for our movie data
@@ -430,7 +431,9 @@ export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
                         if (article) {
                           return (
                             <Table.Cell key={cell.id} className="premium-table-cell" style={{ verticalAlign: "middle" }}>
-                              <Link href={article.slug} style={{ fontWeight: "bold", color: "#ffffff" }}>{value}</Link>
+                              <Link asChild style={{ fontWeight: "bold", color: "#ffffff" }}>
+                                <NextLink href={`/${article.slug}`}>{value}</NextLink>
+                              </Link>
                             </Table.Cell>
                           );
                         }
