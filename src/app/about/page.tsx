@@ -3,8 +3,8 @@ import SocialLinks from "@/components/SocialLinks";
 import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata = {
-  title: "About | Jeremiah Fallin",
-  description: "Background, experience, and skills",
+  title: "About",
+  description: "Background, experience, and skills of Jeremiah Fallin",
 };
 
 interface Role {

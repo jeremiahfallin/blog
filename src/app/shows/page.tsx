@@ -4,6 +4,11 @@ import NextLink from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 
+export const metadata = {
+  title: "TV Shows",
+  description: "TV show reviews and watch history reflections.",
+};
+
 export default async function Shows() {
   const blogPosts = await getBlogPosts();
   const showPosts = blogPosts.filter((post) =>

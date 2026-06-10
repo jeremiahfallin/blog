@@ -15,6 +15,16 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AdjacentNav from "@/components/AdjacentNav";
 import { getAdjacent } from "@/utils/adjacentPosts";
 import { getReadingTime } from "@/utils/readingTime";
+import { buildPostMetadata } from "@/utils/postMetadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  return buildPostMetadata("projects", slug);
+}
 
 export default async function Page({
   params,

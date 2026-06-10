@@ -15,6 +15,16 @@ import calculatedRatings from "@/data/calculated-ratings.json";
 import Breadcrumb from "@/components/Breadcrumb";
 import AdjacentNav from "@/components/AdjacentNav";
 import { getAdjacent } from "@/utils/adjacentPosts";
+import { buildPostMetadata } from "@/utils/postMetadata";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  return buildPostMetadata("movies", slug);
+}
 
 export default async function Page({
   params,

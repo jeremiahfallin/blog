@@ -3,6 +3,12 @@ import { Box, Flex, Heading, Text, Container, Section } from "@radix-ui/themes";
 import { ProjectCard } from "@/components/ProjectCard";
 import ScrollReveal from "@/components/ScrollReveal";
 
+export const metadata = {
+  title: "Projects",
+  description:
+    "Engineering and interface design projects by Jeremiah Fallin.",
+};
+
 export default async function Projects() {
   const blogPosts = await getBlogPosts();
   const projectPosts = blogPosts.filter((post) =>

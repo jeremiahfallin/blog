@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import { Box, Flex, Link, Theme } from "@radix-ui/themes";
 import NextLink from "next/link";
 import SocialLinks from "@/components/SocialLinks";
+import { SITE_URL, SITE_NAME, SITE_TITLE, SITE_DESCRIPTION } from "@/config";
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
 
@@ -12,8 +13,23 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Jeremiah Fallin | Developer Portfolio",
-  description: "Projects, movies, and more by Jeremiah Fallin",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: SITE_TITLE,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  openGraph: {
+    siteName: SITE_NAME,
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+  },
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
 };
 
 function Header() {
