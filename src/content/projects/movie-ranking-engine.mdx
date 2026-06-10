@@ -1,0 +1,59 @@
+export const metadata = {
+  title: "How My Movie Ranking Engine Works",
+  slug: "movie-ranking-engine",
+  date: "2026-06-10T00:00:00.000Z",
+  description:
+    "Turning one yes/no question per movie night into a full ranking with Bradley-Terry, temporal decay, and a TensorFlow cross-check.",
+  tags: ["TypeScript", "TensorFlow", "Math", "Next.js"],
+};
+
+Every movie-rating scheme I have tried eventually collapses under its own bookkeeping. Is this film a 7 or an 8? Is this year's 8 the same as last year's 8? Star scales drift, and past-me and present-me never quite agree on what the numbers mean.
+
+So the [movie tracker](/movies) on this site asks exactly one question after each watch, and it is binary: **was this movie better than the previous one I watched?** One yes or no per viewing turns out to be enough to recover a full ranking — if you are willing to do some math on the way.
+
+## The data
+
+Each watch is a single row in a JSON file:
+
+```json
+{
+  "order": 42,
+  "title": "Kimi",
+  "dateWatched": "2025-01-18",
+  "betterThanPrevious": true
+}
+```
+
+That is the entire input. No scores, no rubrics — just a chain of pairwise comparisons, currently 334 watches across 285 movies.
+
+## From comparisons to ratings
+
+A chain of pairwise outcomes is exactly what the **Bradley-Terry model** was built for. It assumes every movie has a latent strength `r`, and that the probability movie A beats movie B is `r_A / (r_A + r_B)`.
+
+The engine fits those strengths with a damped fixed-point iteration. Each round, every movie's rating is nudged so that its *expected* number of wins under the current ratings moves toward its *actual* (decay-weighted) number of wins, blended 50/50 with the previous value to keep things stable. A weak prior keeps a movie with only one or two comparisons from rocketing to the extremes. Iteration stops once the ratings stop moving (total change below `1e-6`) or after several rounds without improvement.
+
+## Not all comparisons age equally
+
+My taste in 2024 should not get an equal vote on what I love today. Every comparison is weighted by `e^(-λ × days)`, where `days` measures how far the watch sits behind the most recent entry in the history. With `λ = 0.002`, a comparison loses half its weight in roughly 346 days — close enough to call it a one-year half-life. Old opinions fade; they never quite vanish.
+
+## Borrowing evidence from chains
+
+334 comparisons spread over 285 movies is a sparse graph, so the engine also infers indirect evidence: if I said A beats B and B beats C, that is weak evidence A beats C. One discounted closure pass adds those inferred matchups at half credit (`γ = 0.5`), capped by the weaker link in the chain. It thickens the comparison graph without letting long chains of hearsay dominate the direct evidence.
+
+## Saying "I'm not sure" out loud
+
+A rating without an error bar is a guess wearing a suit. For every movie the engine also computes an uncertainty from the curvature of the likelihood around the fitted rating (a diagonal Laplace approximation, mapped back to probability space with the delta method). Movies with few or contradictory comparisons get wide ± bands; heavily compared movies get narrow ones. The table prints the ± next to every score rather than pretending the point estimate is the whole truth.
+
+## Contradictions are data too
+
+Pairwise preferences are under no obligation to be consistent — sincerely preferring A to B, B to C, and C to A is a thing humans do. Instead of silently smoothing those loops away, the engine detects preference cycles in the comparison graph, and whenever my history contains one, the site displays the contradiction outright. A ranking that hides its own rock-paper-scissors moments is lying to you.
+
+## A second opinion from TensorFlow
+
+Any hand-rolled model deserves a cross-check. The same comparisons also train a logistic regression in TensorFlow.js: one weight per movie, no bias, with each comparison encoded as a +1/−1 difference vector and the model predicting the winner through a sigmoid. After training, the learned weights *are* the scores — positive means preferred, negative means not. It is a completely independent estimator, so when both models broadly agree on the ordering, I trust the result a lot more than I would trust either alone.
+
+## Nothing happens in your browser
+
+All of this runs at build time. A script fits both models and writes a static JSON file of scores, uncertainties, view counts, and detected cycles; the site just serves it. The fanciest computation your browser performs on the [movies page](/movies) is sorting a table — the TensorFlow dependency never ships to the client.
+
+If you want to poke at the result, the sortable table and the interactive comparison graph are both [here](/movies). The hover cards on the score columns explain what each number means, error bars included.
