@@ -1,25 +1,111 @@
-## General Blog Improvements
+# TODO
 
-- **Consistent Content Schedule:** Establish and maintain a regular posting schedule (e.g., weekly, bi-weekly) to keep readers engaged.
-- **Search Functionality:** Implement a search feature to allow users to easily find specific posts.
-- **Categorization/Tagging:** Introduce categories or tags for posts to improve navigation and content discovery.
-- **RSS Feed:** Add an RSS feed so readers can subscribe to updates.
+Remaining items from the June 2026 code evaluation, roughly ordered by impact.
+(Already done: per-page metadata/OG/sitemap/RSS, client-side nav fixes, ISO
+dates, `tsx` devDependency, `react-force-graph` removal, artifact gitignore,
+engine writeup post.)
 
-## Content-Specific Recommendations
+## Correctness / robustness
 
-### For Movies and Shows
+- [ ] **Set the production domain.** `src/config.ts` falls back to
+  `https://jeremiahfallin.com`. Set `NEXT_PUBLIC_SITE_URL` in the deployment
+  environment (or edit the fallback) so canonical URLs, Open Graph images,
+  the sitemap, and the RSS feed resolve to the real domain.
 
-- **Ratings:** Consider adding a rating system (e.g., 1-5 stars, thumbs up/down) to provide a quick assessment of the movie or show.
+- [ ] **Deduplicate the logistic-regression implementations.**
+  `scripts/calculate-static-ratings.ts` reimplements
+  `src/utils/calculateLogisticRatings.ts` inline and the copies have already
+  diverged: the script skips `betterThanPrevious === null`, the util treats
+  null as "worse than previous". Extract one shared implementation that takes
+  a TF backend. Both copies also look up the previous film with
+  `watchHistory[movie.order - 2]`, trusting array position to match the
+  `order` field — sort defensively like `calculateRatings` does.
 
-### For Projects
+- [ ] **Harden content loading.** `src/getBlogPostData.ts` calls `notFound()`
+  on any metadata problem and `getBlogPosts` swallows everything and returns
+  `[]` — one malformed MDX file silently empties the home page and every
+  listing. Prefer failing the build with the offending filename, or skipping
+  the bad file with a logged warning.
 
-- **Live Demos/Repositories:** Provide links to live demos of the projects or their code repositories (e.g., GitHub, GitLab).
-- **"Technologies Used":** Add a dedicated section listing the key technologies, frameworks, and libraries used in each project.
-- **Project Goals and Outcomes:** Expand on the project descriptions to include more details about the initial goals and the final outcomes or impact.
+- [ ] **Resolve the graph arrow direction mismatch.** `MovieGraph.tsx` swaps
+  link source/target ("to correct arrow direction"), which makes arrows point
+  worse → better, but the on-screen caption says arrows point "from better to
+  worse." Fix whichever is wrong.
 
-## Future Content Ideas
+- [ ] **Fix the flaky score assertion.** In `tests/movie-api.spec.ts`,
+  `expect(avgBetterScore).toBeGreaterThan(avgWorseScore * 0.7)` breaks down
+  when the average is negative (multiplying by 0.7 moves the threshold the
+  wrong way). Compare rank correlation or use an additive margin instead.
 
-- **Year-in-Review Posts:** At the end of each year, publish posts summarizing the best movies, shows, or projects covered.
-- **"Top X" Lists:** Create curated lists, such as "Top 5 Horror Movies of the Year," "Must-Watch Sci-Fi Shows," or "Innovative Web Projects."
-- **Interviews:** Conduct interviews with people involved in the movies, shows, or projects reviewed.
-- **Thematic Weeks/Months:** Dedicate a week or month to a specific theme or genre (e.g., "Indie Film Week," "Open Source Project Spotlight").
+## Performance / architecture
+
+- [ ] **Pass ratings data down from the server instead of client-fetching.**
+  `MovieTable` and `MovieGraph` each fetch `/api/movies` in `useEffect`, but
+  the data is static JSON known at build time. Import it in
+  `src/app/movies/page.tsx` and pass it as props (the movie detail page
+  already imports it directly). Removes the loading skeleton, a duplicate
+  fetch, and a network roundtrip; keep the API route for external use.
+
+## Accessibility / UX
+
+- [ ] **Make table sorting keyboard-accessible.** Column headers in
+  `MovieTable.tsx` sort via `onClick` only — add button semantics (or
+  key handlers) and `aria-sort` on the active column.
+
+- [ ] **Check the navbar on small screens.** Logo + four text links + two
+  icons in the pill navbar likely overflow near 375px wide; the 768px media
+  query in `globals.css` only shrinks padding. Consider collapsing links into
+  a menu on small screens.
+
+## Content / docs
+
+- [ ] **Fix the README project structure.** It lists `content/` and `media/`
+  at the repo root; they live at `src/content/` and `public/media/`.
+
+- [ ] **Expand thin content.** Several movie reviews are one or two sentences
+  (The Platform's description is "Wow."), and the shows section has a single
+  entry. The ranking engine is the differentiator — the writing around it is
+  what search engines and visitors actually read.
+
+- [ ] **Note `@tensorflow/tfjs-node` install weight.** It is a large native
+  dependency used only at build time. Fine functionally, but it slows
+  installs/deploys; consider moving the rating calculation to a separate
+  workspace or precommitting its output if deploy times become a problem.
+
+## Product & content ideas
+
+General blog improvements and content directions (from TODO PR #17).
+
+### General
+
+- **Consistent content schedule:** Establish and maintain a regular posting
+  schedule (e.g., weekly, bi-weekly) to keep readers engaged.
+- **Search functionality:** Implement a search feature so users can find
+  specific posts. (Note: the movie table already has title search.)
+- **Categorization / tagging:** Introduce categories or tags for posts to
+  improve navigation and content discovery.
+
+### Movies and shows
+
+- **Ratings:** Consider a quick-assessment rating system (e.g., 1–5 stars,
+  thumbs up/down) alongside the computed BT / logistic scores.
+
+### Projects
+
+- **Live demos / repositories:** Provide links to live demos or code
+  repositories (GitHub, GitLab) for each project.
+- **"Technologies used":** Add a dedicated section listing the key
+  technologies, frameworks, and libraries used in each project.
+- **Project goals and outcomes:** Expand project descriptions to cover the
+  initial goals and the final outcomes or impact.
+
+### Future content
+
+- **Year-in-review posts:** At the end of each year, summarize the best
+  movies, shows, or projects covered.
+- **"Top X" lists:** Curated lists such as "Top 5 Horror Movies of the Year,"
+  "Must-Watch Sci-Fi Shows," or "Innovative Web Projects."
+- **Interviews:** Conduct interviews with people involved in the movies,
+  shows, or projects reviewed.
+- **Thematic weeks / months:** Dedicate a week or month to a specific theme
+  or genre (e.g., "Indie Film Week," "Open Source Project Spotlight").
