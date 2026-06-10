@@ -92,7 +92,7 @@ test.describe("Movie Table Functionality", () => {
     const fallGuyRow = fallGuyCell.locator("xpath=ancestor::tr");
 
     // Find the date cell *within that specific row*
-    const dateCellInRow = fallGuyRow.getByRole("cell", { name: "2024-9-7" });
+    const dateCellInRow = fallGuyRow.getByRole("cell", { name: "2024-09-07" });
     await expect(dateCellInRow).toBeVisible(); // Date for The Fall Guy
 
     // Check that logistic scores are numbers (or formatted numbers)

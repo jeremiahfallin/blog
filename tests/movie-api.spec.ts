@@ -35,7 +35,7 @@ test.describe("Movie API", () => {
     const fallGuy = movies.find((movie) => movie.title === "The Fall Guy");
     expect(fallGuy).toBeDefined();
     expect(fallGuy).toHaveProperty("order", 1);
-    expect(fallGuy).toHaveProperty("dateWatched", "2024-9-7");
+    expect(fallGuy).toHaveProperty("dateWatched", "2024-09-07");
     expect(fallGuy).toHaveProperty("btscore");
     expect(fallGuy).toHaveProperty("viewCount");
     expect(fallGuy).toHaveProperty("logisticScore");
