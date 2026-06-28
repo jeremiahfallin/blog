@@ -14,56 +14,25 @@ export type BlogPostData = {
   metadata: PostMetadata;
 };
 
+const SECTIONS = ["movies", "shows", "projects"] as const;
+
 export async function getBlogPosts(): Promise<BlogPostData[]> {
-  try {
-    const moviesPath = path.join(process.cwd(), "src", "content/movies/");
-    const showsPath = path.join(process.cwd(), "src", "content/shows/");
-    const projectsPath = path.join(process.cwd(), "src", "content/projects/");
+  const sections = await Promise.all(
+    SECTIONS.map(async (section) => {
+      const dir = path.join(process.cwd(), "src", "content", section);
+      const files = await fs.readdir(dir);
 
-    const moviesFiles = await fs.readdir(moviesPath);
-    const showsFiles = await fs.readdir(showsPath);
-    const projectsFiles = await fs.readdir(projectsPath);
+      return Promise.all(
+        files
+          .filter((file) => file.endsWith(".mdx"))
+          .map(async (file) => {
+            const slug = `${section}/${file.replace(/\.mdx$/, "")}`;
+            const { metadata } = await getBlogPostMetadata(slug);
+            return { slug, metadata };
+          })
+      );
+    })
+  );
 
-    const moviesData = await Promise.all(
-      moviesFiles.map(async (file) => {
-        const slug = file.replace(".mdx", "");
-        const metadata = await getBlogPostMetadata(`movies/${slug}`);
-        return {
-          slug: `movies/${slug}`,
-          metadata: metadata.metadata,
-        };
-      })
-    );
-
-    const showsData = await Promise.all(
-      showsFiles.map(async (file) => {
-        const slug = file.replace(".mdx", "");
-        const metadata = await getBlogPostMetadata(`shows/${slug}`);
-        return {
-          slug: `shows/${slug}`,
-          metadata: metadata.metadata,
-        };
-      })
-    );
-
-    const projectsData = await Promise.all(
-      projectsFiles.map(async (file) => {
-        const slug = file.replace(".mdx", "");
-        const metadata = await getBlogPostMetadata(`projects/${slug}`);
-        return {
-          slug: `projects/${slug}`,
-          metadata: metadata.metadata,
-        };
-      })
-    );
-
-    return [...moviesData, ...showsData, ...projectsData];
-  } catch (error: unknown) {
-    if (error instanceof Error) {
-      console.error("Error loading blog posts:", error.message);
-    } else {
-      console.error("Unexpected error loading blog posts:", error);
-    }
-    return [];
-  }
+  return sections.flat();
 }

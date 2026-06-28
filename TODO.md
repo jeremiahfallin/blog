@@ -23,11 +23,13 @@ engine writeup post.)
   of trusting `watchHistory[order - 2]`. Covered by
   `tests/logisticRatingsCore.test.ts`.
 
-- [ ] **Harden content loading.** `src/getBlogPostData.ts` calls `notFound()`
-  on any metadata problem and `getBlogPosts` swallows everything and returns
-  `[]` — one malformed MDX file silently empties the home page and every
-  listing. Prefer failing the build with the offending filename, or skipping
-  the bad file with a logged warning.
+- [x] **Harden content loading.** `getBlogPostMetadata` no longer calls
+  `notFound()` on metadata problems (dead code — it only ran on files freshly
+  read from the content dirs); it now throws naming the offending file. The
+  outer `[]`-swallowing `try/catch` in `getBlogPosts` is gone, so one malformed
+  MDX file fails the build with its filename instead of silently emptying every
+  listing. Also deduplicated the three movies/shows/projects blocks and added an
+  `.mdx` filter so stray files aren't treated as slugs.
 
 - [ ] **Resolve the graph arrow direction mismatch.** `MovieGraph.tsx` swaps
   link source/target ("to correct arrow direction"), which makes arrows point
