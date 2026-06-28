@@ -83,16 +83,27 @@ test.describe("Movie API", () => {
     );
 
     if (betterMovies.length > 5 && worseMovies.length > 5) {
-      const avgBetterScore =
-        betterMovies.reduce((sum, movie) => sum + movie.logisticScore!, 0) /
-        betterMovies.length;
-      const avgWorseScore =
-        worseMovies.reduce((sum, movie) => sum + movie.logisticScore!, 0) /
-        worseMovies.length;
+      // Rank-based concordance (Mann-Whitney / rank-biserial): the fraction of
+      // (better, worse) pairs where the better-marked film outranks the worse
+      // one, counting ties as half. This is the probability that a randomly
+      // chosen "better" film scores above a randomly chosen "worse" film.
+      // It only depends on ordering, so it's unaffected by the sign or scale of
+      // logisticScore — unlike comparing raw averages with a multiplier.
+      let concordant = 0;
+      for (const better of betterMovies) {
+        for (const worse of worseMovies) {
+          if (better.logisticScore! > worse.logisticScore!) concordant += 1;
+          else if (better.logisticScore! === worse.logisticScore!)
+            concordant += 0.5;
+        }
+      }
+      const concordance =
+        concordant / (betterMovies.length * worseMovies.length);
 
-      // In general, movies marked as better should have higher scores
-      // but this is not a strict requirement - just a tendency
-      expect(avgBetterScore).toBeGreaterThan(avgWorseScore * 0.7);
+      // In general, movies marked as better should rank higher, but this is a
+      // tendency rather than a strict requirement: we only assert the ranking
+      // is better than chance (0.5).
+      expect(concordance).toBeGreaterThan(0.5);
     }
   });
 });

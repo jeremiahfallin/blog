@@ -31,15 +31,17 @@ engine writeup post.)
   listing. Also deduplicated the three movies/shows/projects blocks and added an
   `.mdx` filter so stray files aren't treated as slugs.
 
-- [ ] **Resolve the graph arrow direction mismatch.** `MovieGraph.tsx` swaps
+- [x] **Resolve the graph arrow direction mismatch.** `MovieGraph.tsx` swaps
   link source/target ("to correct arrow direction"), which makes arrows point
   worse → better, but the on-screen caption says arrows point "from better to
   worse." Fix whichever is wrong.
 
-- [ ] **Fix the flaky score assertion.** In `tests/movie-api.spec.ts`,
-  `expect(avgBetterScore).toBeGreaterThan(avgWorseScore * 0.7)` breaks down
-  when the average is negative (multiplying by 0.7 moves the threshold the
-  wrong way). Compare rank correlation or use an additive margin instead.
+- [x] **Fix the flaky score assertion.** In `tests/movie-api.spec.ts`, the
+  `avgBetterScore > avgWorseScore * 0.7` check moved the threshold the wrong way
+  when the averages were negative. Replaced it with a sign-invariant rank
+  concordance (Mann-Whitney / rank-biserial): the fraction of (better, worse)
+  pairs where the better-marked film outranks the worse one, asserted to be
+  better than chance (> 0.5). Real data sits at ~0.92.
 
 ## Performance / architecture
 
