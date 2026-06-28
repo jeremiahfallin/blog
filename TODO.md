@@ -65,10 +65,14 @@ engine writeup post.)
   Non-sortable headers stay inert. Verified in a headless browser: focus,
   Enter and Space both re-sort, and `aria-sort` updates correctly.
 
-- [ ] **Check the navbar on small screens.** Logo + four text links + two
-  icons in the pill navbar likely overflow near 375px wide; the 768px media
-  query in `globals.css` only shrinks padding. Consider collapsing links into
-  a menu on small screens.
+- [x] **Check the navbar on small screens.** Confirmed the inline links
+  overflow the pill below ~700px. Extracted the header into a client component
+  `src/components/SiteHeader.tsx`: at ≤700px the links + social icons collapse
+  behind a hamburger toggle that opens a glass dropdown panel (logo stays
+  visible). The toggle exposes `aria-expanded`/`aria-controls`; the menu closes
+  on route change, Escape (restoring focus to the toggle), outside click, or
+  resize back to desktop. Verified headless at 1280/701/700/375px: no
+  horizontal overflow at any width, links fit at 701 and collapse at 700.
 
 ## Visual / design polish
 

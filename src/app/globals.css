@@ -106,6 +106,135 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(255, 255, 255, 0.06);
 }
 
+/* Mobile hamburger toggle — hidden on desktop, revealed at the nav breakpoint */
+.nav-hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  color: var(--gray-12);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.nav-hamburger:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-hamburger:focus-visible {
+  outline: 2px solid var(--blue-9);
+  outline-offset: 2px;
+}
+
+.nav-hamburger-bars {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+}
+
+.nav-hamburger-bars span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+}
+
+.nav-hamburger-bars span:nth-child(1) {
+  top: 0;
+}
+
+.nav-hamburger-bars span:nth-child(2) {
+  top: 6px;
+}
+
+.nav-hamburger-bars span:nth-child(3) {
+  top: 12px;
+}
+
+.nav-hamburger-bars[data-open="true"] span:nth-child(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+.nav-hamburger-bars[data-open="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-hamburger-bars[data-open="true"] span:nth-child(3) {
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
+/* Mobile dropdown panel (rendered only while open) */
+.nav-mobile-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  min-width: 200px;
+  padding: 0.75rem;
+  background: rgba(15, 15, 20, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  animation: nav-panel-in 0.18s ease;
+}
+
+@keyframes nav-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-mobile-link {
+  display: block;
+  padding: 0.6rem 0.9rem;
+  border-radius: 12px;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--gray-11) !important;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-mobile-link:hover,
+.nav-mobile-link:focus-visible {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.nav-mobile-socials {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-left: 0.9rem;
+}
+
+/* Below this width the inline links don't fit the pill — collapse to the menu */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: inline-flex;
+  }
+}
+
 /* Hero Section Styles */
 .hero-gradient-text {
   background: linear-gradient(135deg, #ffffff 30%, #a1a1aa 100%);
