@@ -69,10 +69,7 @@ engine writeup post.)
   overflow the pill below ~700px. Extracted the header into a client component
   `src/components/SiteHeader.tsx`: at ≤700px the links + social icons collapse
   behind a hamburger toggle that opens a glass dropdown panel (logo stays
-  visible). The toggle exposes `aria-expanded`/`aria-controls`; the menu closes
-  on route change, Escape (restoring focus to the toggle), outside click, or
-  resize back to desktop. Verified headless at 1280/701/700/375px: no
-  horizontal overflow at any width, links fit at 701 and collapse at 700.
+  visible). The toggle exposes `aria-expanded`/`aria-controls`; the menu closes on route change, Escape (restoring focus to the toggle), outside click, or resize back to desktop. Verified headless at 1280/701/700/375px: no horizontal overflow at any width, links fit at 701 and collapse at 700.
 
 ## Visual / design polish
 
@@ -81,11 +78,22 @@ social links, CSS-grid listings, score HoverCards, breadcrumbs, prev/next
 nav, About page, scroll reveals, table skeleton + empty state, uniform date
 labels, graph label fade-on-zoom).
 
-- [ ] **Revisit the Movie Watch page.** The table got score HoverCards and
-  skeleton/empty states, but a deeper polish pass was deferred. Candidates: a
-  summary strip (films watched, date span, # of preference cycles, top-rated
-  title), poster thumbnails in the title column, and clearer graph
-  controls/zoom affordances.
+- [x] **Revisit the Movie Watch page.** Added a summary strip
+  (`src/components/MovieSummary.tsx`) above the table/graph tabs with four glass
+  stat cards — films watched (294 unique / 343 views), watching-since span,
+  top-rated title (by BT), and preference-cycle count — computed from the
+  existing ratings props. Added zoom-in/out/fit-to-view buttons to `MovieGraph`
+  (via a `ForceGraphMethods` ref) overlaid top-right of the canvas, replacing
+  the wheel-only affordance. Verified headless: stats render correct values in
+  both tabs, and the controls redraw the canvas. **Poster thumbnails were
+  deliberately skipped** — only 8 of 294 titles have imagery and those are 16:9
+  backdrops, not posters; real thumbnails would need a poster source (e.g. TMDB)
+  for ~294 films, which is a content/data project (see below).
+
+- [ ] **Movie poster thumbnails (needs a data source).** The title column could
+  show poster thumbnails, but the watch history has 294 unique titles and only 8
+  have local imagery (and those are wide backdrops). Would require sourcing
+  posters for the full history, e.g. via the TMDB API, plus caching them.
 
 - [ ] **Add a favicon and a default share image.** The site still ships the
   default Next.js favicon — replace it with a branded mark (e.g. a "JF"

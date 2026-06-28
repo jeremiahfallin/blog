@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useRef, useState } from "react";
-import ForceGraph2D from "react-force-graph-2d";
+import ForceGraph2D, { type ForceGraphMethods } from "react-force-graph-2d";
 import { Box, Callout, Flex, Text } from "@radix-ui/themes";
 import type { MovieRating, RatingsGraph } from "@/types/ratings";
 
@@ -37,7 +37,18 @@ export default function MovieGraph({
   movies: MovieRating[];
 }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const fgRef = useRef<ForceGraphMethods<Node, Link> | undefined>(undefined);
   const [hoveredNode, setHoveredNode] = useState<Node | null>(null);
+
+  const zoomBy = (factor: number) => {
+    const fg = fgRef.current;
+    if (!fg) return;
+    fg.zoom(fg.zoom() * factor, 250);
+  };
+
+  const fitView = () => {
+    fgRef.current?.zoomToFit(400, 60);
+  };
 
   const movieData = useMemo(() => {
     const map: Record<string, MovieRating> = {};
@@ -151,6 +162,7 @@ export default function MovieGraph({
         >
           {graphData.nodes.length > 0 && (
             <ForceGraph2D
+              ref={fgRef}
               graphData={graphData}
               linkDirectionalArrowLength={10}
               linkDirectionalArrowRelPos={1}
@@ -242,6 +254,41 @@ export default function MovieGraph({
                 document.body.style.cursor = node ? "pointer" : "default";
               }}
             />
+          )}
+
+          {/* Zoom controls */}
+          {graphData.nodes.length > 0 && (
+            <Flex
+              direction="column"
+              gap="1"
+              className="graph-controls"
+              style={{ position: "absolute", top: "12px", right: "12px", zIndex: 10 }}
+            >
+              <button
+                type="button"
+                className="graph-control"
+                aria-label="Zoom in"
+                onClick={() => zoomBy(1.4)}
+              >
+                +
+              </button>
+              <button
+                type="button"
+                className="graph-control"
+                aria-label="Zoom out"
+                onClick={() => zoomBy(1 / 1.4)}
+              >
+                −
+              </button>
+              <button
+                type="button"
+                className="graph-control"
+                aria-label="Fit graph to view"
+                onClick={fitView}
+              >
+                ⤢
+              </button>
+            </Flex>
           )}
 
           {/* Add a legend for the rating colors */}
@@ -340,8 +387,8 @@ export default function MovieGraph({
         </Box>
 
         <Text size="2" color="gray" style={{ textAlign: "center" }}>
-          Tip: Use the mouse wheel to zoom in/out and drag to pan around the
-          graph.
+          Tip: use the zoom controls (top-right) or the mouse wheel to zoom, and
+          drag to pan around the graph.
         </Text>
       </Flex>
     </Box>

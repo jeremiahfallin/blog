@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Box, Flex, Tabs } from "@radix-ui/themes";
 import MovieTable from "./MovieTable";
 import MovieGraph from "./MovieGraph";
+import MovieSummary from "./MovieSummary";
 import { BlogPostData } from "@/getBlogPosts";
 import type { RatingsData } from "@/types/ratings";
 
@@ -17,6 +18,8 @@ export default function MovieViewer({
 
   return (
     <Box my="4">
+      <MovieSummary movies={ratings.movies} cycles={ratings.cycles} />
+
       <Tabs.Root
         defaultValue="table"
         onValueChange={(value) => setViewMode(value as "table" | "graph")}
