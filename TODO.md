@@ -57,9 +57,13 @@ engine writeup post.)
 
 ## Accessibility / UX
 
-- [ ] **Make table sorting keyboard-accessible.** Column headers in
-  `MovieTable.tsx` sort via `onClick` only — add button semantics (or
-  key handlers) and `aria-sort` on the active column.
+- [x] **Make table sorting keyboard-accessible.** Sortable column headers in
+  `MovieTable.tsx` are now focusable (`tabIndex={0}`) and respond to Enter/Space
+  via an `onKeyDown` handler that toggles sorting, alongside the existing
+  `onClick`. Each sortable header also exposes `aria-sort`
+  (`none`/`ascending`/`descending`) so screen readers announce the active sort.
+  Non-sortable headers stay inert. Verified in a headless browser: focus,
+  Enter and Space both re-sort, and `aria-sort` updates correctly.
 
 - [ ] **Check the navbar on small screens.** Logo + four text links + two
   icons in the pill navbar likely overflow near 375px wide; the 768px media

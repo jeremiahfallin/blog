@@ -293,16 +293,40 @@ export default function MovieTable({
           <Table.Header className="premium-table-header">
             {table.getHeaderGroups().map((headerGroup) => (
               <Table.Row key={headerGroup.id}>
-                {headerGroup.headers.map((header) => (
+                {headerGroup.headers.map((header) => {
+                  const canSort = header.column.getCanSort();
+                  const sortDir = header.column.getIsSorted();
+                  const sortHandler = header.column.getToggleSortingHandler();
+                  return (
                   <Table.ColumnHeaderCell
                     key={header.id}
                     colSpan={header.colSpan}
                     className="premium-table-cell"
-                    onClick={header.column.getToggleSortingHandler()}
+                    onClick={sortHandler}
+                    tabIndex={canSort ? 0 : undefined}
+                    onKeyDown={
+                      canSort
+                        ? (e) => {
+                            if (e.key === "Enter" || e.key === " ") {
+                              e.preventDefault();
+                              sortHandler?.(e);
+                            }
+                          }
+                        : undefined
+                    }
+                    aria-sort={
+                      canSort
+                        ? sortDir === "asc"
+                          ? "ascending"
+                          : sortDir === "desc"
+                          ? "descending"
+                          : "none"
+                        : undefined
+                    }
                     style={{
                       borderBottom: "1px solid rgba(255, 255, 255, 0.08)",
-                      cursor: header.column.getCanSort() ? "pointer" : "default",
-                      userSelect: header.column.getCanSort() ? "none" : "auto",
+                      cursor: canSort ? "pointer" : "default",
+                      userSelect: canSort ? "none" : "auto",
                     }}
                   >
                     <Flex align="center" gap="2">
@@ -322,7 +346,8 @@ export default function MovieTable({
                       </span>
                     </Flex>
                   </Table.ColumnHeaderCell>
-                ))}
+                  );
+                })}
               </Table.Row>
             ))}
           </Table.Header>
