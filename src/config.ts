@@ -4,7 +4,7 @@
 // images, and the sitemap to resolve correctly. Set NEXT_PUBLIC_SITE_URL in
 // the deployment environment to override the fallback below.
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://jeremiahfallin.com";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://tacit.gg";
 
 export const SITE_NAME = "Jeremiah Fallin";
 export const SITE_TITLE = "Jeremiah Fallin | Developer Portfolio";
