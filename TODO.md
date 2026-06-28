@@ -7,19 +7,21 @@ engine writeup post.)
 
 ## Correctness / robustness
 
-- [ ] **Set the production domain.** `src/config.ts` falls back to
+- [x] **Set the production domain.** `src/config.ts` falls back to
   `https://jeremiahfallin.com`. Set `NEXT_PUBLIC_SITE_URL` in the deployment
   environment (or edit the fallback) so canonical URLs, Open Graph images,
   the sitemap, and the RSS feed resolve to the real domain.
 
-- [ ] **Deduplicate the logistic-regression implementations.**
-  `scripts/calculate-static-ratings.ts` reimplements
-  `src/utils/calculateLogisticRatings.ts` inline and the copies have already
-  diverged: the script skips `betterThanPrevious === null`, the util treats
-  null as "worse than previous". Extract one shared implementation that takes
-  a TF backend. Both copies also look up the previous film with
-  `watchHistory[movie.order - 2]`, trusting array position to match the
-  `order` field — sort defensively like `calculateRatings` does.
+- [x] **Deduplicate the logistic-regression implementations.**
+  `scripts/calculate-static-ratings.ts` reimplemented
+  `src/utils/calculateLogisticRatings.ts` inline and the copies had already
+  diverged: the script skipped `betterThanPrevious === null`, the util treated
+  null as "worse than previous". Extracted one shared implementation in
+  `src/utils/logisticRatingsCore.ts` that takes a TF backend; both call sites
+  now delegate to it. The shared copy skips null (matching `calculateRatings`)
+  and sorts by `order` before pairing each film with its predecessor instead
+  of trusting `watchHistory[order - 2]`. Covered by
+  `tests/logisticRatingsCore.test.ts`.
 
 - [ ] **Harden content loading.** `src/getBlogPostData.ts` calls `notFound()`
   on any metadata problem and `getBlogPosts` swallows everything and returns
