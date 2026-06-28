@@ -4,8 +4,15 @@ import { Box, Flex, Tabs } from "@radix-ui/themes";
 import MovieTable from "./MovieTable";
 import MovieGraph from "./MovieGraph";
 import { BlogPostData } from "@/getBlogPosts";
+import type { RatingsData } from "@/types/ratings";
 
-export default function MovieViewer({ posts }: { posts: BlogPostData[] }) {
+export default function MovieViewer({
+  posts,
+  ratings,
+}: {
+  posts: BlogPostData[];
+  ratings: RatingsData;
+}) {
   const [viewMode, setViewMode] = useState<"table" | "graph">("table");
 
   return (
@@ -21,10 +28,14 @@ export default function MovieViewer({ posts }: { posts: BlogPostData[] }) {
 
         <Box mt="4">
           {viewMode === "table" ? (
-            <MovieTable posts={posts} />
+            <MovieTable
+              posts={posts}
+              movies={ratings.movies}
+              cycles={ratings.cycles}
+            />
           ) : (
             <Flex direction="column" gap="4">
-              <MovieGraph />
+              <MovieGraph graph={ratings.graph} movies={ratings.movies} />
             </Flex>
           )}
         </Box>

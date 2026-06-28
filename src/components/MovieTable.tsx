@@ -1,5 +1,5 @@
 "use client";
-import { useState, useMemo, useEffect, type ReactNode } from "react";
+import { useState, useMemo, type ReactNode } from "react";
 import {
   Box,
   Button,
@@ -23,23 +23,9 @@ import {
 } from "@tanstack/react-table";
 import NextLink from "next/link";
 import { BlogPostData } from "@/getBlogPosts";
+import type { MovieRating } from "@/types/ratings";
 
-// Define types for our movie data
-type WatchHistoryEntry = {
-  order: number;
-  title: string;
-  dateWatched: string;
-  betterThanPrevious: boolean | null;
-};
-
-type WatchHistoryWithScore = WatchHistoryEntry & {
-  btscore: number;
-  bayesianUncertainty?: number;
-  viewCount: number;
-  logisticScore: number | null;
-};
-
-const columnHelper = createColumnHelper<WatchHistoryWithScore>();
+const columnHelper = createColumnHelper<MovieRating>();
 
 function ScoreHeader({ title, children }: { title: string; children: ReactNode }) {
   return (
@@ -175,62 +161,24 @@ const columns = [
   }),
 ];
 
-function SkeletonRows({ rows = 5, cols = 7 }: { rows?: number; cols?: number }) {
-  return (
-    <>
-      {Array.from({ length: rows }).map((_, r) => (
-        <Table.Row key={`skel-${r}`}>
-          {Array.from({ length: cols }).map((_, c) => (
-            <Table.Cell key={`skel-${r}-${c}`} className="premium-table-cell">
-              <div
-                className="skeleton-row"
-                style={{ height: "18px", width: `${50 + ((r * 13 + c * 7) % 40)}%` }}
-              />
-            </Table.Cell>
-          ))}
-        </Table.Row>
-      ))}
-    </>
-  );
-}
-
-export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
+export default function MovieTable({
+  posts,
+  movies,
+  cycles,
+}: {
+  posts: BlogPostData[];
+  movies: MovieRating[];
+  cycles: string[][];
+}) {
   const [sorting, setSorting] = useState<SortingState>([]);
-  const [movieData, setMovieData] = useState<WatchHistoryWithScore[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState("");
-  const [cycles, setCycles] = useState<string[][]>([]);
-
-  // Fetch pre-calculated movie data from our API
-  useEffect(() => {
-    async function fetchMovieData() {
-      try {
-        setIsLoading(true);
-        const response = await fetch("/api/movies");
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch movie data");
-        }
-
-        const data = await response.json();
-        setMovieData(data.movies || []);
-        setCycles(data.cycles || []);
-      } catch (error) {
-        console.error("Error fetching movie data:", error);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-
-    fetchMovieData();
-  }, []); // Empty dependency array means this runs once on mount
 
   // Determine unique movies based on sorting criteria
   const uniqueMovies = useMemo(() => {
-    let filtered = movieData;
+    let filtered = movies;
     if (searchQuery.trim() !== "") {
       const query = searchQuery.toLowerCase().trim();
-      filtered = movieData.filter((movie) =>
+      filtered = movies.filter((movie) =>
         movie.title.toLowerCase().includes(query)
       );
     }
@@ -241,7 +189,7 @@ export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
         sorting[0].id === "viewCount" ||
         sorting[0].id === "logisticScore")
     ) {
-      const movieMap = new Map<string, WatchHistoryWithScore>();
+      const movieMap = new Map<string, MovieRating>();
 
       filtered.forEach((movie) => {
         const existingMovie = movieMap.get(movie.title);
@@ -264,7 +212,7 @@ export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
     }
 
     return filtered;
-  }, [movieData, sorting, searchQuery]);
+  }, [movies, sorting, searchQuery]);
 
   const table = useReactTable({
     columns,
@@ -278,7 +226,7 @@ export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
   });
 
   const rows = table.getRowModel().rows;
-  const hasNoResults = !isLoading && rows.length === 0;
+  const hasNoResults = rows.length === 0;
   const isSearching = searchQuery.trim() !== "";
 
   return (
@@ -379,9 +327,7 @@ export default function MovieTable({ posts }: { posts: BlogPostData[] }) {
             ))}
           </Table.Header>
           <Table.Body>
-            {isLoading ? (
-              <SkeletonRows rows={5} cols={columns.length} />
-            ) : hasNoResults ? (
+            {hasNoResults ? (
               <Table.Row>
                 <Table.Cell
                   colSpan={columns.length}

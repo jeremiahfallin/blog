@@ -1,7 +1,8 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import ForceGraph2D from "react-force-graph-2d";
 import { Box, Callout, Flex, Text } from "@radix-ui/themes";
+import type { MovieRating, RatingsGraph } from "@/types/ratings";
 
 type Node = {
   id: string;
@@ -28,110 +29,86 @@ type GraphData = {
   links: Link[];
 };
 
-interface MovieApiData {
-  order: number;
-  title: string;
-  dateWatched: string;
-  betterThanPrevious: boolean | null;
-  btscore: number;
-  viewCount: number;
-  logisticScore: number | null;
-}
-
-export default function MovieGraph() {
+export default function MovieGraph({
+  graph,
+  movies,
+}: {
+  graph: RatingsGraph;
+  movies: MovieRating[];
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [hoveredNode, setHoveredNode] = useState<Node | null>(null);
-  const [movieData, setMovieData] = useState<Record<string, MovieApiData>>({});
-  const [graphData, setGraphData] = useState<GraphData>({
-    nodes: [],
-    links: [],
-  });
-  const [ratingRange, setRatingRange] = useState<{ min: number; max: number }>({
-    min: 0,
-    max: 0,
-  });
 
-  useEffect(() => {
-    async function fetchMovieData() {
-      try {
-        const response = await fetch("/api/movies");
-        if (response.ok) {
-          const data = await response.json();
-          const movies = data.movies || [];
-          const map: Record<string, MovieApiData> = {};
-          movies.forEach((movie: MovieApiData) => {
-            map[movie.title] = movie;
-          });
-          setMovieData(map);
+  const movieData = useMemo(() => {
+    const map: Record<string, MovieRating> = {};
+    movies.forEach((movie) => {
+      map[movie.title] = movie;
+    });
+    return map;
+  }, [movies]);
 
-          if (data.graph) {
-            const graph = data.graph;
+  const { graphData, ratingRange } = useMemo<{
+    graphData: GraphData;
+    ratingRange: { min: number; max: number };
+  }>(() => {
+    // Find min and max ratings in the data
+    let minRating = Number.MAX_VALUE;
+    let maxRating = Number.MIN_VALUE;
 
-            // Find min and max ratings in the data
-            let minRating = Number.MAX_VALUE;
-            let maxRating = Number.MIN_VALUE;
+    graph.nodes.forEach((node) => {
+      if (node.rating < minRating) minRating = node.rating;
+      if (node.rating > maxRating) maxRating = node.rating;
+    });
 
-            graph.nodes.forEach((node: Node) => {
-              if (node.rating < minRating) minRating = node.rating;
-              if (node.rating > maxRating) maxRating = node.rating;
-            });
+    // Define a color spectrum function based on actual rating range
+    const getNodeColor = (rating: number) => {
+      // Normalize rating to 0-1 range
+      const normalizedRating = (rating - minRating) / (maxRating - minRating);
 
-            // Store the rating range for legend display
-            setRatingRange({ min: minRating, max: maxRating });
-
-            // Define a color spectrum function based on actual rating range
-            const getNodeColor = (rating: number) => {
-              // Normalize rating to 0-1 range
-              const normalizedRating = (rating - minRating) / (maxRating - minRating);
-
-              // Create color spectrum from red (low) to yellow to green (high)
-              if (normalizedRating < 0.33) {
-                // Red to orange: mix red with increasing yellow
-                const yellowAmount = normalizedRating * 3; // 0 to 1 within this range
-                return `rgb(231, ${Math.floor(76 + yellowAmount * 100)}, 60)`;
-              } else if (normalizedRating < 0.66) {
-                // Orange to yellow: decrease red while keeping yellow high
-                const adjustedValue = (normalizedRating - 0.33) * 3; // 0 to 1 within this range
-                return `rgb(${Math.floor(231 - adjustedValue * 40)}, ${Math.floor(
-                  176 + adjustedValue * 20
-                )}, 60)`;
-              } else {
-                // Yellow to green: decrease red while keeping green high
-                const adjustedValue = (normalizedRating - 0.66) * 3; // 0 to 1 within this range
-                return `rgb(${Math.floor(191 - adjustedValue * 150)}, ${Math.floor(
-                  196 + adjustedValue * 30
-                )}, ${Math.floor(60 + adjustedValue * 36)})`;
-              }
-            };
-
-            // Adjust node size based on rating and position nodes with more spread
-            setGraphData({
-              nodes: graph.nodes.map((node: Node) => ({
-                ...node,
-                val: 5 + node.rating * 200, // Significantly increase the scaling factor for more noticeable size differences
-                color: getNodeColor(node.rating), // Apply color based on rating
-                // Initialize nodes with much more spread
-                x: (Math.random() - 0.5) * 1200,
-                y: (Math.random() - 0.5) * 800 - 200, // Bias toward upper side of canvas
-              })),
-              // Create links with more distance between nodes
-              links: graph.links.map((link: Link) => ({
-                ...link,
-                // Swap source and target to correct arrow direction
-                source: link.target,
-                target: link.source,
-                // This doesn't directly change distance but helps the ForceGraph spacing
-                value: 20, // Higher value = more spacing
-              })),
-            });
-          }
-        }
-      } catch (error) {
-        console.error("Error fetching movie data for graph:", error);
+      // Create color spectrum from red (low) to yellow to green (high)
+      if (normalizedRating < 0.33) {
+        // Red to orange: mix red with increasing yellow
+        const yellowAmount = normalizedRating * 3; // 0 to 1 within this range
+        return `rgb(231, ${Math.floor(76 + yellowAmount * 100)}, 60)`;
+      } else if (normalizedRating < 0.66) {
+        // Orange to yellow: decrease red while keeping yellow high
+        const adjustedValue = (normalizedRating - 0.33) * 3; // 0 to 1 within this range
+        return `rgb(${Math.floor(231 - adjustedValue * 40)}, ${Math.floor(
+          176 + adjustedValue * 20
+        )}, 60)`;
+      } else {
+        // Yellow to green: decrease red while keeping green high
+        const adjustedValue = (normalizedRating - 0.66) * 3; // 0 to 1 within this range
+        return `rgb(${Math.floor(191 - adjustedValue * 150)}, ${Math.floor(
+          196 + adjustedValue * 30
+        )}, ${Math.floor(60 + adjustedValue * 36)})`;
       }
-    }
-    fetchMovieData();
-  }, []);
+    };
+
+    return {
+      ratingRange: { min: minRating, max: maxRating },
+      // Adjust node size based on rating and position nodes with more spread
+      graphData: {
+        nodes: graph.nodes.map((node) => ({
+          ...node,
+          val: 5 + node.rating * 200, // Significantly increase the scaling factor for more noticeable size differences
+          color: getNodeColor(node.rating), // Apply color based on rating
+          // Initialize nodes with much more spread
+          x: (Math.random() - 0.5) * 1200,
+          y: (Math.random() - 0.5) * 800 - 200, // Bias toward upper side of canvas
+        })),
+        // Create links with more distance between nodes
+        links: graph.links.map((link) => ({
+          ...link,
+          // Swap source and target to correct arrow direction
+          source: link.target,
+          target: link.source,
+          // This doesn't directly change distance but helps the ForceGraph spacing
+          value: 20, // Higher value = more spacing
+        })),
+      },
+    };
+  }, [graph]);
 
   return (
     <Box>
@@ -143,7 +120,7 @@ export default function MovieGraph() {
           This graph visualizes how movies compare to each other based on the
           watch history. Each node represents a movie, with larger and darker
           nodes having higher ratings. Arrows indicate comparisons, with the
-          arrow pointing from better to worse movies.
+          arrow pointing from worse to better movies.
         </Text>
 
         <Box>

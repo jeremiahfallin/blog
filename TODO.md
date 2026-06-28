@@ -45,12 +45,15 @@ engine writeup post.)
 
 ## Performance / architecture
 
-- [ ] **Pass ratings data down from the server instead of client-fetching.**
-  `MovieTable` and `MovieGraph` each fetch `/api/movies` in `useEffect`, but
-  the data is static JSON known at build time. Import it in
-  `src/app/movies/page.tsx` and pass it as props (the movie detail page
-  already imports it directly). Removes the loading skeleton, a duplicate
-  fetch, and a network roundtrip; keep the API route for external use.
+- [x] **Pass ratings data down from the server instead of client-fetching.**
+  `src/app/movies/page.tsx` now imports `calculated-ratings.json` and threads it
+  through `MovieViewerClient` → `MovieViewer` to `MovieTable` (movies + cycles)
+  and `MovieGraph` (graph + movies) as props. Both components dropped their
+  `useEffect`/`fetch`; the table lost its `isLoading`/`SkeletonRows`, and the
+  graph derives its node/link/range data via `useMemo`. Added `src/types/ratings.ts`
+  as the shared payload type (replacing the duplicated local types). The
+  `/api/movies` route is unchanged for external use. Verified in a headless
+  browser: zero `/api/movies` requests, table and graph render immediately.
 
 ## Accessibility / UX
 

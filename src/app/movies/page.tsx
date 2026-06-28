@@ -1,5 +1,7 @@
 import { getBlogPosts } from "@/getBlogPosts";
 import MovieViewerClient from "@/components/MovieViewerClient";
+import calculatedRatings from "@/data/calculated-ratings.json";
+import type { RatingsData } from "@/types/ratings";
 import { Box, Flex, Heading, Text, Container, Section } from "@radix-ui/themes";
 
 export const metadata = {
@@ -10,6 +12,7 @@ export const metadata = {
 
 export default async function Movies() {
   const blogPosts = await getBlogPosts();
+  const ratings = calculatedRatings as RatingsData;
 
   return (
     <Container size="3">
@@ -25,7 +28,7 @@ export default async function Movies() {
             </Text>
           </Box>
 
-          <MovieViewerClient posts={blogPosts} />
+          <MovieViewerClient posts={blogPosts} ratings={ratings} />
         </Flex>
       </Section>
     </Container>
