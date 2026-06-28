@@ -1993,14 +1993,68 @@
   },
   {
     "order": 333,
+    "title": "Obsession",
+    "dateWatched": "2026-06-05",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 334,
     "title": "The Awakening",
     "dateWatched": "2026-06-07",
     "betterThanPrevious": false
   },
   {
-    "order": 334,
+    "order": 335,
     "title": "Hokum",
     "dateWatched": "2026-06-07",
     "betterThanPrevious": true
+  },
+  {
+    "order": 336,
+    "title": "Backrooms",
+    "dateWatched": "2026-06-09",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 336,
+    "title": "Mortal Kombat II",
+    "dateWatched": "2026-06-10",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 337,
+    "title": "Killer Whale",
+    "dateWatched": "2026-06-11",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 338,
+    "title": "Faces of Death",
+    "dateWatched": "2026-06-11",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 339,
+    "title": "Over Your Dead Body",
+    "dateWatched": "2026-06-12",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 340,
+    "title": "Girl, Interrupted",
+    "dateWatched": "2026-06-13",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 341,
+    "title": "Paranormal Activity",
+    "dateWatched": "2026-06-13",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 342,
+    "title": "Fear the Night",
+    "dateWatched": "2026-06-13",
+    "betterThanPrevious": false
   }
 ]
