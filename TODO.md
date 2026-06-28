@@ -57,6 +57,30 @@ engine writeup post.)
   query in `globals.css` only shrinks padding. Consider collapsing links into
   a menu on small screens.
 
+## Visual / design polish
+
+Deferred items from the visual-improvements pass (already done in that pass:
+social links, CSS-grid listings, score HoverCards, breadcrumbs, prev/next
+nav, About page, scroll reveals, table skeleton + empty state, uniform date
+labels, graph label fade-on-zoom).
+
+- [ ] **Revisit the Movie Watch page.** The table got score HoverCards and
+  skeleton/empty states, but a deeper polish pass was deferred. Candidates: a
+  summary strip (films watched, date span, # of preference cycles, top-rated
+  title), poster thumbnails in the title column, and clearer graph
+  controls/zoom affordances.
+
+- [ ] **Add a favicon and a default share image.** The site still ships the
+  default Next.js favicon — replace it with a branded mark (e.g. a "JF"
+  monogram matching the gradient logo). Per-page Open Graph / Twitter tags
+  already exist via `buildPostMetadata`, but pages without a backdrop have no
+  image; add a site-wide default OG image (~1200×630) for link previews.
+
+- [ ] **Try an asymmetric / editorial grid.** Listing grids are uniform
+  `repeat(auto-fit, minmax(...))`. A staggered 2-1 / 3-2 layout — or masonry
+  reflecting movie-backdrop aspect ratios — would add visual variety across
+  the home, projects, movies, and shows pages.
+
 ## Content / docs
 
 - [ ] **Fix the README project structure.** It lists `content/` and `media/`
