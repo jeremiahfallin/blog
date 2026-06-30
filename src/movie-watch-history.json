@@ -146,6 +146,7 @@
   {
     "order": 25,
     "title": "Mean Girls",
+    "tmdbId": 673593,
     "dateWatched": "2025-01-26",
     "betterThanPrevious": false
   },
@@ -2055,6 +2056,78 @@
     "order": 342,
     "title": "Fear the Night",
     "dateWatched": "2026-06-13",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 343,
+    "title": "Evil Dead",
+    "dateWatched": "2026-06-14",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 344,
+    "title": "Slender Man",
+    "dateWatched": "2026-06-19",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 345,
+    "title": "Constantine",
+    "dateWatched": "2026-06-19",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 346,
+    "title": "Blair Witch",
+    "dateWatched": "2026-06-20",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 347,
+    "title": "Paranormal Activity 2",
+    "dateWatched": "2026-06-20",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 348,
+    "title": "Paranormal Activity 3",
+    "dateWatched": "2026-06-21",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 349,
+    "title": "Becky",
+    "dateWatched": "2026-06-20",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 350,
+    "title": "#Alive",
+    "dateWatched": "2026-06-24",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 351,
+    "title": "Zodiac",
+    "dateWatched": "2026-06-25",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 352,
+    "title": "Until Dawn",
+    "dateWatched": "2026-06-26",
+    "betterThanPrevious": false
+  },
+  {
+    "order": 353,
+    "title": "The Night House",
+    "dateWatched": "2026-06-28",
+    "betterThanPrevious": true
+  },
+  {
+    "order": 354,
+    "title": "Shutter",
+    "dateWatched": "2026-06-29",
     "betterThanPrevious": false
   }
 ]

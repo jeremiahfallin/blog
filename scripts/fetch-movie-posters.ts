@@ -7,8 +7,13 @@
  *
  * - Auth: TMDB_READ_ACCESS_TOKEN (v4 read token) sent as a Bearer header. Loaded
  *   from the environment, or from a local .env file if present.
+ * - Disambiguation: a watch-history entry may carry an optional `tmdbId` to pin
+ *   the exact film (e.g. to tell the 2004 from the 2024 "Mean Girls"). The script
+ *   prefers it over title search and flags titles with multiple same-name matches
+ *   so they can be pinned.
  * - Manual fixes: scripts/movie-poster-overrides.json maps a title to either
  *   { tmdbId } (re-resolved against TMDB) or { skip: true } (left unmatched).
+ *   Precedence: override id > watch-history `tmdbId` > title search.
  * - Re-runs are cheap: titles already resolved with a poster are skipped; misses
  *   are retried so they can resolve once TMDB has the film.
  *
@@ -79,21 +84,32 @@ function toEntry(movie: any, match: PosterEntry["match"]): PosterEntry {
   };
 }
 
-async function resolveTitle(token: string, title: string): Promise<PosterEntry> {
+async function resolveTitle(
+  token: string,
+  title: string
+): Promise<{ entry: PosterEntry; candidates: any[] }> {
   const data = await tmdb(
     token,
     `/search/movie?include_adult=false&query=${encodeURIComponent(title)}`
   );
   const results: any[] = data.results ?? [];
   if (results.length === 0) {
-    return { tmdbId: null, posterPath: null, matchedTitle: null, year: null, match: "none" };
+    return {
+      entry: { tmdbId: null, posterPath: null, matchedTitle: null, year: null, match: "none" },
+      candidates: [],
+    };
   }
   const norm = (s: string) => s.toLowerCase().trim();
-  const exact = results.find(
+  const exactMatches = results.filter(
     (r) => norm(r.title) === norm(title) || norm(r.original_title) === norm(title)
   );
   // Results are popularity-sorted; prefer an exact title match, else the top hit.
-  return toEntry(exact ?? results[0], exact ? "exact" : "fuzzy");
+  const chosen = exactMatches[0] ?? results[0];
+  // candidates holds same-name films (remakes) so they can be pinned by id.
+  return {
+    entry: toEntry(chosen, exactMatches.length ? "exact" : "fuzzy"),
+    candidates: exactMatches,
+  };
 }
 
 async function main() {
@@ -106,16 +122,34 @@ async function main() {
     process.exit(1);
   }
 
-  const history = readJson<{ title: string }[]>(WATCH_HISTORY, []);
+  const history = readJson<{ title: string; tmdbId?: number }[]>(WATCH_HISTORY, []);
   const titles = [...new Set(history.map((h) => h.title))].sort();
   const existing = readJson<Record<string, PosterEntry>>(OUTPUT, {});
   const overrides = readJson<Overrides>(OVERRIDES, {});
+
+  // Canonical id pinned in the watch history itself (disambiguates same-name
+  // remakes per watch). First entry with an id wins; warn on conflicts.
+  const pinnedByTitle: Record<string, number> = {};
+  for (const entry of history) {
+    if (typeof entry.tmdbId !== "number") continue;
+    if (
+      pinnedByTitle[entry.title] !== undefined &&
+      pinnedByTitle[entry.title] !== entry.tmdbId
+    ) {
+      console.warn(
+        `Conflicting tmdbId for "${entry.title}": ${pinnedByTitle[entry.title]} vs ${entry.tmdbId} (posters are keyed by title; using the first).`
+      );
+      continue;
+    }
+    pinnedByTitle[entry.title] = entry.tmdbId;
+  }
 
   const out: Record<string, PosterEntry> = {};
   let resolved = 0;
   let queried = 0;
   const lowConfidence: string[] = [];
   const misses: string[] = [];
+  const ambiguous: string[] = [];
 
   for (const title of titles) {
     const override = overrides[title];
@@ -125,20 +159,36 @@ async function main() {
       continue;
     }
 
-    // Reuse a previous successful resolution unless an override changes it.
-    if (!override && existing[title]?.posterPath) {
-      out[title] = existing[title];
+    // Precedence: override id > id pinned in the watch history > title search.
+    const pinnedId = override?.tmdbId ?? pinnedByTitle[title];
+
+    // Reuse a cached resolution if it already reflects the current pin.
+    const cached = existing[title];
+    if (
+      cached?.posterPath &&
+      (pinnedId === undefined || cached.tmdbId === pinnedId)
+    ) {
+      out[title] = cached;
       resolved++;
       continue;
     }
 
     try {
       let entry: PosterEntry;
-      if (override?.tmdbId) {
-        const movie = await tmdb(token, `/movie/${override.tmdbId}`);
+      if (pinnedId !== undefined) {
+        const movie = await tmdb(token, `/movie/${pinnedId}`);
         entry = toEntry(movie, "exact");
       } else {
-        entry = await resolveTitle(token, title);
+        const result = await resolveTitle(token, title);
+        entry = result.entry;
+        if (result.candidates.length > 1) {
+          ambiguous.push(
+            `${title}  (chose ${entry.matchedTitle}, ${entry.year}) — candidates: ` +
+              result.candidates
+                .map((c) => `${c.id}=${(c.release_date || "?").slice(0, 4)}`)
+                .join(", ")
+          );
+        }
       }
       queried++;
       out[title] = entry;
@@ -167,6 +217,12 @@ async function main() {
   if (lowConfidence.length) {
     console.log(`\nLow-confidence (fuzzy) matches to review:`);
     for (const l of lowConfidence) console.log(`  ${l}`);
+  }
+  if (ambiguous.length) {
+    console.log(
+      `\nAmbiguous (multiple same-name films) — pin the right one with a "tmdbId" on the watch-history entry:`
+    );
+    for (const a of ambiguous) console.log(`  ${a}`);
   }
   if (misses.length) {
     console.log(`\nNo poster found (add to ${path.basename(OVERRIDES)} with a tmdbId, or mark skip):`);

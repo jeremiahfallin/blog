@@ -209,6 +209,13 @@
     "year": "2022",
     "match": "exact"
   },
+  "Becky": {
+    "tmdbId": 601844,
+    "posterPath": "/9wqKF883Kn9c0SZV4ZmkIkFhBLh.jpg",
+    "matchedTitle": "Becky",
+    "year": "2020",
+    "match": "exact"
+  },
   "Better Watch Out": {
     "tmdbId": 406994,
     "posterPath": "/liI4c3GYaKuAo4FsCF4RKvFFqbV.jpg",
@@ -242,6 +249,13 @@
     "posterPath": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
     "matchedTitle": "Blade Runner 2049",
     "year": "2017",
+    "match": "exact"
+  },
+  "Blair Witch": {
+    "tmdbId": 351211,
+    "posterPath": "/Ai73frMEz68bibFGRlPKdWBaIaq.jpg",
+    "matchedTitle": "Blair Witch",
+    "year": "2016",
     "match": "exact"
   },
   "Blood": {
@@ -522,6 +536,13 @@
     "posterPath": "/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
     "matchedTitle": "Everything Everywhere All at Once",
     "year": "2022",
+    "match": "exact"
+  },
+  "Evil Dead": {
+    "tmdbId": 109428,
+    "posterPath": "/1gDV0Lm9y8ufIKzyf0h0GBgb9Zj.jpg",
+    "matchedTitle": "Evil Dead",
+    "year": "2013",
     "match": "exact"
   },
   "Exit 8": {
@@ -973,10 +994,10 @@
     "match": "exact"
   },
   "Mean Girls": {
-    "tmdbId": 10625,
-    "posterPath": "/fXm3YKXAEjx7d2tIWDg9TfRZtsU.jpg",
+    "tmdbId": 673593,
+    "posterPath": "/fbbj3viSUDEGT1fFFMNpHP1iUjw.jpg",
     "matchedTitle": "Mean Girls",
-    "year": "2004",
+    "year": "2024",
     "match": "exact"
   },
   "Memories of Murder": {
@@ -1161,6 +1182,20 @@
     "year": "2007",
     "match": "exact"
   },
+  "Paranormal Activity 2": {
+    "tmdbId": 41436,
+    "posterPath": "/gfdrkBZAyUUXJJ2iLQe03SAYRD3.jpg",
+    "matchedTitle": "Paranormal Activity 2",
+    "year": "2010",
+    "match": "exact"
+  },
+  "Paranormal Activity 3": {
+    "tmdbId": 72571,
+    "posterPath": "/9nYranPiWdNmbD5PRPPSL7VUFTS.jpg",
+    "matchedTitle": "Paranormal Activity 3",
+    "year": "2011",
+    "match": "exact"
+  },
   "Paranormal Activity: Next of Kin": {
     "tmdbId": 609972,
     "posterPath": "/wRy3SwJFE55iL2bfKqECzP2qyrd.jpg",
@@ -1343,6 +1378,13 @@
     "year": "2025",
     "match": "exact"
   },
+  "Shutter": {
+    "tmdbId": 17111,
+    "posterPath": "/zUyaVtyugDaDHtOC6kCMJhbZsWu.jpg",
+    "matchedTitle": "Shutter",
+    "year": "2004",
+    "match": "exact"
+  },
   "Sicario": {
     "tmdbId": 273481,
     "posterPath": "/lz8vNyXeidqqOdJW9ZjnDAMb5Vr.jpg",
@@ -1383,6 +1425,13 @@
     "posterPath": "/o942912KFh89SGhqWuKXuT0SXzN.jpg",
     "matchedTitle": "Skinamarink",
     "year": "2023",
+    "match": "exact"
+  },
+  "Slender Man": {
+    "tmdbId": 439015,
+    "posterPath": "/huSncs4RyvQDBmHjBBYHSBYJbSJ.jpg",
+    "matchedTitle": "Slender Man",
+    "year": "2018",
     "match": "exact"
   },
   "Smile": {
@@ -1698,6 +1747,13 @@
     "posterPath": "/yYa8Onk9ow7ukcnfp2QWVvjWYel.jpg",
     "matchedTitle": "The Monkey",
     "year": "2025",
+    "match": "exact"
+  },
+  "The Night House": {
+    "tmdbId": 547565,
+    "posterPath": "/rqs2CXpc4d5FzeP1EZCYItAVo81.jpg",
+    "matchedTitle": "The Night House",
+    "year": "2021",
     "match": "exact"
   },
   "The Nightman": {
@@ -2048,6 +2104,13 @@
     "posterPath": "/l163jakfKvchUTVTtBi0KA7ZhIc.jpg",
     "matchedTitle": "You're Next",
     "year": "2013",
+    "match": "exact"
+  },
+  "Zodiac": {
+    "tmdbId": 1949,
+    "posterPath": "/6YmeO4pB7XTh8P8F960O1uA14JO.jpg",
+    "matchedTitle": "Zodiac",
+    "year": "2007",
     "match": "exact"
   },
   "iHostage": {
