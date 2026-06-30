@@ -101,10 +101,15 @@ labels, graph label fade-on-zoom).
   already exist via `buildPostMetadata`, but pages without a backdrop have no
   image; add a site-wide default OG image (~1200×630) for link previews.
 
-- [ ] **Try an asymmetric / editorial grid.** Listing grids are uniform
-  `repeat(auto-fit, minmax(...))`. A staggered 2-1 / 3-2 layout — or masonry
-  reflecting movie-backdrop aspect ratios — would add visual variety across
-  the home, projects, movies, and shows pages.
+- [x] **Try an asymmetric / editorial grid.** Adopted a "feature-first" layout.
+  Projects page: the newest project renders as a full-width hero card (new
+  `featured` variant of `ProjectCard` — accent border, eyebrow, larger title,
+  full description + all tags; auto-upgrades to an image hero if a project ever
+  gets a `background`), with the rest in the existing grid sorted newest-first.
+  Home: "Recent Watch History" is now a 1-big-+-2 editorial trio
+  (`.movie-feature-grid`) and "Featured Projects" an asymmetric pair
+  (`.featured-pair`). Shows (1 entry) and the movies table are untouched.
+  Verified with desktop/mobile screenshots — no overflow at either width.
 
 ## Content / docs
 

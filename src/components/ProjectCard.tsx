@@ -19,13 +19,79 @@ const getTagColor = (tag: string): "blue" | "indigo" | "pink" | "orange" | "teal
   return "gray";
 };
 
-export function ProjectCard({ project }: { project: BlogPostData }) {
+export function ProjectCard({
+  project,
+  featured = false,
+}: {
+  project: BlogPostData;
+  featured?: boolean;
+}) {
   const hasBackground = project.metadata.background as string | undefined;
   const projectUrl = `/projects/${project.slug.replace("projects/", "")}`;
 
   // Cast metadata to include our extended fields
   const metadata = project.metadata as typeof project.metadata &
     ExtendedMetadata;
+
+  const formattedDate = metadata.date
+    ? new Date(metadata.date).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+      })
+    : null;
+
+  if (featured) {
+    return (
+      <Card className="project-card-featured" asChild>
+        <NextLink href={projectUrl}>
+          <Box className="project-featured-inner" data-has-image={!!hasBackground}>
+            {hasBackground && (
+              <Box className="project-featured-media">
+                <Image
+                  src={`/media/${hasBackground}`}
+                  alt={metadata.title as string}
+                  fill
+                  style={{ objectFit: "cover" }}
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, 45vw"
+                />
+              </Box>
+            )}
+
+            <Flex direction="column" gap="3" className="project-featured-body">
+              <Text className="project-featured-eyebrow">Featured project</Text>
+
+              <Heading as="h3" size="7" className="card-title-hover">
+                <Link asChild>
+                  <span>{metadata.title as string}</span>
+                </Link>
+              </Heading>
+
+              <Text size="3" style={{ color: "var(--gray-11)", lineHeight: 1.6 }}>
+                {metadata.description as string}
+              </Text>
+
+              {metadata.tags && metadata.tags.length > 0 && (
+                <Flex gap="1" wrap="wrap">
+                  {metadata.tags.map((tag) => (
+                    <Badge key={tag} variant="soft" color={getTagColor(tag)} size="1">
+                      {tag}
+                    </Badge>
+                  ))}
+                </Flex>
+              )}
+
+              {formattedDate && (
+                <Text size="1" style={{ color: "var(--gray-10)", marginTop: "auto" }}>
+                  {formattedDate}
+                </Text>
+              )}
+            </Flex>
+          </Box>
+        </NextLink>
+      </Card>
+    );
+  }
 
   return (
     <Box style={{ height: "100%" }}>
@@ -101,15 +167,12 @@ export function ProjectCard({ project }: { project: BlogPostData }) {
                 </Flex>
               )}
 
-              {metadata.date && (
+              {formattedDate && (
                 <Text
                   size="1"
                   style={{ color: "var(--gray-10)", marginTop: "auto" }}
                 >
-                  {new Date(metadata.date).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "short",
-                  })}
+                  {formattedDate}
                 </Text>
               )}
             </Flex>

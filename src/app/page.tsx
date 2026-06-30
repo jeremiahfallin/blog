@@ -85,7 +85,14 @@ export default async function Home() {
   const blogPosts = await getBlogPosts();
 
   const moviePosts = blogPosts.filter((post) => post.slug.startsWith("movies/")).slice(0, 3);
-  const projectPosts = blogPosts.filter((post) => post.slug.startsWith("projects/")).slice(0, 2);
+  const projectPosts = blogPosts
+    .filter((post) => post.slug.startsWith("projects/"))
+    .sort(
+      (a, b) =>
+        new Date((b.metadata as { date?: string }).date ?? 0).getTime() -
+        new Date((a.metadata as { date?: string }).date ?? 0).getTime()
+    )
+    .slice(0, 2);
 
   return (
     <Container size="3">
@@ -153,7 +160,7 @@ export default async function Home() {
               </Link>
             </Flex>
 
-            <Box className="card-grid-wide">
+            <Box className="featured-pair">
               {projectPosts.map((post) => (
                 <ProjectCard key={post.slug} project={post} />
               ))}
@@ -184,7 +191,7 @@ export default async function Home() {
               </Link>
             </Flex>
 
-            <Box className="card-grid">
+            <Box className="movie-feature-grid">
               {moviePosts.map((post) => (
                 <MovieCard key={post.slug} movie={post} />
               ))}

@@ -769,6 +769,81 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+/* Editorial "feature-first" listing layouts */
+
+/* Asymmetric two-up: first card wider (home Featured Projects) */
+.featured-pair {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Movie trio: one full-width banner above a two-up (home Recent Watch History) */
+.movie-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.movie-feature-grid > :first-child {
+  grid-column: 1 / -1;
+}
+
+/* Featured project hero card */
+.project-card-featured {
+  width: 100%;
+  --card-background-color: rgba(28, 32, 48, 0.5);
+  border-left: 3px solid var(--blue-9);
+  overflow: hidden;
+}
+
+.project-featured-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project-featured-inner[data-has-image="true"] {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+}
+
+.project-featured-media {
+  position: relative;
+  min-height: 260px;
+}
+
+.project-featured-body {
+  padding: 1.75rem 2rem;
+}
+
+.project-featured-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--blue-11);
+}
+
+@media (max-width: 768px) {
+  .featured-pair,
+  .movie-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-featured-inner[data-has-image="true"] {
+    grid-template-columns: 1fr;
+  }
+
+  .project-featured-media {
+    min-height: 200px;
+  }
+
+  .project-featured-body {
+    padding: 1.25rem;
+  }
+}
+
 /* Section separator polish — visible gradient line */
 .section-divider {
   border: none;

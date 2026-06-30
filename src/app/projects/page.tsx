@@ -11,9 +11,13 @@ export const metadata = {
 
 export default async function Projects() {
   const blogPosts = await getBlogPosts();
-  const projectPosts = blogPosts.filter((post) =>
-    post.slug.startsWith("projects/")
-  );
+  const projectPosts = blogPosts
+    .filter((post) => post.slug.startsWith("projects/"))
+    .sort(
+      (a, b) =>
+        new Date((b.metadata as { date?: string }).date ?? 0).getTime() -
+        new Date((a.metadata as { date?: string }).date ?? 0).getTime()
+    );
 
   return (
     <Container size="3">
@@ -31,11 +35,18 @@ export default async function Projects() {
           </Box>
 
           <ScrollReveal>
-            <Box className="card-grid-wide">
-              {projectPosts.map((post) => (
-                <ProjectCard key={post.slug} project={post} />
-              ))}
-            </Box>
+            <Flex direction="column" gap="5">
+              {projectPosts.length > 0 && (
+                <ProjectCard project={projectPosts[0]} featured />
+              )}
+              {projectPosts.length > 1 && (
+                <Box className="card-grid-wide">
+                  {projectPosts.slice(1).map((post) => (
+                    <ProjectCard key={post.slug} project={post} />
+                  ))}
+                </Box>
+              )}
+            </Flex>
           </ScrollReveal>
         </Flex>
       </Section>
