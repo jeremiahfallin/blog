@@ -1732,7 +1732,7 @@
     },
     {
       "order": 174,
-      "title": "Session 8",
+      "title": "Session 9",
       "dateWatched": "2025-08-17",
       "betterThanPrevious": false,
       "btscore": 0.15079249946794882,
@@ -4180,7 +4180,7 @@
         "uncertainty": 0.009615380513767268
       },
       {
-        "id": "Session 8",
+        "id": "Session 9",
         "rating": 0.0015079249946794882,
         "uncertainty": 0.0013400997990333195
       },
@@ -5823,7 +5823,7 @@
       },
       {
         "source": "World War Z",
-        "target": "Session 8",
+        "target": "Session 9",
         "weight": 0.5488116360940265
       },
       {
@@ -5858,7 +5858,7 @@
       },
       {
         "source": "Lovely, Dark, and Deep",
-        "target": "Session 8",
+        "target": "Session 9",
         "weight": 0.5488116360940265
       },
       {

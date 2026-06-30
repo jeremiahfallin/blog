@@ -1322,12 +1322,12 @@
     "year": "2026",
     "match": "exact"
   },
-  "Session 8": {
-    "tmdbId": 312931,
-    "posterPath": null,
-    "matchedTitle": "Joe Weider's Bodybuilding Training System, Session 8: Nutrition & Diet",
-    "year": "1994",
-    "match": "fuzzy"
+  "Session 9": {
+    "tmdbId": 10972,
+    "posterPath": "/A3Au37c3KJX29BDvldzGiYtaU5B.jpg",
+    "matchedTitle": "Session 9",
+    "year": "2001",
+    "match": "exact"
   },
   "Shazam! Fury of the Gods": {
     "tmdbId": 594767,
