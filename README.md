@@ -78,13 +78,15 @@ npm run test:e2e:report
 ## 📁 Project Structure
 
 ```
-├── content/              # MDX files containing posts (movies, shows, projects)
-├── media/                # Backdrop images and media assets
+├── public/
+│   └── media/            # Backdrop images and media assets
 ├── scripts/              # Build-time rating calculation scripts
 ├── src/
 │   ├── app/              # Next.js App Router pages and layout assets
 │   ├── components/       # Custom React components (table, graph, layouts)
+│   ├── content/          # MDX files containing posts (movies, shows, projects)
 │   ├── data/             # Static json records and pre-calculated ratings
+│   ├── types/            # Shared TypeScript types
 │   └── utils/            # Bradley-Terry ratings algorithm logic
 └── tests/                # Playwright E2E spec files
 ```

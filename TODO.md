@@ -113,8 +113,8 @@ labels, graph label fade-on-zoom).
 
 ## Content / docs
 
-- [ ] **Fix the README project structure.** It lists `content/` and `media/`
-  at the repo root; they live at `src/content/` and `public/media/`.
+- [x] **Fix the README project structure.** Corrected the tree: `content/` now
+  shown under `src/`, `media/` under `public/`, and added `src/types/`.
 
 - [ ] **Expand thin content.** Several movie reviews are one or two sentences
   (The Platform's description is "Wow."), and the shows section has a single
