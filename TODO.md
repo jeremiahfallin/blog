@@ -90,10 +90,17 @@ labels, graph label fade-on-zoom).
   backdrops, not posters; real thumbnails would need a poster source (e.g. TMDB)
   for ~294 films, which is a content/data project (see below).
 
-- [ ] **Movie poster thumbnails (needs a data source).** The title column could
-  show poster thumbnails, but the watch history has 294 unique titles and only 8
-  have local imagery (and those are wide backdrops). Would require sourcing
-  posters for the full history, e.g. via the TMDB API, plus caching them.
+- [x] **Movie poster thumbnails.** Added `scripts/fetch-movie-posters.ts`, a
+  build-time enrichment that resolves each unique watch-history title to a TMDB
+  movie (Bearer auth via `TMDB_READ_ACCESS_TOKEN`) and writes
+  `src/data/movie-posters.json` (`title → { tmdbId, posterPath, matchedTitle,
+  year, match }`). `scripts/movie-poster-overrides.json` pins ambiguous matches.
+  293/294 titles resolved; the title column now shows a ~w92 poster (hotlinked
+  from `image.tmdb.org`, allowlisted in `next.config.ts`) with a 🎬 placeholder
+  fallback. Required TMDB attribution added to the movies page. Run with
+  `npm run fetch:posters`. The lone miss, **"Session 8", is almost certainly a
+  typo for "Session 9"** in `src/movie-watch-history.json` — worth fixing at the
+  source.
 
 - [ ] **Add a favicon and a default share image.** The site still ships the
   default Next.js favicon — replace it with a branded mark (e.g. a "JF"

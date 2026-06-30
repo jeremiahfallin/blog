@@ -5,14 +5,16 @@ import MovieTable from "./MovieTable";
 import MovieGraph from "./MovieGraph";
 import MovieSummary from "./MovieSummary";
 import { BlogPostData } from "@/getBlogPosts";
-import type { RatingsData } from "@/types/ratings";
+import type { RatingsData, PosterMap } from "@/types/ratings";
 
 export default function MovieViewer({
   posts,
   ratings,
+  posters,
 }: {
   posts: BlogPostData[];
   ratings: RatingsData;
+  posters: PosterMap;
 }) {
   const [viewMode, setViewMode] = useState<"table" | "graph">("table");
 
@@ -35,6 +37,7 @@ export default function MovieViewer({
               posts={posts}
               movies={ratings.movies}
               cycles={ratings.cycles}
+              posters={posters}
             />
           ) : (
             <Flex direction="column" gap="4">

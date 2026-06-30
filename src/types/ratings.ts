@@ -34,3 +34,14 @@ export type RatingsData = {
   cycles: string[][];
   graph: RatingsGraph;
 };
+
+// Shape of src/data/movie-posters.json — built by scripts/fetch-movie-posters.ts.
+export type MoviePoster = {
+  tmdbId: number | null;
+  posterPath: string | null;
+  matchedTitle: string | null;
+  year: string | null;
+  match: "exact" | "fuzzy" | "none";
+};
+
+export type PosterMap = Record<string, MoviePoster>;

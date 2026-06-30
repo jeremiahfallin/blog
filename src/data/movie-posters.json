@@ -1,0 +1,2060 @@
+{
+  "#Alive": {
+    "tmdbId": 614696,
+    "posterPath": "/lZPvLUMYEPLTE2df1VW5FHTYC8N.jpg",
+    "matchedTitle": "#Alive",
+    "year": "2020",
+    "match": "exact"
+  },
+  "10 Cloverfield Lane": {
+    "tmdbId": 333371,
+    "posterPath": "/q8A39vcBDruhvoDTJd6L8a4lnTi.jpg",
+    "matchedTitle": "10 Cloverfield Lane",
+    "year": "2016",
+    "match": "exact"
+  },
+  "28 Weeks Later": {
+    "tmdbId": 1562,
+    "posterPath": "/oix0aNv1lvW3nUGspUyvSIBlpbs.jpg",
+    "matchedTitle": "28 Weeks Later",
+    "year": "2007",
+    "match": "exact"
+  },
+  "28 Years Later": {
+    "tmdbId": 1100988,
+    "posterPath": "/n5FygjEppOvac6yEaowi26nTyw3.jpg",
+    "matchedTitle": "28 Years Later",
+    "year": "2025",
+    "match": "exact"
+  },
+  "28 Years Later: The Bone Temple": {
+    "tmdbId": 1272837,
+    "posterPath": "/kK1BGkG3KAvWB0WMV1DfOx9yTMZ.jpg",
+    "matchedTitle": "28 Years Later: The Bone Temple",
+    "year": "2026",
+    "match": "exact"
+  },
+  "825 Forest Road": {
+    "tmdbId": 1282980,
+    "posterPath": "/mxvRZxq6ACTeJYJZKsHQAhz76yF.jpg",
+    "matchedTitle": "825 Forest Road",
+    "year": "2025",
+    "match": "exact"
+  },
+  "A Dog's Way Home": {
+    "tmdbId": 508763,
+    "posterPath": "/pZn87R7gtmMCGGO8KeaAfZDhXLg.jpg",
+    "matchedTitle": "A Dog's Way Home",
+    "year": "2019",
+    "match": "exact"
+  },
+  "A Quiet Place": {
+    "tmdbId": 447332,
+    "posterPath": "/nAU74GmpUk7t5iklEp3bufwDq4n.jpg",
+    "matchedTitle": "A Quiet Place",
+    "year": "2018",
+    "match": "exact"
+  },
+  "ARQ": {
+    "tmdbId": 410199,
+    "posterPath": "/mU4VeXVK18JtCZsy7i0zczlA9p7.jpg",
+    "matchedTitle": "ARQ",
+    "year": "2016",
+    "match": "exact"
+  },
+  "Abigail": {
+    "tmdbId": 1111873,
+    "posterPath": "/5gKKSoD3iezjoL7YqZONjmyAiRA.jpg",
+    "matchedTitle": "Abigail",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Abraham's Boys": {
+    "tmdbId": 1452176,
+    "posterPath": "/owUZI7rRIN85TnXJY8gD9LdMiGU.jpg",
+    "matchedTitle": "Abraham's Boys: A Dracula Story",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Ad Vitam": {
+    "tmdbId": 1261501,
+    "posterPath": "/xqBSapk1nC35WlZ6PraMjOVMQBy.jpg",
+    "matchedTitle": "Ad Vitam",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Aftermath": {
+    "tmdbId": 390051,
+    "posterPath": "/25oWTCGqIik4gUTMidx3L8DI4Bt.jpg",
+    "matchedTitle": "Aftermath",
+    "year": "2017",
+    "match": "exact"
+  },
+  "Alice": {
+    "tmdbId": 714676,
+    "posterPath": "/jrGyjoCsRLVbzmsaeFCueOnGOKL.jpg",
+    "matchedTitle": "Alice",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Alien": {
+    "tmdbId": 348,
+    "posterPath": "/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+    "matchedTitle": "Alien",
+    "year": "1979",
+    "match": "exact"
+  },
+  "Alien: Romulus": {
+    "tmdbId": 945961,
+    "posterPath": "/2uSWRTtCG336nuBiG8jOTEUKSy8.jpg",
+    "matchedTitle": "Alien: Romulus",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Aliens vs. Predator: Requiem": {
+    "tmdbId": 440,
+    "posterPath": "/5iTwPDNtvK6ZZF607BHBbU3HO0B.jpg",
+    "matchedTitle": "Aliens vs Predator: Requiem",
+    "year": "2007",
+    "match": "fuzzy"
+  },
+  "Alone": {
+    "tmdbId": 509635,
+    "posterPath": "/n9OzZmPMnVrV0cMQ7amX0DtBkQH.jpg",
+    "matchedTitle": "Alone",
+    "year": "2020",
+    "match": "exact"
+  },
+  "Alpha": {
+    "tmdbId": 1122030,
+    "posterPath": "/fQRbBCbqortBDx3PixdpU50oVDj.jpg",
+    "matchedTitle": "Alpha",
+    "year": "2026",
+    "match": "exact"
+  },
+  "American Sniper": {
+    "tmdbId": 190859,
+    "posterPath": "/i1U46OwMc6vlm7OoSUKfqUH615e.jpg",
+    "matchedTitle": "American Sniper",
+    "year": "2014",
+    "match": "exact"
+  },
+  "Anora": {
+    "tmdbId": 1064213,
+    "posterPath": "/cgXk2tNYhJZLXdBDO5DidAVzQ82.jpg",
+    "matchedTitle": "Anora",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Antrum: The Deadliest Film Ever Made": {
+    "tmdbId": 412546,
+    "posterPath": "/20de4Rcmy4B0L5zyOc3Nc5F7c0D.jpg",
+    "matchedTitle": "Antrum",
+    "year": "2018",
+    "match": "fuzzy"
+  },
+  "Apartment 7A": {
+    "tmdbId": 807339,
+    "posterPath": "/uipHKJHY1nNEQyprXjfNzH0GIOF.jpg",
+    "matchedTitle": "Apartment 7A",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Apex": {
+    "tmdbId": 1318447,
+    "posterPath": "/eTp7gSPkSF3Aw79mNx1NkBP1PZT.jpg",
+    "matchedTitle": "Apex",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Army of the Dead": {
+    "tmdbId": 503736,
+    "posterPath": "/gCIsRxzcxvmuLYeAvWgoOuSxszF.jpg",
+    "matchedTitle": "Army of the Dead",
+    "year": "2021",
+    "match": "exact"
+  },
+  "Arrival": {
+    "tmdbId": 329865,
+    "posterPath": "/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
+    "matchedTitle": "Arrival",
+    "year": "2016",
+    "match": "exact"
+  },
+  "Awake": {
+    "tmdbId": 13483,
+    "posterPath": "/xqooV6lR1Kdx4Q52Sim0aGbDTYP.jpg",
+    "matchedTitle": "Awake",
+    "year": "2007",
+    "match": "exact"
+  },
+  "Azrael": {
+    "tmdbId": 1029235,
+    "posterPath": "/qpdFKDvJS7oLKTcBLXOaMwUESbs.jpg",
+    "matchedTitle": "Azrael",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Backrooms": {
+    "tmdbId": 1083381,
+    "posterPath": "/rhGx6E3qRNMgj3i5su2oukNHwIQ.jpg",
+    "matchedTitle": "Backrooms",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Barbarian": {
+    "tmdbId": 913290,
+    "posterPath": "/idT5mnqPcJgSkvpDX7pJffBzdVH.jpg",
+    "matchedTitle": "Barbarian",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Better Watch Out": {
+    "tmdbId": 406994,
+    "posterPath": "/liI4c3GYaKuAo4FsCF4RKvFFqbV.jpg",
+    "matchedTitle": "Better Watch Out",
+    "year": "2017",
+    "match": "exact"
+  },
+  "Black Bag": {
+    "tmdbId": 1233575,
+    "posterPath": "/hHPovtU4b96LHcoeEwRkGHI5btw.jpg",
+    "matchedTitle": "Black Bag",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Black Phone 2": {
+    "tmdbId": 1197137,
+    "posterPath": "/gFddBLQ8wj9M9O82iPzgX5KVNHz.jpg",
+    "matchedTitle": "Black Phone 2",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Blade Runner": {
+    "tmdbId": 78,
+    "posterPath": "/63N9uy8nd9j7Eog2axPQ8lbr3Wj.jpg",
+    "matchedTitle": "Blade Runner",
+    "year": "1982",
+    "match": "exact"
+  },
+  "Blade Runner 2049": {
+    "tmdbId": 335984,
+    "posterPath": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+    "matchedTitle": "Blade Runner 2049",
+    "year": "2017",
+    "match": "exact"
+  },
+  "Blood": {
+    "tmdbId": 136278,
+    "posterPath": "/wtHDMP6VPNF2Vc8YNCHwz4sJtNo.jpg",
+    "matchedTitle": "Blood",
+    "year": "2012",
+    "match": "exact"
+  },
+  "Bodycam": {
+    "tmdbId": 1510745,
+    "posterPath": "/xFpBNcG3Dlr8mYF5Kz9Tizs3Pxn.jpg",
+    "matchedTitle": "Bodycam",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Bone Lake": {
+    "tmdbId": 1330421,
+    "posterPath": "/sGo5ti82LlydAZrvcsaj31iPuEI.jpg",
+    "matchedTitle": "Bone Lake",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Bring Her Back": {
+    "tmdbId": 1151031,
+    "posterPath": "/1Q3GlCXGYWELifxANYZ5OVMRVZl.jpg",
+    "matchedTitle": "Bring Her Back",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Bugonia": {
+    "tmdbId": 701387,
+    "posterPath": "/oxgsAQDAAxA92mFGYCZllgWkH9J.jpg",
+    "matchedTitle": "Bugonia",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Carriers": {
+    "tmdbId": 25769,
+    "posterPath": "/jxjnjHtHXgvjdhkwpelE9ZwVMg6.jpg",
+    "matchedTitle": "Carriers",
+    "year": "2009",
+    "match": "exact"
+  },
+  "Carry-On": {
+    "tmdbId": 1005331,
+    "posterPath": "/sjMN7DRi4sGiledsmllEw5HJjPy.jpg",
+    "matchedTitle": "Carry-On",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Catch Me If You Can": {
+    "tmdbId": 640,
+    "posterPath": "/ctjEj2xM32OvBXCq8zAdK3ZrsAj.jpg",
+    "matchedTitle": "Catch Me If You Can",
+    "year": "2002",
+    "match": "exact"
+  },
+  "Caught Stealing": {
+    "tmdbId": 1245993,
+    "posterPath": "/cvda8s5J8YaHjTyEyXQpvD6f3iV.jpg",
+    "matchedTitle": "Caught Stealing",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Children of Men": {
+    "tmdbId": 9693,
+    "posterPath": "/k9IAS4TehZFcKi4HVByxZNPfqex.jpg",
+    "matchedTitle": "Children of Men",
+    "year": "2006",
+    "match": "exact"
+  },
+  "Circle": {
+    "tmdbId": 335866,
+    "posterPath": "/hbIL53MdZFJXsgxXaSOVuApWTs8.jpg",
+    "matchedTitle": "Circle",
+    "year": "2015",
+    "match": "exact"
+  },
+  "ClearMind": {
+    "tmdbId": 1142101,
+    "posterPath": "/7GqEmx1pUQE8pLJR7OR0urXfBuu.jpg",
+    "matchedTitle": "ClearMind",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Close": {
+    "tmdbId": 460321,
+    "posterPath": "/iYAwwdE5KvDaU4Uyll5h4XscXkc.jpg",
+    "matchedTitle": "Close",
+    "year": "2019",
+    "match": "exact"
+  },
+  "Cloverfield": {
+    "tmdbId": 7191,
+    "posterPath": "/qIegUGJqyMMCRjkKV1s7A9MqdJ8.jpg",
+    "matchedTitle": "Cloverfield",
+    "year": "2008",
+    "match": "exact"
+  },
+  "Companion": {
+    "tmdbId": 1084199,
+    "posterPath": "/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
+    "matchedTitle": "Companion",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Constantine": {
+    "tmdbId": 561,
+    "posterPath": "/vPYgvd2MwHlxTamAOjwVQp4qs1W.jpg",
+    "matchedTitle": "Constantine",
+    "year": "2005",
+    "match": "exact"
+  },
+  "Copycat": {
+    "tmdbId": 1710,
+    "posterPath": "/oMgwJb016znNZcpDR20eXxZoW8A.jpg",
+    "matchedTitle": "Copycat",
+    "year": "1995",
+    "match": "exact"
+  },
+  "Cuckoo": {
+    "tmdbId": 869291,
+    "posterPath": "/4bGP5cnSZbfBJfIidZNSEIKnav7.jpg",
+    "matchedTitle": "Cuckoo",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Daddy's Head": {
+    "tmdbId": 1089123,
+    "posterPath": "/nEWbEBs8BalwasA4Un8rll3kauT.jpg",
+    "matchedTitle": "Daddy's Head",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Dangerous Animals": {
+    "tmdbId": 1285965,
+    "posterPath": "/9tk3Si960hg4E49eMt81dS7Qe9Z.jpg",
+    "matchedTitle": "Dangerous Animals",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Dawn of the Dead": {
+    "tmdbId": 924,
+    "posterPath": "/ttquyxStEEctzghtA2f4PUGprDr.jpg",
+    "matchedTitle": "Dawn of the Dead",
+    "year": "2004",
+    "match": "exact"
+  },
+  "Dead Mail": {
+    "tmdbId": 1229915,
+    "posterPath": "/mZultpdnzuCDAouwDs5ZYdkGGgT.jpg",
+    "matchedTitle": "Dead Mail",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Dead of Winter": {
+    "tmdbId": 1235746,
+    "posterPath": "/5DcrN62sGAiRJxt8rXSRlSRLwIE.jpg",
+    "matchedTitle": "Dead of Winter",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Deadly Illusions": {
+    "tmdbId": 802443,
+    "posterPath": "/wj0PpS8cvXCNB3Wvhe6w5k0Nnke.jpg",
+    "matchedTitle": "Deadly Illusions",
+    "year": "2021",
+    "match": "exact"
+  },
+  "Deadpool & Wolverine": {
+    "tmdbId": 533535,
+    "posterPath": "/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg",
+    "matchedTitle": "Deadpool & Wolverine",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Death of a Unicorn": {
+    "tmdbId": 1153714,
+    "posterPath": "/xWlF2i51zUq7BUq4iJte1g9NyIM.jpg",
+    "matchedTitle": "Death of a Unicorn",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Den of Thieves": {
+    "tmdbId": 449443,
+    "posterPath": "/dAP5NpkrMMczir5dUPjRR6ywqgz.jpg",
+    "matchedTitle": "Den of Thieves",
+    "year": "2018",
+    "match": "exact"
+  },
+  "Den of Thieves 2: Pantera": {
+    "tmdbId": 604685,
+    "posterPath": "/rxcyxxarD17xMliStDEhM6y2AYQ.jpg",
+    "matchedTitle": "Den of Thieves 2: Pantera",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Descendant": {
+    "tmdbId": 54496,
+    "posterPath": "/cIfmJF7IzluVSl2LmqGgUgMAVQZ.jpg",
+    "matchedTitle": "Descendant",
+    "year": "2003",
+    "match": "exact"
+  },
+  "Don't Let Go": {
+    "tmdbId": 539651,
+    "posterPath": "/uNHueGo5TYCTLzoGULse65GC32Q.jpg",
+    "matchedTitle": "Don't Let Go",
+    "year": "2019",
+    "match": "exact"
+  },
+  "Don't Listen": {
+    "tmdbId": 726208,
+    "posterPath": "/lXvBgevABC9n5R6Gg76R3pN1h2M.jpg",
+    "matchedTitle": "Don't Listen",
+    "year": "2020",
+    "match": "exact"
+  },
+  "Don't Move": {
+    "tmdbId": 1063877,
+    "posterPath": "/cRDJxdnRb7ikKd6fVJTrGeaL34v.jpg",
+    "matchedTitle": "Don't Move",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Dracula": {
+    "tmdbId": 1246049,
+    "posterPath": "/dYRqA50yd0nB3qBR7AtWEJJQ8q.jpg",
+    "matchedTitle": "Dracula",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Draft Day": {
+    "tmdbId": 200505,
+    "posterPath": "/bnl2ocjS1io4UCPhjoFuPKmJ9bf.jpg",
+    "matchedTitle": "Draft Day",
+    "year": "2014",
+    "match": "exact"
+  },
+  "Drive": {
+    "tmdbId": 64690,
+    "posterPath": "/602vevIURmpDfzbnv5Ubi6wIkQm.jpg",
+    "matchedTitle": "Drive",
+    "year": "2011",
+    "match": "exact"
+  },
+  "Drop": {
+    "tmdbId": 1249213,
+    "posterPath": "/hSQPSW8aLjsMBfwqGjgJ6HozTkp.jpg",
+    "matchedTitle": "Drop",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Dungeons & Dragons: Honor Among Thieves": {
+    "tmdbId": 493529,
+    "posterPath": "/v7UF7ypAqjsFZFdjksjQ7IUpXdn.jpg",
+    "matchedTitle": "Dungeons & Dragons: Honor Among Thieves",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Dust Bunny": {
+    "tmdbId": 1043197,
+    "posterPath": "/qa5aZpO8tQqhlDaE0flalS1TuIS.jpg",
+    "matchedTitle": "Dust Bunny",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Emilia Pérez": {
+    "tmdbId": 974950,
+    "posterPath": "/7seqaCaaXDNUHOx4DqwpoOH8pPa.jpg",
+    "matchedTitle": "Emilia Pérez",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Everything Everywhere All At Once": {
+    "tmdbId": 545611,
+    "posterPath": "/u68AjlvlutfEIcpmbYpKcdi09ut.jpg",
+    "matchedTitle": "Everything Everywhere All at Once",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Exit 8": {
+    "tmdbId": 1408208,
+    "posterPath": "/nQXYTvm6AY4WmtcPskroqC7Skh.jpg",
+    "matchedTitle": "Exit 8",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Exposed": {
+    "tmdbId": 331962,
+    "posterPath": "/nM26QosEfgjEegONCiNNrYMBTxD.jpg",
+    "matchedTitle": "Exposed",
+    "year": "2016",
+    "match": "exact"
+  },
+  "Exterritorial": {
+    "tmdbId": 1233069,
+    "posterPath": "/micQGmD3K7Ni0wzyaSgBKGxrFWn.jpg",
+    "matchedTitle": "Exterritorial",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Extinction": {
+    "tmdbId": 429415,
+    "posterPath": "/qjnNdjrZIdi7d316SjjkgEjJRSg.jpg",
+    "matchedTitle": "Extinction",
+    "year": "2018",
+    "match": "exact"
+  },
+  "F1: The Movie": {
+    "tmdbId": 911430,
+    "posterPath": "/9PXZIUsSDh4alB80jheWX4fhZmy.jpg",
+    "matchedTitle": "F1",
+    "year": "2025",
+    "match": "fuzzy"
+  },
+  "Faces of Death": {
+    "tmdbId": 855435,
+    "posterPath": "/vPVY3S57lEooBLJCg6KGdMHkUxm.jpg",
+    "matchedTitle": "Faces of Death",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Fear Street Part 1: 1994": {
+    "tmdbId": 591273,
+    "posterPath": "/9J9Wy39ZjrVmfk7yMkulpcI5sy0.jpg",
+    "matchedTitle": "Fear Street: 1994",
+    "year": "2021",
+    "match": "fuzzy"
+  },
+  "Fear Street Part 2: 1978": {
+    "tmdbId": 591274,
+    "posterPath": "/5dNTxhoGDTHHGqUTdxcr4H1dqlU.jpg",
+    "matchedTitle": "Fear Street: 1978",
+    "year": "2021",
+    "match": "fuzzy"
+  },
+  "Fear Street Part 3: 1666": {
+    "tmdbId": 591275,
+    "posterPath": "/rmEPtz3Ufzol2VWUAZYzOFaBio3.jpg",
+    "matchedTitle": "Fear Street: 1666",
+    "year": "2021",
+    "match": "fuzzy"
+  },
+  "Fear Street: Prom Queen": {
+    "tmdbId": 1001414,
+    "posterPath": "/gevScWYkF8l5i9NjFSXo8HfPNyy.jpg",
+    "matchedTitle": "Fear Street: Prom Queen",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Fear the Night": {
+    "tmdbId": 1143190,
+    "posterPath": "/oAWpvlroYbHbkaeKwlL3XlVRnyG.jpg",
+    "matchedTitle": "Fear the Night",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Final Destination: Bloodlines": {
+    "tmdbId": 574475,
+    "posterPath": "/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg",
+    "matchedTitle": "Final Destination Bloodlines",
+    "year": "2025",
+    "match": "fuzzy"
+  },
+  "Freaks – You're One of Us": {
+    "tmdbId": 658777,
+    "posterPath": "/6xzEwXNllYKxhRFCtWzRaYdA6gD.jpg",
+    "matchedTitle": "Freaks - You're One of Us",
+    "year": "2020",
+    "match": "fuzzy"
+  },
+  "Geostorm": {
+    "tmdbId": 274855,
+    "posterPath": "/nrsx0jEaBgXq4PWo7SooSnYJTv.jpg",
+    "matchedTitle": "Geostorm",
+    "year": "2017",
+    "match": "exact"
+  },
+  "Ghost Train": {
+    "tmdbId": 1241624,
+    "posterPath": "/rOTXYy5ScOHdaC2YMQowVwQex5s.jpg",
+    "matchedTitle": "Ghost Train",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Girl, Interrupted": {
+    "tmdbId": 3558,
+    "posterPath": "/dOBdatHIVppvmRFw2z7bf9VKJr9.jpg",
+    "matchedTitle": "Girl, Interrupted",
+    "year": "1999",
+    "match": "exact"
+  },
+  "Good Boy": {
+    "tmdbId": 1381027,
+    "posterPath": "/cEXT4bXOrM0pqrK714NP3M69cWW.jpg",
+    "matchedTitle": "Good Boy",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Good One": {
+    "tmdbId": 1122618,
+    "posterPath": "/yesxQtWrG5vCrNsnG3TrXiOfpOZ.jpg",
+    "matchedTitle": "Good One",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Hamnet": {
+    "tmdbId": 858024,
+    "posterPath": "/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+    "matchedTitle": "Hamnet",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Handling the Undead": {
+    "tmdbId": 1020896,
+    "posterPath": "/6XlHOx0JQNgYjuJ4YQKbrt4Gd4d.jpg",
+    "matchedTitle": "Handling the Undead",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Hanna": {
+    "tmdbId": 50456,
+    "posterPath": "/6QDeHwBXDHbCbuzStgUpuUAqnap.jpg",
+    "matchedTitle": "Hanna",
+    "year": "2011",
+    "match": "exact"
+  },
+  "Haunting of the Queen Mary": {
+    "tmdbId": 977013,
+    "posterPath": "/y8uEuy1NhOwltHePRqvxcDDUJg1.jpg",
+    "matchedTitle": "Haunting of the Queen Mary",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Havoc": {
+    "tmdbId": 668489,
+    "posterPath": "/r46leE6PSzLR3pnVzaxx5Q30yUF.jpg",
+    "matchedTitle": "Havoc",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Heart Eyes": {
+    "tmdbId": 1302916,
+    "posterPath": "/ebqttF1Vjgde6uSFBEw9mta7Hd3.jpg",
+    "matchedTitle": "Heart Eyes",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Hell House LLC Origins: The Carmichael Manor": {
+    "tmdbId": 1035982,
+    "posterPath": "/bsd1ovBNOhYpQElhlZAqpMo51q6.jpg",
+    "matchedTitle": "Hell House LLC Origins: The Carmichael Manor",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Hell House LLC: Lineage": {
+    "tmdbId": 1202306,
+    "posterPath": "/vFZo2cUEF16gsY5lhewOLFA7CBC.jpg",
+    "matchedTitle": "Hell House LLC: Lineage",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Here After": {
+    "tmdbId": 1096838,
+    "posterPath": "/by3EEDIVTdhNJolYK2Msn1RHRFH.jpg",
+    "matchedTitle": "Here After",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Heretic": {
+    "tmdbId": 1138194,
+    "posterPath": "/fr96XzlzsONrQrGfdLMiwtQjott.jpg",
+    "matchedTitle": "Heretic",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Hidden": {
+    "tmdbId": 360784,
+    "posterPath": "/mPuaHaczkoJDzlYD9GyXiDjMXig.jpg",
+    "matchedTitle": "Hidden",
+    "year": "2015",
+    "match": "exact"
+  },
+  "Him": {
+    "tmdbId": 986097,
+    "posterPath": "/qPJzcYR2f1O1uynYBCVPPJuOiAH.jpg",
+    "matchedTitle": "HIM",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Hit Man": {
+    "tmdbId": 974635,
+    "posterPath": "/oil3EZwKFp3CWxZnfGfGglesvm9.jpg",
+    "matchedTitle": "Hit Man",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Hokum": {
+    "tmdbId": 1430077,
+    "posterPath": "/jKPWwsbAM6HKURPYQ1eG8DmKMKn.jpg",
+    "matchedTitle": "Hokum",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Holy Ghost": {
+    "tmdbId": 1528660,
+    "posterPath": "/z1lwn6GWAjJ7CSn80ZcURb0Cj4G.jpg",
+    "matchedTitle": "Holy Ghost",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Holy Night: Demon Hunters": {
+    "tmdbId": 793387,
+    "posterPath": "/v3Mo77Qjp6pctpD4eJaNT6kFRSB.jpg",
+    "matchedTitle": "Holy Night: Demon Hunters",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Humane": {
+    "tmdbId": 914215,
+    "posterPath": "/ecOvKaoM1hwQbp0uTnULGrSV32e.jpg",
+    "matchedTitle": "Humane",
+    "year": "2024",
+    "match": "exact"
+  },
+  "I Am Legend": {
+    "tmdbId": 6479,
+    "posterPath": "/iPDkaSdKk2jRLTM65UOEoKtsIZ8.jpg",
+    "matchedTitle": "I Am Legend",
+    "year": "2007",
+    "match": "exact"
+  },
+  "I Used to Be Funny": {
+    "tmdbId": 918287,
+    "posterPath": "/vL9osUSzKYdDphezKibmCjCH0xD.jpg",
+    "matchedTitle": "I Used to Be Funny",
+    "year": "2024",
+    "match": "exact"
+  },
+  "In The Tall Grass": {
+    "tmdbId": 523139,
+    "posterPath": "/1RxhzwFkAUqMt215Brb06u8P8pn.jpg",
+    "matchedTitle": "In the Tall Grass",
+    "year": "2019",
+    "match": "exact"
+  },
+  "In a Violent Nature": {
+    "tmdbId": 1214509,
+    "posterPath": "/hPfWHgq07nXbeldwEGxWB4JqwtE.jpg",
+    "matchedTitle": "In a Violent Nature",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Insidious: Chapter 2": {
+    "tmdbId": 91586,
+    "posterPath": "/w5JjiB3O1CLDXbTJe1QpU5RHmlU.jpg",
+    "matchedTitle": "Insidious: Chapter 2",
+    "year": "2013",
+    "match": "exact"
+  },
+  "Interstellar": {
+    "tmdbId": 157336,
+    "posterPath": "/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+    "matchedTitle": "Interstellar",
+    "year": "2014",
+    "match": "exact"
+  },
+  "Iron Lung": {
+    "tmdbId": 1116201,
+    "posterPath": "/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
+    "matchedTitle": "Iron Lung",
+    "year": "2026",
+    "match": "exact"
+  },
+  "John Wick: Chapter 4": {
+    "tmdbId": 603692,
+    "posterPath": "/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+    "matchedTitle": "John Wick: Chapter 4",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Juror #2": {
+    "tmdbId": 1106739,
+    "posterPath": "/ugQkpGajKFQ8eyOEhGheR0HfWQ.jpg",
+    "matchedTitle": "Juror #2",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Kate": {
+    "tmdbId": 597891,
+    "posterPath": "/uJgdT1boTSP0dDIjdTgGleg71l4.jpg",
+    "matchedTitle": "Kate",
+    "year": "2021",
+    "match": "exact"
+  },
+  "Killer Whale": {
+    "tmdbId": 1412598,
+    "posterPath": "/xC6zdIoIHjhOIFmjNyGgtzhuhiF.jpg",
+    "matchedTitle": "Killer Whale",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Killers of the Flower Moon": {
+    "tmdbId": 466420,
+    "posterPath": "/dB6Krk806zeqd0YNp2ngQ9zXteH.jpg",
+    "matchedTitle": "Killers of the Flower Moon",
+    "year": "2023",
+    "match": "exact"
+  },
+  "La La Land": {
+    "tmdbId": 313369,
+    "posterPath": "/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+    "matchedTitle": "La La Land",
+    "year": "2016",
+    "match": "exact"
+  },
+  "Land of Bad": {
+    "tmdbId": 969492,
+    "posterPath": "/h3jYanWMEJq6JJsCopy1h7cT2Hs.jpg",
+    "matchedTitle": "Land of Bad",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Last Straw": {
+    "tmdbId": 1137205,
+    "posterPath": "/hgpUvybRQzRK6UagoHNQRrO8sUg.jpg",
+    "matchedTitle": "Last Straw",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Legion": {
+    "tmdbId": 22894,
+    "posterPath": "/ykocDqwg5PRUopnBVb1x1DWnEJF.jpg",
+    "matchedTitle": "Legion",
+    "year": "2010",
+    "match": "exact"
+  },
+  "Lights Out": {
+    "tmdbId": 345911,
+    "posterPath": "/8BnElzAQQpp7ZgdJJiAe1diomr4.jpg",
+    "matchedTitle": "Lights Out",
+    "year": "2016",
+    "match": "exact"
+  },
+  "Little Miss Sunshine": {
+    "tmdbId": 773,
+    "posterPath": "/niNdhTpPHSgw22tK0PLjQMV640v.jpg",
+    "matchedTitle": "Little Miss Sunshine",
+    "year": "2006",
+    "match": "exact"
+  },
+  "Locked": {
+    "tmdbId": 1083968,
+    "posterPath": "/hhkiqXpfpufwxVrdSftzeKIANl3.jpg",
+    "matchedTitle": "Locked",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Locked In": {
+    "tmdbId": 1097953,
+    "posterPath": "/AketYxMP6TADZUmiv5StncgMx2v.jpg",
+    "matchedTitle": "Locked In",
+    "year": "2020",
+    "match": "exact"
+  },
+  "Longlegs": {
+    "tmdbId": 1226578,
+    "posterPath": "/1EwNyiiNFd863H4e8nWEzutnZD7.jpg",
+    "matchedTitle": "Longlegs",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Lou": {
+    "tmdbId": 429473,
+    "posterPath": "/djM2s4wSaATn4jVB33cV05PEbV7.jpg",
+    "matchedTitle": "Lou",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Love Lies Bleeding": {
+    "tmdbId": 948549,
+    "posterPath": "/xImj8RLe39YK0lyVu9kXv7ApN8p.jpg",
+    "matchedTitle": "Love Lies Bleeding",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Lovely, Dark, and Deep": {
+    "tmdbId": 1062528,
+    "posterPath": "/d4maZqH6a4vOUKuFzUrARZAiNc3.jpg",
+    "matchedTitle": "Lovely, Dark, and Deep",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Lowlifes": {
+    "tmdbId": 1272890,
+    "posterPath": "/vxTyYoIRgutvzMpB97XAC8FhJiH.jpg",
+    "matchedTitle": "Lowlifes",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Lucy": {
+    "tmdbId": 240832,
+    "posterPath": "/kRbpUTRNm6QbLQFPFWUcNC4czEm.jpg",
+    "matchedTitle": "Lucy",
+    "year": "2014",
+    "match": "exact"
+  },
+  "Ma": {
+    "tmdbId": 502416,
+    "posterPath": "/6n7ASmQ1wY2cxTubFFGlcvPpyk7.jpg",
+    "matchedTitle": "Ma",
+    "year": "2019",
+    "match": "exact"
+  },
+  "Marty Supreme": {
+    "tmdbId": 1317288,
+    "posterPath": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+    "matchedTitle": "Marty Supreme",
+    "year": "2025",
+    "match": "exact"
+  },
+  "McFarland, USA": {
+    "tmdbId": 228203,
+    "posterPath": "/yyhniD8A7Mv6SOn8oo1Ba2K0mKc.jpg",
+    "matchedTitle": "McFarland, USA",
+    "year": "2015",
+    "match": "exact"
+  },
+  "Mean Girls": {
+    "tmdbId": 10625,
+    "posterPath": "/fXm3YKXAEjx7d2tIWDg9TfRZtsU.jpg",
+    "matchedTitle": "Mean Girls",
+    "year": "2004",
+    "match": "exact"
+  },
+  "Memories of Murder": {
+    "tmdbId": 11423,
+    "posterPath": "/jcgUjx1QcupGzjntTVlnQ15lHqy.jpg",
+    "matchedTitle": "Memories of Murder",
+    "year": "2003",
+    "match": "exact"
+  },
+  "Midnight Peepshow": {
+    "tmdbId": 1002226,
+    "posterPath": "/vm2wuccxwuK6qnhLzlWz2gSGnfx.jpg",
+    "matchedTitle": "Midnight Peepshow",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Midnight in the Switchgrass": {
+    "tmdbId": 693113,
+    "posterPath": "/1OTSuh2HNcTRfme8caU8DjgJ39K.jpg",
+    "matchedTitle": "Midnight in the Switchgrass",
+    "year": "2021",
+    "match": "exact"
+  },
+  "Mission Impossible - The Final Reckoning": {
+    "tmdbId": 575265,
+    "posterPath": "/z53D72EAOxGRqdr7KXXWp9dJiDe.jpg",
+    "matchedTitle": "Mission: Impossible - The Final Reckoning",
+    "year": "2025",
+    "match": "fuzzy"
+  },
+  "Monkey Man": {
+    "tmdbId": 560016,
+    "posterPath": "/4lhR4L2vzzjl68P1zJyCH755Oz4.jpg",
+    "matchedTitle": "Monkey Man",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Monster Island": {
+    "tmdbId": 1214140,
+    "posterPath": "/BCEYcclrfWWLcsTzhweSVFb8tO.jpg",
+    "matchedTitle": "Monster Island",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Monster Summer": {
+    "tmdbId": 928480,
+    "posterPath": "/zD2UZkh0DwbDEMuOKIR7jgwgulZ.jpg",
+    "matchedTitle": "Monster Summer",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Mortal Kombat II": {
+    "tmdbId": 931285,
+    "posterPath": "/hwRdDFIhaEmpRgoki805YvyyjZf.jpg",
+    "matchedTitle": "Mortal Kombat II",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Mufasa: The Lion King": {
+    "tmdbId": 762509,
+    "posterPath": "/jbOSUAWMGzGL1L4EaUF8K6zYFo7.jpg",
+    "matchedTitle": "Mufasa: The Lion King",
+    "year": "2024",
+    "match": "exact"
+  },
+  "New Life": {
+    "tmdbId": 1148027,
+    "posterPath": "/x42j045m9NfxI164KOQKg9BbleD.jpg",
+    "matchedTitle": "New Life",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Night Patrol": {
+    "tmdbId": 1323625,
+    "posterPath": "/rNqLzACU9ez2ehDalTFDPjZiC4G.jpg",
+    "matchedTitle": "Night Patrol",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Night Raiders": {
+    "tmdbId": 795778,
+    "posterPath": "/wCjGxpp6jGtaef0PNGy66Vdoco0.jpg",
+    "matchedTitle": "Night Raiders",
+    "year": "2021",
+    "match": "exact"
+  },
+  "Night Swim": {
+    "tmdbId": 1072342,
+    "posterPath": "/gSkfBGdxdialBMM7P02V4hcI6Ij.jpg",
+    "matchedTitle": "Night Swim",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Night of the Hunted": {
+    "tmdbId": 1160003,
+    "posterPath": "/84YOsylmgr181BHrTKlmaKs8IzV.jpg",
+    "matchedTitle": "Night of the Hunted",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Night of the Reaper": {
+    "tmdbId": 1502943,
+    "posterPath": "/aHPDlpoNuECG4bojvZiNaeYSbxJ.jpg",
+    "matchedTitle": "Night of the Reaper",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Nightbitch": {
+    "tmdbId": 728949,
+    "posterPath": "/h49Pie8gM2jK0UHGFRjfPB3YTd.jpg",
+    "matchedTitle": "Nightbitch",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Nobody 2": {
+    "tmdbId": 1007734,
+    "posterPath": "/svXVRoRSu6zzFtCzkRsjZS7Lqpd.jpg",
+    "matchedTitle": "Nobody 2",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Novocaine": {
+    "tmdbId": 1195506,
+    "posterPath": "/xmMHGz9dVRaMY6rRAlEX4W0Wdhm.jpg",
+    "matchedTitle": "Novocaine",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Now You See Me": {
+    "tmdbId": 75656,
+    "posterPath": "/tWsNYbrqy1p1w6K9zRk0mSchztT.jpg",
+    "matchedTitle": "Now You See Me",
+    "year": "2013",
+    "match": "exact"
+  },
+  "Nuremberg": {
+    "tmdbId": 1214931,
+    "posterPath": "/xthXNYltOOm80vW5Kxjzxx5gvQ6.jpg",
+    "matchedTitle": "Nuremberg",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Obsession": {
+    "tmdbId": 1339713,
+    "posterPath": "/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+    "matchedTitle": "Obsession",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Oddity": {
+    "tmdbId": 1216191,
+    "posterPath": "/3Z9c1tbUhP0QruRjczPHnbx3U2D.jpg",
+    "matchedTitle": "Oddity",
+    "year": "2024",
+    "match": "exact"
+  },
+  "One Battle After Another": {
+    "tmdbId": 1054867,
+    "posterPath": "/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
+    "matchedTitle": "One Battle After Another",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Orphan: First Kill": {
+    "tmdbId": 760161,
+    "posterPath": "/pHkKbIRoCe7zIFvqan9LFSaQAde.jpg",
+    "matchedTitle": "Orphan: First Kill",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Over Your Dead Body": {
+    "tmdbId": 1390300,
+    "posterPath": "/kZCauMzAt9eMAhLMopCqnFw1Q5k.jpg",
+    "matchedTitle": "Over Your Dead Body",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Paranormal Activity": {
+    "tmdbId": 23827,
+    "posterPath": "/tmclkEpjeo4Zu564gf3KrwIOuKw.jpg",
+    "matchedTitle": "Paranormal Activity",
+    "year": "2007",
+    "match": "exact"
+  },
+  "Paranormal Activity: Next of Kin": {
+    "tmdbId": 609972,
+    "posterPath": "/wRy3SwJFE55iL2bfKqECzP2qyrd.jpg",
+    "matchedTitle": "Paranormal Activity: Next of Kin",
+    "year": "2021",
+    "match": "exact"
+  },
+  "Pearl: An X-traordinary Origin Story": {
+    "tmdbId": 949423,
+    "posterPath": "/z5uIG81pXyHKg7cUFIu84Wjn4NS.jpg",
+    "matchedTitle": "Pearl",
+    "year": "2022",
+    "match": "fuzzy"
+  },
+  "Peninsula": {
+    "tmdbId": 581392,
+    "posterPath": "/eeqvAzCccAZOhU3RfbvHB3s44S6.jpg",
+    "matchedTitle": "Peninsula",
+    "year": "2020",
+    "match": "exact"
+  },
+  "Plane": {
+    "tmdbId": 646389,
+    "posterPath": "/qi9r5xBgcc9KTxlOLjssEbDgO0J.jpg",
+    "matchedTitle": "Plane",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Play Dead": {
+    "tmdbId": 1426297,
+    "posterPath": "/ixWeYfvXT9AbfM0QPb9kwbVLbLV.jpg",
+    "matchedTitle": "Play Dead",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Poor Things": {
+    "tmdbId": 792307,
+    "posterPath": "/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg",
+    "matchedTitle": "Poor Things",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Predator: Badlands": {
+    "tmdbId": 1242898,
+    "posterPath": "/pHpq9yNUIo6aDoCXEBzjSolywgz.jpg",
+    "matchedTitle": "Predator: Badlands",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Presence": {
+    "tmdbId": 1140535,
+    "posterPath": "/xZIGHoHj0DF0zdibwa66cRWHdHO.jpg",
+    "matchedTitle": "Presence",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Pretty Lethal": {
+    "tmdbId": 1084187,
+    "posterPath": "/znTPnXCK3lEQJgqXCvP7e5FUz6f.jpg",
+    "matchedTitle": "Pretty Lethal",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Prey": {
+    "tmdbId": 766507,
+    "posterPath": "/ujr5pztc1oitbe7ViMUOilFaJ7s.jpg",
+    "matchedTitle": "Prey",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Primate": {
+    "tmdbId": 1315303,
+    "posterPath": "/rKleYiEj4pFqxedTRWfujLooi84.jpg",
+    "matchedTitle": "Primate",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Project Eerie": {
+    "tmdbId": 1158249,
+    "posterPath": "/idV9YeJ1ZUZ9rc6m6BDEu9IUAHx.jpg",
+    "matchedTitle": "Project Eerie",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Project Power": {
+    "tmdbId": 605116,
+    "posterPath": "/TnOeov4w0sTtV2gqICqIxVi74V.jpg",
+    "matchedTitle": "Project Power",
+    "year": "2020",
+    "match": "exact"
+  },
+  "Psycho Killer": {
+    "tmdbId": 1107166,
+    "posterPath": "/5xgxxmLivJXL8aF0HdZfpx8aAIo.jpg",
+    "matchedTitle": "Psycho Killer",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Rattlesnake": {
+    "tmdbId": 560362,
+    "posterPath": "/cEr3S3Atr4eRlHmMOA1GvaX0f4p.jpg",
+    "matchedTitle": "Rattlesnake",
+    "year": "2019",
+    "match": "exact"
+  },
+  "Ready or Not": {
+    "tmdbId": 567609,
+    "posterPath": "/oJD9KQFoObZmxAS1je56SIFVNJt.jpg",
+    "matchedTitle": "Ready or Not",
+    "year": "2019",
+    "match": "exact"
+  },
+  "Return to Silent Hill": {
+    "tmdbId": 680493,
+    "posterPath": "/mdw7bSnE11WpwWf3ViXtnavuqiT.jpg",
+    "matchedTitle": "Return to Silent Hill",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Revelations": {
+    "tmdbId": 1210938,
+    "posterPath": "/ak0HlRVsVzh8mvwIUZpZr0z6uqW.jpg",
+    "matchedTitle": "Revelations",
+    "year": "2025",
+    "match": "exact"
+  },
+  "River Wild": {
+    "tmdbId": 1000475,
+    "posterPath": "/bAKCbByXeZ9UyFKIR04ry4fCQX3.jpg",
+    "matchedTitle": "River Wild",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Roofman": {
+    "tmdbId": 1242419,
+    "posterPath": "/wXDFtcnYtevleGzCmAD2ReQnJ4l.jpg",
+    "matchedTitle": "Roofman",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Runaway Jury": {
+    "tmdbId": 11329,
+    "posterPath": "/hpBot7sqaskTdZS264c7hOhGiQ0.jpg",
+    "matchedTitle": "Runaway Jury",
+    "year": "2003",
+    "match": "exact"
+  },
+  "STRAW": {
+    "tmdbId": 1426776,
+    "posterPath": "/t3cmnXYtxJb9vVL1ThvT2CWSe1n.jpg",
+    "matchedTitle": "STRAW",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Send Help": {
+    "tmdbId": 1198994,
+    "posterPath": "/zbJWVHOtj3ljBzWgL1P8pxP03Up.jpg",
+    "matchedTitle": "Send Help",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Session 8": {
+    "tmdbId": 312931,
+    "posterPath": null,
+    "matchedTitle": "Joe Weider's Bodybuilding Training System, Session 8: Nutrition & Diet",
+    "year": "1994",
+    "match": "fuzzy"
+  },
+  "Shazam! Fury of the Gods": {
+    "tmdbId": 594767,
+    "posterPath": "/3GrRgt6CiLIUXUtoktcv1g2iwT5.jpg",
+    "matchedTitle": "Shazam! Fury of the Gods",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Shelby Oaks": {
+    "tmdbId": 937941,
+    "posterPath": "/i3omY4P6QUzFQlEeclWY92RuXCH.jpg",
+    "matchedTitle": "Shelby Oaks",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Sicario": {
+    "tmdbId": 273481,
+    "posterPath": "/lz8vNyXeidqqOdJW9ZjnDAMb5Vr.jpg",
+    "matchedTitle": "Sicario",
+    "year": "2015",
+    "match": "exact"
+  },
+  "Sicario: Day of the Soldado": {
+    "tmdbId": 400535,
+    "posterPath": "/qcLYofEhNh51Sk1jUWjmKHLzkqw.jpg",
+    "matchedTitle": "Sicario: Day of the Soldado",
+    "year": "2018",
+    "match": "exact"
+  },
+  "Silent Zone": {
+    "tmdbId": 1419229,
+    "posterPath": "/7YZ0JRRD7mt8Ov9eIEGWMbDybx2.jpg",
+    "matchedTitle": "Silent Zone",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Singin' in the Rain": {
+    "tmdbId": 872,
+    "posterPath": "/w03EiJVHP8Un77boQeE7hg9DVdU.jpg",
+    "matchedTitle": "Singin' in the Rain",
+    "year": "1952",
+    "match": "exact"
+  },
+  "Sinners": {
+    "tmdbId": 1233413,
+    "posterPath": "/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "matchedTitle": "Sinners",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Skinamarink": {
+    "tmdbId": 994143,
+    "posterPath": "/o942912KFh89SGhqWuKXuT0SXzN.jpg",
+    "matchedTitle": "Skinamarink",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Smile": {
+    "tmdbId": 882598,
+    "posterPath": "/aPqcQwu4VGEewPhagWNncDbJ9Xp.jpg",
+    "matchedTitle": "Smile",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Smile 2": {
+    "tmdbId": 1100782,
+    "posterPath": "/ht8Uv9QPv9y7K0RvUyJIaXOZTfd.jpg",
+    "matchedTitle": "Smile 2",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Somewhere Quiet": {
+    "tmdbId": 1114922,
+    "posterPath": "/evExphB7F7PpCHx06dMCwePArfH.jpg",
+    "matchedTitle": "Somewhere Quiet",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Spectral": {
+    "tmdbId": 324670,
+    "posterPath": "/5yprxs7ZyBr58RsTQJrKCVmqk8X.jpg",
+    "matchedTitle": "Spectral",
+    "year": "2016",
+    "match": "exact"
+  },
+  "Spiderhead": {
+    "tmdbId": 615469,
+    "posterPath": "/7COPO5B9AOKIB4sEkvNu0wfve3c.jpg",
+    "matchedTitle": "Spiderhead",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Spotlight": {
+    "tmdbId": 314365,
+    "posterPath": "/8DPGG400FgaFWaqcv11n8mRd2NG.jpg",
+    "matchedTitle": "Spotlight",
+    "year": "2015",
+    "match": "exact"
+  },
+  "Strange Darling": {
+    "tmdbId": 1029281,
+    "posterPath": "/kWNCRgt3ocv19bYO0sk7TRuZuFY.jpg",
+    "matchedTitle": "Strange Darling",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Stranger in the Woods": {
+    "tmdbId": 1175038,
+    "posterPath": "/qcrbiVMOkAaOyha8BqyVDQCTwh6.jpg",
+    "matchedTitle": "Stranger in the Woods",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Summoners": {
+    "tmdbId": 1019967,
+    "posterPath": "/dkGmsZFY3Ao4fx84yEykDkNbWCA.jpg",
+    "matchedTitle": "Summoners",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Sweet Girl": {
+    "tmdbId": 619297,
+    "posterPath": "/cP7odDzzFBD9ycxj2laTeFWGLjD.jpg",
+    "matchedTitle": "Sweet Girl",
+    "year": "2021",
+    "match": "exact"
+  },
+  "Talk to Me": {
+    "tmdbId": 1008042,
+    "posterPath": "/kdPMUMJzyYAc4roD52qavX0nLIC.jpg",
+    "matchedTitle": "Talk to Me",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Tarot": {
+    "tmdbId": 719221,
+    "posterPath": "/gAEUXC37vl1SnM7PXsHTF23I2vq.jpg",
+    "matchedTitle": "Tarot",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Terrifier": {
+    "tmdbId": 420634,
+    "posterPath": "/fjXqhGmaeQpB73WerhrYU6HlyV5.jpg",
+    "matchedTitle": "Terrifier",
+    "year": "2018",
+    "match": "exact"
+  },
+  "Terrifier 2": {
+    "tmdbId": 663712,
+    "posterPath": "/qEAlwXbYk6IHA4ztoS2XFFaa7Xo.jpg",
+    "matchedTitle": "Terrifier 2",
+    "year": "2022",
+    "match": "exact"
+  },
+  "Texas Chainsaw Massacre (2022)": {
+    "tmdbId": 632727,
+    "posterPath": "/7sKiGNWFM15WNyY7LYd5vmb3brO.jpg",
+    "matchedTitle": "Texas Chainsaw Massacre",
+    "year": "2022",
+    "match": "fuzzy"
+  },
+  "The Abyss": {
+    "tmdbId": 2756,
+    "posterPath": "/2dCit3XAtv9KWCJvRKdPkJ0FAkH.jpg",
+    "matchedTitle": "The Abyss",
+    "year": "1989",
+    "match": "exact"
+  },
+  "The Astronaut": {
+    "tmdbId": 1086260,
+    "posterPath": "/souvvkJHYhztC1UqZ8lEVUiJa3J.jpg",
+    "matchedTitle": "The Astronaut",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Autopsy of Jane Doe": {
+    "tmdbId": 397243,
+    "posterPath": "/6K0wjP8kPCiPYy9PtXBGuypyt5I.jpg",
+    "matchedTitle": "The Autopsy of Jane Doe",
+    "year": "2016",
+    "match": "exact"
+  },
+  "The Awakening": {
+    "tmdbId": 77949,
+    "posterPath": "/txmiJkl8su0jkEABLIHZBqVHrTj.jpg",
+    "matchedTitle": "The Awakening",
+    "year": "2011",
+    "match": "exact"
+  },
+  "The Bad Batch": {
+    "tmdbId": 316154,
+    "posterPath": "/7o14VaMphEIzPwzeW6FP3A6zb4W.jpg",
+    "matchedTitle": "The Bad Batch",
+    "year": "2017",
+    "match": "exact"
+  },
+  "The Black Demon": {
+    "tmdbId": 890771,
+    "posterPath": "/6ecSjKSjgIULyHfrfyyg9vgAI33.jpg",
+    "matchedTitle": "The Black Demon",
+    "year": "2023",
+    "match": "exact"
+  },
+  "The Black Phone": {
+    "tmdbId": 756999,
+    "posterPath": "/p9ZUzCyy9wRTDuuQexkQ78R2BgF.jpg",
+    "matchedTitle": "The Black Phone",
+    "year": "2022",
+    "match": "exact"
+  },
+  "The Boogeyman": {
+    "tmdbId": 532408,
+    "posterPath": "/pYwZdnXVnVxAr7dx4MEK7tTK9gI.jpg",
+    "matchedTitle": "The Boogeyman",
+    "year": "2023",
+    "match": "exact"
+  },
+  "The Cleansing Hour": {
+    "tmdbId": 608994,
+    "posterPath": "/c0daWffGoQpk5Y0LZuQ3gFwisdF.jpg",
+    "matchedTitle": "The Cleansing Hour",
+    "year": "2019",
+    "match": "exact"
+  },
+  "The Clovehitch Killer": {
+    "tmdbId": 544431,
+    "posterPath": "/6NmsbUJqnopbnLun2E4KvtVNj8T.jpg",
+    "matchedTitle": "The Clovehitch Killer",
+    "year": "2018",
+    "match": "exact"
+  },
+  "The Conjuring: Last Rites": {
+    "tmdbId": 1038392,
+    "posterPath": "/byWgphT74ClOVa8EOGzYDkl8DVL.jpg",
+    "matchedTitle": "The Conjuring: Last Rites",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Dark and the Wicked": {
+    "tmdbId": 680593,
+    "posterPath": "/4DB9VFVTp0IQEWFEIf9f3f2z3t5.jpg",
+    "matchedTitle": "The Dark and the Wicked",
+    "year": "2020",
+    "match": "exact"
+  },
+  "The Deep House": {
+    "tmdbId": 672582,
+    "posterPath": "/5xhAPxRr64oQPEFnUOrttuI4ZEU.jpg",
+    "matchedTitle": "The Deep House",
+    "year": "2021",
+    "match": "exact"
+  },
+  "The Devil on Trial": {
+    "tmdbId": 1171989,
+    "posterPath": "/qqPIhVKPHePyGqQxbo4gpznsJsA.jpg",
+    "matchedTitle": "The Devil on Trial",
+    "year": "2023",
+    "match": "exact"
+  },
+  "The Devil's Advocate": {
+    "tmdbId": 1813,
+    "posterPath": "/5ZzBGpxy55OQzHxKVY11IpY6a0o.jpg",
+    "matchedTitle": "The Devil's Advocate",
+    "year": "1997",
+    "match": "exact"
+  },
+  "The Electric State": {
+    "tmdbId": 777443,
+    "posterPath": "/sI2NiMU8o65hmIMY0JI9CjJ0p7f.jpg",
+    "matchedTitle": "The Electric State",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Evil Dead": {
+    "tmdbId": 764,
+    "posterPath": "/54C1qdaiSijIU5NeNb4WsPJdNkG.jpg",
+    "matchedTitle": "The Evil Dead",
+    "year": "1981",
+    "match": "exact"
+  },
+  "The Fall Guy": {
+    "tmdbId": 746036,
+    "posterPath": "/e7olqFmzcIX5c23kX4zSmLPJi8c.jpg",
+    "matchedTitle": "The Fall Guy",
+    "year": "2024",
+    "match": "exact"
+  },
+  "The Frozen Ground": {
+    "tmdbId": 199373,
+    "posterPath": "/hHDj1h3lJvYd9Cervoswz9crhWg.jpg",
+    "matchedTitle": "The Frozen Ground",
+    "year": "2013",
+    "match": "exact"
+  },
+  "The Good Nurse": {
+    "tmdbId": 541134,
+    "posterPath": "/rSq6cq0LCcbro10jbEaPTEb3WmW.jpg",
+    "matchedTitle": "The Good Nurse",
+    "year": "2022",
+    "match": "exact"
+  },
+  "The Gorge": {
+    "tmdbId": 950396,
+    "posterPath": "/7iMBZzVZtG0oBug4TfqDb9ZxAOa.jpg",
+    "matchedTitle": "The Gorge",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Gray Man": {
+    "tmdbId": 725201,
+    "posterPath": "/8cXbitsS6dWQ5gfMTZdorpAAzEH.jpg",
+    "matchedTitle": "The Gray Man",
+    "year": "2022",
+    "match": "exact"
+  },
+  "The Hangman": {
+    "tmdbId": 1257586,
+    "posterPath": "/rij9Eh4RVXyPet8A1BNU8pDvtmu.jpg",
+    "matchedTitle": "The Hangman",
+    "year": "2024",
+    "match": "exact"
+  },
+  "The Haunted Apartment \"Miss K\"": {
+    "tmdbId": 1321326,
+    "posterPath": "/uLJFPFIezEQsUWN4WpbNaofysj1.jpg",
+    "matchedTitle": "The Haunted Apartment: \"Miss K\"",
+    "year": "2024",
+    "match": "fuzzy"
+  },
+  "The Housemaid": {
+    "tmdbId": 1368166,
+    "posterPath": "/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
+    "matchedTitle": "The Housemaid",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Killer": {
+    "tmdbId": 800158,
+    "posterPath": "/ipkcgvN7h3yZnbYowthloHLKsf4.jpg",
+    "matchedTitle": "The Killer",
+    "year": "2023",
+    "match": "exact"
+  },
+  "The Last Voyage of the Demeter": {
+    "tmdbId": 635910,
+    "posterPath": "/nrtbv6Cew7qC7k9GsYSf5uSmuKh.jpg",
+    "matchedTitle": "The Last Voyage of the Demeter",
+    "year": "2023",
+    "match": "exact"
+  },
+  "The Long Walk": {
+    "tmdbId": 604079,
+    "posterPath": "/wobVTa99eW0ht6c1rNNzLkazPtR.jpg",
+    "matchedTitle": "The Long Walk",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Man in My Basement": {
+    "tmdbId": 957121,
+    "posterPath": "/1zpeH8wOrM8p2TTAmBetwhe2BIx.jpg",
+    "matchedTitle": "The Man in My Basement",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Monkey": {
+    "tmdbId": 1124620,
+    "posterPath": "/yYa8Onk9ow7ukcnfp2QWVvjWYel.jpg",
+    "matchedTitle": "The Monkey",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Nightman": {
+    "tmdbId": 372719,
+    "posterPath": "/32fxKtkgmefC3j7pP8aK2IByZTm.jpg",
+    "matchedTitle": "The Nightman",
+    "year": "1992",
+    "match": "exact"
+  },
+  "The Old Guard": {
+    "tmdbId": 547016,
+    "posterPath": "/cjr4NWURcVN3gW5FlHeabgBHLrY.jpg",
+    "matchedTitle": "The Old Guard",
+    "year": "2020",
+    "match": "exact"
+  },
+  "The Order": {
+    "tmdbId": 1082195,
+    "posterPath": "/r3BPhDb45sy87kNV41Q1TwCL6BS.jpg",
+    "matchedTitle": "The Order",
+    "year": "2024",
+    "match": "exact"
+  },
+  "The Plague": {
+    "tmdbId": 1370814,
+    "posterPath": "/b0RWuqzgvyfiIYU4QfgJHhmxZF4.jpg",
+    "matchedTitle": "The Plague",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Rip": {
+    "tmdbId": 1306368,
+    "posterPath": "/4wsYWH73Hb1B6noGIFaRQSAkuXj.jpg",
+    "matchedTitle": "The Rip",
+    "year": "2026",
+    "match": "exact"
+  },
+  "The Ritual": {
+    "tmdbId": 1278950,
+    "posterPath": "/uubL8yvtEBjz3V7DFQHjCuSQO8w.jpg",
+    "matchedTitle": "The Ritual",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Running Man": {
+    "tmdbId": 798645,
+    "posterPath": "/dKL78O9zxczVgjtNcQ9UkbYLzqX.jpg",
+    "matchedTitle": "The Running Man",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Secret Agent": {
+    "tmdbId": 1220564,
+    "posterPath": "/iLE2YOmeboeTDC7GlOp1dzh1VFo.jpg",
+    "matchedTitle": "The Secret Agent",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Shrouds": {
+    "tmdbId": 970947,
+    "posterPath": "/xXoueIHdllGo5m0ChKvSATJYWBw.jpg",
+    "matchedTitle": "The Shrouds",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Silence": {
+    "tmdbId": 527261,
+    "posterPath": "/lTVOquzxw2DPF3MKuYd1ynz9F6H.jpg",
+    "matchedTitle": "The Silence",
+    "year": "2019",
+    "match": "exact"
+  },
+  "The Strangers: Chapter 1": {
+    "tmdbId": 1010600,
+    "posterPath": "/oYsCNpW4k7Pd7ac3uQfBhr2ihtW.jpg",
+    "matchedTitle": "The Strangers: Chapter 1",
+    "year": "2024",
+    "match": "exact"
+  },
+  "The Strangers: Chapter 2": {
+    "tmdbId": 1010756,
+    "posterPath": "/pqADzs5SJvI2jC0DThPVMuNJcWS.jpg",
+    "matchedTitle": "The Strangers: Chapter 2",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Strangers: Chapter 3": {
+    "tmdbId": 1010755,
+    "posterPath": "/dWi4D1rUX1Pg4MaafpwwssqJ9lv.jpg",
+    "matchedTitle": "The Strangers: Chapter 3",
+    "year": "2026",
+    "match": "exact"
+  },
+  "The Substance": {
+    "tmdbId": 933260,
+    "posterPath": "/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
+    "matchedTitle": "The Substance",
+    "year": "2024",
+    "match": "exact"
+  },
+  "The Surrender": {
+    "tmdbId": 1339206,
+    "posterPath": "/t45V9B1kSvwVpupWie1t9e1YWXe.jpg",
+    "matchedTitle": "The Surrender",
+    "year": "2025",
+    "match": "exact"
+  },
+  "The Swarm": {
+    "tmdbId": 46878,
+    "posterPath": "/pO5qEEpjxdQ40ScLcFOowyziNiT.jpg",
+    "matchedTitle": "The Swarm",
+    "year": "1978",
+    "match": "exact"
+  },
+  "The Titan": {
+    "tmdbId": 476926,
+    "posterPath": "/qRmQazyIBZR4pQIk9VruiZul0Au.jpg",
+    "matchedTitle": "The Titan",
+    "year": "2018",
+    "match": "exact"
+  },
+  "The Town": {
+    "tmdbId": 23168,
+    "posterPath": "/3NIzyXkfylsjflRKSz8Fts3lXzm.jpg",
+    "matchedTitle": "The Town",
+    "year": "2010",
+    "match": "exact"
+  },
+  "The Watchers": {
+    "tmdbId": 1086747,
+    "posterPath": "/vZVEUPychdvZLrTNwWErr9xZFmu.jpg",
+    "matchedTitle": "The Watchers",
+    "year": "2024",
+    "match": "exact"
+  },
+  "They Called Him Mostly Harmless": {
+    "tmdbId": 1105868,
+    "posterPath": "/i3Ngi39RT9kxTPyGN5CwK2XEZrk.jpg",
+    "matchedTitle": "They Called Him Mostly Harmless",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Things Will Be Different": {
+    "tmdbId": 1226840,
+    "posterPath": "/8vpYPns2SjbmgqkE72e69knRMGY.jpg",
+    "matchedTitle": "Things Will Be Different",
+    "year": "2024",
+    "match": "exact"
+  },
+  "This Never Happened": {
+    "tmdbId": 1273844,
+    "posterPath": "/cpKa8COYTslEu7YFDg7vqxNzGVF.jpg",
+    "matchedTitle": "This Never Happened",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Thrash": {
+    "tmdbId": 1290417,
+    "posterPath": "/adk8weka3O5648g3de4z3y4aE7G.jpg",
+    "matchedTitle": "Thrash",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Thunderbolts*": {
+    "tmdbId": 986056,
+    "posterPath": "/hqcexYHbiTBfDIdDWxrxPtVndBX.jpg",
+    "matchedTitle": "Thunderbolts*",
+    "year": "2025",
+    "match": "exact"
+  },
+  "To Catch a Killer": {
+    "tmdbId": 605886,
+    "posterPath": "/mFp3l4lZg1NSEsyxKrdi0rNK8r1.jpg",
+    "matchedTitle": "To Catch a Killer",
+    "year": "2023",
+    "match": "exact"
+  },
+  "Train Dreams": {
+    "tmdbId": 1241983,
+    "posterPath": "/l3zS4YnpOi4usyEXGJMtxSqDDyb.jpg",
+    "matchedTitle": "Train Dreams",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Train to Busan": {
+    "tmdbId": 396535,
+    "posterPath": "/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg",
+    "matchedTitle": "Train to Busan",
+    "year": "2016",
+    "match": "exact"
+  },
+  "Trap": {
+    "tmdbId": 1032823,
+    "posterPath": "/jwoaKYVqPgYemFpaANL941EF94R.jpg",
+    "matchedTitle": "Trap",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Trial by Fire": {
+    "tmdbId": 481880,
+    "posterPath": "/Aeon31iP17ys9FesAK3bLycXI6v.jpg",
+    "matchedTitle": "Trial by Fire",
+    "year": "2019",
+    "match": "exact"
+  },
+  "Trigger Warning": {
+    "tmdbId": 704673,
+    "posterPath": "/6XJM3C47iGOK9nFU6yLFCSf4U5c.jpg",
+    "matchedTitle": "Trigger Warning",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Twister": {
+    "tmdbId": 664,
+    "posterPath": "/d4ie3f6QTvNw40V770Uzo87SDZn.jpg",
+    "matchedTitle": "Twister",
+    "year": "1996",
+    "match": "exact"
+  },
+  "Twisters": {
+    "tmdbId": 718821,
+    "posterPath": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg",
+    "matchedTitle": "Twisters",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Undertone": {
+    "tmdbId": 1480387,
+    "posterPath": "/2PFgFMnrdCPXWiZl1PUvky7Mo9D.jpg",
+    "matchedTitle": "undertone",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Until Dawn": {
+    "tmdbId": 1232546,
+    "posterPath": "/bLY5yN4MKVynZ2HMZWElTOGBgBe.jpg",
+    "matchedTitle": "Until Dawn",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Upgrade": {
+    "tmdbId": 500664,
+    "posterPath": "/woLGROUdPWdBnLVFKYdGD3kFkPY.jpg",
+    "matchedTitle": "Upgrade",
+    "year": "2018",
+    "match": "exact"
+  },
+  "V/H/S Viral": {
+    "tmdbId": 267806,
+    "posterPath": "/xe4S3x4Kq1UqCsDZdtLCeYt9moY.jpg",
+    "matchedTitle": "V/H/S: Viral",
+    "year": "2014",
+    "match": "fuzzy"
+  },
+  "Vanished into the Night": {
+    "tmdbId": 1039868,
+    "posterPath": "/f83MF5KVFRs5zuFCPlb6UQV1Yo9.jpg",
+    "matchedTitle": "Vanished into the Night",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Venom: The Last Dance": {
+    "tmdbId": 912649,
+    "posterPath": "/vGXptEdgZIhPg3cGlc7e8sNPC2e.jpg",
+    "matchedTitle": "Venom: The Last Dance",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Veronica": {
+    "tmdbId": 441701,
+    "posterPath": "/xHP6mYLQKbJY9pg99PGoGKmmBZX.jpg",
+    "matchedTitle": "Veronica",
+    "year": "2017",
+    "match": "exact"
+  },
+  "Vicious": {
+    "tmdbId": 1251717,
+    "posterPath": "/shKGDGrwqmc9x2aTJcQszoXinq0.jpg",
+    "matchedTitle": "Vicious",
+    "year": "2025",
+    "match": "exact"
+  },
+  "War Machine": {
+    "tmdbId": 1265609,
+    "posterPath": "/rFhKkXhk7ClU03jQ5rHIApJDwev.jpg",
+    "matchedTitle": "War Machine",
+    "year": "2026",
+    "match": "exact"
+  },
+  "War of the Worlds": {
+    "tmdbId": 755898,
+    "posterPath": "/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+    "matchedTitle": "War of the Worlds",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Werevolves": {
+    "tmdbId": 970450,
+    "posterPath": "/otXBlMPbFBRs6o2Xt6KX59Qw6dL.jpg",
+    "matchedTitle": "Werewolves",
+    "year": "2024",
+    "match": "exact"
+  },
+  "Whistle": {
+    "tmdbId": 1193501,
+    "posterPath": "/vgonf5kGsiijUBjzxKTvechhT28.jpg",
+    "matchedTitle": "Whistle",
+    "year": "2026",
+    "match": "exact"
+  },
+  "Witchboard": {
+    "tmdbId": 1107325,
+    "posterPath": "/8RcN5FHkJVNJdOaL6WtTePU7CyF.jpg",
+    "matchedTitle": "Witchboard",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Wolf Man": {
+    "tmdbId": 710295,
+    "posterPath": "/wpSDzTBfF0Eeo5lzu2w9FTujGqd.jpg",
+    "matchedTitle": "Wolf Man",
+    "year": "2025",
+    "match": "exact"
+  },
+  "World War Z": {
+    "tmdbId": 72190,
+    "posterPath": "/aCnVdvExw6UWSeQfr0tUH3jr4qG.jpg",
+    "matchedTitle": "World War Z",
+    "year": "2013",
+    "match": "exact"
+  },
+  "Worldbreaker": {
+    "tmdbId": 1196067,
+    "posterPath": "/ahj1JU8r0uJv7QII5Uj7tKzbEsC.jpg",
+    "matchedTitle": "Worldbreaker",
+    "year": "2025",
+    "match": "exact"
+  },
+  "Wrong Turn 2: Dead End": {
+    "tmdbId": 13186,
+    "posterPath": "/ow3IMhTVLryZuCEoQznVTTmFYuu.jpg",
+    "matchedTitle": "Wrong Turn 2: Dead End",
+    "year": "2007",
+    "match": "exact"
+  },
+  "You're Next": {
+    "tmdbId": 83899,
+    "posterPath": "/l163jakfKvchUTVTtBi0KA7ZhIc.jpg",
+    "matchedTitle": "You're Next",
+    "year": "2013",
+    "match": "exact"
+  },
+  "iHostage": {
+    "tmdbId": 1371202,
+    "posterPath": "/tn3Ckxyc7OWXnhMPkiIBvqLdFC6.jpg",
+    "matchedTitle": "iHostage",
+    "year": "2025",
+    "match": "exact"
+  }
+}

@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "fetch:posters": "npx tsx scripts/fetch-movie-posters.ts",
     "build": "npx tsx scripts/calculate-static-ratings.ts && next build",
     "start": "next start",
     "lint": "next lint",

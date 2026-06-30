@@ -277,6 +277,33 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--gray-10);
 }
 
+/* Movie poster thumbnails in the watch-history table */
+.movie-poster-thumb {
+  flex-shrink: 0;
+  width: 34px;
+  height: 51px;
+  border-radius: 4px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.movie-poster-thumb-empty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  opacity: 0.5;
+}
+
+.tmdb-attribution {
+  font-size: 0.75rem;
+  color: var(--gray-9);
+  text-align: center;
+  margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
   .movie-summary {
     grid-template-columns: repeat(2, 1fr);

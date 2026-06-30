@@ -22,8 +22,9 @@ import {
   flexRender,
 } from "@tanstack/react-table";
 import NextLink from "next/link";
+import Image from "next/image";
 import { BlogPostData } from "@/getBlogPosts";
-import type { MovieRating } from "@/types/ratings";
+import type { MovieRating, PosterMap } from "@/types/ratings";
 
 const columnHelper = createColumnHelper<MovieRating>();
 
@@ -165,10 +166,12 @@ export default function MovieTable({
   posts,
   movies,
   cycles,
+  posters,
 }: {
   posts: BlogPostData[];
   movies: MovieRating[];
   cycles: string[][];
+  posters: PosterMap;
 }) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -399,18 +402,40 @@ export default function MovieTable({
                       );
 
                       if (cell.column.id === "title") {
-                        if (article) {
-                          return (
-                            <Table.Cell key={cell.id} className="premium-table-cell" style={{ verticalAlign: "middle" }}>
-                              <Link asChild style={{ fontWeight: "bold", color: "#ffffff" }}>
-                                <NextLink href={`/${article.slug}`}>{value}</NextLink>
-                              </Link>
-                            </Table.Cell>
-                          );
-                        }
+                        const poster = posters[row.original.title];
+                        const thumb = poster?.posterPath ? (
+                          <Image
+                            src={`https://image.tmdb.org/t/p/w92${poster.posterPath}`}
+                            alt=""
+                            width={34}
+                            height={51}
+                            className="movie-poster-thumb"
+                          />
+                        ) : (
+                          <span
+                            className="movie-poster-thumb movie-poster-thumb-empty"
+                            aria-hidden
+                          >
+                            🎬
+                          </span>
+                        );
+
+                        const titleEl = article ? (
+                          <Link asChild style={{ fontWeight: "bold", color: "#ffffff" }}>
+                            <NextLink href={`/${article.slug}`}>{value}</NextLink>
+                          </Link>
+                        ) : (
+                          <span style={{ fontWeight: "bold", color: "#ffffff", fontSize: "0.875rem" }}>
+                            {value}
+                          </span>
+                        );
+
                         return (
                           <Table.Cell key={cell.id} className="premium-table-cell" style={{ verticalAlign: "middle" }}>
-                            <span style={{ fontWeight: "bold", color: "#ffffff", fontSize: "0.875rem" }}>{value}</span>
+                            <Flex align="center" gap="3">
+                              {thumb}
+                              {titleEl}
+                            </Flex>
                           </Table.Cell>
                         );
                       }

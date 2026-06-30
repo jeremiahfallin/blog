@@ -1,7 +1,8 @@
 import { getBlogPosts } from "@/getBlogPosts";
 import MovieViewerClient from "@/components/MovieViewerClient";
 import calculatedRatings from "@/data/calculated-ratings.json";
-import type { RatingsData } from "@/types/ratings";
+import moviePosters from "@/data/movie-posters.json";
+import type { RatingsData, PosterMap } from "@/types/ratings";
 import { Box, Flex, Heading, Text, Container, Section } from "@radix-ui/themes";
 
 export const metadata = {
@@ -13,6 +14,7 @@ export const metadata = {
 export default async function Movies() {
   const blogPosts = await getBlogPosts();
   const ratings = calculatedRatings as RatingsData;
+  const posters = moviePosters as PosterMap;
 
   return (
     <Container size="3">
@@ -28,7 +30,20 @@ export default async function Movies() {
             </Text>
           </Box>
 
-          <MovieViewerClient posts={blogPosts} ratings={ratings} />
+          <MovieViewerClient posts={blogPosts} ratings={ratings} posters={posters} />
+
+          <Text as="p" className="tmdb-attribution">
+            Movie posters and metadata provided by{" "}
+            <a
+              href="https://www.themoviedb.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "var(--gray-10)", textDecoration: "underline" }}
+            >
+              TMDB
+            </a>
+            . This product uses the TMDB API but is not endorsed or certified by TMDB.
+          </Text>
         </Flex>
       </Section>
     </Container>

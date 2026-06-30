@@ -6,6 +6,16 @@ const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   serverExternalPackages: ["@tensorflow/tfjs-node"],
 
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "image.tmdb.org",
+        pathname: "/t/p/**",
+      },
+    ],
+  },
+
   // @ts-ignore - Next.js types don't fully cover the webpack config options
   webpack: (config: any, { isServer }: { isServer: boolean }) => {
     // For Node.js modules that are imported on the server
