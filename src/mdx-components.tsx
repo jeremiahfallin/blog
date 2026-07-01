@@ -128,11 +128,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
           {children}
         </RadixLink>
       ) : (
-        <Link href={href || "#"} passHref legacyBehavior>
-          <RadixLink highContrast className="mdx-link">
-            {children}
-          </RadixLink>
-        </Link>
+        <RadixLink asChild highContrast className="mdx-link">
+          <Link href={href || "#"}>{children}</Link>
+        </RadixLink>
       );
     },
     ul: ({ children }) => (
