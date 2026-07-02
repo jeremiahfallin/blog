@@ -9,6 +9,7 @@ import {
 import type { MDXComponents } from "mdx/types";
 import Image, { ImageProps } from "next/image";
 import Link from "next/link";
+import ExternalLink from "./components/ExternalLink";
 
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
@@ -116,17 +117,11 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       </Text>
     ),
     a: ({ href, children }) => {
-      const isExternal = href?.startsWith("http");
+      const isExternal = href ? /^(https?:|mailto:|tel:|\/\/)/.test(href) : false;
       return isExternal ? (
-        <RadixLink
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          highContrast
-          className="mdx-link"
-        >
+        <ExternalLink href={href!} highContrast className="mdx-link">
           {children}
-        </RadixLink>
+        </ExternalLink>
       ) : (
         <RadixLink asChild highContrast className="mdx-link">
           <Link href={href || "#"}>{children}</Link>

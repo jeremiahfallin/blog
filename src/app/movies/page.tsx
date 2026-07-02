@@ -3,6 +3,7 @@ import MovieViewerClient from "@/components/MovieViewerClient";
 import calculatedRatings from "@/data/calculated-ratings.json";
 import moviePosters from "@/data/movie-posters.json";
 import type { RatingsData, PosterMap } from "@/types/ratings";
+import ExternalLink from "@/components/ExternalLink";
 import { Box, Flex, Heading, Text, Container, Section } from "@radix-ui/themes";
 
 export const metadata = {
@@ -34,14 +35,12 @@ export default async function Movies() {
 
           <Text as="p" className="tmdb-attribution">
             Movie posters and metadata provided by{" "}
-            <a
+            <ExternalLink
               href="https://www.themoviedb.org/"
-              target="_blank"
-              rel="noopener noreferrer"
               style={{ color: "var(--gray-10)", textDecoration: "underline" }}
             >
               TMDB
-            </a>
+            </ExternalLink>
             . This product uses the TMDB API but is not endorsed or certified by TMDB.
           </Text>
         </Flex>
