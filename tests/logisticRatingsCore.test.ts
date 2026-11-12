@@ -89,6 +89,76 @@ test("produces identical scores on repeated runs", async () => {
   assert.deepEqual(second, first);
 });
 
+const maxAbsDifference = (
+  a: Record<string, number>,
+  b: Record<string, number>
+) => Math.max(...Object.keys(a).map((title) => Math.abs(a[title] - b[title])));
+
+test("scores settle instead of growing with more training", async () => {
+  // No contradictions here, so without regularization the weights would keep
+  // growing for as long as training runs.
+  const outcomes: [string, boolean | null][] = [
+    ["A", null], ["B", true], ["C", false], ["D", true], ["A", false],
+    ["E", true], ["B", false], ["F", false], ["D", true], ["E", true],
+  ];
+  const history = outcomes.map(([title, betterThanPrevious], i) => ({
+    order: i + 1,
+    title,
+    dateWatched: "2024-01-01",
+    betterThanPrevious,
+  }));
+
+  const normal = await calculateLogisticRatingsWithBackend(tf, history);
+  const fourTimesLonger = await calculateLogisticRatingsWithBackend(
+    tf,
+    history,
+    { epochs: 2000 }
+  );
+
+  assert.equal(Object.keys(normal).length, 6);
+  assert.ok(
+    maxAbsDifference(normal, fourTimesLonger) < 1e-4,
+    `scores moved by ${maxAbsDifference(normal, fourTimesLonger)} with more training`
+  );
+});
+
+test("the same comparisons give the same scores in any order", async () => {
+  // 40 comparisons among 12 films, each written as its own two-entry segment
+  // (the null entry breaks the chain), so the segments can be reordered
+  // without changing which films were compared or who won.
+  const segments: [string, boolean | null][][] = [];
+  for (let k = 0; k < 40; k++) {
+    const a = k % 12;
+    const b = (k * 5 + 3) % 12;
+    segments.push([
+      [`F${a}`, null],
+      [`F${b}`, b < a],
+    ]);
+  }
+  const toHistory = (segs: [string, boolean | null][][]) =>
+    segs.flat().map(([title, betterThanPrevious], i) => ({
+      order: i + 1,
+      title,
+      dateWatched: "2024-01-01",
+      betterThanPrevious,
+    }));
+
+  const forward = await calculateLogisticRatingsWithBackend(
+    tf,
+    toHistory(segments)
+  );
+  const reversed = await calculateLogisticRatingsWithBackend(
+    tf,
+    toHistory([...segments].reverse())
+  );
+
+  assert.equal(Object.keys(forward).length, 12);
+  assert.ok(
+    maxAbsDifference(forward, reversed) < 1e-4,
+    `scores differ by ${maxAbsDifference(forward, reversed)} between orderings`
+  );
+});
+
 async function main() {
   let failed = 0;
   for (const { name, fn } of tests) {

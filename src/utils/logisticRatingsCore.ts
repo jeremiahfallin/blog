@@ -10,12 +10,19 @@ export interface WatchEntry {
 export type MovieRatings = { [title: string]: number };
 
 export interface LogisticRatingsOptions {
-  learningRate?: number;
+  /**
+   * L2 penalty strength (λ). Equivalent to a Gaussian prior with variance 1/λ
+   * on every film's score, so the default of 1 says "before any comparisons,
+   * a film's score is 0 give or take 1".
+   */
+  regularization?: number;
+  /** Number of full-batch gradient-descent steps. */
   epochs?: number;
-  batchSize?: number;
-  validationSplit?: number;
   verbose?: boolean;
 }
+
+const DEFAULT_REGULARIZATION = 1;
+const DEFAULT_EPOCHS = 500;
 
 /**
  * The slice of the TensorFlow.js API this module relies on. The build script
@@ -23,7 +30,7 @@ export interface LogisticRatingsOptions {
  */
 export type TfBackend = Pick<
   typeof tfTypes,
-  "ready" | "tensor2d" | "sequential" | "layers" | "train"
+  "ready" | "tensor2d" | "sequential" | "layers" | "train" | "regularizers"
 >;
 
 export interface ComparisonData {
@@ -83,33 +90,29 @@ export function buildComparisonData(history: WatchEntry[]): ComparisonData {
   return { allTitles, numMovies, xDiffData, yData };
 }
 
-const TRAINING_ORDER_SEED = 1;
-
-/** Small seeded generator (mulberry32) returning values in [0, 1). */
-function seededRandom(seed: number): () => number {
-  let state = seed;
-  return () => {
-    state = (state + 0x6d2b79f5) | 0;
-    let t = Math.imul(state ^ (state >>> 15), state | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
 /**
- * Train a bias-free logistic-regression model over the pairwise comparisons
- * and return the learned per-title scores. The TF backend is injected rather
- * than imported here, so this module never pulls TensorFlow into a bundle.
+ * Fit a bias-free, L2-regularized logistic regression over the pairwise
+ * comparisons and return the learned per-title scores. The TF backend is
+ * injected rather than imported here, so this module never pulls TensorFlow
+ * into a bundle.
+ *
+ * The scores minimize
+ *
+ *     -Σ log P(observed outcome)  +  (λ/2) · Σ score²
+ *
+ * where P(a beats b) = sigmoid(score_a - score_b). The penalty matters: a
+ * watch history without contradictions is perfectly separable, so without it
+ * the scores grow for as long as training runs and their size only reflects
+ * when training stopped. With it the problem has one answer, which plain
+ * full-batch gradient descent reaches regardless of sample order or seed.
  */
 export async function calculateLogisticRatingsWithBackend(
   tf: TfBackend,
   history: WatchEntry[],
   options?: LogisticRatingsOptions
 ): Promise<MovieRatings> {
-  const learningRate = options?.learningRate ?? 0.01;
-  const epochs = options?.epochs ?? 100;
-  const batchSize = options?.batchSize ?? 32;
-  const validationSplit = options?.validationSplit ?? 0;
+  const regularization = options?.regularization ?? DEFAULT_REGULARIZATION;
+  const epochs = options?.epochs ?? DEFAULT_EPOCHS;
   const verbose = options?.verbose ?? false;
 
   try {
@@ -131,22 +134,32 @@ export async function calculateLogisticRatingsWithBackend(
       return Object.fromEntries(allTitles.map((title) => [title, 0]));
     }
 
-    // Shuffle the samples once with a seeded generator. Letting `fit` shuffle
-    // would use Math.random and make the scores differ on every build.
-    const order = xDiffData.map((_, i) => i);
-    const random = seededRandom(TRAINING_ORDER_SEED);
-    for (let i = order.length - 1; i > 0; i--) {
-      const j = Math.floor(random() * (i + 1));
-      [order[i], order[j]] = [order[j], order[i]];
-    }
+    const sampleCount = xDiffData.length;
 
-    const xTrain = tf.tensor2d(
-      order.map((i) => xDiffData[i]),
-      [xDiffData.length, numMovies]
-    );
+    // The most comparisons any one film takes part in. Every comparison is in
+    // xDiffData twice (once mirrored), hence the division by 2.
+    const appearances = new Array<number>(numMovies).fill(0);
+    for (const row of xDiffData) {
+      row.forEach((value, index) => {
+        if (value !== 0) appearances[index]++;
+      });
+    }
+    const maxComparisons = Math.max(...appearances) / 2;
+
+    // The objective's curvature is at most maxComparisons / 2 + λ, so a step
+    // of one over that bound is guaranteed to converge however often a film
+    // has been rewatched.
+    const stepSize = 1 / (maxComparisons / 2 + regularization);
+
+    // TensorFlow's loss is the mean over samples, i.e. the objective above
+    // times 2 / sampleCount, so the penalty and the step are rescaled to match.
+    const l2 = regularization / sampleCount;
+    const learningRate = (stepSize * sampleCount) / 2;
+
+    const xTrain = tf.tensor2d(xDiffData, [sampleCount, numMovies]);
     const yTrain = tf.tensor2d(
-      order.map((i) => [yData[i]]),
-      [yData.length, 1]
+      yData.map((y) => [y]),
+      [sampleCount, 1]
     );
 
     const model = tf.sequential();
@@ -160,20 +173,20 @@ export async function calculateLogisticRatingsWithBackend(
         // logistic regression is convex, so there is no symmetry to break,
         // and a fixed start makes the result repeatable.
         kernelInitializer: "zeros",
+        kernelRegularizer: tf.regularizers.l2({ l2 }),
       })
     );
 
     model.compile({
-      optimizer: tf.train.adam(learningRate),
+      optimizer: tf.train.sgd(learningRate),
       loss: "binaryCrossentropy",
     });
 
     try {
       await model.fit(xTrain, yTrain, {
         epochs,
-        batchSize,
-        shuffle: false, // Already shuffled above, deterministically.
-        validationSplit,
+        batchSize: sampleCount, // Full batch: sample order cannot matter.
+        shuffle: false,
         verbose: verbose ? 1 : 0,
       });
 
