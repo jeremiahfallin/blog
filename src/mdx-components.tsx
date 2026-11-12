@@ -182,8 +182,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     em: ({ children }) => <em style={{ fontStyle: "italic" }}>{children}</em>,
     code: ({ children }) => <Code className="mdx-code">{children}</Code>,
+    // Markdown images render inside a <p>, so everything here must be phrasing
+    // content (spans, not div/p) or React fails hydration on invalid nesting.
     img: (props) => (
-      <Box style={{ margin: "2.5rem 0" }}>
+      <Box as="span" display="block" style={{ margin: "2.5rem 0" }}>
         <Image
           sizes="100vw"
           width={1000}
@@ -200,9 +202,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
         />
         {props?.alt && (
           <Text
-            as="p"
+            as="span"
             size="1"
             style={{
+              display: "block",
               marginTop: "0.75rem",
               textAlign: "center",
               color: "var(--gray-10)",

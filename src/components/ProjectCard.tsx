@@ -37,6 +37,7 @@ export function ProjectCard({
     ? new Date(metadata.date).toLocaleDateString("en-US", {
         year: "numeric",
         month: "short",
+        timeZone: "UTC",
       })
     : null;
 

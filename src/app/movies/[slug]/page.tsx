@@ -43,6 +43,7 @@ export default async function Page({
           month: "long",
           day: "numeric",
           year: "numeric",
+          timeZone: "UTC",
         })
       : null;
 

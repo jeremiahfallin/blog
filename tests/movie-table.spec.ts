@@ -15,7 +15,15 @@ async function getColumnCellsText(
 
   return page
     .locator(`table > tbody > tr > td:nth-child(${columnIndex})`)
-    .allTextContents();
+    .evaluateAll((cells) =>
+      cells.map((cell) => {
+        // Skip decorative content such as the poster-placeholder emoji, which
+        // would otherwise be read as part of the title.
+        const clone = cell.cloneNode(true) as HTMLElement;
+        clone.querySelectorAll("[aria-hidden]").forEach((el) => el.remove());
+        return clone.textContent ?? "";
+      })
+    );
 }
 
 // Helper function to parse score (handles potential non-numeric values gracefully)

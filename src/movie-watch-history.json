@@ -2017,117 +2017,123 @@
     "betterThanPrevious": false
   },
   {
-    "order": 336,
+    "order": 337,
     "title": "Mortal Kombat II",
     "dateWatched": "2026-06-10",
     "betterThanPrevious": false
   },
   {
-    "order": 337,
+    "order": 338,
     "title": "Killer Whale",
     "dateWatched": "2026-06-11",
     "betterThanPrevious": false
   },
   {
-    "order": 338,
+    "order": 339,
     "title": "Faces of Death",
     "dateWatched": "2026-06-11",
     "betterThanPrevious": true
   },
   {
-    "order": 339,
+    "order": 340,
     "title": "Over Your Dead Body",
     "dateWatched": "2026-06-12",
     "betterThanPrevious": true
   },
   {
-    "order": 340,
+    "order": 341,
     "title": "Girl, Interrupted",
     "dateWatched": "2026-06-13",
     "betterThanPrevious": true
   },
   {
-    "order": 341,
+    "order": 342,
     "title": "Paranormal Activity",
     "dateWatched": "2026-06-13",
     "betterThanPrevious": false
   },
   {
-    "order": 342,
+    "order": 343,
     "title": "Fear the Night",
     "dateWatched": "2026-06-13",
     "betterThanPrevious": false
   },
   {
-    "order": 343,
+    "order": 344,
     "title": "Evil Dead",
     "dateWatched": "2026-06-14",
     "betterThanPrevious": true
   },
   {
-    "order": 344,
+    "order": 345,
     "title": "Slender Man",
     "dateWatched": "2026-06-19",
     "betterThanPrevious": false
   },
   {
-    "order": 345,
+    "order": 346,
     "title": "Constantine",
     "dateWatched": "2026-06-19",
     "betterThanPrevious": true
   },
   {
-    "order": 346,
+    "order": 347,
     "title": "Blair Witch",
     "dateWatched": "2026-06-20",
     "betterThanPrevious": false
   },
   {
-    "order": 347,
+    "order": 348,
     "title": "Paranormal Activity 2",
     "dateWatched": "2026-06-20",
     "betterThanPrevious": true
   },
   {
-    "order": 348,
+    "order": 349,
     "title": "Paranormal Activity 3",
     "dateWatched": "2026-06-21",
     "betterThanPrevious": false
   },
   {
-    "order": 349,
+    "order": 350,
     "title": "Becky",
     "dateWatched": "2026-06-20",
     "betterThanPrevious": true
   },
   {
-    "order": 350,
+    "order": 351,
     "title": "#Alive",
     "dateWatched": "2026-06-24",
     "betterThanPrevious": true
   },
   {
-    "order": 351,
+    "order": 352,
     "title": "Zodiac",
     "dateWatched": "2026-06-25",
     "betterThanPrevious": true
   },
   {
-    "order": 352,
+    "order": 353,
     "title": "Until Dawn",
     "dateWatched": "2026-06-26",
     "betterThanPrevious": false
   },
   {
-    "order": 353,
+    "order": 354,
     "title": "The Night House",
     "dateWatched": "2026-06-28",
     "betterThanPrevious": true
   },
   {
-    "order": 354,
+    "order": 355,
     "title": "Shutter",
     "dateWatched": "2026-06-29",
     "betterThanPrevious": false
+  },
+  {
+    "order": 356,
+    "title": "Disclosure Day",
+    "dateWatched": "2026-06-30",
+    "betterThanPrevious": true
   }
 ]

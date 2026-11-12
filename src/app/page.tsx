@@ -84,14 +84,17 @@ function MovieCard({ movie }: { movie: BlogPostData }) {
 export default async function Home() {
   const blogPosts = await getBlogPosts();
 
-  const moviePosts = blogPosts.filter((post) => post.slug.startsWith("movies/")).slice(0, 3);
+  const byNewest = (a: BlogPostData, b: BlogPostData) =>
+    new Date((b.metadata as { date?: string }).date ?? 0).getTime() -
+    new Date((a.metadata as { date?: string }).date ?? 0).getTime();
+
+  const moviePosts = blogPosts
+    .filter((post) => post.slug.startsWith("movies/"))
+    .sort(byNewest)
+    .slice(0, 3);
   const projectPosts = blogPosts
     .filter((post) => post.slug.startsWith("projects/"))
-    .sort(
-      (a, b) =>
-        new Date((b.metadata as { date?: string }).date ?? 0).getTime() -
-        new Date((a.metadata as { date?: string }).date ?? 0).getTime()
-    )
+    .sort(byNewest)
     .slice(0, 2);
 
   return (
