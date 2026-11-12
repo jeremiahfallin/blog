@@ -8,7 +8,7 @@
       "btscore": 0.44939508633943814,
       "bayesianUncertainty": 0.004019241670180901,
       "viewCount": 2,
-      "logisticScore": 3.253995895385742
+      "logisticScore": 2.8557980060577393
     },
     {
       "order": 2,
@@ -18,7 +18,7 @@
       "btscore": 0.26568571682400155,
       "bayesianUncertainty": 0.002495013013138701,
       "viewCount": 1,
-      "logisticScore": -0.27082133293151855
+      "logisticScore": -1.0672334432601929
     },
     {
       "order": 3,
@@ -28,7 +28,7 @@
       "btscore": 0.1890952347612522,
       "bayesianUncertainty": 0.0017285169635619972,
       "viewCount": 1,
-      "logisticScore": -3.9425435066223145
+      "logisticScore": -4.323056221008301
     },
     {
       "order": 4,
@@ -38,7 +38,7 @@
       "btscore": 0.2664706344461553,
       "bayesianUncertainty": 0.0024938793818682302,
       "viewCount": 1,
-      "logisticScore": 0.0703224316239357
+      "logisticScore": 0.06109258905053139
     },
     {
       "order": 5,
@@ -48,7 +48,7 @@
       "btscore": 0.4726512158522091,
       "bayesianUncertainty": 0.004078445335077855,
       "viewCount": 1,
-      "logisticScore": 4.307936668395996
+      "logisticScore": 4.609704494476318
     },
     {
       "order": 6,
@@ -58,7 +58,7 @@
       "btscore": 0.49113464444253835,
       "bayesianUncertainty": 0.003920423608865524,
       "viewCount": 3,
-      "logisticScore": 1.6158679723739624
+      "logisticScore": 1.7495554685592651
     },
     {
       "order": 7,
@@ -68,7 +68,7 @@
       "btscore": 0.6599801658279248,
       "bayesianUncertainty": 0.005320548270543799,
       "viewCount": 2,
-      "logisticScore": 4.418365478515625
+      "logisticScore": 4.788112640380859
     },
     {
       "order": 8,
@@ -78,7 +78,7 @@
       "btscore": 0.45961547622384546,
       "bayesianUncertainty": 0.003561812089330145,
       "viewCount": 3,
-      "logisticScore": 1.4073179960250854
+      "logisticScore": 1.2682620286941528
     },
     {
       "order": 9,
@@ -88,7 +88,7 @@
       "btscore": 0.17332606419871835,
       "bayesianUncertainty": 0.0015649733953206019,
       "viewCount": 1,
-      "logisticScore": -4.084388732910156
+      "logisticScore": -4.211802005767822
     },
     {
       "order": 10,
@@ -98,7 +98,7 @@
       "btscore": 0.2623021457481558,
       "bayesianUncertainty": 0.0023996180914812406,
       "viewCount": 1,
-      "logisticScore": -1.1096179485321045
+      "logisticScore": -1.1992008686065674
     },
     {
       "order": 11,
@@ -108,7 +108,7 @@
       "btscore": 0.29161669852686034,
       "bayesianUncertainty": 0.00266065544538775,
       "viewCount": 1,
-      "logisticScore": 1.4204766750335693
+      "logisticScore": 1.3387110233306885
     },
     {
       "order": 12,
@@ -118,7 +118,7 @@
       "btscore": 0.3971267952587832,
       "bayesianUncertainty": 0.0035598245616672037,
       "viewCount": 1,
-      "logisticScore": 4.50490140914917
+      "logisticScore": 4.438858509063721
     },
     {
       "order": 13,
@@ -128,7 +128,7 @@
       "btscore": 0.2735574954416246,
       "bayesianUncertainty": 0.002531932257574962,
       "viewCount": 1,
-      "logisticScore": 0.1491728574037552
+      "logisticScore": 0.03680472820997238
     },
     {
       "order": 14,
@@ -138,7 +138,7 @@
       "btscore": 0.17259496172054375,
       "bayesianUncertainty": 0.0015369331391436197,
       "viewCount": 1,
-      "logisticScore": -4.152490615844727
+      "logisticScore": -4.286858558654785
     },
     {
       "order": 15,
@@ -148,7 +148,7 @@
       "btscore": 0.24643263061899984,
       "bayesianUncertainty": 0.002221327945677806,
       "viewCount": 1,
-      "logisticScore": -0.9938483834266663
+      "logisticScore": -1.0270648002624512
     },
     {
       "order": 16,
@@ -158,7 +158,7 @@
       "btscore": 0.49113464444253835,
       "bayesianUncertainty": 0.003920423608865524,
       "viewCount": 3,
-      "logisticScore": 1.6158679723739624
+      "logisticScore": 1.7495554685592651
     },
     {
       "order": 17,
@@ -168,7 +168,7 @@
       "btscore": 0.17187119317154262,
       "bayesianUncertainty": 0.0015791776379369333,
       "viewCount": 1,
-      "logisticScore": -2.409602165222168
+      "logisticScore": -2.5859451293945312
     },
     {
       "order": 18,
@@ -178,7 +178,7 @@
       "btscore": 0.6599801658279248,
       "bayesianUncertainty": 0.005320548270543799,
       "viewCount": 2,
-      "logisticScore": 4.418365478515625
+      "logisticScore": 4.788112640380859
     },
     {
       "order": 19,
@@ -188,7 +188,7 @@
       "btscore": 0.189971016091077,
       "bayesianUncertainty": 0.0017766616199162925,
       "viewCount": 1,
-      "logisticScore": -1.9763067960739136
+      "logisticScore": -1.9365743398666382
     },
     {
       "order": 20,
@@ -198,7 +198,7 @@
       "btscore": 0.3874033058277306,
       "bayesianUncertainty": 0.003520627085008709,
       "viewCount": 1,
-      "logisticScore": 3.536647081375122
+      "logisticScore": 3.5446605682373047
     },
     {
       "order": 21,
@@ -208,7 +208,7 @@
       "btscore": 0.2754247182623978,
       "bayesianUncertainty": 0.002539665231695322,
       "viewCount": 1,
-      "logisticScore": 0.1636025458574295
+      "logisticScore": 0.00548499496653676
     },
     {
       "order": 22,
@@ -218,7 +218,7 @@
       "btscore": 0.17352954525023043,
       "bayesianUncertainty": 0.0015715450215642644,
       "viewCount": 1,
-      "logisticScore": -3.1841330528259277
+      "logisticScore": -3.514219284057617
     },
     {
       "order": 23,
@@ -228,7 +228,7 @@
       "btscore": 0.6081853080578984,
       "bayesianUncertainty": 0.004828255850392749,
       "viewCount": 3,
-      "logisticScore": 2.4391934871673584
+      "logisticScore": 2.642601490020752
     },
     {
       "order": 24,
@@ -238,7 +238,7 @@
       "btscore": 0.5438609033638835,
       "bayesianUncertainty": 0.004532105379857189,
       "viewCount": 1,
-      "logisticScore": 4.596103191375732
+      "logisticScore": 5.056699752807617
     },
     {
       "order": 25,
@@ -249,7 +249,7 @@
       "btscore": 0.2720598271562191,
       "bayesianUncertainty": 0.0025141564333858073,
       "viewCount": 1,
-      "logisticScore": 0.4994293451309204
+      "logisticScore": 0.5643783211708069
     },
     {
       "order": 26,
@@ -259,7 +259,7 @@
       "btscore": 0.183438169059549,
       "bayesianUncertainty": 0.0016725296771263906,
       "viewCount": 1,
-      "logisticScore": -2.952353000640869
+      "logisticScore": -3.1995651721954346
     },
     {
       "order": 27,
@@ -269,7 +269,7 @@
       "btscore": 0.40457650933249645,
       "bayesianUncertainty": 0.0036290846947096183,
       "viewCount": 1,
-      "logisticScore": 4.089587688446045
+      "logisticScore": 3.9923295974731445
     },
     {
       "order": 28,
@@ -279,7 +279,7 @@
       "btscore": 0.30232874300688206,
       "bayesianUncertainty": 0.0027233967134165406,
       "viewCount": 1,
-      "logisticScore": 1.2356184720993042
+      "logisticScore": 1.0036389827728271
     },
     {
       "order": 29,
@@ -289,7 +289,7 @@
       "btscore": 0.26620032378135133,
       "bayesianUncertainty": 0.0023995003506170325,
       "viewCount": 1,
-      "logisticScore": -1.1714184284210205
+      "logisticScore": -1.5896111726760864
     },
     {
       "order": 30,
@@ -299,7 +299,7 @@
       "btscore": 0.17263231731315531,
       "bayesianUncertainty": 0.0015252223889203294,
       "viewCount": 1,
-      "logisticScore": -4.115341663360596
+      "logisticScore": -4.6625895500183105
     },
     {
       "order": 31,
@@ -309,7 +309,7 @@
       "btscore": 0.2768013369061894,
       "bayesianUncertainty": 0.0025444792796289785,
       "viewCount": 1,
-      "logisticScore": -0.2764538824558258
+      "logisticScore": -0.6753506660461426
     },
     {
       "order": 32,
@@ -319,7 +319,7 @@
       "btscore": 0.39453264025033136,
       "bayesianUncertainty": 0.0035745531868032975,
       "viewCount": 1,
-      "logisticScore": 3.2099385261535645
+      "logisticScore": 2.878204107284546
     },
     {
       "order": 33,
@@ -329,7 +329,7 @@
       "btscore": 0.18241134183813268,
       "bayesianUncertainty": 0.0016593833334655119,
       "viewCount": 1,
-      "logisticScore": -3.240241050720215
+      "logisticScore": -3.3088808059692383
     },
     {
       "order": 34,
@@ -339,7 +339,7 @@
       "btscore": 0.2728401806205514,
       "bayesianUncertainty": 0.002513593090320188,
       "viewCount": 1,
-      "logisticScore": 0.3158004879951477
+      "logisticScore": 0.40066635608673096
     },
     {
       "order": 35,
@@ -349,7 +349,7 @@
       "btscore": 0.5421703964492234,
       "bayesianUncertainty": 0.004587678726321327,
       "viewCount": 2,
-      "logisticScore": 4.231255531311035
+      "logisticScore": 4.582386016845703
     },
     {
       "order": 36,
@@ -359,7 +359,7 @@
       "btscore": 0.18913126756383136,
       "bayesianUncertainty": 0.0017569068309319107,
       "viewCount": 1,
-      "logisticScore": -2.09148907661438
+      "logisticScore": -2.335204601287842
     },
     {
       "order": 37,
@@ -369,7 +369,7 @@
       "btscore": 0.36921323124039424,
       "bayesianUncertainty": 0.0034049966507735166,
       "viewCount": 1,
-      "logisticScore": 2.6944034099578857
+      "logisticScore": 2.3146352767944336
     },
     {
       "order": 38,
@@ -379,7 +379,7 @@
       "btscore": 0.19129784523414303,
       "bayesianUncertainty": 0.0017669061291586555,
       "viewCount": 1,
-      "logisticScore": -2.379930257797241
+      "logisticScore": -2.634033203125
     },
     {
       "order": 39,
@@ -389,7 +389,7 @@
       "btscore": 0.37212577742707786,
       "bayesianUncertainty": 0.0034386097452436164,
       "viewCount": 1,
-      "logisticScore": 2.0823562145233154
+      "logisticScore": 2.289569854736328
     },
     {
       "order": 40,
@@ -399,7 +399,7 @@
       "btscore": 0.1601217111156687,
       "bayesianUncertainty": 0.0014333202777833376,
       "viewCount": 1,
-      "logisticScore": -3.9977738857269287
+      "logisticScore": -3.9035706520080566
     },
     {
       "order": 41,
@@ -409,7 +409,7 @@
       "btscore": 0.4596905222516388,
       "bayesianUncertainty": 0.0032883846225010577,
       "viewCount": 4,
-      "logisticScore": -0.8577682971954346
+      "logisticScore": -0.8297431468963623
     },
     {
       "order": 42,
@@ -419,7 +419,7 @@
       "btscore": 0.42320881895291146,
       "bayesianUncertainty": 0.0031902711588920785,
       "viewCount": 2,
-      "logisticScore": 0.5141541957855225
+      "logisticScore": 0.6874012351036072
     },
     {
       "order": 43,
@@ -429,7 +429,7 @@
       "btscore": 0.5584683563387919,
       "bayesianUncertainty": 0.004621273856484997,
       "viewCount": 2,
-      "logisticScore": 4.309379577636719
+      "logisticScore": 4.362884998321533
     },
     {
       "order": 44,
@@ -439,7 +439,7 @@
       "btscore": 0.2739437359142565,
       "bayesianUncertainty": 0.0025214578742762195,
       "viewCount": 1,
-      "logisticScore": 0.17652715742588043
+      "logisticScore": 0.319357305765152
     },
     {
       "order": 45,
@@ -449,7 +449,7 @@
       "btscore": 0.1738544813100189,
       "bayesianUncertainty": 0.0015494275100249267,
       "viewCount": 1,
-      "logisticScore": -3.9289357662200928
+      "logisticScore": -3.5391507148742676
     },
     {
       "order": 46,
@@ -459,7 +459,7 @@
       "btscore": 0.2775956419985276,
       "bayesianUncertainty": 0.00254637230033325,
       "viewCount": 1,
-      "logisticScore": -0.222820445895195
+      "logisticScore": -0.010461300611495972
     },
     {
       "order": 47,
@@ -469,7 +469,7 @@
       "btscore": 0.3986746232647341,
       "bayesianUncertainty": 0.0036040254356882115,
       "viewCount": 1,
-      "logisticScore": 3.3314926624298096
+      "logisticScore": 3.471360445022583
     },
     {
       "order": 48,
@@ -479,7 +479,7 @@
       "btscore": 0.18168438458599792,
       "bayesianUncertainty": 0.0016456190097066158,
       "viewCount": 1,
-      "logisticScore": -2.8785037994384766
+      "logisticScore": -3.057384729385376
     },
     {
       "order": 49,
@@ -489,7 +489,7 @@
       "btscore": 0.27724590289306833,
       "bayesianUncertainty": 0.0025405656699500545,
       "viewCount": 1,
-      "logisticScore": 0.2882801592350006
+      "logisticScore": 0.23639808595180511
     },
     {
       "order": 50,
@@ -499,7 +499,7 @@
       "btscore": 0.40111253742637204,
       "bayesianUncertainty": 0.0036251897432980212,
       "viewCount": 1,
-      "logisticScore": 3.615180015563965
+      "logisticScore": 3.586000680923462
     },
     {
       "order": 51,
@@ -509,7 +509,7 @@
       "btscore": 0.16982592433990354,
       "bayesianUncertainty": 0.0015224103952307267,
       "viewCount": 1,
-      "logisticScore": -3.0362565517425537
+      "logisticScore": -3.2168517112731934
     },
     {
       "order": 52,
@@ -519,7 +519,7 @@
       "btscore": 0.27976859070800125,
       "bayesianUncertainty": 0.0020919375890497767,
       "viewCount": 2,
-      "logisticScore": 0.5433906316757202
+      "logisticScore": 0.5870839357376099
     },
     {
       "order": 53,
@@ -529,7 +529,7 @@
       "btscore": 0.5684776354974541,
       "bayesianUncertainty": 0.0047446931776008805,
       "viewCount": 1,
-      "logisticScore": 3.841907024383545
+      "logisticScore": 3.6132724285125732
     },
     {
       "order": 54,
@@ -539,7 +539,7 @@
       "btscore": 0.4596905222516388,
       "bayesianUncertainty": 0.0032883846225010577,
       "viewCount": 4,
-      "logisticScore": -0.8577682971954346
+      "logisticScore": -0.8297431468963623
     },
     {
       "order": 55,
@@ -549,7 +549,7 @@
       "btscore": 0.42320881895291146,
       "bayesianUncertainty": 0.0031902711588920785,
       "viewCount": 2,
-      "logisticScore": 0.5141541957855225
+      "logisticScore": 0.6874012351036072
     },
     {
       "order": 56,
@@ -559,7 +559,7 @@
       "btscore": 0.2270012859809968,
       "bayesianUncertainty": 0.0019234139762848367,
       "viewCount": 2,
-      "logisticScore": 1.4650943279266357
+      "logisticScore": 1.5875507593154907
     },
     {
       "order": 57,
@@ -569,7 +569,7 @@
       "btscore": 0.5421703964492234,
       "bayesianUncertainty": 0.004587678726321327,
       "viewCount": 2,
-      "logisticScore": 4.231255531311035
+      "logisticScore": 4.582386016845703
     },
     {
       "order": 58,
@@ -579,7 +579,7 @@
       "btscore": 0.14453920926873134,
       "bayesianUncertainty": 0.0012458874280325241,
       "viewCount": 2,
-      "logisticScore": -3.6877174377441406
+      "logisticScore": -3.7185513973236084
     },
     {
       "order": 59,
@@ -589,7 +589,7 @@
       "btscore": 0.28022230417813554,
       "bayesianUncertainty": 0.0025714400044339015,
       "viewCount": 1,
-      "logisticScore": -0.2710585594177246
+      "logisticScore": -0.18646375834941864
     },
     {
       "order": 60,
@@ -599,7 +599,7 @@
       "btscore": 0.40361501546215817,
       "bayesianUncertainty": 0.003649135296464367,
       "viewCount": 1,
-      "logisticScore": 2.949997663497925
+      "logisticScore": 3.3377232551574707
     },
     {
       "order": 61,
@@ -609,7 +609,7 @@
       "btscore": 0.17530287216558368,
       "bayesianUncertainty": 0.0015808405868101604,
       "viewCount": 1,
-      "logisticScore": -3.273592233657837
+      "logisticScore": -3.618114471435547
     },
     {
       "order": 62,
@@ -619,7 +619,7 @@
       "btscore": 0.2597342178646165,
       "bayesianUncertainty": 0.0023515295321529994,
       "viewCount": 1,
-      "logisticScore": -0.2458806335926056
+      "logisticScore": -0.36424654722213745
     },
     {
       "order": 63,
@@ -629,7 +629,7 @@
       "btscore": 0.6081853080578984,
       "bayesianUncertainty": 0.004828255850392749,
       "viewCount": 3,
-      "logisticScore": 2.4391934871673584
+      "logisticScore": 2.642601490020752
     },
     {
       "order": 64,
@@ -639,7 +639,7 @@
       "btscore": 0.20046818970834868,
       "bayesianUncertainty": 0.0017053986465279647,
       "viewCount": 2,
-      "logisticScore": -0.8411114811897278
+      "logisticScore": -0.832015335559845
     },
     {
       "order": 65,
@@ -649,7 +649,7 @@
       "btscore": 0.15121755595169645,
       "bayesianUncertainty": 0.0013094544002405718,
       "viewCount": 1,
-      "logisticScore": -3.959028482437134
+      "logisticScore": -3.9991917610168457
     },
     {
       "order": 66,
@@ -659,7 +659,7 @@
       "btscore": 0.2798504726830311,
       "bayesianUncertainty": 0.0025662216124498556,
       "viewCount": 1,
-      "logisticScore": -0.23836098611354828
+      "logisticScore": -0.32416415214538574
     },
     {
       "order": 67,
@@ -669,7 +669,7 @@
       "btscore": 0.4061145282039383,
       "bayesianUncertainty": 0.0036785525749431394,
       "viewCount": 1,
-      "logisticScore": 3.2756218910217285
+      "logisticScore": 2.99027943611145
     },
     {
       "order": 68,
@@ -679,7 +679,7 @@
       "btscore": 0.1494959853694256,
       "bayesianUncertainty": 0.001312456797524613,
       "viewCount": 2,
-      "logisticScore": -2.485414981842041
+      "logisticScore": -2.440885543823242
     },
     {
       "order": 69,
@@ -689,7 +689,7 @@
       "btscore": 0.4235280803938024,
       "bayesianUncertainty": 0.003802883734908455,
       "viewCount": 1,
-      "logisticScore": 2.9983413219451904
+      "logisticScore": 2.977628469467163
     },
     {
       "order": 70,
@@ -699,7 +699,7 @@
       "btscore": 0.23281316654597614,
       "bayesianUncertainty": 0.001910127378885204,
       "viewCount": 2,
-      "logisticScore": -0.6611579060554504
+      "logisticScore": -0.585421085357666
     },
     {
       "order": 71,
@@ -709,7 +709,7 @@
       "btscore": 0.24459608887199635,
       "bayesianUncertainty": 0.0021197424772843574,
       "viewCount": 1,
-      "logisticScore": -2.301586389541626
+      "logisticScore": -2.4085052013397217
     },
     {
       "order": 72,
@@ -719,7 +719,7 @@
       "btscore": 0.15256314925616343,
       "bayesianUncertainty": 0.0013025952045372874,
       "viewCount": 1,
-      "logisticScore": -4.95658016204834
+      "logisticScore": -5.246638774871826
     },
     {
       "order": 73,
@@ -729,7 +729,7 @@
       "btscore": 0.30846035227970475,
       "bayesianUncertainty": 0.0023682113759200193,
       "viewCount": 2,
-      "logisticScore": -1.4658150672912598
+      "logisticScore": -1.7361655235290527
     },
     {
       "order": 74,
@@ -739,7 +739,7 @@
       "btscore": 0.3349429036722796,
       "bayesianUncertainty": 0.002957956116261316,
       "viewCount": 1,
-      "logisticScore": 1.125685453414917
+      "logisticScore": 1.083909034729004
     },
     {
       "order": 75,
@@ -749,7 +749,7 @@
       "btscore": 0.5588935785578975,
       "bayesianUncertainty": 0.004710824631972776,
       "viewCount": 2,
-      "logisticScore": 4.175591468811035
+      "logisticScore": 4.297607898712158
     },
     {
       "order": 76,
@@ -759,7 +759,7 @@
       "btscore": 0.14206299907283942,
       "bayesianUncertainty": 0.0012300080910198855,
       "viewCount": 2,
-      "logisticScore": -3.089123249053955
+      "logisticScore": -3.2735772132873535
     },
     {
       "order": 77,
@@ -769,7 +769,7 @@
       "btscore": 0.38735466844412564,
       "bayesianUncertainty": 0.003586063572353077,
       "viewCount": 1,
-      "logisticScore": 2.1763389110565186
+      "logisticScore": 2.1071813106536865
     },
     {
       "order": 78,
@@ -779,7 +779,7 @@
       "btscore": 0.14453920926873134,
       "bayesianUncertainty": 0.0012458874280325241,
       "viewCount": 2,
-      "logisticScore": -3.6877174377441406
+      "logisticScore": -3.7185513973236084
     },
     {
       "order": 79,
@@ -789,7 +789,7 @@
       "btscore": 0.44939508633943814,
       "bayesianUncertainty": 0.004019241670180901,
       "viewCount": 2,
-      "logisticScore": 3.253995895385742
+      "logisticScore": 2.8557980060577393
     },
     {
       "order": 80,
@@ -799,7 +799,7 @@
       "btscore": 0.1494959853694256,
       "bayesianUncertainty": 0.001312456797524613,
       "viewCount": 2,
-      "logisticScore": -2.485414981842041
+      "logisticScore": -2.440885543823242
     },
     {
       "order": 81,
@@ -809,7 +809,7 @@
       "btscore": 0.5584683563387919,
       "bayesianUncertainty": 0.004621273856484997,
       "viewCount": 2,
-      "logisticScore": 4.309379577636719
+      "logisticScore": 4.362884998321533
     },
     {
       "order": 82,
@@ -819,7 +819,7 @@
       "btscore": 0.27809356010445835,
       "bayesianUncertainty": 0.002554158620045134,
       "viewCount": 1,
-      "logisticScore": 0.45043808221817017
+      "logisticScore": 0.4179363548755646
     },
     {
       "order": 83,
@@ -829,7 +829,7 @@
       "btscore": 0.14206299907283942,
       "bayesianUncertainty": 0.0012300080910198855,
       "viewCount": 2,
-      "logisticScore": -3.089123249053955
+      "logisticScore": -3.2735772132873535
     },
     {
       "order": 84,
@@ -839,7 +839,7 @@
       "btscore": 0.5588935785578975,
       "bayesianUncertainty": 0.004710824631972776,
       "viewCount": 2,
-      "logisticScore": 4.175591468811035
+      "logisticScore": 4.297607898712158
     },
     {
       "order": 85,
@@ -849,7 +849,7 @@
       "btscore": 0.2767977017444162,
       "bayesianUncertainty": 0.0025384355903464227,
       "viewCount": 1,
-      "logisticScore": 0.4251675009727478
+      "logisticScore": 0.23702119290828705
     },
     {
       "order": 86,
@@ -859,7 +859,7 @@
       "btscore": 0.15908371152251444,
       "bayesianUncertainty": 0.0014146573459081567,
       "viewCount": 1,
-      "logisticScore": -3.1858270168304443
+      "logisticScore": -3.588644504547119
     },
     {
       "order": 87,
@@ -869,7 +869,7 @@
       "btscore": 0.45961547622384546,
       "bayesianUncertainty": 0.003561812089330145,
       "viewCount": 3,
-      "logisticScore": 1.4073179960250854
+      "logisticScore": 1.2682620286941528
     },
     {
       "order": 88,
@@ -879,7 +879,7 @@
       "btscore": 0.249385584715345,
       "bayesianUncertainty": 0.0022165338151474167,
       "viewCount": 1,
-      "logisticScore": -0.778121829032898
+      "logisticScore": -1.045121431350708
     },
     {
       "order": 89,
@@ -889,7 +889,7 @@
       "btscore": 0.16992822436132107,
       "bayesianUncertainty": 0.0015164438282131878,
       "viewCount": 1,
-      "logisticScore": -3.3853535652160645
+      "logisticScore": -3.8373537063598633
     },
     {
       "order": 90,
@@ -899,7 +899,7 @@
       "btscore": 0.3820057955012376,
       "bayesianUncertainty": 0.003512893170941446,
       "viewCount": 1,
-      "logisticScore": 2.0404675006866455
+      "logisticScore": 1.8242645263671875
     },
     {
       "order": 91,
@@ -909,7 +909,7 @@
       "btscore": 0.18059190096987304,
       "bayesianUncertainty": 0.0016244133565133008,
       "viewCount": 1,
-      "logisticScore": -4.097947597503662
+      "logisticScore": -4.170691967010498
     },
     {
       "order": 92,
@@ -919,7 +919,7 @@
       "btscore": 0.2676361118433408,
       "bayesianUncertainty": 0.0023916458451900893,
       "viewCount": 1,
-      "logisticScore": -1.2530875205993652
+      "logisticScore": -1.243716835975647
     },
     {
       "order": 93,
@@ -929,7 +929,7 @@
       "btscore": 0.3071500462360587,
       "bayesianUncertainty": 0.002742857770361924,
       "viewCount": 1,
-      "logisticScore": 1.022139072418213
+      "logisticScore": 1.185773491859436
     },
     {
       "order": 94,
@@ -939,7 +939,7 @@
       "btscore": 0.40237760466417233,
       "bayesianUncertainty": 0.0036082732291138923,
       "viewCount": 1,
-      "logisticScore": 3.853708505630493
+      "logisticScore": 4.082973480224609
     },
     {
       "order": 95,
@@ -949,7 +949,7 @@
       "btscore": 0.18029661087358684,
       "bayesianUncertainty": 0.0016223518385009223,
       "viewCount": 1,
-      "logisticScore": -3.9619879722595215
+      "logisticScore": -3.964952230453491
     },
     {
       "order": 96,
@@ -959,7 +959,7 @@
       "btscore": 0.2650743902629004,
       "bayesianUncertainty": 0.0023735357063739003,
       "viewCount": 1,
-      "logisticScore": -0.9364309906959534
+      "logisticScore": -0.9640616774559021
     },
     {
       "order": 97,
@@ -969,7 +969,7 @@
       "btscore": 0.3011802692188694,
       "bayesianUncertainty": 0.0026986426416807843,
       "viewCount": 1,
-      "logisticScore": 1.5753588676452637
+      "logisticScore": 1.6947822570800781
     },
     {
       "order": 98,
@@ -979,7 +979,7 @@
       "btscore": 0.6464564951928454,
       "bayesianUncertainty": 0.005133541196714994,
       "viewCount": 2,
-      "logisticScore": 4.946622848510742
+      "logisticScore": 5.2911858558654785
     },
     {
       "order": 99,
@@ -989,7 +989,7 @@
       "btscore": 0.3155755988914227,
       "bayesianUncertainty": 0.0027911412037968856,
       "viewCount": 1,
-      "logisticScore": 2.049659013748169
+      "logisticScore": 2.585286855697632
     },
     {
       "order": 100,
@@ -999,7 +999,7 @@
       "btscore": 0.2947350842439848,
       "bayesianUncertainty": 0.0025773461314645254,
       "viewCount": 1,
-      "logisticScore": 0.09008646756410599
+      "logisticScore": 0.8507294654846191
     },
     {
       "order": 101,
@@ -1009,7 +1009,7 @@
       "btscore": 0.2635629496560964,
       "bayesianUncertainty": 0.002327404857760498,
       "viewCount": 1,
-      "logisticScore": -1.8422683477401733
+      "logisticScore": -2.0246167182922363
     },
     {
       "order": 102,
@@ -1019,7 +1019,7 @@
       "btscore": 0.1632777692305497,
       "bayesianUncertainty": 0.0014203622887033979,
       "viewCount": 1,
-      "logisticScore": -4.658217430114746
+      "logisticScore": -4.761967658996582
     },
     {
       "order": 103,
@@ -1029,7 +1029,7 @@
       "btscore": 0.2807468024683014,
       "bayesianUncertainty": 0.0025588761941251117,
       "viewCount": 1,
-      "logisticScore": -0.2118728905916214
+      "logisticScore": -0.2046535164117813
     },
     {
       "order": 104,
@@ -1039,7 +1039,7 @@
       "btscore": 0.440910996556033,
       "bayesianUncertainty": 0.0038761592664281856,
       "viewCount": 1,
-      "logisticScore": 3.7670328617095947
+      "logisticScore": 3.9150278568267822
     },
     {
       "order": 105,
@@ -1049,7 +1049,7 @@
       "btscore": 0.28038794110629706,
       "bayesianUncertainty": 0.0025543288808239097,
       "viewCount": 1,
-      "logisticScore": -0.2417876124382019
+      "logisticScore": 0.054553985595703125
     },
     {
       "order": 106,
@@ -1059,7 +1059,7 @@
       "btscore": 0.1699837684563597,
       "bayesianUncertainty": 0.00149502342399752,
       "viewCount": 1,
-      "logisticScore": -4.567505359649658
+      "logisticScore": -3.946378707885742
     },
     {
       "order": 107,
@@ -1069,7 +1069,7 @@
       "btscore": 0.26902004470811824,
       "bayesianUncertainty": 0.002396242294604674,
       "viewCount": 1,
-      "logisticScore": -1.4798606634140015
+      "logisticScore": -1.0526180267333984
     },
     {
       "order": 108,
@@ -1079,7 +1079,7 @@
       "btscore": 0.30895789129209206,
       "bayesianUncertainty": 0.0027499633187879394,
       "viewCount": 1,
-      "logisticScore": 1.0762548446655273
+      "logisticScore": 1.4449632167816162
     },
     {
       "order": 109,
@@ -1089,7 +1089,7 @@
       "btscore": 0.4344098258365186,
       "bayesianUncertainty": 0.003801166157414186,
       "viewCount": 1,
-      "logisticScore": 4.078125
+      "logisticScore": 4.5691237449646
     },
     {
       "order": 110,
@@ -1099,7 +1099,7 @@
       "btscore": 0.2800076604784565,
       "bayesianUncertainty": 0.002549317907571801,
       "viewCount": 1,
-      "logisticScore": 0.2824842035770416
+      "logisticScore": 0.5178996920585632
     },
     {
       "order": 111,
@@ -1109,7 +1109,7 @@
       "btscore": 0.17694787747285134,
       "bayesianUncertainty": 0.0015906960204657877,
       "viewCount": 1,
-      "logisticScore": -3.180201768875122
+      "logisticScore": -3.0391957759857178
     },
     {
       "order": 112,
@@ -1119,7 +1119,7 @@
       "btscore": 0.38840679419618085,
       "bayesianUncertainty": 0.0035612468043272863,
       "viewCount": 1,
-      "logisticScore": 2.378554582595825
+      "logisticScore": 2.419344186782837
     },
     {
       "order": 113,
@@ -1129,7 +1129,7 @@
       "btscore": 0.17294934744009885,
       "bayesianUncertainty": 0.0015789595799788286,
       "viewCount": 1,
-      "logisticScore": -2.39190936088562
+      "logisticScore": -2.50921893119812
     },
     {
       "order": 114,
@@ -1139,7 +1139,7 @@
       "btscore": 0.6081853080578984,
       "bayesianUncertainty": 0.004828255850392749,
       "viewCount": 3,
-      "logisticScore": 2.4391934871673584
+      "logisticScore": 2.642601490020752
     },
     {
       "order": 115,
@@ -1149,7 +1149,7 @@
       "btscore": 0.263090964597207,
       "bayesianUncertainty": 0.0023657688178864277,
       "viewCount": 1,
-      "logisticScore": -0.4010521471500397
+      "logisticScore": -0.40214723348617554
     },
     {
       "order": 116,
@@ -1159,7 +1159,7 @@
       "btscore": 0.17106394252836063,
       "bayesianUncertainty": 0.0015309023004822803,
       "viewCount": 1,
-      "logisticScore": -3.5299699306488037
+      "logisticScore": -3.7077813148498535
     },
     {
       "order": 117,
@@ -1169,7 +1169,7 @@
       "btscore": 0.391021711087341,
       "bayesianUncertainty": 0.0035860097395063037,
       "viewCount": 1,
-      "logisticScore": 2.3031301498413086
+      "logisticScore": 2.03179931640625
     },
     {
       "order": 118,
@@ -1179,7 +1179,7 @@
       "btscore": 0.1684425449112888,
       "bayesianUncertainty": 0.0015496979209843544,
       "viewCount": 1,
-      "logisticScore": -2.6363906860351562
+      "logisticScore": -2.7346580028533936
     },
     {
       "order": 119,
@@ -1189,7 +1189,7 @@
       "btscore": 0.8827146875198014,
       "bayesianUncertainty": 0.0068546317201128755,
       "viewCount": 4,
-      "logisticScore": 2.0876567363739014
+      "logisticScore": 2.1973800659179688
     },
     {
       "order": 120,
@@ -1199,7 +1199,7 @@
       "btscore": 0.15886221400917583,
       "bayesianUncertainty": 0.0014405251757362118,
       "viewCount": 1,
-      "logisticScore": -3.5441043376922607
+      "logisticScore": -3.3401951789855957
     },
     {
       "order": 121,
@@ -1209,7 +1209,7 @@
       "btscore": 0.273897813190137,
       "bayesianUncertainty": 0.0025188526135770874,
       "viewCount": 1,
-      "logisticScore": 0.2843617796897888
+      "logisticScore": 0.4488205015659332
     },
     {
       "order": 122,
@@ -1219,7 +1219,7 @@
       "btscore": 0.943001552436591,
       "bayesianUncertainty": 0.0074235306015175626,
       "viewCount": 3,
-      "logisticScore": 4.340419292449951
+      "logisticScore": 4.6513776779174805
     },
     {
       "order": 123,
@@ -1229,7 +1229,7 @@
       "btscore": 0.2732437845260111,
       "bayesianUncertainty": 0.002510884791841291,
       "viewCount": 1,
-      "logisticScore": 0.4689147174358368
+      "logisticScore": 0.5168930888175964
     },
     {
       "order": 124,
@@ -1239,7 +1239,7 @@
       "btscore": 0.16975894708651304,
       "bayesianUncertainty": 0.0015514897316537915,
       "viewCount": 1,
-      "logisticScore": -2.9786300659179688
+      "logisticScore": -3.173443555831909
     },
     {
       "order": 125,
@@ -1249,7 +1249,7 @@
       "btscore": 0.7997378976456868,
       "bayesianUncertainty": 0.006324210180745706,
       "viewCount": 2,
-      "logisticScore": 4.4232940673828125
+      "logisticScore": 4.623189449310303
     },
     {
       "order": 126,
@@ -1259,7 +1259,7 @@
       "btscore": 0.17139256021409646,
       "bayesianUncertainty": 0.0015555159030861806,
       "viewCount": 1,
-      "logisticScore": -3.2548558712005615
+      "logisticScore": -3.505058526992798
     },
     {
       "order": 127,
@@ -1269,7 +1269,7 @@
       "btscore": 0.2820666014855744,
       "bayesianUncertainty": 0.0025605434465847056,
       "viewCount": 1,
-      "logisticScore": 0.1554395705461502
+      "logisticScore": -0.165342777967453
     },
     {
       "order": 128,
@@ -1279,7 +1279,7 @@
       "btscore": 0.42087080163125723,
       "bayesianUncertainty": 0.00376452482607261,
       "viewCount": 1,
-      "logisticScore": 3.5821218490600586
+      "logisticScore": 3.0920252799987793
     },
     {
       "order": 129,
@@ -1289,7 +1289,7 @@
       "btscore": 0.17465861777632208,
       "bayesianUncertainty": 0.0015669739833809226,
       "viewCount": 1,
-      "logisticScore": -3.232046127319336
+      "logisticScore": -3.4701428413391113
     },
     {
       "order": 130,
@@ -1299,7 +1299,7 @@
       "btscore": 0.2817982360612601,
       "bayesianUncertainty": 0.0025570165504978557,
       "viewCount": 1,
-      "logisticScore": 0.12217061966657639
+      "logisticScore": 0.0014053083723410964
     },
     {
       "order": 131,
@@ -1309,7 +1309,7 @@
       "btscore": 0.4219711000423983,
       "bayesianUncertainty": 0.003774094577226127,
       "viewCount": 1,
-      "logisticScore": 3.4850847721099854
+      "logisticScore": 3.4768896102905273
     },
     {
       "order": 132,
@@ -1319,7 +1319,7 @@
       "btscore": 0.1699581524950732,
       "bayesianUncertainty": 0.001540990582789374,
       "viewCount": 1,
-      "logisticScore": -2.9948818683624268
+      "logisticScore": -3.0121395587921143
     },
     {
       "order": 133,
@@ -1329,7 +1329,7 @@
       "btscore": 0.4526603690280778,
       "bayesianUncertainty": 0.0036375388888748145,
       "viewCount": 2,
-      "logisticScore": 0.8069936633110046
+      "logisticScore": 0.8205353021621704
     },
     {
       "order": 134,
@@ -1339,7 +1339,7 @@
       "btscore": 0.15569379405492656,
       "bayesianUncertainty": 0.0014169763295317256,
       "viewCount": 1,
-      "logisticScore": -2.952132225036621
+      "logisticScore": -3.1776669025421143
     },
     {
       "order": 135,
@@ -1349,7 +1349,7 @@
       "btscore": 0.8827146875198014,
       "bayesianUncertainty": 0.0068546317201128755,
       "viewCount": 4,
-      "logisticScore": 2.0876567363739014
+      "logisticScore": 2.1973800659179688
     },
     {
       "order": 136,
@@ -1359,7 +1359,7 @@
       "btscore": 0.16496760272967728,
       "bayesianUncertainty": 0.0015241822977194075,
       "viewCount": 1,
-      "logisticScore": -2.309666156768799
+      "logisticScore": -2.1927950382232666
     },
     {
       "order": 137,
@@ -1369,7 +1369,7 @@
       "btscore": 0.5486979914676917,
       "bayesianUncertainty": 0.004715697645834177,
       "viewCount": 1,
-      "logisticScore": 3.604731798171997
+      "logisticScore": 3.8225855827331543
     },
     {
       "order": 138,
@@ -1379,7 +1379,7 @@
       "btscore": 0.46191938061471827,
       "bayesianUncertainty": 0.0030114173465003924,
       "viewCount": 4,
-      "logisticScore": 0.377751886844635
+      "logisticScore": 0.5865315794944763
     },
     {
       "order": 139,
@@ -1389,7 +1389,7 @@
       "btscore": 0.13993565707265293,
       "bayesianUncertainty": 0.001235360925216234,
       "viewCount": 1,
-      "logisticScore": -3.300297260284424
+      "logisticScore": -2.8838837146759033
     },
     {
       "order": 140,
@@ -1399,7 +1399,7 @@
       "btscore": 0.42093732268739004,
       "bayesianUncertainty": 0.003762340130568312,
       "viewCount": 1,
-      "logisticScore": 3.785858631134033
+      "logisticScore": 4.227543354034424
     },
     {
       "order": 141,
@@ -1409,7 +1409,7 @@
       "btscore": 0.3246682315110131,
       "bayesianUncertainty": 0.002854903427827809,
       "viewCount": 1,
-      "logisticScore": 1.2872698307037354
+      "logisticScore": 1.4860849380493164
     },
     {
       "order": 142,
@@ -1419,7 +1419,7 @@
       "btscore": 0.23281316654597614,
       "bayesianUncertainty": 0.001910127378885204,
       "viewCount": 2,
-      "logisticScore": -0.6611579060554504
+      "logisticScore": -0.585421085357666
     },
     {
       "order": 143,
@@ -1429,7 +1429,7 @@
       "btscore": 0.6464564951928454,
       "bayesianUncertainty": 0.005133541196714994,
       "viewCount": 2,
-      "logisticScore": 4.946622848510742
+      "logisticScore": 5.2911858558654785
     },
     {
       "order": 144,
@@ -1439,7 +1439,7 @@
       "btscore": 0.2784529775541631,
       "bayesianUncertainty": 0.00254037337304797,
       "viewCount": 1,
-      "logisticScore": 0.17502424120903015
+      "logisticScore": 0.5304684638977051
     },
     {
       "order": 145,
@@ -1449,7 +1449,7 @@
       "btscore": 0.15793788787508695,
       "bayesianUncertainty": 0.0013789087070948574,
       "viewCount": 1,
-      "logisticScore": -4.291909694671631
+      "logisticScore": -3.788597345352173
     },
     {
       "order": 146,
@@ -1459,7 +1459,7 @@
       "btscore": 0.2575383481094272,
       "bayesianUncertainty": 0.0022792781332077877,
       "viewCount": 1,
-      "logisticScore": -1.071936845779419
+      "logisticScore": -0.8313327431678772
     },
     {
       "order": 147,
@@ -1469,7 +1469,7 @@
       "btscore": 0.49113464444253835,
       "bayesianUncertainty": 0.003920423608865524,
       "viewCount": 3,
-      "logisticScore": 1.6158679723739624
+      "logisticScore": 1.7495554685592651
     },
     {
       "order": 148,
@@ -1479,7 +1479,7 @@
       "btscore": 0.16079196414451422,
       "bayesianUncertainty": 0.001469521166306186,
       "viewCount": 1,
-      "logisticScore": -2.26212477684021
+      "logisticScore": -2.5813145637512207
     },
     {
       "order": 149,
@@ -1489,7 +1489,7 @@
       "btscore": 0.943001552436591,
       "bayesianUncertainty": 0.0074235306015175626,
       "viewCount": 3,
-      "logisticScore": 4.340419292449951
+      "logisticScore": 4.6513776779174805
     },
     {
       "order": 150,
@@ -1499,7 +1499,7 @@
       "btscore": 0.2270012859809968,
       "bayesianUncertainty": 0.0019234139762848367,
       "viewCount": 2,
-      "logisticScore": 1.4650943279266357
+      "logisticScore": 1.5875507593154907
     },
     {
       "order": 151,
@@ -1509,7 +1509,7 @@
       "btscore": 0.42244308242126066,
       "bayesianUncertainty": 0.003773226198013576,
       "viewCount": 1,
-      "logisticScore": 3.9784867763519287
+      "logisticScore": 4.267341613769531
     },
     {
       "order": 152,
@@ -1519,7 +1519,7 @@
       "btscore": 0.15693895451696663,
       "bayesianUncertainty": 0.0013751881024490437,
       "viewCount": 1,
-      "logisticScore": -4.46333122253418
+      "logisticScore": -4.630756378173828
     },
     {
       "order": 153,
@@ -1529,7 +1529,7 @@
       "btscore": 0.23558978996671273,
       "bayesianUncertainty": 0.0020267875081700555,
       "viewCount": 1,
-      "logisticScore": -2.186021566390991
+      "logisticScore": -2.253469705581665
     },
     {
       "order": 154,
@@ -1539,7 +1539,7 @@
       "btscore": 0.4596905222516388,
       "bayesianUncertainty": 0.0032883846225010577,
       "viewCount": 4,
-      "logisticScore": -0.8577682971954346
+      "logisticScore": -0.8297431468963623
     },
     {
       "order": 155,
@@ -1549,7 +1549,7 @@
       "btscore": 0.8726471690162882,
       "bayesianUncertainty": 0.007049635506678859,
       "viewCount": 2,
-      "logisticScore": 3.172645330429077
+      "logisticScore": 3.315159797668457
     },
     {
       "order": 156,
@@ -1559,7 +1559,7 @@
       "btscore": 0.17632355483633896,
       "bayesianUncertainty": 0.0016327039998921212,
       "viewCount": 1,
-      "logisticScore": -2.209273099899292
+      "logisticScore": -2.379579782485962
     },
     {
       "order": 157,
@@ -1569,7 +1569,7 @@
       "btscore": 0.40246859082953385,
       "bayesianUncertainty": 0.0036667953839739365,
       "viewCount": 1,
-      "logisticScore": 2.4100100994110107
+      "logisticScore": 2.3630530834198
     },
     {
       "order": 158,
@@ -1579,7 +1579,7 @@
       "btscore": 0.17307033614466322,
       "bayesianUncertainty": 0.0015367444480058525,
       "viewCount": 1,
-      "logisticScore": -4.0897040367126465
+      "logisticScore": -4.193992614746094
     },
     {
       "order": 159,
@@ -1589,7 +1589,7 @@
       "btscore": 0.2804374042880903,
       "bayesianUncertainty": 0.002468643682369518,
       "viewCount": 1,
-      "logisticScore": -2.0719943046569824
+      "logisticScore": -1.929871678352356
     },
     {
       "order": 160,
@@ -1599,7 +1599,7 @@
       "btscore": 0.2643772675940881,
       "bayesianUncertainty": 0.002182303878536308,
       "viewCount": 1,
-      "logisticScore": -0.9298157095909119
+      "logisticScore": -0.8741503357887268
     },
     {
       "order": 161,
@@ -1609,7 +1609,7 @@
       "btscore": 0.17770503801423213,
       "bayesianUncertainty": 0.0013656176378245759,
       "viewCount": 2,
-      "logisticScore": -0.36767706274986267
+      "logisticScore": -0.2810814678668976
     },
     {
       "order": 162,
@@ -1619,7 +1619,7 @@
       "btscore": 0.8827146875198014,
       "bayesianUncertainty": 0.0068546317201128755,
       "viewCount": 4,
-      "logisticScore": 2.0876567363739014
+      "logisticScore": 2.1973800659179688
     },
     {
       "order": 163,
@@ -1629,7 +1629,7 @@
       "btscore": 0.7997378976456868,
       "bayesianUncertainty": 0.006324210180745706,
       "viewCount": 2,
-      "logisticScore": 4.4232940673828125
+      "logisticScore": 4.623189449310303
     },
     {
       "order": 164,
@@ -1639,7 +1639,7 @@
       "btscore": 0.20046818970834868,
       "bayesianUncertainty": 0.0017053986465279647,
       "viewCount": 2,
-      "logisticScore": -0.8411114811897278
+      "logisticScore": -0.832015335559845
     },
     {
       "order": 165,
@@ -1649,7 +1649,7 @@
       "btscore": 0.4900071584151022,
       "bayesianUncertainty": 0.004341943423051862,
       "viewCount": 1,
-      "logisticScore": 3.2005372047424316
+      "logisticScore": 3.3779547214508057
     },
     {
       "order": 166,
@@ -1659,7 +1659,7 @@
       "btscore": 0.1633862650689889,
       "bayesianUncertainty": 0.0012130066410254757,
       "viewCount": 3,
-      "logisticScore": -1.3852592706680298
+      "logisticScore": -1.1519923210144043
     },
     {
       "order": 167,
@@ -1669,7 +1669,7 @@
       "btscore": 0.5075586794793464,
       "bayesianUncertainty": 0.004398139148970261,
       "viewCount": 1,
-      "logisticScore": 3.9226205348968506
+      "logisticScore": 4.1231369972229
     },
     {
       "order": 168,
@@ -1679,7 +1679,7 @@
       "btscore": 0.3217561690482151,
       "bayesianUncertainty": 0.002828773904046068,
       "viewCount": 1,
-      "logisticScore": 1.0203328132629395
+      "logisticScore": 1.0147432088851929
     },
     {
       "order": 169,
@@ -1689,7 +1689,7 @@
       "btscore": 0.2850387961436768,
       "bayesianUncertainty": 0.0025161655514211244,
       "viewCount": 1,
-      "logisticScore": -1.4252671003341675
+      "logisticScore": -1.687224268913269
     },
     {
       "order": 170,
@@ -1699,7 +1699,7 @@
       "btscore": 0.08692188145202469,
       "bayesianUncertainty": 0.0006925490681924587,
       "viewCount": 2,
-      "logisticScore": -4.694796085357666
+      "logisticScore": -5.008155345916748
     },
     {
       "order": 171,
@@ -1709,7 +1709,7 @@
       "btscore": 0.28914446415716144,
       "bayesianUncertainty": 0.0026409647416470684,
       "viewCount": 1,
-      "logisticScore": 0.14488264918327332
+      "logisticScore": 0.15477541089057922
     },
     {
       "order": 172,
@@ -1719,7 +1719,7 @@
       "btscore": 0.8547140263287482,
       "bayesianUncertainty": 0.006340626319955175,
       "viewCount": 1,
-      "logisticScore": 5.409984111785889
+      "logisticScore": 5.678126335144043
     },
     {
       "order": 173,
@@ -1729,7 +1729,7 @@
       "btscore": 1.3859299036451038,
       "bayesianUncertainty": 0.009109480890834677,
       "viewCount": 4,
-      "logisticScore": 3.8972322940826416
+      "logisticScore": 4.030233383178711
     },
     {
       "order": 174,
@@ -1739,7 +1739,7 @@
       "btscore": 0.14760862934314975,
       "bayesianUncertainty": 0.0013146396652280545,
       "viewCount": 1,
-      "logisticScore": -4.144039154052734
+      "logisticScore": -4.133662223815918
     },
     {
       "order": 175,
@@ -1749,7 +1749,7 @@
       "btscore": 0.280532568523596,
       "bayesianUncertainty": 0.002436520074244845,
       "viewCount": 1,
-      "logisticScore": -1.6417810916900635
+      "logisticScore": -1.6444127559661865
     },
     {
       "order": 176,
@@ -1759,7 +1759,7 @@
       "btscore": 0.30904021232926593,
       "bayesianUncertainty": 0.002616895603407844,
       "viewCount": 1,
-      "logisticScore": 0.09217832237482071
+      "logisticScore": 0.17047923803329468
     },
     {
       "order": 177,
@@ -1769,7 +1769,7 @@
       "btscore": 0.3158354582182342,
       "bayesianUncertainty": 0.0027349161941048884,
       "viewCount": 1,
-      "logisticScore": 1.8693686723709106
+      "logisticScore": 2.0549449920654297
     },
     {
       "order": 178,
@@ -1779,7 +1779,7 @@
       "btscore": 0.49715616894304765,
       "bayesianUncertainty": 0.004196849253202472,
       "viewCount": 1,
-      "logisticScore": 4.555517196655273
+      "logisticScore": 4.795062065124512
     },
     {
       "order": 179,
@@ -1789,7 +1789,7 @@
       "btscore": 0.29742359654350686,
       "bayesianUncertainty": 0.0026171949593906617,
       "viewCount": 1,
-      "logisticScore": 0.46044570207595825
+      "logisticScore": 0.4593091905117035
     },
     {
       "order": 180,
@@ -1799,7 +1799,7 @@
       "btscore": 0.15327979331489933,
       "bayesianUncertainty": 0.0013368164212031394,
       "viewCount": 1,
-      "logisticScore": -3.201380968093872
+      "logisticScore": -3.3633923530578613
     },
     {
       "order": 181,
@@ -1809,7 +1809,7 @@
       "btscore": 0.4626193797571552,
       "bayesianUncertainty": 0.004147520228092117,
       "viewCount": 1,
-      "logisticScore": 2.0825560092926025
+      "logisticScore": 2.07366943359375
     },
     {
       "order": 182,
@@ -1819,7 +1819,7 @@
       "btscore": 0.15492016573084283,
       "bayesianUncertainty": 0.0013430957282212263,
       "viewCount": 1,
-      "logisticScore": -4.137128829956055
+      "logisticScore": -4.157779216766357
     },
     {
       "order": 183,
@@ -1829,7 +1829,7 @@
       "btscore": 0.28024557921674065,
       "bayesianUncertainty": 0.0023880141514973302,
       "viewCount": 1,
-      "logisticScore": -1.2478736639022827
+      "logisticScore": -1.23255455493927
     },
     {
       "order": 184,
@@ -1839,7 +1839,7 @@
       "btscore": 0.33518914111425596,
       "bayesianUncertainty": 0.002851120128936499,
       "viewCount": 1,
-      "logisticScore": 1.111446738243103
+      "logisticScore": 1.2028968334197998
     },
     {
       "order": 185,
@@ -1849,7 +1849,7 @@
       "btscore": 0.48508988314951396,
       "bayesianUncertainty": 0.004166464980882401,
       "viewCount": 1,
-      "logisticScore": 4.028615474700928
+      "logisticScore": 4.115981101989746
     },
     {
       "order": 186,
@@ -1859,7 +1859,7 @@
       "btscore": 0.16146899876927306,
       "bayesianUncertainty": 0.0014476621653076696,
       "viewCount": 1,
-      "logisticScore": -2.3107893466949463
+      "logisticScore": -2.4242279529571533
     },
     {
       "order": 187,
@@ -1869,7 +1869,7 @@
       "btscore": 0.47426290063363186,
       "bayesianUncertainty": 0.004253441056058719,
       "viewCount": 1,
-      "logisticScore": 2.2559146881103516
+      "logisticScore": 2.1376161575317383
     },
     {
       "order": 188,
@@ -1879,7 +1879,7 @@
       "btscore": 0.130754812932865,
       "bayesianUncertainty": 0.0011293345201107332,
       "viewCount": 1,
-      "logisticScore": -2.467320203781128
+      "logisticScore": -2.903230667114258
     },
     {
       "order": 189,
@@ -1889,7 +1889,7 @@
       "btscore": 0.30060594481127695,
       "bayesianUncertainty": 0.0023769531143035417,
       "viewCount": 2,
-      "logisticScore": 0.4755312502384186
+      "logisticScore": 0.25699299573898315
     },
     {
       "order": 190,
@@ -1899,7 +1899,7 @@
       "btscore": 0.12184742917114356,
       "bayesianUncertainty": 0.001025210993288781,
       "viewCount": 1,
-      "logisticScore": -3.646151304244995
+      "logisticScore": -3.9348623752593994
     },
     {
       "order": 191,
@@ -1909,7 +1909,7 @@
       "btscore": 0.30520702751501505,
       "bayesianUncertainty": 0.002672085535825568,
       "viewCount": 1,
-      "logisticScore": -0.028088610619306564
+      "logisticScore": -0.1903839111328125
     },
     {
       "order": 192,
@@ -1919,7 +1919,7 @@
       "btscore": 0.5210632387040541,
       "bayesianUncertainty": 0.004491330050076119,
       "viewCount": 1,
-      "logisticScore": 3.5842466354370117
+      "logisticScore": 3.423091173171997
     },
     {
       "order": 193,
@@ -1929,7 +1929,7 @@
       "btscore": 0.15661187452473482,
       "bayesianUncertainty": 0.0013995537425519201,
       "viewCount": 1,
-      "logisticScore": -2.292529344558716
+      "logisticScore": -2.3432962894439697
     },
     {
       "order": 194,
@@ -1939,7 +1939,7 @@
       "btscore": 0.48449531293266657,
       "bayesianUncertainty": 0.004306221755545655,
       "viewCount": 1,
-      "logisticScore": 2.4797744750976562
+      "logisticScore": 2.5513503551483154
     },
     {
       "order": 195,
@@ -1949,7 +1949,7 @@
       "btscore": 0.15690131478244138,
       "bayesianUncertainty": 0.0013991460079889881,
       "viewCount": 1,
-      "logisticScore": -2.486022472381592
+      "logisticScore": -2.559628486633301
     },
     {
       "order": 196,
@@ -1959,7 +1959,7 @@
       "btscore": 0.48739131459268953,
       "bayesianUncertainty": 0.004340387001321857,
       "viewCount": 1,
-      "logisticScore": 2.2715210914611816
+      "logisticScore": 2.3231234550476074
     },
     {
       "order": 197,
@@ -1969,7 +1969,7 @@
       "btscore": 0.14529018867739252,
       "bayesianUncertainty": 0.0012661595997042014,
       "viewCount": 1,
-      "logisticScore": -3.3381712436676025
+      "logisticScore": -3.5191473960876465
     },
     {
       "order": 198,
@@ -1979,7 +1979,7 @@
       "btscore": 0.26056893115204893,
       "bayesianUncertainty": 0.0022669872512640827,
       "viewCount": 1,
-      "logisticScore": -0.048728957772254944
+      "logisticScore": -0.05404360219836235
     },
     {
       "order": 199,
@@ -1989,7 +1989,7 @@
       "btscore": 1.2323379027595438,
       "bayesianUncertainty": 0.008370160469434467,
       "viewCount": 4,
-      "logisticScore": 3.2030351161956787
+      "logisticScore": 3.399751663208008
     },
     {
       "order": 200,
@@ -1999,7 +1999,7 @@
       "btscore": 0.12893700301998035,
       "bayesianUncertainty": 0.0011323874968212954,
       "viewCount": 1,
-      "logisticScore": -3.5958003997802734
+      "logisticScore": -3.4732682704925537
     },
     {
       "order": 201,
@@ -2009,7 +2009,7 @@
       "btscore": 0.3050978950889731,
       "bayesianUncertainty": 0.002662528184988055,
       "viewCount": 1,
-      "logisticScore": -0.11538038402795792
+      "logisticScore": -0.0070227631367743015
     },
     {
       "order": 202,
@@ -2019,7 +2019,7 @@
       "btscore": 0.529137948038852,
       "bayesianUncertainty": 0.0045686591932392676,
       "viewCount": 1,
-      "logisticScore": 3.298933506011963
+      "logisticScore": 3.442927360534668
     },
     {
       "order": 203,
@@ -2029,7 +2029,7 @@
       "btscore": 0.13472729525147054,
       "bayesianUncertainty": 0.0011440677237308757,
       "viewCount": 1,
-      "logisticScore": -3.892563819885254
+      "logisticScore": -3.9447858333587646
     },
     {
       "order": 204,
@@ -2039,7 +2039,7 @@
       "btscore": 0.27247239956900315,
       "bayesianUncertainty": 0.0018889762263973769,
       "viewCount": 2,
-      "logisticScore": -1.0194475650787354
+      "logisticScore": -1.0251579284667969
     },
     {
       "order": 205,
@@ -2049,7 +2049,7 @@
       "btscore": 0.2686456576905469,
       "bayesianUncertainty": 0.00220761803934444,
       "viewCount": 1,
-      "logisticScore": -2.32273268699646
+      "logisticScore": -2.3511202335357666
     },
     {
       "order": 206,
@@ -2059,7 +2059,7 @@
       "btscore": 0.13606692017493086,
       "bayesianUncertainty": 0.001144291811951465,
       "viewCount": 1,
-      "logisticScore": -4.632570743560791
+      "logisticScore": -4.715384006500244
     },
     {
       "order": 207,
@@ -2069,7 +2069,7 @@
       "btscore": 0.49553147946709736,
       "bayesianUncertainty": 0.004426624060471425,
       "viewCount": 1,
-      "logisticScore": 2.1263480186462402
+      "logisticScore": 1.8723522424697876
     },
     {
       "order": 208,
@@ -2079,7 +2079,7 @@
       "btscore": 0.14481247422539967,
       "bayesianUncertainty": 0.0012514077173001322,
       "viewCount": 1,
-      "logisticScore": -3.350414752960205
+      "logisticScore": -3.2413034439086914
     },
     {
       "order": 209,
@@ -2089,7 +2089,7 @@
       "btscore": 0.3032384160956809,
       "bayesianUncertainty": 0.0026344110816724,
       "viewCount": 1,
-      "logisticScore": -0.03667018935084343
+      "logisticScore": 0.10807296633720398
     },
     {
       "order": 210,
@@ -2099,7 +2099,7 @@
       "btscore": 0.5305860213839242,
       "bayesianUncertainty": 0.004555646560953754,
       "viewCount": 1,
-      "logisticScore": 3.339031219482422
+      "logisticScore": 3.4958205223083496
     },
     {
       "order": 211,
@@ -2109,7 +2109,7 @@
       "btscore": 0.14573561629258894,
       "bayesianUncertainty": 0.0012516138461296338,
       "viewCount": 1,
-      "logisticScore": -4.049596786499023
+      "logisticScore": -4.08522891998291
     },
     {
       "order": 212,
@@ -2119,7 +2119,7 @@
       "btscore": 0.2849859478513602,
       "bayesianUncertainty": 0.002388222619893493,
       "viewCount": 1,
-      "logisticScore": -1.2736896276474
+      "logisticScore": -1.1992193460464478
     },
     {
       "order": 213,
@@ -2129,7 +2129,7 @@
       "btscore": 0.34519995857176006,
       "bayesianUncertainty": 0.0028863085903380638,
       "viewCount": 1,
-      "logisticScore": 1.1066200733184814
+      "logisticScore": 1.2095394134521484
     },
     {
       "order": 214,
@@ -2139,7 +2139,7 @@
       "btscore": 0.5140291779030097,
       "bayesianUncertainty": 0.004355446751085299,
       "viewCount": 1,
-      "logisticScore": 3.815969944000244
+      "logisticScore": 4.114409923553467
     },
     {
       "order": 215,
@@ -2149,7 +2149,7 @@
       "btscore": 0.1542271888540995,
       "bayesianUncertainty": 0.0013744281164083476,
       "viewCount": 1,
-      "logisticScore": -2.433401346206665
+      "logisticScore": -2.3436920642852783
     },
     {
       "order": 216,
@@ -2159,7 +2159,7 @@
       "btscore": 0.49692751668732926,
       "bayesianUncertainty": 0.004414945234070164,
       "viewCount": 1,
-      "logisticScore": 2.1699655055999756
+      "logisticScore": 2.343923568725586
     },
     {
       "order": 217,
@@ -2169,7 +2169,7 @@
       "btscore": 0.14542159571801905,
       "bayesianUncertainty": 0.0012448768094499064,
       "viewCount": 1,
-      "logisticScore": -3.7697060108184814
+      "logisticScore": -4.158916473388672
     },
     {
       "order": 218,
@@ -2179,7 +2179,7 @@
       "btscore": 0.2842964191991813,
       "bayesianUncertainty": 0.0023821487856927827,
       "viewCount": 1,
-      "logisticScore": -1.0445667505264282
+      "logisticScore": -1.254008173942566
     },
     {
       "order": 219,
@@ -2189,7 +2189,7 @@
       "btscore": 0.34245110095646386,
       "bayesianUncertainty": 0.0028655305465995345,
       "viewCount": 1,
-      "logisticScore": 1.4928479194641113
+      "logisticScore": 1.1566904783248901
     },
     {
       "order": 220,
@@ -2199,7 +2199,7 @@
       "btscore": 0.6037486548520243,
       "bayesianUncertainty": 0.00490293814045415,
       "viewCount": 1,
-      "logisticScore": 4.442041873931885
+      "logisticScore": 4.030644416809082
     },
     {
       "order": 221,
@@ -2209,7 +2209,7 @@
       "btscore": 0.30060594481127695,
       "bayesianUncertainty": 0.0023769531143035417,
       "viewCount": 2,
-      "logisticScore": 0.4755312502384186
+      "logisticScore": 0.25699299573898315
     },
     {
       "order": 222,
@@ -2219,7 +2219,7 @@
       "btscore": 1.3859299036451038,
       "bayesianUncertainty": 0.009109480890834677,
       "viewCount": 4,
-      "logisticScore": 3.8972322940826416
+      "logisticScore": 4.030233383178711
     },
     {
       "order": 223,
@@ -2229,7 +2229,7 @@
       "btscore": 0.5564567672909021,
       "bayesianUncertainty": 0.0036329574886528816,
       "viewCount": 3,
-      "logisticScore": 1.9342529773712158
+      "logisticScore": 2.0883610248565674
     },
     {
       "order": 224,
@@ -2239,7 +2239,7 @@
       "btscore": 0.2628582083137314,
       "bayesianUncertainty": 0.0020967908869375705,
       "viewCount": 1,
-      "logisticScore": 0.005482176318764687
+      "logisticScore": -0.7127317786216736
     },
     {
       "order": 225,
@@ -2249,7 +2249,7 @@
       "btscore": 0.25489524541141206,
       "bayesianUncertainty": 0.0020939855067707252,
       "viewCount": 1,
-      "logisticScore": -1.9218813180923462
+      "logisticScore": -2.4063398838043213
     },
     {
       "order": 226,
@@ -2259,7 +2259,7 @@
       "btscore": 0.08692188145202469,
       "bayesianUncertainty": 0.0006925490681924587,
       "viewCount": 2,
-      "logisticScore": -4.694796085357666
+      "logisticScore": -5.008155345916748
     },
     {
       "order": 227,
@@ -2269,7 +2269,7 @@
       "btscore": 1.3859299036451038,
       "bayesianUncertainty": 0.009109480890834677,
       "viewCount": 4,
-      "logisticScore": 3.8972322940826416
+      "logisticScore": 4.030233383178711
     },
     {
       "order": 228,
@@ -2279,7 +2279,7 @@
       "btscore": 0.27291266001698317,
       "bayesianUncertainty": 0.0023870872986372113,
       "viewCount": 1,
-      "logisticScore": -0.0070798359811306
+      "logisticScore": -0.05449264496564865
     },
     {
       "order": 229,
@@ -2289,7 +2289,7 @@
       "btscore": 0.11322677127019208,
       "bayesianUncertainty": 0.0009498703733422743,
       "viewCount": 1,
-      "logisticScore": -3.984710931777954
+      "logisticScore": -4.2009968757629395
     },
     {
       "order": 230,
@@ -2299,7 +2299,7 @@
       "btscore": 0.4596905222516388,
       "bayesianUncertainty": 0.0032883846225010577,
       "viewCount": 4,
-      "logisticScore": -0.8577682971954346
+      "logisticScore": -0.8297431468963623
     },
     {
       "order": 231,
@@ -2309,7 +2309,7 @@
       "btscore": 0.1252467490566962,
       "bayesianUncertainty": 0.0010736898710267402,
       "viewCount": 1,
-      "logisticScore": -3.881807565689087
+      "logisticScore": -3.922128677368164
     },
     {
       "order": 232,
@@ -2319,7 +2319,7 @@
       "btscore": 0.512507124447187,
       "bayesianUncertainty": 0.004586719648855994,
       "viewCount": 1,
-      "logisticScore": 2.1290929317474365
+      "logisticScore": 2.1892783641815186
     },
     {
       "order": 233,
@@ -2329,7 +2329,7 @@
       "btscore": 0.13303843429703538,
       "bayesianUncertainty": 0.001156177936817201,
       "viewCount": 1,
-      "logisticScore": -2.795991897583008
+      "logisticScore": -2.996774435043335
     },
     {
       "order": 234,
@@ -2339,7 +2339,7 @@
       "btscore": 0.45961547622384546,
       "bayesianUncertainty": 0.003561812089330145,
       "viewCount": 3,
-      "logisticScore": 1.4073179960250854
+      "logisticScore": 1.2682620286941528
     },
     {
       "order": 235,
@@ -2349,7 +2349,7 @@
       "btscore": 0.6571071026670119,
       "bayesianUncertainty": 0.005240511403829733,
       "viewCount": 1,
-      "logisticScore": 4.580113887786865
+      "logisticScore": 4.075429439544678
     },
     {
       "order": 236,
@@ -2359,7 +2359,7 @@
       "btscore": 0.30477351053762275,
       "bayesianUncertainty": 0.002653645421584677,
       "viewCount": 1,
-      "logisticScore": 0.48384419083595276
+      "logisticScore": 0.2015777975320816
     },
     {
       "order": 237,
@@ -2369,7 +2369,7 @@
       "btscore": 0.12453680212409073,
       "bayesianUncertainty": 0.0010916002796346152,
       "viewCount": 1,
-      "logisticScore": -3.123896360397339
+      "logisticScore": -3.3946032524108887
     },
     {
       "order": 238,
@@ -2379,7 +2379,7 @@
       "btscore": 1.2323379027595438,
       "bayesianUncertainty": 0.008370160469434467,
       "viewCount": 4,
-      "logisticScore": 3.2030351161956787
+      "logisticScore": 3.399751663208008
     },
     {
       "order": 239,
@@ -2389,7 +2389,7 @@
       "btscore": 0.26721488140957395,
       "bayesianUncertainty": 0.0023217430537666923,
       "viewCount": 1,
-      "logisticScore": -0.18725985288619995
+      "logisticScore": -0.06625888496637344
     },
     {
       "order": 240,
@@ -2399,7 +2399,7 @@
       "btscore": 0.10298585251203304,
       "bayesianUncertainty": 0.0008804043332535279,
       "viewCount": 1,
-      "logisticScore": -3.7128236293792725
+      "logisticScore": -3.5684525966644287
     },
     {
       "order": 241,
@@ -2409,7 +2409,7 @@
       "btscore": 0.5564567672909021,
       "bayesianUncertainty": 0.0036329574886528816,
       "viewCount": 3,
-      "logisticScore": 1.9342529773712158
+      "logisticScore": 2.0883610248565674
     },
     {
       "order": 242,
@@ -2419,7 +2419,7 @@
       "btscore": 0.27976859070800125,
       "bayesianUncertainty": 0.0020919375890497767,
       "viewCount": 2,
-      "logisticScore": 0.5433906316757202
+      "logisticScore": 0.5870839357376099
     },
     {
       "order": 243,
@@ -2429,7 +2429,7 @@
       "btscore": 0.22399389831637478,
       "bayesianUncertainty": 0.0015288447952018411,
       "viewCount": 2,
-      "logisticScore": -0.5138891935348511
+      "logisticScore": -0.47989022731781006
     },
     {
       "order": 244,
@@ -2439,7 +2439,7 @@
       "btscore": 0.27247239956900315,
       "bayesianUncertainty": 0.0018889762263973769,
       "viewCount": 2,
-      "logisticScore": -1.0194475650787354
+      "logisticScore": -1.0251579284667969
     },
     {
       "order": 245,
@@ -2449,7 +2449,7 @@
       "btscore": 1.0098753807447036,
       "bayesianUncertainty": 0.007214597445173898,
       "viewCount": 1,
-      "logisticScore": 4.893582344055176
+      "logisticScore": 4.929378509521484
     },
     {
       "order": 246,
@@ -2459,7 +2459,7 @@
       "btscore": 1.2323379027595438,
       "bayesianUncertainty": 0.008370160469434467,
       "viewCount": 4,
-      "logisticScore": 3.2030351161956787
+      "logisticScore": 3.399751663208008
     },
     {
       "order": 247,
@@ -2469,7 +2469,7 @@
       "btscore": 0.5564567672909021,
       "bayesianUncertainty": 0.0036329574886528816,
       "viewCount": 3,
-      "logisticScore": 1.9342529773712158
+      "logisticScore": 2.0883610248565674
     },
     {
       "order": 248,
@@ -2479,7 +2479,7 @@
       "btscore": 0.22399389831637478,
       "bayesianUncertainty": 0.0015288447952018411,
       "viewCount": 2,
-      "logisticScore": -0.5138891935348511
+      "logisticScore": -0.47989022731781006
     },
     {
       "order": 249,
@@ -2489,7 +2489,7 @@
       "btscore": 0.5481835045823439,
       "bayesianUncertainty": 0.004677611135511944,
       "viewCount": 1,
-      "logisticScore": 3.0700669288635254
+      "logisticScore": 2.8117918968200684
     },
     {
       "order": 250,
@@ -2499,7 +2499,7 @@
       "btscore": 0.1417752939596988,
       "bayesianUncertainty": 0.0012117745098878675,
       "viewCount": 1,
-      "logisticScore": -4.068792343139648
+      "logisticScore": -4.202098846435547
     },
     {
       "order": 251,
@@ -2509,7 +2509,7 @@
       "btscore": 0.28750142974955634,
       "bayesianUncertainty": 0.0023914869221837148,
       "viewCount": 1,
-      "logisticScore": -1.254661202430725
+      "logisticScore": -1.3553332090377808
     },
     {
       "order": 252,
@@ -2519,7 +2519,7 @@
       "btscore": 0.3493890872507871,
       "bayesianUncertainty": 0.0028988912327124277,
       "viewCount": 1,
-      "logisticScore": 1.0368849039077759
+      "logisticScore": 1.121153473854065
     },
     {
       "order": 253,
@@ -2529,7 +2529,7 @@
       "btscore": 0.5306053333799722,
       "bayesianUncertainty": 0.004478612969276126,
       "viewCount": 1,
-      "logisticScore": 3.793544054031372
+      "logisticScore": 4.057309150695801
     },
     {
       "order": 254,
@@ -2539,7 +2539,7 @@
       "btscore": 0.13883055582322282,
       "bayesianUncertainty": 0.0012018654158959972,
       "viewCount": 1,
-      "logisticScore": -2.9102025032043457
+      "logisticScore": -3.035956621170044
     },
     {
       "order": 255,
@@ -2549,7 +2549,7 @@
       "btscore": 0.298183304900652,
       "bayesianUncertainty": 0.0026027287674013793,
       "viewCount": 1,
-      "logisticScore": 0.49889126420021057
+      "logisticScore": 0.8222349286079407
     },
     {
       "order": 256,
@@ -2559,7 +2559,7 @@
       "btscore": 0.8894912272494295,
       "bayesianUncertainty": 0.006813833432820215,
       "viewCount": 2,
-      "logisticScore": 4.255828857421875
+      "logisticScore": 4.682984828948975
     },
     {
       "order": 257,
@@ -2569,7 +2569,7 @@
       "btscore": 0.13903105548878736,
       "bayesianUncertainty": 0.001203727081332632,
       "viewCount": 1,
-      "logisticScore": -3.969738006591797
+      "logisticScore": -3.792847156524658
     },
     {
       "order": 258,
@@ -2579,7 +2579,7 @@
       "btscore": 0.2880870547973955,
       "bayesianUncertainty": 0.002395112560011869,
       "viewCount": 1,
-      "logisticScore": -1.154093861579895
+      "logisticScore": -1.1967229843139648
     },
     {
       "order": 259,
@@ -2589,7 +2589,7 @@
       "btscore": 0.3501256381455474,
       "bayesianUncertainty": 0.0029028940128491662,
       "viewCount": 1,
-      "logisticScore": 1.1954652070999146
+      "logisticScore": 0.9074109792709351
     },
     {
       "order": 260,
@@ -2599,7 +2599,7 @@
       "btscore": 0.5299223710837709,
       "bayesianUncertainty": 0.004459114524990282,
       "viewCount": 1,
-      "logisticScore": 4.024181842803955
+      "logisticScore": 3.3556644916534424
     },
     {
       "order": 261,
@@ -2609,7 +2609,7 @@
       "btscore": 0.15011862418379246,
       "bayesianUncertainty": 0.0013339412811587954,
       "viewCount": 1,
-      "logisticScore": -2.1516754627227783
+      "logisticScore": -2.15820574760437
     },
     {
       "order": 262,
@@ -2619,7 +2619,7 @@
       "btscore": 0.5145912499218319,
       "bayesianUncertainty": 0.004561080329959271,
       "viewCount": 1,
-      "logisticScore": 2.380718946456909
+      "logisticScore": 2.4691970348358154
     },
     {
       "order": 263,
@@ -2629,7 +2629,7 @@
       "btscore": 0.13919772700545566,
       "bayesianUncertainty": 0.0011956420337441139,
       "viewCount": 1,
-      "logisticScore": -3.733710765838623
+      "logisticScore": -3.5011022090911865
     },
     {
       "order": 264,
@@ -2639,7 +2639,7 @@
       "btscore": 0.3078384316970645,
       "bayesianUncertainty": 0.0026525992204352944,
       "viewCount": 1,
-      "logisticScore": -0.32042941451072693
+      "logisticScore": 0.006600501481443644
     },
     {
       "order": 265,
@@ -2649,7 +2649,7 @@
       "btscore": 0.5516631023460581,
       "bayesianUncertainty": 0.004696389431211724,
       "viewCount": 1,
-      "logisticScore": 2.9328765869140625
+      "logisticScore": 3.5140645503997803
     },
     {
       "order": 266,
@@ -2659,7 +2659,7 @@
       "btscore": 0.14933171691551983,
       "bayesianUncertainty": 0.0013280089278319474,
       "viewCount": 1,
-      "logisticScore": -1.936413049697876
+      "logisticScore": -2.321526527404785
     },
     {
       "order": 267,
@@ -2669,7 +2669,7 @@
       "btscore": 0.5172882519810088,
       "bayesianUncertainty": 0.004588012690805701,
       "viewCount": 1,
-      "logisticScore": 2.710136890411377
+      "logisticScore": 2.629159688949585
     },
     {
       "order": 268,
@@ -2679,7 +2679,7 @@
       "btscore": 0.13517677800928346,
       "bayesianUncertainty": 0.0012231001626521471,
       "viewCount": 1,
-      "logisticScore": -2.2531216144561768
+      "logisticScore": -2.2716522216796875
     },
     {
       "order": 269,
@@ -2689,7 +2689,7 @@
       "btscore": 1.3859299036451038,
       "bayesianUncertainty": 0.009109480890834677,
       "viewCount": 4,
-      "logisticScore": 3.8972322940826416
+      "logisticScore": 4.030233383178711
     },
     {
       "order": 270,
@@ -2699,7 +2699,7 @@
       "btscore": 0.6022252815733747,
       "bayesianUncertainty": 0.004405966515975817,
       "viewCount": 2,
-      "logisticScore": 2.3689942359924316
+      "logisticScore": 2.379549741744995
     },
     {
       "order": 271,
@@ -2709,7 +2709,7 @@
       "btscore": 0.2853739975471966,
       "bayesianUncertainty": 0.0023356408043896013,
       "viewCount": 1,
-      "logisticScore": 0.771563708782196
+      "logisticScore": 0.8908233046531677
     },
     {
       "order": 272,
@@ -2719,7 +2719,7 @@
       "btscore": 0.17770503801423213,
       "bayesianUncertainty": 0.0013656176378245759,
       "viewCount": 2,
-      "logisticScore": -0.36767706274986267
+      "logisticScore": -0.2810814678668976
     },
     {
       "order": 273,
@@ -2729,7 +2729,7 @@
       "btscore": 0.5421357175300675,
       "bayesianUncertainty": 0.0046893062090676155,
       "viewCount": 1,
-      "logisticScore": 3.3304004669189453
+      "logisticScore": 3.40566086769104
     },
     {
       "order": 274,
@@ -2739,7 +2739,7 @@
       "btscore": 0.14775296383626974,
       "bayesianUncertainty": 0.0013151313450254453,
       "viewCount": 1,
-      "logisticScore": -2.3690602779388428
+      "logisticScore": -1.935043215751648
     },
     {
       "order": 275,
@@ -2749,7 +2749,7 @@
       "btscore": 0.565212424634093,
       "bayesianUncertainty": 0.004800438180393765,
       "viewCount": 1,
-      "logisticScore": 3.1476666927337646
+      "logisticScore": 3.3998663425445557
     },
     {
       "order": 276,
@@ -2759,7 +2759,7 @@
       "btscore": 0.31427737167847636,
       "bayesianUncertainty": 0.0027024179475204162,
       "viewCount": 1,
-      "logisticScore": -0.4902198910713196
+      "logisticScore": -0.3805382549762726
     },
     {
       "order": 277,
@@ -2769,7 +2769,7 @@
       "btscore": 0.12110373135189871,
       "bayesianUncertainty": 0.0009894589833105544,
       "viewCount": 1,
-      "logisticScore": -4.385462284088135
+      "logisticScore": -4.683173656463623
     },
     {
       "order": 278,
@@ -2779,7 +2779,7 @@
       "btscore": 0.30846035227970475,
       "bayesianUncertainty": 0.0023682113759200193,
       "viewCount": 2,
-      "logisticScore": -1.4658150672912598
+      "logisticScore": -1.7361655235290527
     },
     {
       "order": 279,
@@ -2789,7 +2789,7 @@
       "btscore": 0.38233646343342753,
       "bayesianUncertainty": 0.0031034257357776362,
       "viewCount": 1,
-      "logisticScore": 1.2479115724563599
+      "logisticScore": 1.0049960613250732
     },
     {
       "order": 280,
@@ -2799,7 +2799,7 @@
       "btscore": 0.5903290352278259,
       "bayesianUncertainty": 0.004650241859902046,
       "viewCount": 1,
-      "logisticScore": 4.620079040527344
+      "logisticScore": 4.254454135894775
     },
     {
       "order": 281,
@@ -2809,7 +2809,7 @@
       "btscore": 0.3546756736645278,
       "bayesianUncertainty": 0.0029152188379435004,
       "viewCount": 1,
-      "logisticScore": 1.397948980331421
+      "logisticScore": 1.2563464641571045
     },
     {
       "order": 282,
@@ -2819,7 +2819,7 @@
       "btscore": 0.2911393485763937,
       "bayesianUncertainty": 0.00240016368339061,
       "viewCount": 1,
-      "logisticScore": -1.0727109909057617
+      "logisticScore": -1.1720157861709595
     },
     {
       "order": 283,
@@ -2829,7 +2829,7 @@
       "btscore": 0.12936537812749876,
       "bayesianUncertainty": 0.0010906526802277915,
       "viewCount": 1,
-      "logisticScore": -3.9555845260620117
+      "logisticScore": -4.064228534698486
     },
     {
       "order": 284,
@@ -2839,7 +2839,7 @@
       "btscore": 0.5758274500022248,
       "bayesianUncertainty": 0.0048993720744577775,
       "viewCount": 1,
-      "logisticScore": 3.1503143310546875
+      "logisticScore": 3.4226462841033936
     },
     {
       "order": 285,
@@ -2849,7 +2849,7 @@
       "btscore": 0.3134244224519369,
       "bayesianUncertainty": 0.0026894673773116507,
       "viewCount": 1,
-      "logisticScore": -0.27931493520736694
+      "logisticScore": -0.02221774309873581
     },
     {
       "order": 286,
@@ -2859,7 +2859,7 @@
       "btscore": 0.12392903982355924,
       "bayesianUncertainty": 0.001033460551894265,
       "viewCount": 1,
-      "logisticScore": -3.8601489067077637
+      "logisticScore": -3.5109150409698486
     },
     {
       "order": 287,
@@ -2869,7 +2869,7 @@
       "btscore": 0.3036520097562902,
       "bayesianUncertainty": 0.002632419964452012,
       "viewCount": 1,
-      "logisticScore": 0.17956078052520752
+      "logisticScore": 0.5006615519523621
     },
     {
       "order": 288,
@@ -2879,7 +2879,7 @@
       "btscore": 0.8894912272494295,
       "bayesianUncertainty": 0.006813833432820215,
       "viewCount": 2,
-      "logisticScore": 4.255828857421875
+      "logisticScore": 4.682984828948975
     },
     {
       "order": 289,
@@ -2889,7 +2889,7 @@
       "btscore": 0.30194207110057153,
       "bayesianUncertainty": 0.002612513770119305,
       "viewCount": 1,
-      "logisticScore": 0.3852682411670685
+      "logisticScore": 0.5599110126495361
     },
     {
       "order": 290,
@@ -2899,7 +2899,7 @@
       "btscore": 0.13192778479072637,
       "bayesianUncertainty": 0.0011468214243256566,
       "viewCount": 1,
-      "logisticScore": -3.2391469478607178
+      "logisticScore": -3.1699745655059814
     },
     {
       "order": 291,
@@ -2909,7 +2909,7 @@
       "btscore": 0.7647256975718812,
       "bayesianUncertainty": 0.006201882501132416,
       "viewCount": 1,
-      "logisticScore": 3.6444315910339355
+      "logisticScore": 3.759561777114868
     },
     {
       "order": 292,
@@ -2919,7 +2919,7 @@
       "btscore": 0.46191938061471827,
       "bayesianUncertainty": 0.0030114173465003924,
       "viewCount": 4,
-      "logisticScore": 0.377751886844635
+      "logisticScore": 0.5865315794944763
     },
     {
       "order": 293,
@@ -2929,7 +2929,7 @@
       "btscore": 0.0969520044929305,
       "bayesianUncertainty": 0.0007945793185645339,
       "viewCount": 1,
-      "logisticScore": -4.262409687042236
+      "logisticScore": -4.39583158493042
     },
     {
       "order": 294,
@@ -2939,7 +2939,7 @@
       "btscore": 0.2976574078151262,
       "bayesianUncertainty": 0.0024622921453108055,
       "viewCount": 1,
-      "logisticScore": -1.3419004678726196
+      "logisticScore": -1.4838225841522217
     },
     {
       "order": 295,
@@ -2949,7 +2949,7 @@
       "btscore": 0.3604857850292627,
       "bayesianUncertainty": 0.0029599808601098905,
       "viewCount": 1,
-      "logisticScore": 1.0635356903076172
+      "logisticScore": 0.8285259008407593
     },
     {
       "order": 296,
@@ -2959,7 +2959,7 @@
       "btscore": 0.5550457923221769,
       "bayesianUncertainty": 0.004619718894772471,
       "viewCount": 1,
-      "logisticScore": 3.9187026023864746
+      "logisticScore": 3.485280990600586
     },
     {
       "order": 297,
@@ -2969,7 +2969,7 @@
       "btscore": 0.1429537397309499,
       "bayesianUncertainty": 0.0012705420904913932,
       "viewCount": 1,
-      "logisticScore": -1.9529093503952026
+      "logisticScore": -2.0687644481658936
     },
     {
       "order": 298,
@@ -2979,7 +2979,7 @@
       "btscore": 0.6166259496599135,
       "bayesianUncertainty": 0.005340458732732754,
       "viewCount": 1,
-      "logisticScore": 2.644691228866577
+      "logisticScore": 3.0310795307159424
     },
     {
       "order": 299,
@@ -2989,7 +2989,7 @@
       "btscore": 0.1633862650689889,
       "bayesianUncertainty": 0.0012130066410254757,
       "viewCount": 3,
-      "logisticScore": -1.3852592706680298
+      "logisticScore": -1.1519923210144043
     },
     {
       "order": 300,
@@ -2999,7 +2999,7 @@
       "btscore": 0.10023509710731335,
       "bayesianUncertainty": 0.000814250335027961,
       "viewCount": 1,
-      "logisticScore": -4.326816558837891
+      "logisticScore": -4.0865478515625
     },
     {
       "order": 301,
@@ -3009,7 +3009,7 @@
       "btscore": 0.5592707553843834,
       "bayesianUncertainty": 0.004997635570934924,
       "viewCount": 1,
-      "logisticScore": 1.8063302040100098
+      "logisticScore": 1.9249346256256104
     },
     {
       "order": 302,
@@ -3019,7 +3019,7 @@
       "btscore": 0.1315974826004187,
       "bayesianUncertainty": 0.0011242373187558522,
       "viewCount": 1,
-      "logisticScore": -3.2968263626098633
+      "logisticScore": -3.135826826095581
     },
     {
       "order": 303,
@@ -3029,7 +3029,7 @@
       "btscore": 0.3127685993139307,
       "bayesianUncertainty": 0.0026698162803404425,
       "viewCount": 1,
-      "logisticScore": 0.10522536933422089
+      "logisticScore": 0.3878982365131378
     },
     {
       "order": 304,
@@ -3039,7 +3039,7 @@
       "btscore": 0.6205354159134386,
       "bayesianUncertainty": 0.005038919872966543,
       "viewCount": 1,
-      "logisticScore": 3.7222559452056885
+      "logisticScore": 4.194268703460693
     },
     {
       "order": 305,
@@ -3049,7 +3049,7 @@
       "btscore": 0.3133379585164632,
       "bayesianUncertainty": 0.0026741083973187358,
       "viewCount": 1,
-      "logisticScore": 0.11598299443721771
+      "logisticScore": 0.49079620838165283
     },
     {
       "order": 306,
@@ -3059,7 +3059,7 @@
       "btscore": 0.13137382651612184,
       "bayesianUncertainty": 0.001121588135762757,
       "viewCount": 1,
-      "logisticScore": -3.3107049465179443
+      "logisticScore": -2.9955942630767822
     },
     {
       "order": 307,
@@ -3069,7 +3069,7 @@
       "btscore": 0.5539127344445888,
       "bayesianUncertainty": 0.004909176404655028,
       "viewCount": 1,
-      "logisticScore": 2.3595356941223145
+      "logisticScore": 2.469742774963379
     },
     {
       "order": 308,
@@ -3079,7 +3079,7 @@
       "btscore": 0.1258540103075501,
       "bayesianUncertainty": 0.0011307984213858942,
       "viewCount": 1,
-      "logisticScore": -2.34255313873291
+      "logisticScore": -2.3797707557678223
     },
     {
       "order": 309,
@@ -3089,7 +3089,7 @@
       "btscore": 1.2323379027595438,
       "bayesianUncertainty": 0.008370160469434467,
       "viewCount": 4,
-      "logisticScore": 3.2030351161956787
+      "logisticScore": 3.399751663208008
     },
     {
       "order": 310,
@@ -3099,7 +3099,7 @@
       "btscore": 0.12432234412585229,
       "bayesianUncertainty": 0.0011300417082658212,
       "viewCount": 1,
-      "logisticScore": -2.0264198780059814
+      "logisticScore": -2.1272363662719727
     },
     {
       "order": 311,
@@ -3109,7 +3109,7 @@
       "btscore": 0.7840407281104714,
       "bayesianUncertainty": 0.006339734830586101,
       "viewCount": 1,
-      "logisticScore": 3.420320987701416
+      "logisticScore": 3.8131890296936035
     },
     {
       "order": 312,
@@ -3119,7 +3119,7 @@
       "btscore": 0.46191938061471827,
       "bayesianUncertainty": 0.0030114173465003924,
       "viewCount": 4,
-      "logisticScore": 0.377751886844635
+      "logisticScore": 0.5865315794944763
     },
     {
       "order": 313,
@@ -3129,7 +3129,7 @@
       "btscore": 0.09447524145938095,
       "bayesianUncertainty": 0.0008075121724583938,
       "viewCount": 1,
-      "logisticScore": -3.0878872871398926
+      "logisticScore": -3.078453302383423
     },
     {
       "order": 314,
@@ -3139,7 +3139,7 @@
       "btscore": 0.8827146875198014,
       "bayesianUncertainty": 0.0068546317201128755,
       "viewCount": 4,
-      "logisticScore": 2.0876567363739014
+      "logisticScore": 2.1973800659179688
     },
     {
       "order": 315,
@@ -3149,7 +3149,7 @@
       "btscore": 0.12830263116499024,
       "bayesianUncertainty": 0.0011409134091368628,
       "viewCount": 1,
-      "logisticScore": -2.6428487300872803
+      "logisticScore": -2.6671552658081055
     },
     {
       "order": 316,
@@ -3159,7 +3159,7 @@
       "btscore": 0.5716435477929254,
       "bayesianUncertainty": 0.005030874653328066,
       "viewCount": 1,
-      "logisticScore": 2.314856767654419
+      "logisticScore": 2.312635898590088
     },
     {
       "order": 317,
@@ -3169,7 +3169,7 @@
       "btscore": 0.13750848612010128,
       "bayesianUncertainty": 0.0012116232410842832,
       "viewCount": 1,
-      "logisticScore": -2.620605945587158
+      "logisticScore": -2.307931423187256
     },
     {
       "order": 318,
@@ -3179,7 +3179,7 @@
       "btscore": 0.5721812320312665,
       "bayesianUncertainty": 0.005020526378072302,
       "viewCount": 1,
-      "logisticScore": 2.4880998134613037
+      "logisticScore": 2.6416680812835693
     },
     {
       "order": 319,
@@ -3189,7 +3189,7 @@
       "btscore": 0.13652083783922928,
       "bayesianUncertainty": 0.0012092949675248893,
       "viewCount": 1,
-      "logisticScore": -2.2224419116973877
+      "logisticScore": -2.246028423309326
     },
     {
       "order": 320,
@@ -3199,7 +3199,7 @@
       "btscore": 0.6630324988393734,
       "bayesianUncertainty": 0.005425263370955008,
       "viewCount": 1,
-      "logisticScore": 3.6907315254211426
+      "logisticScore": 3.9293270111083984
     },
     {
       "order": 321,
@@ -3209,7 +3209,7 @@
       "btscore": 0.4526603690280778,
       "bayesianUncertainty": 0.0036375388888748145,
       "viewCount": 2,
-      "logisticScore": 0.8069936633110046
+      "logisticScore": 0.8205353021621704
     },
     {
       "order": 322,
@@ -3219,7 +3219,7 @@
       "btscore": 0.10751642174287124,
       "bayesianUncertainty": 0.0008878633582169641,
       "viewCount": 1,
-      "logisticScore": -3.8651626110076904
+      "logisticScore": -3.9813168048858643
     },
     {
       "order": 323,
@@ -3229,7 +3229,7 @@
       "btscore": 0.27728810008456484,
       "bayesianUncertainty": 0.0022856595650186467,
       "viewCount": 1,
-      "logisticScore": -0.6436113119125366
+      "logisticScore": -0.6479213237762451
     },
     {
       "order": 324,
@@ -3239,7 +3239,7 @@
       "btscore": 0.6022252815733747,
       "bayesianUncertainty": 0.004405966515975817,
       "viewCount": 2,
-      "logisticScore": 2.3689942359924316
+      "logisticScore": 2.379549741744995
     },
     {
       "order": 325,
@@ -3249,7 +3249,7 @@
       "btscore": 0.11872690607699099,
       "bayesianUncertainty": 0.0010400734693677438,
       "viewCount": 1,
-      "logisticScore": -2.471830129623413
+      "logisticScore": -2.6701650619506836
     },
     {
       "order": 326,
@@ -3259,7 +3259,7 @@
       "btscore": 0.5854791121122467,
       "bayesianUncertainty": 0.005159884419961687,
       "viewCount": 1,
-      "logisticScore": 2.3879024982452393
+      "logisticScore": 2.2391018867492676
     },
     {
       "order": 327,
@@ -3269,7 +3269,7 @@
       "btscore": 0.13507486007855374,
       "bayesianUncertainty": 0.001192495747788628,
       "viewCount": 1,
-      "logisticScore": -2.4365174770355225
+      "logisticScore": -2.436396598815918
     },
     {
       "order": 328,
@@ -3279,7 +3279,7 @@
       "btscore": 0.6236234189161283,
       "bayesianUncertainty": 0.0052118436040615845,
       "viewCount": 1,
-      "logisticScore": 3.4344489574432373
+      "logisticScore": 3.726261615753174
     },
     {
       "order": 329,
@@ -3289,7 +3289,7 @@
       "btscore": 0.3215643584172517,
       "bayesianUncertainty": 0.0027089921554001003,
       "viewCount": 1,
-      "logisticScore": 0.17247308790683746
+      "logisticScore": 0.45559224486351013
     },
     {
       "order": 330,
@@ -3299,7 +3299,7 @@
       "btscore": 0.1220067964861673,
       "bayesianUncertainty": 0.001047046069068215,
       "viewCount": 1,
-      "logisticScore": -3.0518791675567627
+      "logisticScore": -2.5436489582061768
     },
     {
       "order": 331,
@@ -3309,7 +3309,7 @@
       "btscore": 0.8726471690162882,
       "bayesianUncertainty": 0.007049635506678859,
       "viewCount": 2,
-      "logisticScore": 3.172645330429077
+      "logisticScore": 3.315159797668457
     },
     {
       "order": 332,
@@ -3319,7 +3319,7 @@
       "btscore": 0.13241768548120542,
       "bayesianUncertainty": 0.0011823025840730595,
       "viewCount": 1,
-      "logisticScore": -2.116325616836548
+      "logisticScore": -2.3223795890808105
     },
     {
       "order": 333,
@@ -3329,7 +3329,7 @@
       "btscore": 0.5894668930712075,
       "bayesianUncertainty": 0.0051666974698935065,
       "viewCount": 1,
-      "logisticScore": 2.776665449142456
+      "logisticScore": 2.5903091430664062
     },
     {
       "order": 334,
@@ -3339,7 +3339,7 @@
       "btscore": 0.13361149365972275,
       "bayesianUncertainty": 0.0011792909259970541,
       "viewCount": 1,
-      "logisticScore": -2.1187093257904053
+      "logisticScore": -2.339524030685425
     },
     {
       "order": 335,
@@ -3349,7 +3349,7 @@
       "btscore": 0.6407452953346409,
       "bayesianUncertainty": 0.00521048971726867,
       "viewCount": 1,
-      "logisticScore": 3.8244740962982178
+      "logisticScore": 3.753357410430908
     },
     {
       "order": 336,
@@ -3359,7 +3359,7 @@
       "btscore": 0.3696968665452241,
       "bayesianUncertainty": 0.0029635054755892103,
       "viewCount": 1,
-      "logisticScore": 0.961262583732605
+      "logisticScore": 0.9898873567581177
     },
     {
       "order": 337,
@@ -3369,7 +3369,7 @@
       "btscore": 0.3006307066632722,
       "bayesianUncertainty": 0.002422993671090452,
       "viewCount": 1,
-      "logisticScore": -1.4717861413955688
+      "logisticScore": -1.5285351276397705
     },
     {
       "order": 338,
@@ -3379,7 +3379,7 @@
       "btscore": 0.10940888187041689,
       "bayesianUncertainty": 0.0008705255012097969,
       "viewCount": 1,
-      "logisticScore": -4.675969123840332
+      "logisticScore": -4.821081638336182
     },
     {
       "order": 339,
@@ -3389,7 +3389,7 @@
       "btscore": 0.3001882781336248,
       "bayesianUncertainty": 0.0024180730507896795,
       "viewCount": 1,
-      "logisticScore": -1.354263424873352
+      "logisticScore": -1.3780078887939453
     },
     {
       "order": 340,
@@ -3399,7 +3399,7 @@
       "btscore": 0.3697557000652831,
       "bayesianUncertainty": 0.0029610494463665885,
       "viewCount": 1,
-      "logisticScore": 1.2280917167663574
+      "logisticScore": 1.3607213497161865
     },
     {
       "order": 341,
@@ -3409,7 +3409,7 @@
       "btscore": 0.6387884621248846,
       "bayesianUncertainty": 0.005002408483728992,
       "viewCount": 1,
-      "logisticScore": 4.3061017990112305
+      "logisticScore": 4.72145414352417
     },
     {
       "order": 342,
@@ -3419,7 +3419,7 @@
       "btscore": 0.3225397482062368,
       "bayesianUncertainty": 0.002709563935976887,
       "viewCount": 1,
-      "logisticScore": 0.2829533517360687
+      "logisticScore": 1.2199677228927612
     },
     {
       "order": 343,
@@ -3429,7 +3429,7 @@
       "btscore": 0.12187114098895063,
       "bayesianUncertainty": 0.001031276713176626,
       "viewCount": 1,
-      "logisticScore": -3.3452532291412354
+      "logisticScore": -2.678255319595337
     },
     {
       "order": 344,
@@ -3439,7 +3439,7 @@
       "btscore": 0.6011584707248552,
       "bayesianUncertainty": 0.005283984843090336,
       "viewCount": 1,
-      "logisticScore": 2.5207464694976807
+      "logisticScore": 2.3964099884033203
     },
     {
       "order": 345,
@@ -3449,7 +3449,7 @@
       "btscore": 0.13014977181222465,
       "bayesianUncertainty": 0.001163808065293539,
       "viewCount": 1,
-      "logisticScore": -2.160719156265259
+      "logisticScore": -2.031191349029541
     },
     {
       "order": 346,
@@ -3459,7 +3459,7 @@
       "btscore": 0.943001552436591,
       "bayesianUncertainty": 0.0074235306015175626,
       "viewCount": 3,
-      "logisticScore": 4.340419292449951
+      "logisticScore": 4.6513776779174805
     },
     {
       "order": 347,
@@ -3469,7 +3469,7 @@
       "btscore": 0.12994199984626695,
       "bayesianUncertainty": 0.0011624919219057062,
       "viewCount": 1,
-      "logisticScore": -2.3275721073150635
+      "logisticScore": -2.185331344604492
     },
     {
       "order": 348,
@@ -3479,7 +3479,7 @@
       "btscore": 0.6102145380542291,
       "bayesianUncertainty": 0.005394727810597989,
       "viewCount": 1,
-      "logisticScore": 2.177309513092041
+      "logisticScore": 2.252042770385742
     },
     {
       "order": 349,
@@ -3489,7 +3489,7 @@
       "btscore": 0.10379167807171379,
       "bayesianUncertainty": 0.0008500178440826473,
       "viewCount": 1,
-      "logisticScore": -4.171300411224365
+      "logisticScore": -4.305795669555664
     },
     {
       "order": 350,
@@ -3499,7 +3499,7 @@
       "btscore": 0.22657204621868995,
       "bayesianUncertainty": 0.0017334005997165583,
       "viewCount": 1,
-      "logisticScore": -1.5560752153396606
+      "logisticScore": -1.5479707717895508
     },
     {
       "order": 351,
@@ -3509,7 +3509,7 @@
       "btscore": 0.46191938061471827,
       "bayesianUncertainty": 0.0030114173465003924,
       "viewCount": 4,
-      "logisticScore": 0.377751886844635
+      "logisticScore": 0.5865315794944763
     },
     {
       "order": 352,
@@ -3519,7 +3519,7 @@
       "btscore": 0.8963385307687995,
       "bayesianUncertainty": 0.007042471871867342,
       "viewCount": 1,
-      "logisticScore": 3.609893321990967
+      "logisticScore": 3.9176061153411865
     },
     {
       "order": 353,
@@ -3529,7 +3529,7 @@
       "btscore": 0.1633862650689889,
       "bayesianUncertainty": 0.0012130066410254757,
       "viewCount": 3,
-      "logisticScore": -1.3852592706680298
+      "logisticScore": -1.1519923210144043
     },
     {
       "order": 354,
@@ -3539,7 +3539,7 @@
       "btscore": 0.6750232724375488,
       "bayesianUncertainty": 0.005790659322445927,
       "viewCount": 1,
-      "logisticScore": 2.4419655799865723
+      "logisticScore": 2.93829607963562
     },
     {
       "order": 355,
@@ -3549,7 +3549,7 @@
       "btscore": 0.13256615037240044,
       "bayesianUncertainty": 0.0011532391177674717,
       "viewCount": 1,
-      "logisticScore": -2.71396803855896
+      "logisticScore": -2.5938022136688232
     },
     {
       "order": 356,
@@ -3559,7 +3559,7 @@
       "btscore": 0.42627596372768917,
       "bayesianUncertainty": 0.00390589768274675,
       "viewCount": 1,
-      "logisticScore": 2.003995656967163
+      "logisticScore": 2.058870315551758
     }
   ],
   "cycles": [],

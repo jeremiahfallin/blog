@@ -57,6 +57,10 @@ export function buildComparisonData(history: WatchEntry[]): ComparisonData {
     const curr = sortedHistory[i];
 
     if (curr.betterThanPrevious === null) continue;
+    // A back-to-back rewatch compares a film with itself. It carries no
+    // information, and encoding it would collapse the difference vector to a
+    // lone -1 and push the film's own score the wrong way.
+    if (prev.title === curr.title) continue;
 
     const idx1 = movieIndexMap.get(curr.title);
     const idx2 = movieIndexMap.get(prev.title);
@@ -77,6 +81,19 @@ export function buildComparisonData(history: WatchEntry[]): ComparisonData {
   }
 
   return { allTitles, numMovies, xDiffData, yData };
+}
+
+const TRAINING_ORDER_SEED = 1;
+
+/** Small seeded generator (mulberry32) returning values in [0, 1). */
+function seededRandom(seed: number): () => number {
+  let state = seed;
+  return () => {
+    state = (state + 0x6d2b79f5) | 0;
+    let t = Math.imul(state ^ (state >>> 15), state | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
 }
 
 /**
@@ -114,9 +131,21 @@ export async function calculateLogisticRatingsWithBackend(
       return Object.fromEntries(allTitles.map((title) => [title, 0]));
     }
 
-    const xTrain = tf.tensor2d(xDiffData, [xDiffData.length, numMovies]);
+    // Shuffle the samples once with a seeded generator. Letting `fit` shuffle
+    // would use Math.random and make the scores differ on every build.
+    const order = xDiffData.map((_, i) => i);
+    const random = seededRandom(TRAINING_ORDER_SEED);
+    for (let i = order.length - 1; i > 0; i--) {
+      const j = Math.floor(random() * (i + 1));
+      [order[i], order[j]] = [order[j], order[i]];
+    }
+
+    const xTrain = tf.tensor2d(
+      order.map((i) => xDiffData[i]),
+      [xDiffData.length, numMovies]
+    );
     const yTrain = tf.tensor2d(
-      yData.map((y) => [y]),
+      order.map((i) => [yData[i]]),
       [yData.length, 1]
     );
 
@@ -127,6 +156,10 @@ export async function calculateLogisticRatingsWithBackend(
         inputShape: [numMovies],
         activation: "sigmoid",
         useBias: false, // Weights represent per-title scores directly.
+        // Start every film at 0 instead of a random weight. A single-layer
+        // logistic regression is convex, so there is no symmetry to break,
+        // and a fixed start makes the result repeatable.
+        kernelInitializer: "zeros",
       })
     );
 
@@ -139,7 +172,7 @@ export async function calculateLogisticRatingsWithBackend(
       await model.fit(xTrain, yTrain, {
         epochs,
         batchSize,
-        shuffle: true,
+        shuffle: false, // Already shuffled above, deterministically.
         validationSplit,
         verbose: verbose ? 1 : 0,
       });

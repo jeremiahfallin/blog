@@ -1,11 +1,16 @@
 import assert from "node:assert/strict";
-import { buildComparisonData } from "../src/utils/logisticRatingsCore";
+import * as tf from "@tensorflow/tfjs";
+import {
+  buildComparisonData,
+  calculateLogisticRatingsWithBackend,
+} from "../src/utils/logisticRatingsCore";
 
 const normalizeZeros = (arr: number[]) => arr.map((v) => v + 0);
 
-type Test = { name: string; fn: () => void };
+type TestFn = () => void | Promise<void>;
+type Test = { name: string; fn: TestFn };
 const tests: Test[] = [];
-const test = (name: string, fn: () => void) => tests.push({ name, fn });
+const test = (name: string, fn: TestFn) => tests.push({ name, fn });
 
 test("skips entries whose betterThanPrevious is null", () => {
   const history = [
@@ -44,19 +49,63 @@ test("compares against the previous film by order, not array position", () => {
   assert.deepEqual(normalizeZeros(xDiffData[0]), [-1, 1]);
 });
 
-let failed = 0;
-for (const { name, fn } of tests) {
-  try {
-    fn();
-    console.log(`PASS  ${name}`);
-  } catch (err) {
-    failed++;
-    console.error(`FAIL  ${name}`);
-    console.error(err instanceof Error ? err.message : err);
+test("skips a film compared against itself (back-to-back rewatch)", () => {
+  const history = [
+    { order: 1, title: "A", dateWatched: "2024-01-01", betterThanPrevious: null },
+    { order: 2, title: "B", dateWatched: "2024-01-02", betterThanPrevious: true },
+    // B again, marked "better than previous" — but the previous film is B.
+    { order: 3, title: "B", dateWatched: "2024-01-03", betterThanPrevious: true },
+  ];
+
+  const { xDiffData, yData } = buildComparisonData(history);
+
+  // Only B-vs-A is a real comparison; B-vs-B says nothing about B, and
+  // encoding it would push B's own score down.
+  assert.equal(xDiffData.length, 2);
+  assert.deepEqual(yData, [1, 0]);
+  assert.deepEqual(normalizeZeros(xDiffData[0]), [-1, 1]);
+});
+
+test("produces identical scores on repeated runs", async () => {
+  // E beats A, B and D; F loses to B and D; A loses to B, D and E.
+  const outcomes: [string, boolean | null][] = [
+    ["A", null], ["B", true], ["C", false], ["D", true], ["A", false],
+    ["E", true], ["B", false], ["F", false], ["D", true], ["E", true],
+  ];
+  const history = outcomes.map(([title, betterThanPrevious], i) => ({
+    order: i + 1,
+    title,
+    dateWatched: "2024-01-01",
+    betterThanPrevious,
+  }));
+
+  const first = await calculateLogisticRatingsWithBackend(tf, history);
+  const second = await calculateLogisticRatingsWithBackend(tf, history);
+
+  // Guard against the error path, which returns {} (and {} equals {}).
+  assert.equal(Object.keys(first).length, 6);
+  assert.ok(first.E > first.F, "the film with the best record should outscore the worst");
+  assert.ok(first.E > first.A, "the film with the best record should outscore the worst");
+  assert.deepEqual(second, first);
+});
+
+async function main() {
+  let failed = 0;
+  for (const { name, fn } of tests) {
+    try {
+      await fn();
+      console.log(`PASS  ${name}`);
+    } catch (err) {
+      failed++;
+      console.error(`FAIL  ${name}`);
+      console.error(err instanceof Error ? err.message : err);
+    }
   }
+  if (failed > 0) {
+    console.error(`\n${failed} test(s) failed`);
+    process.exit(1);
+  }
+  console.log(`\nAll ${tests.length} tests passed`);
 }
-if (failed > 0) {
-  console.error(`\n${failed} test(s) failed`);
-  process.exit(1);
-}
-console.log(`\nAll ${tests.length} tests passed`);
+
+main();
