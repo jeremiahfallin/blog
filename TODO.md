@@ -128,10 +128,11 @@ labels, graph label fade-on-zoom).
   entry. The ranking engine is the differentiator — the writing around it is
   what search engines and visitors actually read.
 
-- [ ] **Note `@tensorflow/tfjs-node` install weight.** It is a large native
-  dependency used only at build time. Fine functionally, but it slows
-  installs/deploys; consider moving the rating calculation to a separate
-  workspace or precommitting its output if deploy times become a problem.
+- [x] **Drop `@tensorflow/tfjs-node`.** It was a large native dependency used
+  only at build time, and its install-time dependencies (`tar`, `adm-zip`)
+  carried Dependabot alerts with no upstream fix. The build script now runs the
+  logistic model on pure-JS `@tensorflow/tfjs`, which is fast enough for a
+  one-weight-per-film model.
 
 ## Product & content ideas
 

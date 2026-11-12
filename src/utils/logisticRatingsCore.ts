@@ -18,9 +18,8 @@ export interface LogisticRatingsOptions {
 }
 
 /**
- * The slice of the TensorFlow.js API this module relies on. Both
- * `@tensorflow/tfjs` (browser) and `@tensorflow/tfjs-node` (build script)
- * satisfy it, so callers inject whichever backend they have.
+ * The slice of the TensorFlow.js API this module relies on. The build script
+ * injects pure-JS `@tensorflow/tfjs`; any backend exposing this slice works.
  */
 export type TfBackend = Pick<
   typeof tfTypes,
@@ -82,9 +81,8 @@ export function buildComparisonData(history: WatchEntry[]): ComparisonData {
 
 /**
  * Train a bias-free logistic-regression model over the pairwise comparisons
- * and return the learned per-title scores. The TF backend is injected so the
- * same implementation runs in the browser (`@tensorflow/tfjs`) and at build
- * time on the native backend (`@tensorflow/tfjs-node`).
+ * and return the learned per-title scores. The TF backend is injected rather
+ * than imported here, so this module never pulls TensorFlow into a bundle.
  */
 export async function calculateLogisticRatingsWithBackend(
   tf: TfBackend,

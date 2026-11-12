@@ -2,26 +2,11 @@ import fs from "fs/promises";
 import path from "path";
 import watchHistory from "../src/movie-watch-history.json";
 import { calculateRatings } from "../src/utils/calculateRatings";
-import {
-  calculateLogisticRatingsWithBackend,
-  type TfBackend,
-} from "../src/utils/logisticRatingsCore";
-
-async function calculateServerLogisticRatings() {
-  let tf: TfBackend;
-  try {
-    tf = await import("@tensorflow/tfjs-node");
-    console.log("Using TensorFlow.js Node backend for script calculation");
-  } catch (e) {
-    console.error(
-      "Failed to import tfjs-node, falling back to browser version:",
-      e
-    );
-    tf = await import("@tensorflow/tfjs");
-  }
-
-  return calculateLogisticRatingsWithBackend(tf, watchHistory);
-}
+// Pure-JS TensorFlow.js. The model is one weight per film over a few hundred
+// comparisons, so the native `@tensorflow/tfjs-node` backend is not worth its
+// install weight or its unpatched install-time dependencies (tar, adm-zip).
+import * as tf from "@tensorflow/tfjs";
+import { calculateLogisticRatingsWithBackend } from "../src/utils/logisticRatingsCore";
 
 const getViewCounts = () => {
   const counts: Record<string, number> = {};
@@ -35,7 +20,10 @@ async function run() {
   console.log("Calculating movie scores at build-time...");
   const viewCounts = getViewCounts();
   const ratings = calculateRatings(watchHistory);
-  const logisticRatings = await calculateServerLogisticRatings();
+  const logisticRatings = await calculateLogisticRatingsWithBackend(
+    tf,
+    watchHistory
+  );
 
   const moviesWithScores = watchHistory.map((watch) => ({
     ...watch,
