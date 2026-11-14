@@ -9,6 +9,7 @@
     "build": "npx tsx scripts/calculate-static-ratings.ts && next build",
     "start": "next start",
     "lint": "next lint",
+    "test:unit": "npx tsx tests/logisticRatingsCore.test.ts && npx tsx tests/calculateRatings.test.ts && npx tsx tests/rewatchSuggestions.test.ts",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:report": "playwright show-report"

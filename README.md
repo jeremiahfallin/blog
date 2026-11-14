@@ -9,7 +9,7 @@ This repository contains the source code for the personal developer portfolio we
 ### 🎬 1. Movie Watch History & Ranking Engine
 * **Bradley-Terry Probability Model:** Quantifies movie comparison preferences using a custom mathematical model implemented with a **TensorFlow.js** backend.
 * **Temporal Decay:** Integrates exponential decay ($e^{-\lambda T}$) to prioritize recent watch history reviews and decay the weight of older reviews over time.
-* **Transitive Preference Discounting:** Performs Floyd-Warshall closure steps to infer transitive comparisons, applying a discount factor ($\gamma = 0.5$) to reduce the statistical weight of indirect matches.
+* **Evidence-Based Uncertainty:** Reports a plausible range for every rating from a Laplace approximation, so thinly compared films show wider ranges than heavily compared ones.
 * **Preference Loop Detection:** Detects and displays circular contradictions (e.g. loops where movie A > B, B > C, and C > A) to uncover inconsistencies in ratings.
 * **Build-Time Prerendering:** Executes rating algorithms during build time via a calculation script, outputting scores and cycles as a static JSON asset served by a Next.js API route.
 
