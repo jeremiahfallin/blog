@@ -4,3 +4,8 @@
   # Next.js 15 needs Node 18.18 or newer. The project's UI settings pinned an
   # older Node, which made every build fail before `next build` could start.
   NODE_VERSION = "22"
+
+# Netlify's Next.js adapter. Without it the build uploads the raw `.next`
+# folder as static files and every route returns 404.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
