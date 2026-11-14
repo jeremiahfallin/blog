@@ -30,19 +30,19 @@ That is the entire input. No scores, no rubrics — just a chain of pairwise com
 
 A chain of pairwise outcomes is exactly what the **Bradley-Terry model** was built for. It assumes every movie has a latent strength `r`, and that the probability movie A beats movie B is `r_A / (r_A + r_B)`.
 
-The engine fits those strengths with a damped fixed-point iteration. Each round, every movie's rating is nudged so that its *expected* number of wins under the current ratings moves toward its *actual* (decay-weighted) number of wins, blended 50/50 with the previous value to keep things stable. A weak prior keeps a movie with only one or two comparisons from rocketing to the extremes. Iteration stops once the ratings stop moving (total change below `1e-6`) or after several rounds without improvement.
+The engine fits those strengths with a fixed-point iteration. Each round, every movie's rating is updated so that its *expected* number of wins under the current ratings moves toward its *actual* (decay-weighted) number of wins. A weak prior — two imaginary games against an average film, one won and one lost — keeps a movie with only one or two comparisons from rocketing to the extremes. Iteration stops once the ratings stop moving.
 
 ## Not all comparisons age equally
 
 My taste in 2024 should not get an equal vote on what I love today. Every comparison is weighted by `e^(-λ × days)`, where `days` measures how far the watch sits behind the most recent entry in the history. With `λ = 0.002`, a comparison loses half its weight in roughly 346 days — close enough to call it a one-year half-life. Old opinions fade; they never quite vanish.
 
-## Borrowing evidence from chains
+## Chains take care of themselves
 
-334 comparisons spread over 285 movies is a sparse graph, so the engine also infers indirect evidence: if I said A beats B and B beats C, that is weak evidence A beats C. One discounted closure pass adds those inferred matchups at half credit (`γ = 0.5`), capped by the weaker link in the chain. It thickens the comparison graph without letting long chains of hearsay dominate the direct evidence.
+A few hundred comparisons spread over a few hundred movies is a sparse graph: most pairs of movies have never met. The model does not need them to. If I said A beats B and B beats C, fitting both comparisons at once already places A above C, and how far above depends on how firmly each link is established. An earlier version of the engine also added "inferred" A-beats-C matchups on top; that counted the same evidence twice and made the result depend on the order rows were entered, so it is gone. Only comparisons I actually made count, each exactly once.
 
 ## Saying "I'm not sure" out loud
 
-A rating without an error bar is a guess wearing a suit. For every movie the engine also computes an uncertainty from the curvature of the likelihood around the fitted rating (a diagonal Laplace approximation, mapped back to probability space with the delta method). Movies with few or contradictory comparisons get wide ± bands; heavily compared movies get narrow ones. The table prints the ± next to every score rather than pretending the point estimate is the whole truth.
+A rating without an error bar is a guess wearing a suit. For every movie the engine also computes an uncertainty from the curvature of the likelihood around the fitted rating (a diagonal Laplace approximation on the log of the rating). Movies with few comparisons get wide ranges; heavily compared movies get narrow ones. The table prints that range under every score rather than pretending the point estimate is the whole truth.
 
 ## Contradictions are data too
 

@@ -115,7 +115,8 @@ const columns = [
         <Text size="2" style={{ lineHeight: 1.6 }}>
           <strong style={{ color: "var(--blue-11)" }}>Bradley-Terry probability rating</strong> inferred from
           pairwise comparisons across the watch history, with temporal decay weighting more recent reviews.
-          The <em>±</em> value is a Bayesian uncertainty estimate from a diagonal Laplace approximation.
+          The range under each score is where the rating plausibly lies (roughly a 68% interval, from a
+          diagonal Laplace approximation); films with more comparisons get narrower ranges.
           Higher is more preferred.
         </Text>
       </ScoreHeader>
@@ -129,8 +130,8 @@ const columns = [
             {score.toFixed(2)}
           </Text>
           {uncertainty !== undefined && (
-            <Text size="1" color="gray" style={{ opacity: 0.8 }}>
-              ±{(100 * uncertainty).toFixed(2)}
+            <Text size="1" color="gray" style={{ opacity: 0.8, whiteSpace: "nowrap" }}>
+              {(score * Math.exp(-uncertainty)).toFixed(2)}–{(score * Math.exp(uncertainty)).toFixed(2)}
             </Text>
           )}
         </Flex>

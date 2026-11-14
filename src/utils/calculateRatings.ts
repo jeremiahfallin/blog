@@ -6,7 +6,13 @@ type WatchHistory = {
 };
 
 type RatingResult = {
+  /** Each film's share of total Bradley-Terry strength; the shares sum to 1. */
   ratings: Record<string, number>;
+  /**
+   * Posterior standard deviation of each film's log-strength. A value of σ
+   * means the film's true rating plausibly lies within a factor of e^σ
+   * either side of its fitted rating.
+   */
   uncertainties: Record<string, number>;
   graph: {
     nodes: Array<{ id: string; rating: number; uncertainty: number }>;
@@ -27,7 +33,6 @@ export const calculateRatings = (
   const maxDate = dates.length > 0 ? Math.max(...dates) : Date.now();
 
   const LAMBDA = 0.002; // halflife approx 346 days (~1 year)
-  const GAMMA = 0.5;   // Transitive discount factor
 
   const wins: Record<string, number> = {};
   const matches: Record<string, Record<string, number>> = {};
@@ -112,163 +117,81 @@ export const calculateRatings = (
 
   const cycles = detectCycles(graph);
 
-  // Compute transitive relationships using discounted graph traversal
-  const computeTransitiveComparisons = () => {
-    const transitiveGraph: Record<string, Map<string, number>> = {};
-
-    for (const title in graph) {
-      transitiveGraph[title] = new Map(graph[title]);
-    }
-
-    for (const b in graph) {
-      for (const a in graph) {
-        if (a === b) continue;
-
-        const aToB = transitiveGraph[a].get(b) || 0;
-        if (aToB > 0) {
-          for (const [c, bToC] of graph[b].entries()) {
-            if (a === c || b === c) continue;
-
-            const inferredCount = Math.min(aToB, bToC) * GAMMA;
-            if (inferredCount > 0) {
-              const current = transitiveGraph[a].get(c) || 0;
-              transitiveGraph[a].set(c, current + inferredCount);
-
-              addMatch(a, c, inferredCount);
-              addMatch(c, a, inferredCount);
-              wins[a] += inferredCount;
-            }
-          }
-        }
-      }
-    }
-
-    return transitiveGraph;
-  };
-
-  // Apply transitive comparisons
-  computeTransitiveComparisons();
-
   const items = Object.keys(wins);
 
-  const totalComparisons =
-    Object.values(matches).reduce(
-      (sum, matchObj) =>
-        sum + Object.values(matchObj).reduce((s, v) => s + v, 0),
-      0
-    ) / 2;
+  // Fit Bradley-Terry strengths, P(i beats j) = s_i / (s_i + s_j), by
+  // maximum a posteriori.
+  //
+  // Prior: besides its real comparisons, every film plays PRIOR_GAMES virtual
+  // games against a reference film whose strength is pinned at 1, winning
+  // PRIOR_WIN_RATE of them. That pulls thinly compared films toward the
+  // reference, fixes the overall scale (strengths are otherwise only defined
+  // up to a common factor) and keeps a film with an unbeaten or winless
+  // record finite.
+  const PRIOR_GAMES = 2;
+  const PRIOR_WIN_RATE = 0.5;
+  const REFERENCE_STRENGTH = 1;
 
-  let ratings: Record<string, number>;
+  const strengths: Record<string, number> = {};
+  for (const i of items) strengths[i] = REFERENCE_STRENGTH;
 
-  if (totalComparisons === 0) {
-    const equalRating = 1 / items.length;
-    ratings = items.reduce((acc, item) => {
-      acc[item] = equalRating;
-      return acc;
-    }, {} as Record<string, number>);
-  } else {
-    ratings = {};
-    items.forEach((item) => {
-      const totalMatches = Object.values(matches[item] || {}).reduce(
-        (sum, count) => sum + count,
-        0
+  // Hunter's MM update: s_i ← wins_i / Σ_j n_ij / (s_i + s_j), with the
+  // virtual games counted on both sides. Each round increases the posterior,
+  // so it needs no damping; at the fixed point every film's expected wins
+  // under the fitted strengths equal its actual (decay-weighted) wins.
+  const maxIterations = 10000;
+  const convergenceThreshold = 1e-12; // largest change in any log-strength
+
+  let converged = false;
+  for (let iter = 0; iter < maxIterations && !converged; iter++) {
+    const next: Record<string, number> = {};
+    let largestLogChange = 0;
+
+    for (const i of items) {
+      const numerator = wins[i] + PRIOR_WIN_RATE * PRIOR_GAMES;
+      let denominator = PRIOR_GAMES / (strengths[i] + REFERENCE_STRENGTH);
+      for (const j in matches[i]) {
+        denominator += matches[i][j] / (strengths[i] + strengths[j]);
+      }
+
+      next[i] = numerator / denominator;
+      largestLogChange = Math.max(
+        largestLogChange,
+        Math.abs(Math.log(next[i] / strengths[i]))
       );
-      ratings[item] = totalMatches > 0 ? wins[item] / totalMatches : 0.5;
-    });
-
-    const prior = 0.5;
-    const priorStrength = 2;
-
-    const initialTotal = Object.values(ratings).reduce(
-      (sum, val) => sum + val,
-      0
-    );
-    for (const key in ratings) {
-      ratings[key] /= initialTotal;
-      if (ratings[key] < 1e-10) ratings[key] = 1e-10;
     }
 
-    const maxIterations = 1000;
-    const convergenceThreshold = 1e-6;
-    const damping = 0.5;
-
-    let lastDiff = Infinity;
-    let nonImprovementCount = 0;
-
-    for (let iter = 0; iter < maxIterations; iter++) {
-      const newRatings: Record<string, number> = {};
-
-      for (const i of items) {
-        const numerator = wins[i] + prior * priorStrength;
-        let denominator = 0;
-
-        if (matches[i]) {
-          for (const j in matches[i]) {
-            const n_ij = matches[i][j];
-            denominator += (n_ij * ratings[j]) / (ratings[i] + ratings[j]);
-          }
-        }
-
-        denominator += priorStrength;
-
-        const updatedValue = numerator / denominator;
-        newRatings[i] = (1 - damping) * ratings[i] + damping * updatedValue;
-      }
-
-      const total = Object.values(newRatings).reduce(
-        (sum, val) => sum + val,
-        0
-      );
-      for (const key in newRatings) {
-        newRatings[key] /= total;
-      }
-
-      let diff = 0;
-      for (const i of items) {
-        diff += Math.abs(newRatings[i] - ratings[i]);
-      }
-
-      if (diff >= lastDiff) {
-        nonImprovementCount++;
-        if (nonImprovementCount >= 5) {
-          break;
-        }
-      } else {
-        nonImprovementCount = 0;
-      }
-
-      lastDiff = diff;
-      Object.assign(ratings, newRatings);
-
-      if (diff < convergenceThreshold) {
-        break;
-      }
-    }
+    Object.assign(strengths, next);
+    converged = largestLogChange < convergenceThreshold;
   }
 
-  // Compute uncertainties using the diagonal Laplace approximation
-  const uncertainties: Record<string, number> = {};
-  const priorVariance = 1.0; // Baseline variance in log-odds space
+  if (!converged) {
+    throw new Error(
+      `Bradley-Terry fit did not converge within ${maxIterations} iterations.`
+    );
+  }
 
-  items.forEach((i) => {
-    let H_ii = 1.0 / priorVariance;
-    if (matches[i]) {
-      for (const j in matches[i]) {
-        const n_ij = matches[i][j];
-        const r_i = ratings[i] || 0;
-        const r_j = ratings[j] || 0;
-        const sum = r_i + r_j;
-        if (sum > 0) {
-          H_ii += n_ij * (r_i * r_j) / Math.pow(sum, 2);
-        }
-      }
+  // Published ratings are each film's share of the total strength.
+  const totalStrength = items.reduce((sum, i) => sum + strengths[i], 0);
+  const ratings: Record<string, number> = {};
+  for (const i of items) ratings[i] = strengths[i] / totalStrength;
+
+  // Uncertainty: the posterior standard deviation of each film's
+  // log-strength, from a diagonal Laplace approximation. The curvature of
+  // the log-posterior in log(s_i) is Σ_j n_ij · p_ij · (1 − p_ij) over the
+  // film's real and virtual games, so it depends on how much evidence the
+  // film has and how informative it was — not on how high the film scores.
+  const uncertainties: Record<string, number> = {};
+  const curvatureOf = (a: number, b: number) => (a * b) / (a + b) ** 2;
+
+  for (const i of items) {
+    let curvature =
+      PRIOR_GAMES * curvatureOf(strengths[i], REFERENCE_STRENGTH);
+    for (const j in matches[i]) {
+      curvature += matches[i][j] * curvatureOf(strengths[i], strengths[j]);
     }
-    const sdLogOdds = 1.0 / Math.sqrt(H_ii);
-    const ratingVal = ratings[i] || 0;
-    // Apply delta method to map standard deviation to probability space:
-    // sd_prob = sd_log_odds * pi * (1 - pi)
-    uncertainties[i] = sdLogOdds * ratingVal * (1.0 - ratingVal);
-  });
+    uncertainties[i] = 1 / Math.sqrt(curvature);
+  }
 
   const graphForDisplay = {
     nodes: items.map((title) => ({

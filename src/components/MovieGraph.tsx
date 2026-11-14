@@ -364,7 +364,12 @@ export default function MovieGraph({
                 BT Score:{" "}
                 <span style={{ fontWeight: "bold", color: hoveredNode.color }}>
                   {(100 * hoveredNode.rating).toFixed(2)}
-                  {hoveredNode.uncertainty !== undefined && ` (±${(100 * hoveredNode.uncertainty).toFixed(2)})`}
+                  {hoveredNode.uncertainty !== undefined &&
+                    ` (${(100 * hoveredNode.rating * Math.exp(-hoveredNode.uncertainty)).toFixed(2)}–${(
+                      100 *
+                      hoveredNode.rating *
+                      Math.exp(hoveredNode.uncertainty)
+                    ).toFixed(2)})`}
                 </span>
               </Text>
               {movieData[hoveredNode.id]?.logisticScore !== undefined && (

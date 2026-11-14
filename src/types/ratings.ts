@@ -6,7 +6,12 @@ export type MovieRating = {
   title: string;
   dateWatched: string;
   betterThanPrevious: boolean | null;
+  /** Bradley-Terry rating: 100 × the film's share of total strength. */
   btscore: number;
+  /**
+   * Posterior standard deviation σ of the film's log-strength. The rating
+   * plausibly lies between btscore · e^−σ and btscore · e^σ.
+   */
   bayesianUncertainty?: number;
   viewCount: number;
   logisticScore: number | null;
@@ -14,7 +19,9 @@ export type MovieRating = {
 
 export type RatingsGraphNode = {
   id: string;
+  /** The film's share of total strength (btscore / 100). */
   rating: number;
+  /** Same quantity as MovieRating.bayesianUncertainty. */
   uncertainty?: number;
 };
 
