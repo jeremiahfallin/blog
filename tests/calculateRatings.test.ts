@@ -8,7 +8,7 @@ const test = (name: string, fn: TestFn) => tests.push({ name, fn });
 
 type Row = [title: string, betterThanPrevious: boolean | null];
 
-// Every entry shares one date, so temporal decay leaves all weights at 1.
+// Dates play no part in the ratings, so every entry shares one.
 const toHistory = (rows: Row[]) =>
   rows.map(([title, betterThanPrevious], i) => ({
     order: i + 1,
@@ -209,6 +209,115 @@ test("a film with no comparisons keeps the prior's uncertainty", () => {
     `Z was ${uncertainties.Z}`
   );
   assert.ok(uncertainties.Z > uncertainties.A);
+});
+
+test("a comparison counts the same however long ago it was made", () => {
+  // A beat B four times and lost once; C beat A once. Spread over a decade
+  // or packed into one day, the evidence is the same.
+  const rows = [...record("A", "B", 4, 5), ...win("C", "A")];
+  const sameDay = toHistory(rows);
+  const overYears = toHistory(rows).map((entry, i) => ({
+    ...entry,
+    dateWatched: `${2015 + i}-06-15`,
+  }));
+  // Dates are not needed at all: a missing one changes nothing either.
+  const undated = toHistory(rows).map((entry) => ({ ...entry, dateWatched: "" }));
+
+  const expected = calculateRatings(sameDay);
+  for (const history of [overYears, undated]) {
+    const actual = calculateRatings(history);
+    assert.deepEqual(actual.ratings, expected.ratings);
+    assert.deepEqual(actual.uncertainties, expected.uncertainties);
+    assert.deepEqual(actual.graph.links, expected.graph.links);
+  }
+});
+
+test("graph links carry the number of wins", () => {
+  const { graph } = calculateRatings(
+    toHistory([...record("A", "B", 3, 4), ...win("C", "A")])
+  );
+
+  const weightOf = (source: string, target: string) =>
+    graph.links.find((l) => l.source === source && l.target === target)?.weight;
+  assert.equal(weightOf("A", "B"), 3);
+  assert.equal(weightOf("B", "A"), 1);
+  assert.equal(weightOf("C", "A"), 1);
+  assert.equal(graph.links.length, 3);
+});
+
+test("a history without contradictions reports no loops", () => {
+  const { cycles } = calculateRatings(
+    toHistory([...win("A", "B"), ...win("B", "C"), ...win("A", "C")])
+  );
+
+  assert.deepEqual(cycles, []);
+});
+
+test("reports a three-film loop once, starting from its first film", () => {
+  // G > E > F > G, entered starting from the middle of the loop.
+  const { cycles } = calculateRatings(
+    toHistory([...win("E", "F"), ...win("F", "G"), ...win("G", "E")])
+  );
+
+  assert.deepEqual(cycles, [["E", "F", "G"]]);
+});
+
+test("reports loops longer than three films", () => {
+  const fourLoop = [
+    ...win("A", "B"), ...win("B", "C"), ...win("C", "D"), ...win("D", "A"),
+  ];
+  assert.deepEqual(calculateRatings(toHistory(fourLoop)).cycles, [
+    ["A", "B", "C", "D"],
+  ]);
+
+  // Six films in a ring, plus a bystander chain that is not part of it.
+  const ring = ["P", "Q", "R", "S", "T", "U"];
+  const sixLoop = [
+    ...ring.flatMap((film, i) => win(film, ring[(i + 1) % ring.length])),
+    ...win("U", "Y"),
+    ...win("Y", "Z"),
+  ];
+  assert.deepEqual(calculateRatings(toHistory(sixLoop)).cycles, [ring]);
+});
+
+test("a split record is a change of mind, not a loop", () => {
+  // X and Y each beat the other once; Y also beat Z. Nothing circles back.
+  const { cycles } = calculateRatings(
+    toHistory([...win("X", "Y"), ...win("Y", "X"), ...win("Y", "Z")])
+  );
+
+  assert.deepEqual(cycles, []);
+});
+
+test("reports the shortest loop through each comparison", () => {
+  // A > B > C > A is a three-film loop. D sits on a longer one only:
+  // A > B > C > D > A, so that loop is reported for D's comparisons.
+  const { cycles } = calculateRatings(
+    toHistory([
+      ...win("A", "B"), ...win("B", "C"), ...win("C", "A"),
+      ...win("C", "D"), ...win("D", "A"),
+    ])
+  );
+
+  assert.deepEqual(cycles, [
+    ["A", "B", "C"],
+    ["A", "B", "C", "D"],
+  ]);
+});
+
+test("the same comparisons report the same loops in any order", () => {
+  const segments = [
+    win("A", "B"), win("B", "C"), win("C", "A"), win("C", "D"),
+    win("D", "A"), win("D", "E"), win("E", "B"), win("B", "D"),
+  ];
+
+  const forward = calculateRatings(toHistory(segments.flat())).cycles;
+  const reversed = calculateRatings(
+    toHistory([...segments].reverse().flat())
+  ).cycles;
+
+  assert.ok(forward.length > 0);
+  assert.deepEqual(reversed, forward);
 });
 
 async function main() {

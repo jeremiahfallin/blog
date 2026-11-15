@@ -3,7 +3,7 @@ export const metadata = {
   slug: "movie-ranking-engine",
   date: "2026-06-10T00:00:00.000Z",
   description:
-    "Turning one yes/no question per movie night into a full ranking with Bradley-Terry, temporal decay, and a TensorFlow cross-check.",
+    "Turning one yes/no question per movie night into a full ranking with Bradley-Terry, honest error bars, and a TensorFlow cross-check.",
   tags: ["TypeScript", "TensorFlow", "Math", "Next.js"],
 };
 
@@ -24,17 +24,17 @@ Each watch is a single row in a JSON file:
 }
 ```
 
-That is the entire input. No scores, no rubrics — just a chain of pairwise comparisons, currently 334 watches across 285 movies.
+That is the entire input. No scores, no rubrics — just a chain of pairwise comparisons, currently 356 watches across 304 movies.
 
 ## From comparisons to ratings
 
 A chain of pairwise outcomes is exactly what the **Bradley-Terry model** was built for. It assumes every movie has a latent strength `r`, and that the probability movie A beats movie B is `r_A / (r_A + r_B)`.
 
-The engine fits those strengths with a fixed-point iteration. Each round, every movie's rating is updated so that its *expected* number of wins under the current ratings moves toward its *actual* (decay-weighted) number of wins. A weak prior — two imaginary games against an average film, one won and one lost — keeps a movie with only one or two comparisons from rocketing to the extremes. Iteration stops once the ratings stop moving.
+The engine fits those strengths with a fixed-point iteration. Each round, every movie's rating is updated so that its *expected* number of wins under the current ratings moves toward its *actual* number of wins. A weak prior — two imaginary games against an average film, one won and one lost — keeps a movie with only one or two comparisons from rocketing to the extremes. Iteration stops once the ratings stop moving.
 
-## Not all comparisons age equally
+## Old comparisons keep their vote
 
-My taste in 2024 should not get an equal vote on what I love today. Every comparison is weighted by `e^(-λ × days)`, where `days` measures how far the watch sits behind the most recent entry in the history. With `λ = 0.002`, a comparison loses half its weight in roughly 346 days — close enough to call it a one-year half-life. Old opinions fade; they never quite vanish.
+An earlier version of the engine faded comparisons with age, halving their weight roughly every year, on the theory that my taste in 2024 should not get an equal vote on what I love today. It did not do what I wanted. The prior never fades, so as a movie's comparisons lost weight the prior took over and the movie slid toward the middle of the ranking — the favorites and the duds of two years ago both ended up looking average, simply for being old. So the decay is gone: every comparison counts once, however long ago I made it. If my opinion of a movie has changed, the way to tell the engine is to watch it again.
 
 ## Chains take care of themselves
 
@@ -50,7 +50,7 @@ Pairwise preferences are under no obligation to be consistent — sincerely pref
 
 ## A second opinion from TensorFlow
 
-Any hand-rolled model deserves a cross-check. The same comparisons also train a logistic regression in TensorFlow.js: one weight per movie, no bias, with each comparison encoded as a +1/−1 difference vector and the model predicting the winner through a sigmoid. After training, the learned weights *are* the scores — positive means preferred, negative means not. It is a completely independent estimator, so when both models broadly agree on the ordering, I trust the result a lot more than I would trust either alone.
+Any hand-rolled model deserves a cross-check. The same comparisons also train a logistic regression in TensorFlow.js: one weight per movie, no bias, with each comparison encoded as a +1/−1 difference vector and the model predicting the winner through a sigmoid. After training, the learned weights *are* the scores — positive means preferred, negative means not. It is not an independent model, though: the sigmoid of a score difference is exactly `r_A / (r_A + r_B)` with `r = e^score`, so this is Bradley-Terry again in different clothes. What is independent is the implementation — different code, a different fitting method and a slightly different prior. When the two orderings agree, that tells me my hand-rolled fit is not broken; the small differences that remain come from the priors.
 
 ## Nothing happens in your browser
 

@@ -82,7 +82,8 @@ test("produces identical scores on repeated runs", async () => {
   const first = await calculateLogisticRatingsWithBackend(tf, history);
   const second = await calculateLogisticRatingsWithBackend(tf, history);
 
-  // Guard against the error path, which returns {} (and {} equals {}).
+  // Guard against an empty result: {} equals {}, so the repeat check below
+  // would pass without any scores having been fitted.
   assert.equal(Object.keys(first).length, 6);
   assert.ok(first.E > first.F, "the film with the best record should outscore the worst");
   assert.ok(first.E > first.A, "the film with the best record should outscore the worst");
@@ -156,6 +157,46 @@ test("the same comparisons give the same scores in any order", async () => {
   assert.ok(
     maxAbsDifference(forward, reversed) < 1e-4,
     `scores differ by ${maxAbsDifference(forward, reversed)} between orderings`
+  );
+});
+
+const smallHistory = () =>
+  (
+    [
+      ["A", null],
+      ["B", true],
+      ["C", false],
+      ["A", true],
+    ] as [string, boolean | null][]
+  ).map(([title, betterThanPrevious], i) => ({
+    order: i + 1,
+    title,
+    dateWatched: "2024-01-01",
+    betterThanPrevious,
+  }));
+
+test("fails loudly when the backend breaks instead of returning no scores", async () => {
+  // A backend that cannot initialize, e.g. a missing or broken install.
+  const brokenBackend = {
+    ...tf,
+    ready: async () => {
+      throw new Error("backend unavailable");
+    },
+  };
+
+  await assert.rejects(
+    calculateLogisticRatingsWithBackend(brokenBackend, smallHistory()),
+    /backend unavailable/
+  );
+});
+
+test("fails loudly when training yields non-finite scores instead of reporting zeros", async () => {
+  // A NaN penalty poisons the step size, so every weight trains to NaN.
+  await assert.rejects(
+    calculateLogisticRatingsWithBackend(tf, smallHistory(), {
+      regularization: NaN,
+    }),
+    /non-finite/i
   );
 });
 
