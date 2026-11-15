@@ -69,9 +69,7 @@ test.describe("Movie Table Functionality", () => {
     const knownMovieScoreCellLocator =
       knownMovieRowLocator.locator("td:nth-child(7)"); // Logistic score is the 7th column
 
-    // Verify it has a numeric value (not "Calculating...")
-    await expect(knownMovieScoreCellLocator).not.toHaveText("Calculating...");
-    // Then, assert that it matches the number regex
+    // Verify it holds a fitted score rather than the "—" no-score placeholder
     await expect(knownMovieScoreCellLocator).toHaveText(/^-?\d+(\.\d+)?$/);
   });
 

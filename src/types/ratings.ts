@@ -38,6 +38,7 @@ export type RatingsGraph = {
 
 export type RatingsData = {
   movies: MovieRating[];
+  /** Preference loops of three or more films; each film beat the next. */
   cycles: string[][];
   graph: RatingsGraph;
 };

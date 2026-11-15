@@ -18,6 +18,11 @@ type RatingResult = {
     nodes: Array<{ id: string; rating: number; uncertainty: number }>;
     links: Array<{ source: string; target: string; weight: number }>;
   };
+  /**
+   * Preference loops of three or more films: each film beat the next, and
+   * the last beat the first. Holds the shortest loop through every comparison
+   * that lies on one, starting from its alphabetically first film.
+   */
   cycles: string[][];
 };
 
@@ -26,20 +31,12 @@ export const calculateRatings = (
 ): RatingResult => {
   const sortedHistory = [...watchHistory].sort((a, b) => a.order - b.order);
 
-  // Find maximum watch date for temporal decay reference
-  const dates = sortedHistory
-    .filter((item) => item.dateWatched)
-    .map((item) => new Date(item.dateWatched).getTime());
-  const maxDate = dates.length > 0 ? Math.max(...dates) : Date.now();
-
-  const LAMBDA = 0.002; // halflife approx 346 days (~1 year)
-
   const wins: Record<string, number> = {};
   const matches: Record<string, Record<string, number>> = {};
 
-  const addMatch = (a: string, b: string, weight: number = 1) => {
+  const addMatch = (a: string, b: string) => {
     if (!matches[a]) matches[a] = {};
-    matches[a][b] = (matches[a][b] || 0) + weight;
+    matches[a][b] = (matches[a][b] || 0) + 1;
   };
 
   // Initialize win counts for each title.
@@ -58,57 +55,79 @@ export const calculateRatings = (
     }
   });
 
-  // Process direct comparisons from the watch history with temporal decay
+  // Process direct comparisons from the watch history. Every comparison
+  // counts once, however long ago it was made: a film's standing changes
+  // when it is rewatched and compared again, not as its last watch ages.
   for (let i = 1; i < sortedHistory.length; i++) {
     const prev = sortedHistory[i - 1];
     const curr = sortedHistory[i];
 
     if (prev.title === curr.title || curr.betterThanPrevious === null) continue;
 
-    // Calculate time diff in days and apply decay
-    const watchTime = new Date(curr.dateWatched).getTime();
-    const diffDays = Math.max(0, (maxDate - watchTime) / (1000 * 3600 * 24));
-    const decayWeight = Math.exp(-LAMBDA * diffDays);
-
     // Record direct match
-    addMatch(prev.title, curr.title, decayWeight);
-    addMatch(curr.title, prev.title, decayWeight);
+    addMatch(prev.title, curr.title);
+    addMatch(curr.title, prev.title);
 
-    if (curr.betterThanPrevious === true) {
-      wins[curr.title] += decayWeight;
-      const currentEdges = graph[curr.title];
-      currentEdges.set(prev.title, (currentEdges.get(prev.title) || 0) + decayWeight);
-    } else {
-      wins[prev.title] += decayWeight;
-      const prevEdges = graph[prev.title];
-      prevEdges.set(curr.title, (prevEdges.get(curr.title) || 0) + decayWeight);
-    }
+    const [winner, loser] = curr.betterThanPrevious
+      ? [curr.title, prev.title]
+      : [prev.title, curr.title];
+    wins[winner] += 1;
+    graph[winner].set(loser, (graph[winner].get(loser) || 0) + 1);
   }
 
-  // Detect circular preferences (3-cycles: A > B > C > A) on the direct graph
+  // Detect circular preferences (A > B > C > A, or longer) on the direct graph.
+  //
+  // A loop of any length is a contradiction, but a graph can hold
+  // exponentially many loops, so this reports the shortest loop through each
+  // comparison that lies on one. A split record (A beat B, B beat A) is a
+  // change of mind rather than a loop, so a loop needs at least three films.
   const detectCycles = (directGraph: Record<string, Map<string, number>>): string[][] => {
+    // Sorted, so the loops reported do not depend on the order of the rows.
+    const titles = Object.keys(directGraph).sort();
+    const beatenBy = new Map(
+      titles.map((title) => [title, [...directGraph[title].keys()].sort()])
+    );
+
     const cyclesList: string[][] = [];
     const seen = new Set<string>();
 
-    for (const a in directGraph) {
-      const edgesA = directGraph[a];
-      for (const b of edgesA.keys()) {
-        const edgesB = directGraph[b];
-        if (!edgesB) continue;
-        for (const c of edgesB.keys()) {
-          const edgesC = directGraph[c];
-          if (!edgesC) continue;
-          if (edgesC.has(a)) {
-            const cycle = [a, b, c];
-            const minElement = [...cycle].sort()[0];
-            const minIndex = cycle.indexOf(minElement);
-            const shifted = [...cycle.slice(minIndex), ...cycle.slice(0, minIndex)];
-            const key = shifted.join(" -> ");
-            if (!seen.has(key)) {
-              seen.add(key);
-              cyclesList.push(cycle);
+    for (const winner of titles) {
+      for (const loser of beatenBy.get(winner)!) {
+        // Breadth-first search for the shortest chain of wins leading from
+        // `loser` back to `winner`, which closes a loop through this win.
+        const cameFrom = new Map<string, string>();
+        const visited = new Set([loser]);
+        const queue = [loser];
+        let chain: string[] | null = null;
+
+        for (let head = 0; head < queue.length && !chain; head++) {
+          const current = queue[head];
+          for (const next of beatenBy.get(current) ?? []) {
+            if (next === winner) {
+              // The loser beating the winner straight back is a split record.
+              if (current === loser) continue;
+              chain = [current];
+              while (chain[0] !== loser) chain.unshift(cameFrom.get(chain[0])!);
+              break;
+            }
+            if (!visited.has(next)) {
+              visited.add(next);
+              cameFrom.set(next, current);
+              queue.push(next);
             }
           }
+        }
+        if (!chain) continue;
+
+        // Start every loop at its alphabetically first film, so the same loop
+        // found from a different comparison is recognized as a repeat.
+        const cycle = [winner, ...chain];
+        const start = cycle.indexOf([...cycle].sort()[0]);
+        const rotated = [...cycle.slice(start), ...cycle.slice(0, start)];
+        const key = JSON.stringify(rotated);
+        if (!seen.has(key)) {
+          seen.add(key);
+          cyclesList.push(rotated);
         }
       }
     }
@@ -138,7 +157,7 @@ export const calculateRatings = (
   // Hunter's MM update: s_i ← wins_i / Σ_j n_ij / (s_i + s_j), with the
   // virtual games counted on both sides. Each round increases the posterior,
   // so it needs no damping; at the fixed point every film's expected wins
-  // under the fitted strengths equal its actual (decay-weighted) wins.
+  // under the fitted strengths equal its actual wins.
   const maxIterations = 10000;
   const convergenceThreshold = 1e-12; // largest change in any log-strength
 

@@ -174,7 +174,8 @@ export default function MovieGraph({
               cooldownTicks={300} // More ticks = more time for layout
               warmupTicks={100} // Pre-simulation ticks
               linkColor={() => "rgba(255, 255, 255, 0.2)"}
-              linkWidth={(link) => (link.weight as number) * 2}
+              // weight is the number of times the source film beat the target
+              linkWidth={(link) => (link.weight as number) * 1.25}
               nodeCanvasObject={(node: Node, ctx, globalScale) => {
                 const label = node.id;
                 const fontSize = 12 / globalScale;
@@ -378,7 +379,7 @@ export default function MovieGraph({
                   <span style={{ fontWeight: "bold", color: "#60a5fa" }}>
                     {movieData[hoveredNode.id].logisticScore !== null
                       ? (movieData[hoveredNode.id].logisticScore as number).toFixed(4)
-                      : "Calculating..."}
+                      : "—"}
                   </span>
                 </Text>
               )}

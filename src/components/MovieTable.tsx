@@ -114,7 +114,7 @@ const columns = [
       <ScoreHeader title="BT Score">
         <Text size="2" style={{ lineHeight: 1.6 }}>
           <strong style={{ color: "var(--blue-11)" }}>Bradley-Terry probability rating</strong> inferred from
-          pairwise comparisons across the watch history, with temporal decay weighting more recent reviews.
+          pairwise comparisons across the watch history. Every comparison counts once, however long ago it was made.
           The range under each score is where the rating plausibly lies (roughly a 68% interval, from a
           diagonal Laplace approximation); films with more comparisons get narrower ranges.
           Higher is more preferred.
@@ -142,16 +142,19 @@ const columns = [
     header: () => (
       <ScoreHeader title="Logistic Score">
         <Text size="2" style={{ lineHeight: 1.6 }}>
-          An independent <strong style={{ color: "var(--indigo-11)" }}>TensorFlow.js logistic-regression</strong>{" "}
-          model trained on the same pairwise comparisons. Positive values mean preferred; negative values mean
-          less preferred.
+          A <strong style={{ color: "var(--indigo-11)" }}>TensorFlow.js logistic-regression</strong>{" "}
+          fit of the same pairwise comparisons: the same underlying model as the BT score, implemented
+          separately with a different fitting method and prior, as a cross-check. Positive values mean preferred; negative
+          values mean less preferred.
         </Text>
       </ScoreHeader>
     ),
     cell: (props) => {
       const score = props.getValue();
+      // Scores are fitted at build time; null only means the history held no
+      // comparisons to fit.
       if (score === null) {
-        return <Text size="2" color="gray">Calculating...</Text>;
+        return <Text size="2" color="gray" title="No comparisons to score">—</Text>;
       }
       const isPositive = score >= 0;
       return (
@@ -255,7 +258,7 @@ export default function MovieTable({
             <Flex direction="column" gap="2" style={{ maxHeight: "150px", overflowY: "auto", paddingRight: "4px" }}>
               {cycles.map((cycle, index) => (
                 <Text key={index} size="2" style={{ color: "var(--gray-12)" }}>
-                  • <span style={{ fontWeight: 600 }}>{cycle[0]}</span> &gt; {cycle[1]} &gt; {cycle[2]} &gt; <span style={{ fontWeight: 600 }}>{cycle[0]}</span>
+                  • <span style={{ fontWeight: 600 }}>{cycle[0]}</span> &gt; {cycle.slice(1).join(" > ")} &gt; <span style={{ fontWeight: 600 }}>{cycle[0]}</span>
                 </Text>
               ))}
             </Flex>
