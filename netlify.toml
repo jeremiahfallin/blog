@@ -1,7 +1,7 @@
 # Netlify build settings. Values here take precedence over the Netlify UI.
 
 [build.environment]
-  # Next.js 15 needs Node 18.18 or newer. The project's UI settings pinned an
+  # Next.js 16 needs Node 20.9 or newer. The project's UI settings pinned an
   # older Node, which made every build fail before `next build` could start.
   NODE_VERSION = "22"
 
