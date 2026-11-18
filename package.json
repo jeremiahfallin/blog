@@ -5,11 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "fetch:posters": "npx tsx scripts/fetch-movie-posters.ts",
+    "sync:plex": "npx tsx scripts/sync-plex.ts",
     "suggest:rewatch": "npx tsx scripts/suggest-rewatch.ts",
     "build": "npx tsx scripts/calculate-static-ratings.ts && next build",
     "start": "next start",
     "lint": "eslint .",
-    "test:unit": "npx tsx tests/logisticRatingsCore.test.ts && npx tsx tests/calculateRatings.test.ts && npx tsx tests/rewatchSuggestions.test.ts",
+    "test:unit": "npx tsx tests/logisticRatingsCore.test.ts && npx tsx tests/calculateRatings.test.ts && npx tsx tests/rewatchSuggestions.test.ts && npx tsx tests/watchQueue.test.ts",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:report": "playwright show-report"

@@ -21,6 +21,7 @@
  */
 import fs from "fs";
 import path from "path";
+import { loadEnv } from "./loadEnv";
 
 const ROOT = path.join(__dirname, "..");
 const WATCH_HISTORY = path.join(ROOT, "src", "movie-watch-history.json");
@@ -36,19 +37,6 @@ type PosterEntry = {
 };
 
 type Overrides = Record<string, { tmdbId?: number; skip?: boolean }>;
-
-// Minimal .env loader so the script works regardless of how it is invoked.
-function loadEnv() {
-  if (process.env.TMDB_READ_ACCESS_TOKEN) return;
-  const envPath = path.join(ROOT, ".env");
-  if (!fs.existsSync(envPath)) return;
-  for (const line of fs.readFileSync(envPath, "utf8").split("\n")) {
-    const m = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$/);
-    if (m && !process.env[m[1]]) {
-      process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
-    }
-  }
-}
 
 function readJson<T>(file: string, fallback: T): T {
   return fs.existsSync(file)
@@ -113,7 +101,7 @@ async function resolveTitle(
 }
 
 async function main() {
-  loadEnv();
+  loadEnv(ROOT);
   const token = process.env.TMDB_READ_ACCESS_TOKEN;
   if (!token) {
     console.error(
