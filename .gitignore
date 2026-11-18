@@ -41,3 +41,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local queue of Plex watches awaiting review (npm run sync:plex)
+/.plex-queue.json

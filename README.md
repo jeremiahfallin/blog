@@ -51,6 +51,23 @@ Build and compile the application for production (this automatically updates and
 npm run build
 ```
 
+### Add new watches from Plex
+New movie watches can come from your Plex server instead of being typed into `src/movie-watch-history.json` by hand. Plex supplies what you watched and when; you still answer the one question each watch needs (was it better than the film before it?) on a local review page.
+
+1. Add your server's address and token to `.env`:
+   ```
+   PLEX_URL=http://192.168.1.20:32400
+   PLEX_TOKEN=your-plex-token
+   ```
+   To find the token, open any movie in Plex Web, choose **Get Info → View XML**, and copy the `X-Plex-Token` value from the address bar. If other people use your server, also set `PLEX_ACCOUNT_ID` to your account (the server owner is usually `1`). Posters for films new to the site come from TMDB when `TMDB_READ_ACCESS_TOKEN` is set.
+2. Fetch the watches made since the last entry in the history:
+   ```bash
+   npm run sync:plex
+   ```
+   Add `-- --dry-run` to list them without saving. They wait in `.plex-queue.json`, which is not committed.
+3. Start `npm run dev` and open [http://localhost:3000/review](http://localhost:3000/review). Answer each watch in order: **Better**, **Worse**, **Can't compare**, or **Not a real watch**. You can fix the title before answering so a rewatch matches how you named the film before, and **Undo** reverses the last answer. The page only exists in development; a production build returns 404 for it.
+4. Run `npm run build` to update the rankings, then commit the changed files.
+
 ---
 
 ## 🧪 Testing
